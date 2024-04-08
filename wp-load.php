@@ -18,6 +18,7 @@
 
 
 // just for test
+// just for test 2
 
 /** Define ABSPATH as this file's directory */
 if ( ! defined( 'ABSPATH' ) ) {
