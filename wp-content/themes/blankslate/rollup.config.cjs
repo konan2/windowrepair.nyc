@@ -1,6 +1,7 @@
 import postcss from 'rollup-plugin-postcss';
-import autoReload from 'rollup-plugin-auto-reload';
+//import autoReload from 'rollup-plugin-auto-reload';
 import sass from 'node-sass';
+import { terser } from "rollup-plugin-minification";
 
 export default [
   {
@@ -10,8 +11,9 @@ export default [
       format: 'esm',
     },
     plugins: [
+      terser({compress: {drop_console: true, module: true}})
       // Другие плагины Rollup, которые у вас уже есть, если есть
-      autoReload, // Добавляем плагин автоматической перезагрузки
+      //autoReload, // Добавляем плагин автоматической перезагрузки
     ]
   },
   {
