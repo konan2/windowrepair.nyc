@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "rollup": "^4.14.1",
+    "rollup-plugin-concat": "^1.0.3",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-css-bundle": "^1.0.4",
+    "rollup-plugin-import-css": "^3.5.0",
+    "rollup-plugin-includepaths": "^0.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-virtual": "^1.0.1",
+    "rollup-watch": "^4.3.1",
+    "sass": "^1.74.1"
+  },
+  "scripts": {
+    "watch": "rollup -c -w --bundleConfigAsCjs"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^9.5.4",
+    "postcss-sass": "^0.5.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
