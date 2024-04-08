@@ -16,21 +16,21 @@ function remove_jquery_migrate( $scripts ) {
 
 function include_my_scripts() {
 
-    // Подключаем стили
-    wp_enqueue_style(
-        'default',
-        get_template_directory_uri() . 'build/app.min.css'
-    );
+    // // Подключаем стили
+    // wp_enqueue_style(
+    //     'default',
+    //     get_template_directory_uri() . 'build/app.min.css'
+    // );
 
-    //Подключаем скрипты
-    wp_enqueue_script( 
-        'app-js',
-         get_template_directory_uri() . 'build/app.min.js',
-         true
-    );
+    // //Подключаем скрипты
+    // wp_enqueue_script( 
+    //     'app-js',
+    //      get_template_directory_uri() . 'build/app.min.js',
+    //      true
+    // );
 }
 
-add_action( 'wp_enqueue_scripts', 'include_my_scripts' );
+//add_action( 'wp_enqueue_scripts', 'include_my_scripts' );
 
 
 
@@ -81,8 +81,4 @@ function my_custom_menu() {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
-
-
-
-
-
+?>
