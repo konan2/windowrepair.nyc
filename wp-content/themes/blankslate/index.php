@@ -17,87 +17,10 @@
     </div>
 </section>
 
-<section id="counters" class="counters container-fluid">
-    <div class="container-xl">
-            <div class="row row-cols-1 row-cols-md-4 text-center">
-                <h3 class="counters__item">
-                    <span class="counters__value">11 203</span>
-                    <span class="counters__text">Happy clients</span>
-                </h3>
-            
-            
-                <h3 class="counters__item">
-                    <span class="counters__value">4.67</span>
-                    <span class="counters__text">Average rating</span>
-                </h3>
-            
-            
-                <h3 class="counters__item">
-                    <span class="counters__value">14 420</span>
-                    <span class="counters__text">Jobs complete</span>
-                </h3>
-            
-            
-                <h3 class="counters__item">
-                    <span class="counters__value">28</span>
-                    <span class="counters__text">Qualified stafs</span>
-                </h3>
-            </div>
-        
-    </div>
-</section>
+<?php get_template_part('section-counters'); ?>
+<?php get_template_part('section-quality-services'); ?>
 
 
-
-
-
-<section id="quality-services" class="quality-services container-fluid">
-    <div class="container-xl text-center">
-        <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
-        <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <div class="quality-services__wrapper row row-cols-1">
-            <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article>
-            <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article> <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article> <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article> <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article> <article class="col-4">
-                <div class="quality-services__item">
-                    <span class="quality-services__icon"></span>
-                    <h4>Sameday Service</h4>
-                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                </div>
-            </article>
-            
-        </div>
-    </div>
-</section>
 
 <section id="benefits" class="benefits container-fluid">
     <div class="container-xl">
@@ -125,7 +48,10 @@
 
 
 
-
-
-
+<section id="benefits" class="benefits container-fluid">
+    <div class="container-xl text-center">
+    <h2>our  <span class="text-primary-emphasis">brand partners</span> we work with</h2>
+        <p class="text-body-secondary">We are proud to work with some of the biggest and most trusted companies in New York</p>
+    </div>
+</section>    
 <?php get_footer();?>

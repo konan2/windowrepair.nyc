@@ -1,5 +1,4 @@
 import postcss from 'rollup-plugin-postcss';
-//import autoReload from 'rollup-plugin-auto-reload';
 import sass from 'node-sass';
 import { terser } from "rollup-plugin-minification";
 
