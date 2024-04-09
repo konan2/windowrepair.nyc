@@ -8,7 +8,8 @@ export default [
     input: 'js/script.js',
     output: {
       file: 'build/main.min.js',
-      format: 'esm',
+      format: 'umd',
+      name: 'MyModule'
     },
     plugins: [
       terser({compress: {drop_console: true, module: true}})
@@ -17,7 +18,7 @@ export default [
     ]
   },
   {
-    input: 'sass/main.sass', // Ваш основной Sass файл
+    input: 'scss/main.scss', // Ваш основной Sass файл
     output: {
       file: 'build/main.min.css', // Выходной CSS файл
       format: 'esm',
@@ -26,7 +27,7 @@ export default [
       postcss({
         extract: true, // Извлечение CSS в отдельный файл
         minimize: true,
-        extensions: ['.sass'], // Добавляем поддержку расширения .sass
+        extensions: ['.scss'], // Добавляем поддержку расширения .sass
         preprocessor: (content, id) => new Promise((resolve, reject) => {
           const result = sass.renderSync({ file: id });
           resolve({ code: result.css.toString() });
