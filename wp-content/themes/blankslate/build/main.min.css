@@ -11964,3 +11964,58 @@ p {
   position: relative;
   z-index: 1;
 }
+
+.counters__item {
+  position: relative;
+  margin: 80px 0;
+}
+.counters__value {
+  color: #D6E3F9;
+  font-size: 90px;
+  line-height: 1;
+  height: 90px;
+  display: block;
+}
+.counters__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: #0E192D;
+  font-size: 22px;
+}
+
+.quality-services__wrapper {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.quality-services__item {
+  margin-top: 30px;
+  padding: 32px 20px;
+  border: 2px solid #D6E3F9;
+  border-radius: 16px;
+  box-shadow: 0 1px 17px rgba(14, 25, 45, 0.07);
+}
+.quality-services__icon {
+  border-radius: 100%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #789AEE;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.benefits__list {
+  padding: 0;
+  list-style: none;
+  margin: 24px 0 0 0;
+}
+.benefits__list-item {
+  padding-left: 38px;
+  margin: 10px 0;
+  font-weight: bold;
+  line-height: 26px;
+  color: #2C5697;
+  background: url("../img/list-item-icon.svg") no-repeat;
+}

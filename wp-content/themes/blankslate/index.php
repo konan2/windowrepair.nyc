@@ -17,16 +17,111 @@
     </div>
 </section>
 
+<section id="counters" class="counters container-fluid">
+    <div class="container-xl">
+            <div class="row row-cols-1 row-cols-md-4 text-center">
+                <h3 class="counters__item">
+                    <span class="counters__value">11 203</span>
+                    <span class="counters__text">Happy clients</span>
+                </h3>
+            
+            
+                <h3 class="counters__item">
+                    <span class="counters__value">4.67</span>
+                    <span class="counters__text">Average rating</span>
+                </h3>
+            
+            
+                <h3 class="counters__item">
+                    <span class="counters__value">14 420</span>
+                    <span class="counters__text">Jobs complete</span>
+                </h3>
+            
+            
+                <h3 class="counters__item">
+                    <span class="counters__value">28</span>
+                    <span class="counters__text">Qualified stafs</span>
+                </h3>
+            </div>
+        
+    </div>
+</section>
 
 
 
 
 
+<section id="quality-services" class="quality-services container-fluid">
+    <div class="container-xl text-center">
+        <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
+        <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="quality-services__wrapper row row-cols-1">
+            <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article>
+            <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article> <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article> <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article> <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article> <article class="col-4">
+                <div class="quality-services__item">
+                    <span class="quality-services__icon"></span>
+                    <h4>Sameday Service</h4>
+                    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</section>
 
-
-
-
-
+<section id="benefits" class="benefits container-fluid">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/img2.png" alt="Описание изображения" height="542" width="445">
+            </div>
+            <div class="col-md-6 flex-column justify-content-center">
+                <span class="text-primary-emphasis">Windows repair NYC benefits</span>
+                <h1>window repair nyc</h1>
+                <p class="text-body-secondary">We specialize in assisting homeowners to get the most from skilled and veteran professionals in the locality. The company is fully licensed and insured to bring you the assurance that you may expect your service provider to have. For homeowners facing some problems with windows and doors at home, we offer a cost-free and no-obligation quote. Besides, we even visit your home to look into the matter before repairing windows.</p>
+                <p class="text-body-secondary">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not. All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
+                <ul class="benefits__list row">
+                    <li class="benefits__list-item col-6">Timely</li>
+                    <li class="benefits__list-item col-6">Honest</li>
+                    <li class="benefits__list-item col-6">Quick to respond</li>
+                    <li class="benefits__list-item col-6">Conscientious</li>
+                    <li class="benefits__list-item col-6">Responsible</li>
+                    <li class="benefits__list-item col-6">Flexible Price</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>    
 
 
 

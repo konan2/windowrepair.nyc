@@ -1,0 +1,100 @@
+// Banner
+
+.front-banner{
+    position: relative;
+}
+
+.front-banner:after{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: calc(50vw + 30px);
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d6e3f9), to(#d6e3f9));
+}
+.front-banner:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: calc(50vw + 30px);
+    height: 100%;
+    background-image: linear-gradient(rgb(255 255 255 / 20%) 16px, transparent 1px), linear-gradient(to right, rgb(255 255 255 / 20%) 16px, transparent 16px);
+    background-size: 497px 298px;
+    background-position: -96px -17px;
+}
+
+.front-banner__container{
+    position: relative;
+    z-index: 1;
+}
+
+/// Section counters
+.counters{
+    &__item{
+        position: relative;
+        margin: 80px 0;
+    }
+    &__value{
+        color: #D6E3F9;
+        font-size: 90px;
+        line-height: 1;
+        height: 90px;
+        display: block;
+    }
+    &__text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        color: #0E192D;
+        font-size: 22px;
+    }
+}
+
+
+// quality-services
+
+.quality-services{
+    &__wrapper{
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+    &__item{
+        margin-top: 30px;
+        padding: 32px 20px;
+        border: 2px solid #D6E3F9;
+        border-radius: 16px;
+        box-shadow: 0 1px 17px rgb(14 25 45 / 7%);
+    }
+    &__icon{
+        border-radius: 100%;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-color: #789AEE;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+}
+
+// Benefits
+
+.benefits{
+    &__list{
+        padding: 0; 
+        list-style: none;
+        margin: 24px 0 0 0;
+    }
+    &__list-item{
+        padding-left: 38px;
+        margin: 10px 0;
+        font-weight: bold;
+        line-height: 26px;
+        color: $primary;
+        background: url("../img/list-item-icon.svg") no-repeat;
+    }
+}
