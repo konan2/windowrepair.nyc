@@ -26,13 +26,13 @@ define( 'FS_METHOD', 'direct' );
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'window-repair-nyc' );
+define( 'DB_NAME', 'windowrepair-nyc' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'admin' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'd22ser314' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
