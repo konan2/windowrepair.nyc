@@ -26,7 +26,7 @@ export default [
     plugins: [
       postcss({
         extract: true, // Извлечение CSS в отдельный файл
-        minimize: true,
+        minimize: false,
         extensions: ['.scss'], // Добавляем поддержку расширения .sass
         preprocessor: (content, id) => new Promise((resolve, reject) => {
           const result = sass.renderSync({ file: id });

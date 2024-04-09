@@ -1,7 +1,15 @@
-$primary: #2C5697;
-$secondary: #FFD221;
+// General
 
-$spacer: 15px;
+$font-family-sans-serif: "Poppins", sans-serif;
+
+// Colors
+$primary: #2C5697;
+$emphasis-color: #FFD221;
+$primary-text-emphasis: #789AEE;
+
+// Grid
+
+$grid-gutter-width: 30px;
 
 $container-max-widths: (
   sm: 540px,
@@ -9,3 +17,25 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
 );
+
+
+// Buttons
+
+$btn-font-family: $font-family-sans-serif;
+$btn-font-size: 18px;
+$btn-bg: #fff;
+$btn-font-weight: 700;
+$btn-box-shadow: none;
+$btn-border-width: 0;
+$btn-font-style: italic;
+$btn-line-height: 27px;
+//btn-border-radius: ;
+
+$btn-primary-color: $primary;
+$btn-primary-bg: $primary;
+$btn-light-color: $primary;
+$btn-light-bg: #fff;
+
+// Переопределение переменных для размеров кнопок
+$btn-padding-x: 24px;
+$btn-padding-y: 12px;

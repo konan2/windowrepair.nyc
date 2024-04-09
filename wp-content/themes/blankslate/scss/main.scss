@@ -1,4 +1,6 @@
-@import "variable-overrides";   
-@import "../node_modules/bootstrap/scss/bootstrap";
-//@import '~bootstrap/scss/bootstrap';
+@import "fonts";
+@import "variable-overrides"; 
+@import "../node_modules/bootstrap/scss/bootstrap"; //@import '~bootstrap/scss/bootstrap';
 @import "custom";
+
+@import "front-banner";
