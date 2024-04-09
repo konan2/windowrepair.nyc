@@ -1,0 +1,359 @@
+0000.000 (0) Opened log file at time: Tue, 09 Apr 2024 17:10:19 +0000 on http://localhost/window-repair-nyc
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.2 WP: 6.5 PHP: 8.2.4 (apache2handler, Darwin MacBook-Pro-Oleg.local 21.6.0 Darwin Kernel Version 21.6.0: Sun Dec 17 22:55:27 PST 2023; root:xnu-8020.240.18.706.2~1/RELEASE_X86_64 x86_64) MySQL: 10.4.28-MariaDB (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 35.8M | 38.5M) multisite: N openssl: OpenSSL 1.1.1t  7 Feb 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 (0) Free space on disk containing Updraft's temporary directory: 55450.1 MB
+0000.009 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.010 (0) Semaphore (fd, wp_options) being initialised
+0000.015 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.021 (0) Set semaphore last lock (fd) time to 2024-04-09 17:10:19
+0000.021 (0) Semaphore lock (fd) complete
+0000.025 (0) Backup run: resumption=0, nonce=e2226368fb09, file_nonce=e2226368fb09 begun at=1712682619 (0s ago), job type=backup
+0000.026 (0) Scheduling a resumption (1) after 300 seconds (1712682919) in case this run gets aborted
+0000.036 (0) Checking if we have a zip executable available
+0000.037 (0) Testing: /usr/bin/zip
+0000.044 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.045 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.047 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.048 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.049 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.060 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.063 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.069 (0) Working binary zip found: /usr/bin/zip
+0000.071 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.071 (0) Creation of backups of directories: beginning
+0000.074 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.215 (0) Total entities for the zip file: 357 directories, 2740 files (0 skipped as non-modified), 47.7 MB
+0000.221 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.227 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.231 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.237 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.241 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.244 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.248 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.252 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.256 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.259 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.260 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (24.4 MB, 2740 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.784 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: size is now: 7.30 MB
+0001.792 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1100 files added (on-disk size: 7447 KB)
+0001.797 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1200 files added (on-disk size: 7447 KB)
+0001.802 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1300 files added (on-disk size: 7447 KB)
+0001.808 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1400 files added (on-disk size: 7447 KB)
+0001.815 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1500 files added (on-disk size: 7447 KB)
+0001.819 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1600 files added (on-disk size: 7447 KB)
+0001.825 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1700 files added (on-disk size: 7447 KB)
+0001.829 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1800 files added (on-disk size: 7447 KB)
+0001.835 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 1900 files added (on-disk size: 7447 KB)
+0001.842 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2000 files added (on-disk size: 7447 KB)
+0001.843 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (11.3 MB, 2740 files batched, 1001 (2002) added so far); re-opening (prior size: 7447 KB)
+0002.713 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: size is now: 12.10 MB
+0002.719 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2100 files added (on-disk size: 12386.4 KB)
+0002.723 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2200 files added (on-disk size: 12386.4 KB)
+0002.727 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2300 files added (on-disk size: 12386.4 KB)
+0002.731 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2400 files added (on-disk size: 12386.4 KB)
+0002.735 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2500 files added (on-disk size: 12386.4 KB)
+0002.738 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2600 files added (on-disk size: 12386.4 KB)
+0002.742 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: 2700 files added (on-disk size: 12386.4 KB)
+0003.854 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.tmp: size is now: 17.20 MB
+0003.886 (0) Creating zip file manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.list-temp.tmp)
+0003.902 (0) Successfully created zip file manifest (size: 221111)
+0004.085 (0) Created plugins zip (0) - 17659.1 KB in 4 s (4405.4 KB/s) (sha1: 8ed0982d4500938730ccb1116e318816771725b4, sha256: 8b6d6711906e1ff3f3888f9c930f838e28ee2b9d83ecc98da7c9194ea5b51355)
+0004.090 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0004.091 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-40b46de3b9c51fe1d7a4391057c13bd5)
+0004.927 (0) Google Drive: creating path: /UpdraftPlus
+0006.359 (0) Google Drive: quota usage: used=47.3 MB, total=15360 MB, available=15312.7 MB
+0006.360 (0) Google Drive: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip: Attempting to upload to Google Drive (into folder id: 1vAwmNJyVEh6W2vScOOi8pgbmS55IIUQp)
+0007.547 (0) Googledrive chunked upload: 5.8 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 38.9 / 44.5)
+0008.377 (0) Googledrive chunked upload: 17.4 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 38.9 / 44.5)
+0010.337 (0) Googledrive chunked upload: 40.6 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 38.9 / 44.5)
+0014.485 (0) Googledrive chunked upload: 87 % uploaded (15728640)
+0016.890 (0) Googledrive chunked upload: 100 % uploaded (15728640)
+0016.892 (0) Google Drive: OK: Archive backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip uploaded in 10.53 seconds
+0016.893 (0) Recording as successfully uploaded: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip
+0016.897 (0) Deleting local file: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip: OK
+0016.904 (0) Beginning creation of dump of themes (split every: 400 MB)
+0017.596 (0) Total entities for the zip file: 1809 directories, 10189 files (0 skipped as non-modified), 78.6 MB
+0017.601 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0017.604 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0017.609 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0017.613 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0017.616 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0017.620 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0017.624 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0017.627 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0017.632 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0017.635 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0017.636 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (2.8 MB, 10189 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0018.030 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 1.40 MB
+0018.036 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1100 files added (on-disk size: 1396 KB)
+0018.040 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1200 files added (on-disk size: 1396 KB)
+0018.044 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1300 files added (on-disk size: 1396 KB)
+0018.046 (0) File skipped due to unexpected name mismatch (locale: C): file=/Applications/XAMPP/xamppfiles/htdocs/window-repair-nyc/wp-content/themes/blankslate/node_modules/browserslist/cli.js add_as=themes/blankslate/node_modules/.bin/browserslist
+0018.047 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1400 files added (on-disk size: 1396 KB)
+0018.051 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1500 files added (on-disk size: 1396 KB)
+0018.055 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1600 files added (on-disk size: 1396 KB)
+0018.059 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1700 files added (on-disk size: 1396 KB)
+0018.063 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1800 files added (on-disk size: 1396 KB)
+0018.067 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 1900 files added (on-disk size: 1396 KB)
+0018.070 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2000 files added (on-disk size: 1396 KB)
+0018.071 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (3.8 MB, 10189 files batched, 1001 (2002) added so far); re-opening (prior size: 1396 KB)
+0018.572 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 2.70 MB
+0018.580 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2100 files added (on-disk size: 2771.7 KB)
+0018.586 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2200 files added (on-disk size: 2771.7 KB)
+0018.590 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2300 files added (on-disk size: 2771.7 KB)
+0018.594 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2400 files added (on-disk size: 2771.7 KB)
+0018.597 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2500 files added (on-disk size: 2771.7 KB)
+0018.601 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2600 files added (on-disk size: 2771.7 KB)
+0018.605 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2700 files added (on-disk size: 2771.7 KB)
+0018.609 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2800 files added (on-disk size: 2771.7 KB)
+0018.612 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 2900 files added (on-disk size: 2771.7 KB)
+0018.616 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3000 files added (on-disk size: 2771.7 KB)
+0018.617 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (12.6 MB, 10189 files batched, 1001 (3003) added so far); re-opening (prior size: 2771.7 KB)
+0019.330 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 5.50 MB
+0019.336 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3100 files added (on-disk size: 5681.4 KB)
+0019.341 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3200 files added (on-disk size: 5681.4 KB)
+0019.344 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3300 files added (on-disk size: 5681.4 KB)
+0019.348 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3400 files added (on-disk size: 5681.4 KB)
+0019.351 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3500 files added (on-disk size: 5681.4 KB)
+0019.356 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3600 files added (on-disk size: 5681.4 KB)
+0019.359 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3700 files added (on-disk size: 5681.4 KB)
+0019.363 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3800 files added (on-disk size: 5681.4 KB)
+0019.367 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 3900 files added (on-disk size: 5681.4 KB)
+0019.370 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4000 files added (on-disk size: 5681.4 KB)
+0019.371 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7.8 MB, 10189 files batched, 1001 (4004) added so far); re-opening (prior size: 5681.4 KB)
+0020.043 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 8.30 MB
+0020.049 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4100 files added (on-disk size: 8511.2 KB)
+0020.054 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4200 files added (on-disk size: 8511.2 KB)
+0020.058 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4300 files added (on-disk size: 8511.2 KB)
+0020.062 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4400 files added (on-disk size: 8511.2 KB)
+0020.066 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4500 files added (on-disk size: 8511.2 KB)
+0020.070 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4600 files added (on-disk size: 8511.2 KB)
+0020.073 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4700 files added (on-disk size: 8511.2 KB)
+0020.077 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4800 files added (on-disk size: 8511.2 KB)
+0020.081 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 4900 files added (on-disk size: 8511.2 KB)
+0020.085 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5000 files added (on-disk size: 8511.2 KB)
+0020.086 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (4.8 MB, 10189 files batched, 1001 (5005) added so far); re-opening (prior size: 8511.2 KB)
+0020.599 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5100 files added (on-disk size: 10098.6 KB)
+0020.603 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5200 files added (on-disk size: 10098.6 KB)
+0020.606 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5300 files added (on-disk size: 10098.6 KB)
+0020.610 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5400 files added (on-disk size: 10098.6 KB)
+0020.614 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5500 files added (on-disk size: 10098.6 KB)
+0020.618 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5600 files added (on-disk size: 10098.6 KB)
+0020.621 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5700 files added (on-disk size: 10098.6 KB)
+0020.625 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5800 files added (on-disk size: 10098.6 KB)
+0020.629 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 5900 files added (on-disk size: 10098.6 KB)
+0020.632 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6000 files added (on-disk size: 10098.6 KB)
+0020.633 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (5 MB, 10189 files batched, 1001 (6006) added so far); re-opening (prior size: 10098.6 KB)
+0021.190 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6100 files added (on-disk size: 11850.2 KB)
+0021.194 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6200 files added (on-disk size: 11850.2 KB)
+0021.198 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6300 files added (on-disk size: 11850.2 KB)
+0021.201 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6400 files added (on-disk size: 11850.2 KB)
+0021.205 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6500 files added (on-disk size: 11850.2 KB)
+0021.209 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6600 files added (on-disk size: 11850.2 KB)
+0021.212 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6700 files added (on-disk size: 11850.2 KB)
+0021.216 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6800 files added (on-disk size: 11850.2 KB)
+0021.220 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 6900 files added (on-disk size: 11850.2 KB)
+0021.224 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7000 files added (on-disk size: 11850.2 KB)
+0021.225 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7.7 MB, 10189 files batched, 1001 (7007) added so far); re-opening (prior size: 11850.2 KB)
+0021.882 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7100 files added (on-disk size: 14137.9 KB)
+0021.886 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7200 files added (on-disk size: 14137.9 KB)
+0021.890 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7300 files added (on-disk size: 14137.9 KB)
+0021.894 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7400 files added (on-disk size: 14137.9 KB)
+0021.898 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7500 files added (on-disk size: 14137.9 KB)
+0021.902 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7600 files added (on-disk size: 14137.9 KB)
+0021.906 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7700 files added (on-disk size: 14137.9 KB)
+0021.909 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7800 files added (on-disk size: 14137.9 KB)
+0021.913 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 7900 files added (on-disk size: 14137.9 KB)
+0021.917 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8000 files added (on-disk size: 14137.9 KB)
+0021.918 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (9.8 MB, 10189 files batched, 1001 (8008) added so far); re-opening (prior size: 14137.9 KB)
+0022.808 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 16.70 MB
+0022.815 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8100 files added (on-disk size: 17096.7 KB)
+0022.819 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8200 files added (on-disk size: 17096.7 KB)
+0022.823 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8300 files added (on-disk size: 17096.7 KB)
+0022.828 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8400 files added (on-disk size: 17096.7 KB)
+0022.832 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8500 files added (on-disk size: 17096.7 KB)
+0022.837 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8600 files added (on-disk size: 17096.7 KB)
+0022.841 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8700 files added (on-disk size: 17096.7 KB)
+0022.845 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8800 files added (on-disk size: 17096.7 KB)
+0022.849 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 8900 files added (on-disk size: 17096.7 KB)
+0022.853 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9000 files added (on-disk size: 17096.7 KB)
+0022.855 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7.6 MB, 10189 files batched, 1001 (9009) added so far); re-opening (prior size: 17096.7 KB)
+0023.622 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9100 files added (on-disk size: 19053 KB)
+0023.626 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9200 files added (on-disk size: 19053 KB)
+0023.630 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9300 files added (on-disk size: 19053 KB)
+0023.634 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9400 files added (on-disk size: 19053 KB)
+0023.637 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9500 files added (on-disk size: 19053 KB)
+0023.642 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9600 files added (on-disk size: 19053 KB)
+0023.646 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9700 files added (on-disk size: 19053 KB)
+0023.650 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9800 files added (on-disk size: 19053 KB)
+0023.654 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 9900 files added (on-disk size: 19053 KB)
+0023.659 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 10000 files added (on-disk size: 19053 KB)
+0023.660 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7.5 MB, 10189 files batched, 1001 (10010) added so far); re-opening (prior size: 19053 KB)
+0024.294 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 23.70 MB
+0024.301 (0) Zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: 10100 files added (on-disk size: 24226.2 KB)
+0024.847 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.tmp: size is now: 31.50 MB
+0024.968 (0) Creating zip file manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.list-temp.tmp)
+0025.024 (0) Successfully created zip file manifest (size: 837490)
+0025.359 (0) Created themes zip (0) - 32284.2 KB in 8.5 s (3819.4 KB/s) (sha1: a95bb3cef3dd33ae2657e6511dae6c7cbdc235da, sha256: ccd51cffd7562f9099fbe6891535bae9b70fe651d2aa5055ed6f82a7bf7d32a1)
+0025.367 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0025.368 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-40b46de3b9c51fe1d7a4391057c13bd5)
+0025.916 (0) Google Drive: quota usage: used=64.5 MB, total=15360 MB, available=15295.5 MB
+0025.918 (0) Google Drive: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip: Attempting to upload to Google Drive (into folder id: 1vAwmNJyVEh6W2vScOOi8pgbmS55IIUQp)
+0026.952 (0) Googledrive chunked upload: 3.2 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 40.1 / 54.5)
+0027.824 (0) Googledrive chunked upload: 9.5 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 40.1 / 54.5)
+0029.913 (0) Googledrive chunked upload: 22.2 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 40.1 / 54.5)
+0033.566 (0) Googledrive chunked upload: 47.6 % uploaded (15728640)
+0037.286 (0) Googledrive chunked upload: 73 % uploaded (24117248)
+0041.659 (0) Googledrive chunked upload: 98.3 % uploaded (32505856)
+0043.074 (0) Googledrive chunked upload: 100 % uploaded (32505856)
+0043.076 (0) Google Drive: OK: Archive backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip uploaded in 17.16 seconds
+0043.077 (0) Recording as successfully uploaded: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip
+0043.082 (0) Deleting local file: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip: OK
+0043.087 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0043.087 (0) Looking for candidates to backup in: /Applications/XAMPP/xamppfiles/htdocs/window-repair-nyc/wp-content/uploads
+0043.088 (0) finding files: 2024: adding to list (1)
+0043.089 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0043.092 (0) Total entities for the zip file: 2 directories, 0 files (0 skipped as non-modified), 0 MB
+0043.102 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip.tmp: size is now: 0.00 MB
+0043.105 (0) Did not find any files in the zip: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip.tmp
+0043.109 (0) Created uploads zip (0) - 0.3 KB in 0 s (18.7 KB/s) (sha1: 0981b7a48d4cb23ea1fca4316efb631942122acb, sha256: 2fe5e7abcc0a9feb01a07cf099207c158d3ca4cc8d39e8b4f1d3b31bed9f4b7e)
+0043.111 (0) No backup of mu-plugins: excluded by user's options
+0043.112 (0) Beginning backup of other directories found in the content directory (index: 0)
+0043.113 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0043.114 (0) Looking for candidates to backup in: /Applications/XAMPP/xamppfiles/htdocs/window-repair-nyc/wp-content
+0043.115 (0) finding files: upgrade: skipping: excluded by options
+0043.115 (0) finding files: .DS_Store: adding to list (1)
+0043.116 (0) finding files: index.php: adding to list (2)
+0043.117 (0) finding files: plugins: skipping: this is the plugins directory
+0043.117 (0) finding files: uploads: skipping: this is the uploads directory
+0043.118 (0) finding files: updraft: skipping: this is the updraft directory
+0043.119 (0) finding files: themes: skipping: this is the themes directory
+0043.122 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0043.132 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip.tmp: size is now: 0.00 MB
+0043.136 (0) Creating zip file manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip.list-temp.tmp)
+0043.136 (0) Successfully created zip file manifest (size: 62)
+0043.141 (0) Created others zip (0) - 0.7 KB in 0 s (35 KB/s) (sha1: 08bd2bc140852b332cc160f43dfe3a90483cb3ae, sha256: 43498907ca3a4ffd5d662de8e0555cc9eced879df34708a0a4104e7ac939179f)
+0043.144 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0043.145 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-40b46de3b9c51fe1d7a4391057c13bd5)
+0043.578 (0) Google Drive: quota usage: used=96 MB, total=15360 MB, available=15264 MB
+0043.580 (0) Google Drive: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip: Attempting to upload to Google Drive (into folder id: 1vAwmNJyVEh6W2vScOOi8pgbmS55IIUQp)
+0045.377 (0) Googledrive chunked upload: 100 % uploaded
+0045.380 (0) Google Drive: OK: Archive backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip uploaded in 1.8 seconds
+0045.381 (0) Recording as successfully uploaded: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip
+0045.383 (0) Deleting local file: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip: OK
+0045.388 (0) Saving backup status to database (elements: 8)
+0045.391 (0) Beginning creation of database dump (WordPress DB)
+0045.394 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0045.419 (0) Table wp_options: Total expected rows (via COUNT): 199
+0045.420 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.427 (0) Table wp_options: Rows added in this batch (next record: 303): 195 (uncompressed bytes in this segment=60727) in 0.02 seconds
+0045.432 (0) Table wp_options: finishing file(s) (2, 12.4 KB)
+0045.439 (0) Table wp_users: Total expected rows (via COUNT): 1
+0045.439 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.442 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1173) in 0.01 seconds
+0045.445 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0045.451 (0) Table wp_usermeta: Total expected rows (via COUNT): 18
+0045.451 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.453 (0) Table wp_usermeta: Rows added in this batch (next record: 18): 18 (uncompressed bytes in this segment=1615) in 0.01 seconds
+0045.457 (0) Table wp_usermeta: finishing file(s) (2, 0.9 KB)
+0045.467 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0045.470 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=634) in 0.01 seconds
+0045.474 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0045.479 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0045.480 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.483 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1885) in 0.01 seconds
+0045.487 (0) Table wp_comments: finishing file(s) (2, 0.7 KB)
+0045.502 (0) Table wp_links: Total expected rows (via COUNT): 0
+0045.504 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1027) in 0.01 seconds
+0045.507 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0045.514 (0) Table wp_postmeta: Total expected rows (via COUNT): 2
+0045.514 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.517 (0) Table wp_postmeta: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=739) in 0.01 seconds
+0045.522 (0) Table wp_postmeta: finishing file(s) (2, 0.4 KB)
+0045.528 (0) Table wp_posts: Total expected rows (via COUNT): 6
+0045.529 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.531 (0) Table wp_posts: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=10425) in 0.01 seconds
+0045.538 (0) Table wp_posts: finishing file(s) (2, 3.2 KB)
+0045.544 (0) Table wp_term_relationships: Total expected rows (approximate): 0
+0045.547 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 2 (uncompressed bytes in this segment=708) in 0.01 seconds
+0045.550 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0045.557 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 2
+0045.558 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.561 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=889) in 0.01 seconds
+0045.565 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0045.572 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0045.574 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=607) in 0.01 seconds
+0045.579 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0045.585 (0) Table wp_terms: Total expected rows (via COUNT): 2
+0045.585 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0045.588 (0) Table wp_terms: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=721) in 0.01 seconds
+0045.592 (0) Table wp_terms: finishing file(s) (2, 0.4 KB)
+0045.593 (0) PHP event: code E_WARNING: filemtime(): stat failed for /Applications/XAMPP/xamppfiles/htdocs/window-repair-nyc/wp-content/updraft/backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz (line 1925, wp-content/plugins/updraftplus/backup.php)
+0045.595 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_options.table.tmpr304.gz (1/12/fopen): adding to final database dump
+0045.596 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_options.table.gz (2/12/fopen): adding to final database dump
+0045.597 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_users.table.tmpr2.gz (3/12/fopen): adding to final database dump
+0045.598 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_users.table.gz (4/12/fopen): adding to final database dump
+0045.599 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_usermeta.table.tmpr19.gz (5/12/fopen): adding to final database dump
+0045.599 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_usermeta.table.gz (6/12/fopen): adding to final database dump
+0045.600 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_commentmeta.table.tmpr0.gz (7/12/fopen): adding to final database dump
+0045.601 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_commentmeta.table.gz (8/12/fopen): adding to final database dump
+0045.602 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_comments.table.tmpr2.gz (9/12/fopen): adding to final database dump
+0045.603 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_comments.table.gz (10/12/fopen): adding to final database dump
+0045.603 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_links.table.tmpr0.gz (11/12/fopen): adding to final database dump
+0045.604 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_links.table.gz (12/12/fopen): adding to final database dump
+0045.605 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_postmeta.table.tmpr3.gz (13/12/fopen): adding to final database dump
+0045.606 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_postmeta.table.gz (14/12/fopen): adding to final database dump
+0045.607 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_posts.table.tmpr7.gz (15/12/fopen): adding to final database dump
+0045.607 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_posts.table.gz (16/12/fopen): adding to final database dump
+0045.608 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_term_relationships.table.tmpr100001.gz (17/12/fopen): adding to final database dump
+0045.609 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_term_relationships.table.gz (18/12/fopen): adding to final database dump
+0045.610 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_term_taxonomy.table.tmpr3.gz (19/12/fopen): adding to final database dump
+0045.610 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_term_taxonomy.table.gz (20/12/fopen): adding to final database dump
+0045.611 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_termmeta.table.tmpr0.gz (21/12/fopen): adding to final database dump
+0045.612 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_termmeta.table.gz (22/12/fopen): adding to final database dump
+0045.613 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_terms.table.tmpr3.gz (23/12/fopen): adding to final database dump
+0045.613 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db-table-wp_terms.table.gz (24/12/fopen): adding to final database dump
+0045.626 (0) An error occurred while attempting to retrieve routine status (Column count of mysql.proc is wrong. Expected 21, found 20. The table is probably corrupted - SHOW FUNCTION STATUS WHERE DB = 'window-repair-nyc')
+0045.627 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz: finished writing out complete database file (21.1 KB)
+0045.634 (0) Total database tables backed up: 12 (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz, size: 21741, sha1: 31557df65d89d99b03aeef8251bc07524c983a2a, sha256: db52c75088a5f0ee1772286bfaaeed6179784ea5527b212e9b71415dc59a33f5)
+0045.641 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip: plugins: This file has already been successfully uploaded
+0045.642 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip: themes: This file has already been successfully uploaded
+0045.642 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0045.643 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip: others: This file has already been successfully uploaded
+0045.644 (0) backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz: db: This file has not yet been successfully uploaded: will queue
+0045.644 (0) Saving backup history. Total backup size: 48.8 MB
+0045.647 (0) Requesting upload of the files that have not yet been successfully uploaded (2)
+0045.649 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0045.650 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-40b46de3b9c51fe1d7a4391057c13bd5)
+0046.295 (0) Google Drive: quota usage: used=96 MB, total=15360 MB, available=15264 MB
+0046.297 (0) Google Drive: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip: Attempting to upload to Google Drive (into folder id: 1vAwmNJyVEh6W2vScOOi8pgbmS55IIUQp)
+0048.347 (0) Googledrive chunked upload: 100 % uploaded
+0048.350 (0) Google Drive: OK: Archive backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip uploaded in 2.05 seconds
+0048.351 (0) Recording as successfully uploaded: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip
+0048.353 (0) Deleting local file: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-uploads.zip: OK
+0049.061 (0) Google Drive: quota usage: used=96 MB, total=15360 MB, available=15264 MB
+0049.064 (0) Google Drive: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz: Attempting to upload to Google Drive (into folder id: 1vAwmNJyVEh6W2vScOOi8pgbmS55IIUQp)
+0050.909 (0) Googledrive chunked upload: 100 % uploaded
+0050.912 (0) Google Drive: OK: Archive backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz uploaded in 1.85 seconds
+0050.913 (0) Recording as successfully uploaded: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz
+0050.915 (0) Deleting local file: backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-db.gz: OK
+0050.917 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0050.918 (0) Number of backup sets in history: 1; groups (db): 1
+0050.919 (0) Examining (for databases) backup set with group_id=0, nonce=e2226368fb09, datestamp=1712682619 (Apr 09 2024 17:10:19)
+0050.921 (0) This backup set is the backup set just made, so will not be deleted.
+0050.921 (0) Number of backup sets in history: 1; groups (files): 1
+0050.922 (0) Examining (for files) backup set with nonce=e2226368fb09, datestamp=1712682619 (Apr 09 2024 17:10:19)
+0050.922 (0) This backup set is the backup set just made, so will not be deleted.
+0050.923 (0) This backup set is the backup set just made, so will not be deleted.
+0050.923 (0) This backup set is the backup set just made, so will not be deleted.
+0050.923 (0) This backup set is the backup set just made, so will not be deleted.
+0050.923 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0050.924 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0050.926 (0) Resume backup (e2226368fb09, 0): finish run
+0050.928 (0) Decremented the semaphore (fd) by 1
+0050.930 (0) Semaphore (fd) unlocked
+0050.930 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0050.933 (0) Deleting zip manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-plugins.zip.list.tmp)
+0050.934 (0) Deleting zip manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-themes.zip.list.tmp)
+0050.935 (0) Deleting zip manifest (backup_2024-04-09-1710_Window_Repair_NYC_e2226368fb09-others.zip.list.tmp)
+0050.936 (0) No email will/can be sent - the user has not configured an email address.
+0050.937 (0) The backup succeeded and is now complete

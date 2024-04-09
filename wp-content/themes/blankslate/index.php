@@ -46,12 +46,12 @@
     </div>
 </section>    
 
+<?php get_template_part('section-brands-slider'); ?>
+
+  
 
 
-<section id="benefits" class="benefits container-fluid">
-    <div class="container-xl text-center">
-    <h2>our  <span class="text-primary-emphasis">brand partners</span> we work with</h2>
-        <p class="text-body-secondary">We are proud to work with some of the biggest and most trusted companies in New York</p>
-    </div>
-</section>    
+
+
+
 <?php get_footer();?>
