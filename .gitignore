@@ -3,4 +3,4 @@
 *.sql.gz
 error-logs.txt
 wp-config.php
-wp-content/themes/blankslate/node_modules/*
+wp-content/themes/blankslate/node_modules
