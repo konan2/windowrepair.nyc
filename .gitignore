@@ -4,3 +4,4 @@
 error-logs.txt
 wp-config.php
 wp-content/themes/blankslate/node_modules
+node_modules
