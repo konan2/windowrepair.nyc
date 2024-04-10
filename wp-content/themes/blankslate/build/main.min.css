@@ -12026,13 +12026,69 @@ p {
   background-position: center;
   display: flex;
   align-items: center;
+}
+.services-hero-section__title {
   color: #fff;
+  margin: 0;
+}
+.services-hero-section__desc {
+  color: #D6E3F9;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .services-hero-section {
+    background-position: 50% center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services-hero-section {
+    background: #D6E3F9;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .services-hero-section__title {
+    color: #0E192D;
+    font-size: 32px;
+  }
+  .services-hero-section__desc {
+    color: #7A7A7A;
+  }
 }
 
-#services {
+.main-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .services-hero-section:after {
+    content: " ";
+    background: url("../img/services/services-hero-img-sm.png") no-repeat;
+    height: 330px;
+    width: 100%;
+    background-size: cover;
+  }
+  .main-title-block {
+    padding: 40px 0;
+  }
+}
+.services-section {
   padding: 80px 0;
   margin: 0 auto;
   background-color: #D6E3F9;
+}
+.services-section__title {
+  margin: 0;
+}
+@media screen and (max-width: 550px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  .services-section__title {
+    font-size: 28px;
+  }
 }
 
 .services_tabs {
@@ -12067,6 +12123,14 @@ p {
 .services_list {
   row-gap: 40px;
   column-gap: 30px;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .services_list {
+    row-gap: 20px;
+    column-gap: 16px;
+  }
 }
 
 .service_item {
@@ -12079,9 +12143,13 @@ p {
   max-width: 160px;
   min-width: 160px;
   gap: 16px;
+  height: 212px;
 }
 .service_item__image {
-  border-radius: 8px;
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .service_item__title {
   color: #2C5697;
@@ -12089,7 +12157,32 @@ p {
   text-align: center;
   line-height: 18px;
   margin: 0;
-  max-width: 85%;
+  width: 85%;
+  transition-property: text-decoration, color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service_item:hover, .service_item:focus {
+  cursor: pointer;
+}
+
+.service_item:hover .service_item__title,
+.service_item:focus .service_item__title {
+  color: #789AEE;
+  text-decoration: underline;
+}
+
+.service_item__bl {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.service_item:hover .service_item__image,
+.service_item:focus .service_item__image {
+  transform: scale(1.1);
 }
 
 .areas-section {
