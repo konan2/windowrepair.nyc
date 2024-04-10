@@ -11905,11 +11905,11 @@ h2, .h2 {
   font-size: 42px;
 }
 
-h2, .h2 {
+h3, .h3 {
   font-size: 32px;
 }
 
-h2, .h2 {
+h4, .h4 {
   font-size: 26px;
 }
 
@@ -12018,4 +12018,41 @@ p {
   line-height: 26px;
   color: #2C5697;
   background: url("../img/list-item-icon.svg") no-repeat;
+}
+
+#portfolio {
+  padding: 80px 0;
+  margin: 0 auto;
+  background-color: #D6E3F9;
+}
+
+.filter-button {
+  font-size: 18px;
+  border: 1px solid #db584e;
+  border-radius: 5px;
+  text-align: center;
+  color: #db584e;
+  margin-bottom: 30px;
+}
+
+.filter-button:hover {
+  font-size: 18px;
+  border: 1px solid #db584e;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #db584e;
+}
+
+.btn-default:active .filter-button:active {
+  background-color: #db584e;
+  color: white;
+}
+
+.port-image {
+  width: 100%;
+}
+
+.gallery_product {
+  margin-bottom: 30px;
 }

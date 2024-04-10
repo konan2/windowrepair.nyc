@@ -6,7 +6,10 @@
 <section id="portfolio">
         <div class="container">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                <h2 class="gallery-title">ALl list of services we provided</h2>
+                <div>
+                   <h2 class="">ALl list of services we provided</h2>
+                   <p>Professional team of repair technicians with 12 years experience.</p>
+                </div>
             </div>
             <div>
                 <button class="btn btn-default filter-button" data-filter="all">All</button>
