@@ -1,6 +1,6 @@
 </main>
 
-<footer id="footer" role="contentinfo">
+<footer id="footer" class="poppins-medium" role="contentinfo">
 <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -11,8 +11,8 @@
                   Address: 244 5th Avenue 2nd floor<br>
                   New York NY 10001
                   </address>
-                  <p>Phone:<a href="tel:+16462552766">+1 646 255 2766</a></p>
-                  <p>Email:<a href="mailto:support@WindowRepairNYC.com">support@WindowRepairNYC.com</a></p>
+                  <p>Phone: <a href="tel:+16462552766">+1 646 255 2766</a></p>
+                  <p>Email: <a href="mailto:support@WindowRepairNYC.com">support@WindowRepairNYC.com</a></p>
             </div>
             <div class="col-sm-2">
                 <span>USEFUL LINKS</span>
