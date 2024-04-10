@@ -81,4 +81,54 @@ function my_custom_menu() {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
+
+
+
+
+
+
+
+
+function custom_page_sections_post_type() {
+  $labels = array(
+      'name'               => __( 'Page Sections', 'text-domain' ),
+      'singular_name'      => __( 'Page Section', 'text-domain' ),
+      'menu_name'          => __( 'Page Sections', 'text-domain' ),
+      'name_admin_bar'     => __( 'Page Section', 'text-domain' ),
+      'add_new'            => __( 'Add New', 'text-domain' ),
+      'add_new_item'       => __( 'Add New Page Section', 'text-domain' ),
+      'new_item'           => __( 'New Page Section', 'text-domain' ),
+      'edit_item'          => __( 'Edit Page Section', 'text-domain' ),
+      'view_item'          => __( 'View Page Section', 'text-domain' ),
+      'all_items'          => __( 'All Page Sections', 'text-domain' ),
+      'search_items'       => __( 'Search Page Sections', 'text-domain' ),
+      'parent_item_colon'  => __( 'Parent Page Sections:', 'text-domain' ),
+      'not_found'          => __( 'No page sections found.', 'text-domain' ),
+      'not_found_in_trash' => __( 'No page sections found in Trash.', 'text-domain' )
+  );
+
+  $args = array(
+      'labels'             => $labels,
+      'public'             => true,
+      'publicly_queryable' => true,
+      'show_ui'            => true,
+      'show_in_menu'       => true,
+      'query_var'          => true,
+      'rewrite'            => array( 'slug' => 'page-section' ),
+      'capability_type'    => 'post',
+      'has_archive'        => false,
+      'hierarchical'       => false,
+      'menu_position'      => null,
+      'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+      'menu_icon'          => 'dashicons-layout',
+  );
+
+  register_post_type( 'page-section', $args );
+}
+add_action( 'init', 'custom_page_sections_post_type' );
+
+
+
+
+
 ?>
