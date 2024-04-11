@@ -17,7 +17,7 @@
                 <button class="btn btn-light mt-4">Book online</button>
             </div>
             <div class="col-md-6">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565" class="alignnone size-full wp-image-87" />    
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565"  />    
             </div>
         </div>
     </div>
@@ -117,56 +117,36 @@
 
 
 
-<section id="brands-slider" class="brands-slider container-fluid">
+<section id="brands-slider" class="slider container-fluid">
     <div class="container-xl text-center">
     <h2>our  <span class="text-primary-emphasis">brand partners</span> we work with</h2>
         <p class="text-body-secondary">We are proud to work with some of the biggest and most trusted companies in New York</p>
     </div>
-
-    <div class="container-xl carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/crystal.png" alt="" width="128" height="43" class="alignnone size-full wp-image-91" />
+    <div class="container-xl position-relative">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/crystal.png" alt="" width="128" height="43" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-2.png" alt="" width="160" height="60" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-1.png" alt="" width="160" height="60" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo.png" alt="" width="160" height="60" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/image-62.png" alt="" width="128" height="37" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-5.png" alt="" width="160" height="60" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-3.png" alt="" width="160" height="60" /></div>
+                <div class="swiper-slide col-2 text-center"><img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-4.png" alt="" width="160" height="60" /></div>
             </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-2.png" alt="" width="160" height="60" class="alignnone size-full wp-image-94" />
-            </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-1.png" alt="" width="160" height="60" class="alignnone size-full wp-image-93" />
-            </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo.png" alt="" width="160" height="60" class="alignnone size-full wp-image-98" />
-            </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/image-62.png" alt="" width="128" height="37" class="alignnone size-full wp-image-92" />
-            </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-5.png" alt="" width="160" height="60" class="alignnone size-full wp-image-97" />
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-3.png" alt="" width="160" height="60" class="alignnone size-full wp-image-95" />
-            </div>
-            <div class="col-2 text-center">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/logo-4.png" alt="" width="160" height="60" class="alignnone size-full wp-image-96" />
-            </div>
-            
-        </div>
-      </div>
-      </div>
-
+        <div class="swiper-button-next"></div>
     </div>
+</div>
+
 
 
 </section>  
 
 
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
 <section id="front-banner-mirrors" class="front-banner-mirrors container-fluid">
     <div class="front-banner-mirrors__container container-xl">
@@ -177,7 +157,7 @@
                 <button class="btn btn-light mt-4">Request a call</button>
             </div>
             <div class="col-md-7">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565" class="alignnone size-full wp-image-87" />
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565"  />
             </div>
         </div>
     </div>
@@ -266,7 +246,7 @@
        
             <article class="filter-card col-3" data-type="type1">
                 <div class="our-services__list-item">
-                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" class="alignnone size-full wp-image-87" />
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450"  />
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
@@ -276,7 +256,7 @@
             </article>
             <article class="filter-card col-3" data-type="type2">
                 <div class="our-services__list-item">
-                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" class="alignnone size-full wp-image-87" />
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450"  />
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
@@ -286,7 +266,7 @@
             </article>
             <article class="filter-card col-3" data-type="type1">
                 <div class="our-services__list-item">
-                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" class="alignnone size-full wp-image-87" />
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450"  />
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
@@ -296,7 +276,7 @@
             </article>
             <article class="filter-card col-3" data-type="type2">
                 <div class="our-services__list-item">
-                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" class="alignnone size-full wp-image-87" />
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450"  />
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
@@ -361,29 +341,29 @@
 
 
 
-<section class="container-fluid">
-    <div class="container-xl">
+<section class="company-history container-fluid">
+    <div class="company-history__wrapper container-xl">
         <div class="row">
-            <div class="col-md-6 flex-column justify-content-center">
+            <div class="col-md-5 flex-column justify-content-center">
                 <span class="text-primary-emphasis">About us</span>
                 <h1>Company history</h1>
-                <p class="mb-2">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.
+                <p class="text-body-secondary">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.
                     If you are fed up with the noise and the dirt of the city that makes way into your clean home, then we can proffer you a simple, sensible, and affordable solution to get rid of the noise.</p>
                 <a href="#" class="btn btn-primary mt-4">Read more</a>
             </div>
-            <div class="col-md-6">
-                <div class="row">
+            <div class="col-md-6 offset-md-1">
+                <div class="row gy-4">
                     <div class="col-md-6">
-                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
                     </div>
                     <div class="col-md-6">
-                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
                     </div>
                     <div class="col-md-6">
-                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
                     </div>
                     <div class="col-md-6">
-                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
                     </div>
                 </div>
             </div>

@@ -8,10 +8,14 @@ export default [
     output: {
       file: 'build/main.min.js',
       format: 'umd',
-      name: 'MyModule'
+      name: 'MyModule',
+      globals: {
+        swiper: 'Swiper'
+      }
     },
     plugins: [
-      terser({compress: {drop_console: true, module: true}})
+      terser({compress: {drop_console: true, module: true}}),
+
       // Другие плагины Rollup, которые у вас уже есть, если есть
       //autoReload, // Добавляем плагин автоматической перезагрузки
     ]
@@ -23,6 +27,7 @@ export default [
       format: 'esm',
     },
     plugins: [
+      
       postcss({
         extract: true, // Извлечение CSS в отдельный файл
         minimize: false,

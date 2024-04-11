@@ -1,6 +1,7 @@
 {
   "type": "module",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
     "rollup": "^4.14.1",
     "rollup-plugin-auto-reload": "^1.0.3",
     "rollup-plugin-concat": "^1.0.3",
@@ -20,6 +21,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "bootstrap": "^5.3.3",
+    "commonjs": "^0.0.1",
     "cssnano": "^6.1.2",
     "node-sass": "^9.0.0",
     "postcss": "^8.4.38",
@@ -27,6 +29,7 @@
     "postcss-preset-env": "^9.5.4",
     "postcss-sass": "^0.5.0",
     "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "swiper": "^11.1.1"
   }
 }

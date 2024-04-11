@@ -4,83 +4,51 @@
 // import Tooltip from '../node_modules/bootstrap/js/src/tooltip';
 // import Carousel from '../node_modules/bootstrap/js/src/carousel';
 
-import '../node_modules/bootstrap/js/src/carousel';
+//import '../node_modules/bootstrap/js/src/carousel';
+import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 
-//export default {
-  // Alert,
-  // Button,
-  //Carousel,
-  // Collapse,
-  //Dropdown,
-  //Modal,
-  // Offcanvas,
-  // Popover,
-  // ScrollSpy,
-  //Tab,
-  // Toast,
-    // Popper,
-  //Tooltip
-//}
 
 window.addEventListener('DOMContentLoaded',function () {
 
+  
 
+// Получаем все элементы с классом 'swiper'
+var swiperContainers = document.querySelectorAll('.swiper');
 
-// Brands slider
-
-
-  // Находим все карусели на странице с классом "carousel"
-var carousels = document.querySelectorAll(".carousel");
-
-// Перебираем каждую карусель
-carousels.forEach(function(carousel, index) {
-    var carouselId = "carousel-" + index; // Генерируем уникальный id для карусели
-
-    // Устанавливаем уникальный id для карусели
-    carousel.setAttribute("id", carouselId);
-
-    var carouselItems = carousel.querySelectorAll(".carousel-item");
-
-    // Создаем контейнер для индикаторов
-    var indicatorsContainer = document.createElement("div");
-    indicatorsContainer.classList.add("carousel-indicators");
-
-    // Создаем кнопку prev
-    var prevButton = document.createElement("button");
-    prevButton.classList.add("carousel-control-prev");
-    prevButton.setAttribute("type", "button");
-    prevButton.setAttribute("data-bs-target", "#" + carouselId);
-    prevButton.setAttribute("data-bs-slide", "prev");
-    prevButton.innerHTML = '<i class="arrow left"></i>';
-
-    // Создаем кнопку next
-    var nextButton = document.createElement("button");
-    nextButton.classList.add("carousel-control-next");
-    nextButton.setAttribute("type", "button");
-    nextButton.setAttribute("data-bs-target", "#" + carouselId);
-    nextButton.setAttribute("data-bs-slide", "next");
-    nextButton.innerHTML = '<i class="arrow right"></i>';
-
-    // Создаем индикаторы для каждого слайда
-    carouselItems.forEach(function(item, index) {
-        var indicatorButton = document.createElement("button");
-        indicatorButton.setAttribute("type", "button");
-        indicatorButton.setAttribute("data-bs-target", "#" + carouselId);
-        indicatorButton.setAttribute("data-bs-slide-to", index);
-        if (index === 0) {
-            indicatorButton.classList.add("active");
-            indicatorButton.setAttribute("aria-current", "true");
-        }
-        indicatorsContainer.appendChild(indicatorButton);
-    });
-
-    // Вставляем кнопки prev и next перед контейнером индикаторов
-    carousel.insertBefore(prevButton, carousel.firstChild);
-    carousel.appendChild(nextButton);
-
-    // Вставляем контейнер индикаторов после элемента .carousel-inner
-    var carouselInner = carousel.querySelector(".carousel-inner");
-    carousel.insertBefore(indicatorsContainer, carouselInner.nextSibling);
+// Перебираем все элементы и инициализируем Swiper для каждого из них
+swiperContainers.forEach(function(container) {
+  new Swiper(container, {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 4,
+    initialSlide: 0,
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 1000,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      550: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1300: {
+        slidesPerView: 4,
+      },
+    }
+  });
 });
 
 

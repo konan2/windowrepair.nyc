@@ -2,34 +2,32 @@
 
 .front-banner{
     position: relative;
-}
-
-.front-banner:after{
-    content: '';
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    width: calc(50vw + 30px);
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from($primary-muted-bg), to($primary-muted-bg));
-}
-.front-banner:before{
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: calc(50vw + 30px);
-    height: 100%;
-    background-image: linear-gradient(rgb(255 255 255 / 20%) 16px, transparent 1px), linear-gradient(to right, rgb(255 255 255 / 20%) 16px, transparent 16px);
-    background-size: 497px 298px;
-    background-position: -96px -17px;
-}
-
-.front-banner__container{
-    position: relative;
-    z-index: 1;
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: calc(50vw + 30px);
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from($primary-muted-bg), to($primary-muted-bg));
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: calc(50vw + 30px);
+        height: 100%;
+        background-image: linear-gradient(rgb(255 255 255 / 20%) 16px, transparent 1px), linear-gradient(to right, rgb(255 255 255 / 20%) 16px, transparent 16px);
+        background-size: 497px 298px;
+        background-position: -96px -17px;
+    }
+    &__container{
+        position: relative;
+        z-index: 1;
+    }
 }
 
 /// Section counters
@@ -203,5 +201,45 @@
             opacity: .5;
             z-index: 0;
         }
+    }
+}
+
+
+.company-history{
+    position: relative;
+    padding: 60px 0;
+    img{
+        max-height: 255px;
+        max-width: 255px;
+    }
+    &__wrapper{
+        position: relative;
+    }
+    &::after{
+        content: '';
+        display: block;
+        height: 660px;
+        width: 515px;
+        position: absolute;
+        right: 25%;
+        transform: translateX(50%);
+        top: 0;
+        background-color: #D6E3F9;
+        z-index: -2;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        right: 25%;
+        transform: translateX(50%);
+        top: 0;
+        display: block;
+        height: 660px;
+        width: 515px;
+        background-image: linear-gradient(#fff 16px, transparent 1px), linear-gradient(to right, #fff 16px, transparent 16px);
+        background-size: calc(50% + 8px) calc(50% + 5px);
+        background-position: -16px -16px;
+        z-index: -1;
     }
 }
