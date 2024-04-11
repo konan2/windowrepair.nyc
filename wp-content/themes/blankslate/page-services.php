@@ -1,4 +1,4 @@
-<?php /* Template Name: Service Template */ ?>
+<?php /* Template Name: Service Hub Template */ ?>
 
 
 <?php get_header(); ?>
@@ -12,158 +12,7 @@
     </div> 
 </section>
 
-<section class="services-section">
-        <div class="container">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
-                <div class="middle-title-block">
-                   <h2 class="services-section__title">ALl list of services we provided</h2>
-                   <p class="services-section__desc">Professional team of repair technicians with 12 years experience.</p>
-                </div>
-            </div>
-            <div class="services_tabs">
-                <button class="btn btn-default filter-button poppins-semibold active" data-filter="all">All</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="windows">Windows</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="glass">Glass </button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="doors">Doors</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="mirrors">Mirrors</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="shower-doors">Shower Doors</button>
-            </div>
-            <div class="row services_list">
-                <div class="service_item col filter center windows">
-                    <div class="service_item__bl">
-                       <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Window Replacement - 01">
-                     </div>
-                    <h3 class="service_item__title poppins-medium">Window Replacement</h3>
-                </div>
 
-                <div class="service_item col filter windows">
-                  <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_repair.png" alt="Our services Window Repair - 02">
-                  </div>
-                <h3 class="service_item__title poppins-medium">Window Repair</h3>
-                </div>
-
-                <div class="service_item col filter windows">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_installation.png" alt="Our services Window Installation - 03">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Window Installation</h3>
-                </div>
-
-                <div class="service_item col filter windows">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/door_glass_replacement.png" alt="Our services Window Capping - 04">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Window Capping</h3>
-                </div>
-
-                <div class="service_item col filter windows">
-                  <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/restoration.png" alt="Our services Wooden Windows Restoration - 05">
-                  </div>
-                <h3 class="service_item__title poppins-medium">Wooden Windows Restoration</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/door_glass_replacement.png" alt="Our services Door Glass Replacement - 06">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Door Glass Replacement</h3>
-                </div>
-
-                <div class="service_item col filter glass">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_repair.png" alt="Our services Table Top Glass Replacement - 07">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Table Top Glass Replacement</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Storefront Replacement  - 08">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Storefront Replacement </h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Skylight Installation  - 09">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Skylight Installation</h3>
-                </div>
-
-                <div class="service_item col filter glass">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_installation.png" alt="Our services Shower Glass Replacement  - 10">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Shower Glass Replacement</h3>
-                </div>
-
-                <div class="service_item col filter glass">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Glass Railings Installation  - 11">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Glass Railings Installation</h3>
-                </div>
-
-                <div class="service_item col filter glass">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/door_glass_replacement.png" alt="Our services Skylight Glass Replacement - 12"> 
-                 </div>
-                <h3 class="service_item__title poppins-medium">Skylight Glass Replacement</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Door Screens Installation - 13">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Door Screens Installation</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_repair.png" alt="Our services Door Mesh Replacement - 14">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Door Mesh Replacement</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_installation.png" alt="Our services Door Installation - 15">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Door Installation</h3>
-                </div>
-
-                <div class="service_item col filter doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Door Capping - 16">
-                </div>
-                <h3 class="service_item__title poppins-medium">Door Capping</h3>
-                </div>
-
-                <div class="service_item col filter shower-doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_repair.png" alt="Our services Shower Doors Repair - 17">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Shower Doors Repair</h3>
-                </div>
-
-                <div class="service_item col filter shower-doors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_installation.png" alt="Our services Shower Doors Installation - 17">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Shower Doors Installation</h3>
-                </div>
-
-                <div class="service_item col filter mirrors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Mirror Installation - 18">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Mirror Installation</h3>
-                </div>
-            </div>
-        </div>
-</section>
 
 <section>
     <div class="container">
@@ -239,25 +88,8 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
     <script>
-    $(document).ready(function(){
-        $(".filter-button").click(function(){
-            var value = $(this).attr('data-filter');
-
-            $(".filter-button").removeClass("active"); 
-            $(this).addClass("active"); 
-
-            if(value == "all") {
-                $('.filter').show('1000');
-            } else {
-                $(".filter").not('.'+value).hide('3000');
-                $('.filter').filter('.'+value).show('3000');
-            }
-        });
-    });
-
-
+   
     $(document).ready(function(){
      var defaultCity = 'new-york';
      showDistricts(defaultCity);
