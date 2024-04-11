@@ -12,6 +12,70 @@
     </div> 
 </section>
 
+
+<section id="counters" class="counters container-fluid">
+<div class="container-xl">
+<div class="row row-cols-1 row-cols-md-4 text-center">
+<h3 class="counters__item"><span class="counters__value">11 203</span> <span class="counters__text">Happy clients</span></h3>
+<h3 class="counters__item"><span class="counters__value">4.67</span> <span class="counters__text">Average rating</span></h3>
+<h3 class="counters__item"><span class="counters__value">14 420</span> <span class="counters__text">Jobs complete</span></h3>
+<h3 class="counters__item"><span class="counters__value">28</span> <span class="counters__text">Qualified stafs</span></h3>
+</div>
+</div>
+</section>
+
+
+<section id="quality-services" class="quality-services container-fluid">
+<div class="container-xl text-center">
+<h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
+<p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+<div class="quality-services__wrapper row row-cols-1"><article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+<article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+<article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+<article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+<article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+<article class="col-4">
+<div class="quality-services__item">
+<span class="quality-services__icon"></span>
+<h4>Sameday Service</h4>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
 <section class="advantages-section">
     <div class="container-bg">
       <div class="advantages-block">
@@ -33,6 +97,7 @@
     </div>
 </section>
 
+
 <section>
     <div class="container">
 
@@ -49,6 +114,65 @@
         <div class="repair-form__right"></div>
       </div>
 
+    </div>
+</section>
+
+
+
+<section  class="clients container-fluid">
+    <div class="container-xl text-center">
+    <h2>our business <span class="text-primary-emphasis">clients</span></h2>
+        <p class="text-body-secondary">Within a decade we were able to complete different jobs and made happy more than 12000 clients and counting</p>
+    </div>
+
+    <div class="container-xl carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/crystal.png" alt="" width="128" height="43" class="alignnone size-full wp-image-91" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo-2.png" alt="" width="160" height="60" class="alignnone size-full wp-image-94" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo-1.png" alt="" width="160" height="60" class="alignnone size-full wp-image-93" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo.png" alt="" width="160" height="60" class="alignnone size-full wp-image-98" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/image-62.png" alt="" width="128" height="37" class="alignnone size-full wp-image-92" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo-5.png" alt="" width="160" height="60" class="alignnone size-full wp-image-97" />
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo-3.png" alt="" width="160" height="60" class="alignnone size-full wp-image-95" />
+            </div>
+            <div class="col-2 text-center">
+                <img src="../wp-content/uploads/2024/04/logo-4.png" alt="" width="160" height="60" class="alignnone size-full wp-image-96" />
+            </div>
+            
+        </div>
+      </div>
+      </div>
+
+    </div>
+</section>  
+
+<section class="contact-banner-section">
+    <div class="container">
+        <div class="contact-banner">
+             <h2 class="contact-banner__title">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not</h2>
+             <p class="contact-banner__desc">All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
+             <button class=" btn btn-light contact-banner__btn" type="button">request a call</button>
+    </div>
+       
     </div>
 </section>
 

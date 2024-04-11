@@ -68,3 +68,53 @@
         padding-top: 37px;
     }
 }
+
+
+//Contact banner section
+
+.contact-banner-section {
+    background: url("../img/request-banner.png") no-repeat;
+    height: 367px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+
+    @media (max-width: 990px) {
+        height: auto;
+        background-size: cover; 
+    }
+
+    @media (max-width:768px) {
+        padding: 32px 0;
+    }
+}
+
+.contact-banner {
+    max-width: 1030px;
+
+    &__title {
+        text-align: center;
+        color:#fff;
+        margin: 0;
+        margin-bottom: 16px;
+
+        @media (max-width:550px) {
+         font-size: 28px;
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        color:#D6E3F9;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+}

@@ -74,7 +74,33 @@
         background-color: $primary-text-emphasis;
         color: #fff;
         margin-bottom: 8px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+}
+
+.quality-services__wrapper article:first-child .quality-services__icon{
+    background-image: url(../img/stopwhatch.svg);
+}
+
+.quality-services__wrapper article:nth-child(2) .quality-services__icon{
+    background-image: url(../img/hand.svg);
+}
+
+.quality-services__wrapper article:nth-child(3) .quality-services__icon{
+    background-image: url(../img/ribbon.svg);
+}
+
+.quality-services__wrapper article:nth-child(4) .quality-services__icon{
+    background-image: url(../img/guarantee.svg);
+}
+
+.quality-services__wrapper article:nth-child(5) .quality-services__icon{
+    background-image: url(../img/card.svg);
+}
+
+.quality-services__wrapper article:nth-child(6) .quality-services__icon{
+    background-image: url(../img/person.svg);
 }
 
 // Benefits
@@ -149,13 +175,13 @@
         border-radius: 100%;
     }
     &__item-wrapper{
-        border: 20px solid $primary-muted-bg;
+        border: 20px solid #f7f9fe;
         list-style: none;
         position: relative;
         padding: 0;
         margin: 0;
         border-radius: 100%;
-        background-color: #D6E3F9;
+        background-color: #f7f9fe;
         max-width: 255px;
         max-height: 255px;
         min-width: 255px;

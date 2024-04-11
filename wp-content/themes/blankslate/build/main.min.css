@@ -12082,6 +12082,32 @@ ul {
   background-color: #789AEE;
   color: #fff;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quality-services__wrapper article:first-child .quality-services__icon {
+  background-image: url(../img/stopwhatch.svg);
+}
+
+.quality-services__wrapper article:nth-child(2) .quality-services__icon {
+  background-image: url(../img/hand.svg);
+}
+
+.quality-services__wrapper article:nth-child(3) .quality-services__icon {
+  background-image: url(../img/ribbon.svg);
+}
+
+.quality-services__wrapper article:nth-child(4) .quality-services__icon {
+  background-image: url(../img/guarantee.svg);
+}
+
+.quality-services__wrapper article:nth-child(5) .quality-services__icon {
+  background-image: url(../img/card.svg);
+}
+
+.quality-services__wrapper article:nth-child(6) .quality-services__icon {
+  background-image: url(../img/person.svg);
 }
 
 .benefits__list {
@@ -12147,13 +12173,13 @@ ul {
   border-radius: 100%;
 }
 .best-solutions__item-wrapper {
-  border: 20px solid #D6E3F9;
+  border: 20px solid #f7f9fe;
   list-style: none;
   position: relative;
   padding: 0;
   margin: 0;
   border-radius: 100%;
-  background-color: #D6E3F9;
+  background-color: #f7f9fe;
   max-width: 255px;
   max-height: 255px;
   min-width: 255px;
@@ -12256,7 +12282,7 @@ ul {
 }
 .services-section {
   padding: 80px 0;
-  margin: 0 auto;
+  margin: 0 !important;
   background-color: #D6E3F9;
 }
 .services-section__title {
@@ -12383,7 +12409,7 @@ ul {
   padding: 60px 0;
   min-height: 450px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   width: 100%;
 }
 @media (max-width: 990px) {
@@ -12613,6 +12639,51 @@ ul {
   max-width: 605px;
   padding-left: 60px;
   padding-top: 37px;
+}
+
+.contact-banner-section {
+  background: url("../img/request-banner.png") no-repeat;
+  height: 367px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+@media (max-width: 990px) {
+  .contact-banner-section {
+    height: auto;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .contact-banner-section {
+    padding: 32px 0;
+  }
+}
+
+.contact-banner {
+  max-width: 1030px;
+}
+.contact-banner__title {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+@media (max-width: 550px) {
+  .contact-banner__title {
+    font-size: 28px;
+  }
+}
+.contact-banner__desc {
+  text-align: center;
+  color: #D6E3F9;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.contact-banner__btn {
+  display: block;
+  margin: 0 auto;
 }
 
 #footer {
