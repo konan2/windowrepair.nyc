@@ -5,35 +5,6 @@
 
 <?php the_content(); ?>
 
-<!-- 
-<?php
-// Получаем массив значений поля
-$field_values = get_field('page_section');
-
-// Проверяем, есть ли значения в массиве
-if ($field_values) {
-    // Создаем пустую переменную для хранения контента
-    $content = '';
-
-    // Перебираем каждый элемент массива
-    foreach ($field_values as $value) {
-        // Проверяем, что значение является массивом и не пустым
-        if (is_array($value) && !empty($value['post'])) {
-            // Извлекаем объект WP_Post из массива
-            $post = $value['post'][0];
-
-            // Добавляем контент текущего поста к общему контенту
-            $content .= $post->post_content;
-        }
-    }
-
-    // Выводим общий контент
-    echo $content;
-} else {
-    //echo 'Значение поля не найдено';
-}
-?> -->
-
 
 
 <section id="front-banner" class="front-banner container-fluid">
@@ -46,8 +17,7 @@ if ($field_values) {
                 <button class="btn btn-light mt-4">Book online</button>
             </div>
             <div class="col-md-6">
-<img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565" class="alignnone size-full wp-image-87" />
-               
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565" class="alignnone size-full wp-image-87" />    
             </div>
         </div>
     </div>
@@ -55,93 +25,94 @@ if ($field_values) {
 
 
 <section id="counters" class="counters container-fluid">
-<div class="container-xl">
-<div class="row row-cols-1 row-cols-md-4 text-center">
-<h3 class="counters__item"><span class="counters__value">11 203</span> <span class="counters__text">Happy clients</span></h3>
-<h3 class="counters__item"><span class="counters__value">4.67</span> <span class="counters__text">Average rating</span></h3>
-<h3 class="counters__item"><span class="counters__value">14 420</span> <span class="counters__text">Jobs complete</span></h3>
-<h3 class="counters__item"><span class="counters__value">28</span> <span class="counters__text">Qualified stafs</span></h3>
-</div>
-</div>
+    <div class="container-xl">
+    <div class="row row-cols-1 row-cols-md-4 text-center">
+    <h3 class="counters__item"><span class="counters__value">11 203</span> <span class="counters__text">Happy clients</span></h3>
+    <h3 class="counters__item"><span class="counters__value">4.67</span> <span class="counters__text">Average rating</span></h3>
+    <h3 class="counters__item"><span class="counters__value">14 420</span> <span class="counters__text">Jobs complete</span></h3>
+    <h3 class="counters__item"><span class="counters__value">28</span> <span class="counters__text">Qualified stafs</span></h3>
+    </div>
+    </div>
 </section>
 
 
 <section id="quality-services" class="quality-services container-fluid">
-<div class="container-xl text-center">
-<h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
-<p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <div class="container-xl text-center">
+    <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
+    <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-<div class="quality-services__wrapper row row-cols-1"><article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-</div>
-</div>
+    <div class="quality-services__wrapper row row-cols-1"><article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    <article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    <article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    <article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    <article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    <article class="col-4">
+    <div class="quality-services__item">
+    <span class="quality-services__icon"></span>
+    <h4>Sameday Service</h4>
+    <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+    </div>
+    </article>
+    </div>
+    </div>
 </section>
 
 
 
 <section id="benefits" class="benefits container-fluid">
-<div class="container-xl">
-<div class="row">
-<div class="col-md-6">
-<img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img2.png" alt="" width="445" height="542" class="alignnone size-full wp-image-88" />
-</div>
-<div class="col-md-6"><span class="text-primary-emphasis">Windows repair NYC benefits</span>
-<h2>window repair nyc</h2>
+    <div class="container-xl">
+    <div class="row">
+    <div class="col-md-6">
+    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img2.png" alt="" width="445" height="542" class="alignnone size-full wp-image-88" />
+    </div>
+    <div class="col-md-6">
+        <span class="text-primary-emphasis">Windows repair NYC benefits</span>
+    <h2>window repair nyc</h2>
 
-<p class="text-body-secondary">We specialize in assisting homeowners to get the most from skilled and veteran professionals in the locality. The company is fully licensed and insured to bring you the assurance that you may expect your service provider to have. For homeowners facing some problems with windows and doors at home, we offer a cost-free and no-obligation quote. Besides, we even visit your home to look into the matter before repairing windows.</p>
-<p class="text-body-secondary">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not. All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
+    <p class="text-body-secondary">We specialize in assisting homeowners to get the most from skilled and veteran professionals in the locality. The company is fully licensed and insured to bring you the assurance that you may expect your service provider to have. For homeowners facing some problems with windows and doors at home, we offer a cost-free and no-obligation quote. Besides, we even visit your home to look into the matter before repairing windows.</p>
+    <p class="text-body-secondary">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not. All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
 
-<ul class="benefits__list row">
- 	<li class="benefits__list-item col-6">Timely</li>
- 	<li class="benefits__list-item col-6">Honest</li>
- 	<li class="benefits__list-item col-6">Quick to respond</li>
- 	<li class="benefits__list-item col-6">Conscientious</li>
- 	<li class="benefits__list-item col-6">Responsible</li>
- 	<li class="benefits__list-item col-6">Flexible Price</li>
-</ul>
-</div>
-</div>
-</div>
+    <ul class="benefits__list row">
+        <li class="benefits__list-item col-6">Timely</li>
+        <li class="benefits__list-item col-6">Honest</li>
+        <li class="benefits__list-item col-6">Quick to respond</li>
+        <li class="benefits__list-item col-6">Conscientious</li>
+        <li class="benefits__list-item col-6">Responsible</li>
+        <li class="benefits__list-item col-6">Flexible Price</li>
+    </ul>
+    </div>
+    </div>
+    </div>
 </section>
 
 
@@ -383,18 +354,44 @@ if ($field_values) {
         </div>
       </div>
       </div>
-
     </div>
-
-
 </section>  
 
 
 
-<script>
- 
 
 
-</script>
+<section class="container-fluid">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-6 flex-column justify-content-center">
+                <span class="text-primary-emphasis">About us</span>
+                <h1>Company history</h1>
+                <p class="mb-2">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.
+                    If you are fed up with the noise and the dirt of the city that makes way into your clean home, then we can proffer you a simple, sensible, and affordable solution to get rid of the noise.</p>
+                <a href="#" class="btn btn-primary mt-4">Read more</a>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255" class="alignnone size-full wp-image-87" />    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <?php get_footer();?>
