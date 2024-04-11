@@ -1,7 +1,7 @@
 // Hero section
 
 .services-hero-section {
-    background: url("../img/services/services-hero-img.png") no-repeat;
+    background: url("../img/services/section-hero-serv-img.png") no-repeat;
     height: 300px;
     background-position: center;
     display: flex;
@@ -38,22 +38,33 @@
     }
 }
 
-.main-title-block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 @media (max-width: 550px) {
     .services-hero-section:after {
         content: ' ';
-        background: url("../img/services/services-hero-img-sm.png") no-repeat;
+        background: url("../img/services/section-hero-serv-img-sm.png") no-repeat;
         height: 330px;
         width: 100%;
         background-size: cover;
     }
+}
 
-    .main-title-block {
-        padding: 40px 0;
+//Advantages section
+
+.advantages-section .container-bg {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FCF4DA;
+}
+
+.advantages-block {
+    display: flex;
+
+    &__left {}
+
+    &__right {
+        max-width: 605px;
+        padding-left: 60px;
+        padding-top: 37px;
     }
 }

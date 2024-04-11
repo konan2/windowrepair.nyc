@@ -189,16 +189,16 @@
      <div class="areas-block">
 
       <div class="areas-block__left">
-        <h2>AREAS WE SERVICES</h2>
-        <p>Choose your state</p>
+        <h2 class="areas-block__title">AREAS WE SERVICES</h2>
+        <p class="areas-block__desc">Choose your state</p>
        
          <div class="row areas-list">
-            <div class="col areas-list__city">
+            <div class="col-auto areas-list__city">
                 <button class="btn btn-default filter-button-city poppins-semibold " data-filter-city="connecticut">CONNECTICUT</button>
                 <button class="btn btn-default filter-button-city poppins-semibold" data-filter-city="new-jersey">NEW JERSEY</button>
                 <button class="btn btn-default filter-button-city poppins-semibold active" data-filter-city="new-york">NEW YORK </button>
             </div>
-            <div class="col areas-list__location">
+            <div class="col-6 areas-list__location">
                 <button class="btn poppins-semibold new-york" >New York City</button>
                 <button class="btn poppins-semibold new-york" >New Rochelle</button>
                 <button class="btn poppins-semibold new-york" >Hempstead </button>

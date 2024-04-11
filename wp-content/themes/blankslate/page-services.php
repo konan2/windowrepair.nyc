@@ -5,28 +5,49 @@
 
 <section class="services-hero-section">
     <div class="container">
-        <div class="main-title-block">
-            <h1 class="services-hero-section__title">Our services</h1>
-            <p  class="services-hero-section__desc">Professional team of repair technicians with 12 years experience.</p>
+        <div class="col-sm-6 main-title-block">
+            <h1 class="services-hero-section__title">window repair</h1>
+            <p  class="services-hero-section__desc">Professional team of repair technicians with 12 years experience. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         </div>
     </div> 
 </section>
 
-
+<section class="advantages-section">
+    <div class="container-bg">
+      <div class="advantages-block">
+          <div class="advantages-block__left">
+            <img  src="../wp-content/themes/blankslate/img/services/advantages-block-img.png" alt="Advantages window repair services - 01">
+        </div>
+        <div class="advantages-block__right">
+            <h2>what window repair services do we have?</h2>
+            <p>Extensive experience, proven working methods and cooperation with manufacturv</p>
+            <ul>
+                <li>Window Replacement</li>
+                <li>Window Repair</li>
+                <li>Window Installation</li>
+                <li>Window Capping</li>
+                <li>Wooden Windows Restoration</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</section>
 
 <section>
     <div class="container">
 
-        <div class="block-title">
-            <h2>our the <span>best solution</span> to your vision</h2>
-            <p>Our 4 step project system makes everything seamless from connecting with our representative to getting job done by our Glass Technician.</p>
+      <div class="repair-form">
+        <div class="repair-form__left">
+            <h2>Essential Window Repair Tips for New York City Residents</h2>
+            <p>The Importance of Regular Maintenance Regular maintenance is essential for preserving the integrity and functionality of windows in NYC. By addressing minor issues promptly, homeowners can prevent more significant problems and prolong the lifespan of their windows. Tasks such as cleaning, lubricating hinges and tracks, and inspecting for signs of damage should be part of a routine maintenance regimen.</p>
+
+            <p>Common Window Problems and Solutions In NYC, windows may encounter various issues, including air leaks, condensation, drafts, and broken seals. This section will explore common window problems faced by city dwellers and provide practical solutions for addressing them. From installing weatherstripping to repairing cracked glass or malfunctioning hardware, proactive measures can help mitigate these issues and enhance comfort and energy efficiency.</p>
+
+            <p>Professional Repair and Restoration Services While DIY maintenance can address many window issues, some repairs may require professional expertise. NYC residents can benefit from hiring experienced window repair and restoration professionals who specialize in addressing the unique challenges of urban living. From historic brownstones to modern high-rises, these experts have the skills and resources to restore windows to their former glory.</p>
+            <img src="../wp-content/themes/blankslate/img/services/repair-tips-img.png" alt="Essential Window Repair Tips - 01">
         </div>
-
-
-
-
-        <div class="solution-item">
-        </div>
+        <div class="repair-form__right"></div>
+      </div>
 
     </div>
 </section>
@@ -36,18 +57,17 @@
      <div class="container">
 
      <div class="areas-block">
-
       <div class="areas-block__left">
-        <h2>AREAS WE SERVICES</h2>
-        <p>Choose your state</p>
+        <h2 class="areas-block__title">AREAS WE SERVICES</h2>
+        <p class="areas-block__desc">Choose your state</p>
        
          <div class="row areas-list">
-            <div class="col areas-list__city">
+            <div class="col-auto areas-list__city">
                 <button class="btn btn-default filter-button-city poppins-semibold " data-filter-city="connecticut">CONNECTICUT</button>
                 <button class="btn btn-default filter-button-city poppins-semibold" data-filter-city="new-jersey">NEW JERSEY</button>
                 <button class="btn btn-default filter-button-city poppins-semibold active" data-filter-city="new-york">NEW YORK </button>
             </div>
-            <div class="col areas-list__location">
+            <div class="col-6 areas-list__location">
                 <button class="btn poppins-semibold new-york" >New York City</button>
                 <button class="btn poppins-semibold new-york" >New Rochelle</button>
                 <button class="btn poppins-semibold new-york" >Hempstead </button>
@@ -79,6 +99,7 @@
      </div>
      </div>
 </section>
+
 
 
 <?php get_template_part('section-counters'); ?>
