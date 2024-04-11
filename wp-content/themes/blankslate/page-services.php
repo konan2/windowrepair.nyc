@@ -176,6 +176,83 @@
     </div>
 </section>
 
+<section  class="clients container-fluid">
+    <div class="container-xl text-center">
+        <h2>what <span class="text-primary-emphasis">other’s says</span></h2>
+        <p class="text-body-secondary">Our professional glaziers are always going above and beyond to satisfy every customer, as customer satisfaction is our top priority</p>
+    </div>
+
+
+    <div class="swiper-google-reviews">
+            <div class="swiper-wrapper">
+        
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Kurt Bates</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Marc Anthony</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Kurt Bates</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+           </div>
+           <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+   </div>
+   
+
+
+
+</section>
+
 
 <section class="areas-section">
      <div class="container">
@@ -251,4 +328,48 @@
     showDistricts(city);
     });
   });
+
+  
 </script>
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+   
+   const swiperIconsPartners = new Swiper('.swiper-google-reviews', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 3,
+    initialSlide: 0,
+    speed: 1000,
+    // autoplay: {
+    //     delay: 3000,
+    // },
+    pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1300: {
+            slidesPerView: 3,
+        },
+    }
+});
+   
+    </script>
