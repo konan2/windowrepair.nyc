@@ -98,7 +98,7 @@
 </section>
 
 
-<section>
+<section class="repair-form-section">
     <div class="container">
 
       <div class="repair-form">
@@ -201,7 +201,7 @@
 
 
 
-<section  class="clients container-fluid">
+<section class="clients container-fluid">
     <div class="container-xl text-center">
     <h2>our business <span class="text-primary-emphasis">clients</span></h2>
         <p class="text-body-secondary">Within a decade we were able to complete different jobs and made happy more than 12000 clients and counting</p>
@@ -243,9 +243,8 @@
         </div>
       </div>
       </div>
-
     </div>
-</section>  
+</section> 
 
 <section class="contact-banner-section">
     <div class="container">
@@ -255,6 +254,36 @@
              <button class=" btn btn-light contact-banner__btn" type="button">request a call</button>
     </div>
        
+    </div>
+</section>
+
+<section class="company-history container-fluid">
+    <div class="company-history__wrapper container-xl">
+        <div class="row">
+            <div class="col-md-5 flex-column justify-content-center">
+                <span class="text-primary-emphasis">About us</span>
+                <h1>Company history</h1>
+                <p class="text-body-secondary">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.
+                    If you are fed up with the noise and the dirt of the city that makes way into your clean home, then we can proffer you a simple, sensible, and affordable solution to get rid of the noise.</p>
+                <a href="#" class="btn btn-primary mt-4">Read more</a>
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

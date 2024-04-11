@@ -172,8 +172,11 @@
     </div>
 
     <div class="container-xl">
-        <ul class="best-solutions__list row">
-            <li class="best-solutions__item col-3 justify-content-center">
+        <div class="best-solutions__list  swiper-best-solutions">
+          <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="best-solutions__item">
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -182,8 +185,11 @@
                         </div>
                     </div>
                 </div>
-            </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
+            </div>  
+          </div>
+
+          <div class="swiper-slide">
+            <div class="best-solutions__item">
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -192,8 +198,11 @@
                         </div>
                     </div>
                 </div>
-            </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
+            </div> 
+          </div>  
+            
+          <div class="swiper-slide"> 
+            <div class="best-solutions__item">
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -202,8 +211,11 @@
                         </div>
                     </div>
                 </div>
-            </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
+            </div> 
+          </div>
+
+          <div class="swiper-slide">            
+            <div class="best-solutions__item">
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -212,8 +224,15 @@
                         </div>
                     </div>
                 </div>
-            </li>  
-        </ul>
+            </div> 
+          </div> 
+
+         </div> 
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
 </section> 
 
@@ -308,4 +327,42 @@
     showDistricts(city);
     });
   });
+</script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+   
+   const swiperBestSolutions = new Swiper('.swiper-best-solutions', {
+    grabCursor: true,
+    slidesPerView: 4,
+    initialSlide: 0,
+    speed: 1000,
+    pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1100: {
+            slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 4,
+        },
+    }
+});
 </script>

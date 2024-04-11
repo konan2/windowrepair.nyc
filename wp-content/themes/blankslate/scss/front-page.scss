@@ -117,6 +117,7 @@
     &__item{
         display: flex;
         position: relative;
+        width: 255px;
         &::before{
             counter-increment: items; /* Увеличить значение счетчика */
             content: "0" counter(items); /* Отобразить значение счетчика */

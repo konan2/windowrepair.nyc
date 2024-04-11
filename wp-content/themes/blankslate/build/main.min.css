@@ -12194,6 +12194,7 @@ ul {
 .best-solutions__item {
   display: flex;
   position: relative;
+  width: 255px;
 }
 .best-solutions__item::before {
   counter-increment: items; /* Увеличить значение счетчика */
@@ -12781,10 +12782,28 @@ ul {
   gap: 16px;
 }
 
+@media (max-width: 550px) {
+  .repair-form-section {
+    margin-top: 30px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 .repair-form {
   display: flex;
   flex-direction: row;
   gap: 96px;
+}
+@media (max-width: 990px) {
+  .repair-form {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .repair-form {
+    gap: 24px;
+  }
 }
 .repair-form__left-text {
   color: #7A7A7A;
@@ -12799,6 +12818,12 @@ ul {
   border-radius: 16px;
   width: 380px;
   color: #fff;
+}
+@media (max-width: 550px) {
+  .form-wrap {
+    max-width: 380px;
+    width: auto;
+  }
 }
 .form-wrap__title {
   color: #fff;
@@ -12954,7 +12979,8 @@ input:checked + label:before {
   margin: 0 auto;
 }
 
-.swiper-google-reviews {
+.swiper-google-reviews,
+.swiper-best-solutions {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
@@ -12963,7 +12989,8 @@ input:checked + label:before {
   margin-top: 20px;
 }
 
-.swiper-google-reviews .swiper-slide {
+.swiper-google-reviews .swiper-slide,
+.swiper-best-solutions .swiper-slide {
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -13016,38 +13043,59 @@ input:checked + label:before {
   display: block;
 }
 
-.swiper-google-reviews .swiper-pagination {
+.swiper-google-reviews .swiper-pagination,
+.swiper-best-solutions .swiper-pagination {
   position: static;
 }
 
 .swiper-google-reviews .swiper-button-next:after,
-.swiper-google-reviews .swiper-button-prev:after {
+.swiper-google-reviews .swiper-button-prev:after,
+.swiper-best-solutions .swiper-button-next:after,
+.swiper-best-solutions .swiper-button-prev:after {
   font-size: 13px;
 }
 
 .swiper-google-reviews .swiper-button-next,
-.swiper-google-reviews .swiper-button-prev {
+.swiper-google-reviews .swiper-button-prev,
+.swiper-best-solutions .swiper-button-next,
+.swiper-best-solutions .swiper-button-prev {
   width: 18px;
   height: 18px;
   top: unset;
   bottom: 0;
 }
 
-.swiper-google-reviews .swiper-button-prev {
+.swiper-google-reviews .swiper-button-prev,
+.swiper-best-solutions .swiper-button-prev {
   left: 35%;
 }
-
-.swiper-google-reviews .swiper-button-next {
-  right: 35%;
+@media (max-width: 550px) {
+  .swiper-google-reviews .swiper-button-prev,
+  .swiper-best-solutions .swiper-button-prev {
+    left: 5%;
+  }
 }
 
-.swiper-google-reviews .swiper-pagination-bullet {
+.swiper-google-reviews .swiper-button-next,
+.swiper-best-solutions .swiper-button-next {
+  right: 35%;
+}
+@media (max-width: 550px) {
+  .swiper-google-reviews .swiper-button-next,
+  .swiper-best-solutions .swiper-button-next {
+    right: 5%;
+  }
+}
+
+.swiper-google-reviews .swiper-pagination-bullet,
+.swiper-best-solutions .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background: #D6E3F9;
 }
 
-.swiper-google-reviews .swiper-pagination-bullet-active {
+.swiper-google-reviews .swiper-pagination-bullet-active,
+.swiper-best-solutions .swiper-pagination-bullet-active {
   background: #789AEE;
 }
 
