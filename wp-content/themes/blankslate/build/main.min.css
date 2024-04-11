@@ -12069,6 +12069,32 @@ ul {
   background-color: #789AEE;
   color: #fff;
   margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quality-services__wrapper article:first-child .quality-services__icon {
+  background-image: url(../img/stopwhatch.svg);
+}
+
+.quality-services__wrapper article:nth-child(2) .quality-services__icon {
+  background-image: url(../img/hand.svg);
+}
+
+.quality-services__wrapper article:nth-child(3) .quality-services__icon {
+  background-image: url(../img/ribbon.svg);
+}
+
+.quality-services__wrapper article:nth-child(4) .quality-services__icon {
+  background-image: url(../img/guarantee.svg);
+}
+
+.quality-services__wrapper article:nth-child(5) .quality-services__icon {
+  background-image: url(../img/card.svg);
+}
+
+.quality-services__wrapper article:nth-child(6) .quality-services__icon {
+  background-image: url(../img/person.svg);
 }
 
 .benefits__list {
@@ -12134,13 +12160,13 @@ ul {
   border-radius: 100%;
 }
 .best-solutions__item-wrapper {
-  border: 20px solid #D6E3F9;
+  border: 20px solid #f7f9fe;
   list-style: none;
   position: relative;
   padding: 0;
   margin: 0;
   border-radius: 100%;
-  background-color: #D6E3F9;
+  background-color: #f7f9fe;
   max-width: 255px;
   max-height: 255px;
   min-width: 255px;
@@ -12282,7 +12308,7 @@ ul {
 }
 .services-section {
   padding: 80px 0;
-  margin: 0 auto;
+  margin: 0 !important;
   background-color: #D6E3F9;
 }
 .services-section__title {
@@ -12409,7 +12435,7 @@ ul {
   padding: 60px 0;
   min-height: 450px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   width: 100%;
 }
 @media (max-width: 990px) {
@@ -12639,6 +12665,148 @@ ul {
   max-width: 605px;
   padding-left: 60px;
   padding-top: 37px;
+}
+
+.contact-banner-section {
+  background: url("../img/request-banner.png") no-repeat;
+  height: 367px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+@media (max-width: 990px) {
+  .contact-banner-section {
+    height: auto;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .contact-banner-section {
+    padding: 32px 0;
+  }
+}
+
+.contact-banner {
+  max-width: 1030px;
+}
+.contact-banner__title {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+@media (max-width: 550px) {
+  .contact-banner__title {
+    font-size: 28px;
+  }
+}
+.contact-banner__desc {
+  text-align: center;
+  color: #D6E3F9;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.contact-banner__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-google-reviews {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-google-reviews .swiper-slide {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.google-reviews-item {
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px rgba(14, 25, 45, 0.1);
+  padding: 32px 20px;
+  max-width: 350px;
+}
+.google-reviews-item__top {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+.google-reviews-item__title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.google-reviews-item__title > h4, .google-reviews-item__title > .h4 {
+  font-size: 18px;
+  color: #2C5697;
+}
+.google-reviews-item__desc {
+  color: #7A7A7A;
+}
+.google-reviews-item__date {
+  color: #789AEE;
+  font-size: 12px;
+  display: block;
+  float: right;
+}
+
+.google-reviews-item__top:before {
+  content: " ";
+  background: url("../img/google-bus-logo.svg") no-repeat;
+  height: 48px;
+  width: 115px;
+  display: block;
+}
+
+.google-reviews-item__title > h4:after, .google-reviews-item__title > .h4:after {
+  content: " ";
+  background: url("../img/stars.svg") no-repeat;
+  height: 17px;
+  width: 105px;
+  display: block;
+}
+
+.swiper-google-reviews .swiper-pagination {
+  position: static;
+}
+
+.swiper-google-reviews .swiper-button-next:after,
+.swiper-google-reviews .swiper-button-prev:after {
+  font-size: 13px;
+}
+
+.swiper-google-reviews .swiper-button-next,
+.swiper-google-reviews .swiper-button-prev {
+  width: 18px;
+  height: 18px;
+  top: unset;
+  bottom: 0;
+}
+
+.swiper-google-reviews .swiper-button-prev {
+  left: 35%;
+}
+
+.swiper-google-reviews .swiper-button-next {
+  right: 35%;
+}
+
+.swiper-google-reviews .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #D6E3F9;
+}
+
+.swiper-google-reviews .swiper-pagination-bullet-active {
+  background: #789AEE;
 }
 
 #footer {

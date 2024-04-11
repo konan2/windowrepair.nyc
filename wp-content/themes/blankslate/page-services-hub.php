@@ -165,22 +165,57 @@
         </div>
 </section>
 
-<section>
-    <div class="container">
-
-        <div class="block-title">
-            <h2>our the <span>best solution</span> to your vision</h2>
-            <p>Our 4 step project system makes everything seamless from connecting with our representative to getting job done by our Glass Technician.</p>
-        </div>
-
-
-
-
-        <div class="solution-item">
-        </div>
-
+<section id="best-solutions" class="best-solutions container-fluid">
+    <div class="container-xl text-center">
+        <h2>our the <span class="text-primary-emphasis">best solution</span> to your vision</h2>
+        <p class="text-body-secondary">Our 4 step project system makes everything seamless from connecting with our representative to getting job done by our Glass Technician.</p>
     </div>
-</section>
+
+    <div class="container-xl">
+        <ul class="best-solutions__list row">
+            <li class="best-solutions__item col-3 justify-content-center">
+                <div class="best-solutions__item-wrapper">
+                    <div class="best-solutions__item-content">
+                        <div>
+                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </li>  
+            <li class="best-solutions__item col-3 justify-content-center">
+                <div class="best-solutions__item-wrapper">
+                    <div class="best-solutions__item-content">
+                        <div>
+                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </li>  
+            <li class="best-solutions__item col-3 justify-content-center">
+                <div class="best-solutions__item-wrapper">
+                    <div class="best-solutions__item-content">
+                        <div>
+                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </li>  
+            <li class="best-solutions__item col-3 justify-content-center">
+                <div class="best-solutions__item-wrapper">
+                    <div class="best-solutions__item-content">
+                        <div>
+                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </li>  
+        </ul>
+    </div>
+</section> 
 
 
 <section class="areas-section">
