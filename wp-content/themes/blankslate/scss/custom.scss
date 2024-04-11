@@ -3,7 +3,9 @@
 }
 
 img{
+    display: block;
     max-width: 100%;
+    height: auto;
 }
 
 body{
@@ -48,10 +50,6 @@ p{
     margin: 8px 0;
 }
 
-.text-transform-none{
-    text-transform: none;
-}
-
 // Buttons
 
 .btn {
@@ -63,6 +61,12 @@ p{
     background-color: #fff;
     color: $primary;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
 // Containers
 
