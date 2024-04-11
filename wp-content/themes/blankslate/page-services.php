@@ -1,4 +1,4 @@
-<?php /* Template Name: Service Hub Template */ ?>
+<?php /* Template Name: Service Template */ ?>
 
 
 <?php get_header(); ?>
