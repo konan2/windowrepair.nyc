@@ -18,6 +18,6 @@
         </nav>
     </header>
 
-<main id="content" role="main">
+<main id="content" role="main" class="page-wrapper">
    
  
