@@ -12730,11 +12730,183 @@ ul {
 
 .advantages-block {
   display: flex;
+  flex-direction: row;
+}
+@media (max-width: 990px) {
+  .advantages-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.advantages-block__left {
+  display: flex;
+  align-items: center;
 }
 .advantages-block__right {
   max-width: 605px;
   padding-left: 60px;
   padding-top: 37px;
+  padding-bottom: 37px;
+}
+@media (max-width: 990px) {
+  .advantages-block__right {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .advantages-block__right {
+    padding: 24px 20px 30px;
+  }
+}
+.advantages-block__right-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+@media (max-width: 550px) {
+  .advantages-block__right-title {
+    font-size: 28px;
+  }
+}
+.advantages-block__right-desc {
+  color: #7A7A7A;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.advantages-block__right-list {
+  list-style: disc;
+  padding-left: 24px;
+  color: #2C5697;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.repair-form {
+  display: flex;
+  flex-direction: row;
+  gap: 96px;
+}
+.repair-form__left-text {
+  color: #7A7A7A;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.form-wrap {
+  padding: 32px 20px;
+  background: #2C5697;
+  border-radius: 16px;
+  width: 380px;
+  color: #fff;
+}
+.form-wrap__title {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.form-wrap__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.repair-form .btn-primary {
+  background: #FFD221;
+  color: #2C5697;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.repair-form label {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.repair-form .form-control {
+  height: 48px;
+}
+
+.custom-control-input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom-control-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.row-agree .custom-control-label {
+  font-size: 12px;
+}
+
+.custom-control-label:before {
+  content: " ";
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: none;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border-radius: 4.5px;
+}
+
+input:checked + label:before {
+  background-color: #FFD221;
+}
+
+.repair-form input[type=checkbox]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid #0E192D;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.repair-form .form-group input[type=checkbox]:checked + label:after {
+  top: 5px;
+}
+
+.show-comment-form {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 16px;
+}
+
+.show-comment-form:after {
+  content: " ";
+  display: block;
+  top: 6px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
 }
 
 .contact-banner-section {

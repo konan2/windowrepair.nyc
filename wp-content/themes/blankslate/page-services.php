@@ -83,9 +83,9 @@
             <img  src="../wp-content/themes/blankslate/img/services/advantages-block-img.png" alt="Advantages window repair services - 01">
         </div>
         <div class="advantages-block__right">
-            <h2>what window repair services do we have?</h2>
-            <p>Extensive experience, proven working methods and cooperation with manufacturv</p>
-            <ul>
+            <h2 class="advantages-block__right-title">what window repair services do we have?</h2>
+            <p class="advantages-block__right-desc">Extensive experience, proven working methods and cooperation with manufacturv</p>
+            <ul class="advantages-block__right-list poppins-semibold">
                 <li>Window Replacement</li>
                 <li>Window Repair</li>
                 <li>Window Installation</li>
@@ -104,17 +104,99 @@
       <div class="repair-form">
         <div class="repair-form__left">
             <h2>Essential Window Repair Tips for New York City Residents</h2>
-            <p>The Importance of Regular Maintenance Regular maintenance is essential for preserving the integrity and functionality of windows in NYC. By addressing minor issues promptly, homeowners can prevent more significant problems and prolong the lifespan of their windows. Tasks such as cleaning, lubricating hinges and tracks, and inspecting for signs of damage should be part of a routine maintenance regimen.</p>
+             <div class="repair-form__left-text">
+                <p>The Importance of Regular Maintenance Regular maintenance is essential for preserving the integrity and functionality of windows in NYC. By addressing minor issues promptly, homeowners can prevent more significant problems and prolong the lifespan of their windows. Tasks such as cleaning, lubricating hinges and tracks, and inspecting for signs of damage should be part of a routine maintenance regimen.</p>
 
-            <p>Common Window Problems and Solutions In NYC, windows may encounter various issues, including air leaks, condensation, drafts, and broken seals. This section will explore common window problems faced by city dwellers and provide practical solutions for addressing them. From installing weatherstripping to repairing cracked glass or malfunctioning hardware, proactive measures can help mitigate these issues and enhance comfort and energy efficiency.</p>
+                <p>Common Window Problems and Solutions In NYC, windows may encounter various issues, including air leaks, condensation, drafts, and broken seals. This section will explore common window problems faced by city dwellers and provide practical solutions for addressing them. From installing weatherstripping to repairing cracked glass or malfunctioning hardware, proactive measures can help mitigate these issues and enhance comfort and energy efficiency.</p>
 
-            <p>Professional Repair and Restoration Services While DIY maintenance can address many window issues, some repairs may require professional expertise. NYC residents can benefit from hiring experienced window repair and restoration professionals who specialize in addressing the unique challenges of urban living. From historic brownstones to modern high-rises, these experts have the skills and resources to restore windows to their former glory.</p>
+                <p>Professional Repair and Restoration Services While DIY maintenance can address many window issues, some repairs may require professional expertise. NYC residents can benefit from hiring experienced window repair and restoration professionals who specialize in addressing the unique challenges of urban living. From historic brownstones to modern high-rises, these experts have the skills and resources to restore windows to their former glory.</p>
+             </div>
             <img src="../wp-content/themes/blankslate/img/services/repair-tips-img.png" alt="Essential Window Repair Tips - 01">
         </div>
-        <div class="repair-form__right"></div>
+
+        <div class="repair-form__right">
+
+    
+
+	<div class="form-wrap">	
+        <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
+		<form id="survey-form" class="form-wrap__rows">
+			<div class="row">
+					<div class="form-group">
+						<label id="name-label" for="name">Full name*</label>
+						<input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
+					</div>
+			</div>
+			
+			<div class="row">
+					<div class="form-group">
+						<label id="number-label" for="number">Phone number*</label>
+						<input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="age" id="number" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+					</div>
+            </div>
+
+            <div class="row">
+					<div class="form-group">
+						<label>Choose a service*</label>
+                        <div class="row">
+                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repair" checked>
+                                <label class="custom-control-label" for="repair">Repair</label>
+                            </div>
+                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" name="install" value="install" id="install">
+                                <label class="custom-control-label" for="install">Install</label>
+                            </div>
+                        </div>
+					</div>
+            </div>
+
+           <div class="row">
+					<div class="form-group">
+						<label>What's the problem*</label>
+						<select id="dropdown" name="role" class="form-control" required>
+							<option disabled selected value>Window replacement</option>
+							<option value="windowRepair">Window Repair</option>
+							<option value="windowInstallation">Window Installation</option>
+							<option value="windowCapping">Window Capping</option>
+							<option value="woodenWindowsRestoration">Wooden Windows Restoration</option>
+							<option value="other">Other</option>
+						</select>
+				    </div>
+			</div>
+
+            <button id="show-comment-btn" class="show-comment-form">Would you like to leave a comment?</button>
+
+            <div id="comment-form" style="display: none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Leave a comment</label>
+                            <textarea  id="comments" class="form-control" name="comment" placeholder="How can we help?"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-agree">
+				<input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
+				<label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
+            </div>
+			
+			<div class="row">
+              <div class="col-md-12">
+                <button type="submit" id="submit" class="btn btn-primary">BOOK ONLINE</button>
+              </div>
+			</div>
+
+		</form>
+	</div>	
+</div>
+
+        </div>
       </div>
 
-    </div>
+ 
 </section>
 
 
@@ -329,7 +411,16 @@
     });
   });
 
-  
+
+var showCommentBtn = document.getElementById('show-comment-btn');
+var commentForm = document.getElementById('comment-form');
+
+showCommentBtn.addEventListener('click', function() {
+    if (commentForm.style.display === 'none') {
+        commentForm.style.display = 'block';
+        showCommentBtn.style.display = 'none';
+    }
+});
 </script>
 
 <link
@@ -345,9 +436,9 @@
     slidesPerView: 3,
     initialSlide: 0,
     speed: 1000,
-    // autoplay: {
-    //     delay: 3000,
-    // },
+    autoplay: {
+        delay: 3000,
+    },
     pagination: {
           el: ".swiper-pagination",
           clickable: true,
