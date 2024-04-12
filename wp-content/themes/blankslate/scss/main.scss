@@ -1,8 +1,9 @@
 @import "fonts";
 @import "variable-overrides"; 
+@import "swiper";
 @import "../node_modules/bootstrap/scss/bootstrap"; //@import '~bootstrap/scss/bootstrap';
 @import "custom";
-@import "../node_modules/swiper/swiper-bundle.min.css";
+
 
 @import "header";
 @import "front-page";
