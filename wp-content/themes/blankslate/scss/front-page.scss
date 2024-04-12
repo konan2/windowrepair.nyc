@@ -204,9 +204,9 @@
 
 
 .contrast-banner{
-    background-color: #FCF4DA;
-    //padding-top: 32px;
-    //padding-bottom: 32px;
+    min-height: 400px;
+    background: url(../img/window-bg-1.png) 10vw 25px, url(../img/window-bg-2.png) 26vw 100px, url(../img/window-bg-3.png) 65vw 100px, url(../img/window-bg-4.png) 79vw 20px, #FCF4DA;
+    background-repeat: no-repeat;            
     &__text{
         padding: 60px 0;
     }
