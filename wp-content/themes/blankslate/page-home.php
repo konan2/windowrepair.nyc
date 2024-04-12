@@ -23,7 +23,6 @@
     </div>
 </section>
 
-
 <section id="counters" class="counters container-fluid">
     <div class="container-xl">
     <div class="row row-cols-1 row-cols-md-4 text-center">
@@ -34,7 +33,6 @@
     </div>
     </div>
 </section>
-
 
 <section id="quality-services" class="quality-services container-fluid">
     <div class="container-xl text-center">
@@ -87,8 +85,6 @@
     </div>
 </section>
 
-
-
 <section id="benefits" class="benefits container-fluid">
     <div class="container-xl">
     <div class="row">
@@ -114,8 +110,6 @@
     </div>
     </div>
 </section>
-
-
 
 <section id="brands-slider" class="slider container-fluid">
     <div class="container-xl text-center">
@@ -145,9 +139,6 @@
 
 </section>  
 
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-
 <section id="front-banner-mirrors" class="contrast-banner container-fluid">
     <div class="contrast-banner__container container-xl">
         <div class="row">
@@ -162,8 +153,6 @@
         </div>
     </div>
 </section>
-
-
 
 <section id="best-solutions" class="best-solutions container-fluid">
     <div class="container-xl text-center">
@@ -224,8 +213,6 @@
         </ul>
     </div>
 </section> 
-
-
 
 <section id="our-services" class="our-services container-fluid">
     <div class="container-xl text-center">
@@ -304,10 +291,6 @@
    
 </section>
 
-
-
-
-
 <section id="clients" class="clients container-fluid">
     <div class="container-xl text-center">
     <h2>our business <span class="text-primary-emphasis">clients</span></h2>
@@ -332,10 +315,6 @@
         <div class="swiper-button-next"></div>
     </div>
 </section>  
-
-
-
-
 
 <section class="company-history container-fluid">
     <div class="company-history__wrapper container-xl">
@@ -367,6 +346,16 @@
     </div>
 </section>
 
+<section class="contact-banner-section">
+    <div class="container">
+        <div class="contact-banner">
+             <h2 class="contact-banner__title">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not</h2>
+             <p class="contact-banner__desc">All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
+             <button class=" btn btn-light contact-banner__btn" type="button">request a call</button>
+    </div>
+       
+    </div>
+</section>
 
 <section class="manufacturing container-fluid">
     <div class="manufacturing__wrapper container-xl">
@@ -396,8 +385,6 @@
     </div>
 </section>
 
-
-
 <section class="certification container-fluid">
     <div class="container-xl">
         <div class="row">
@@ -418,51 +405,6 @@
             </div>
     </div>
 </section>
-
-
-
-<!-- <section id="our-works" class="our-works container-fluid">
-    <div class="container-xl text-center">
-        <strong class="text-primary-emphasis">Our work</strong>
-        <h2>latest projects we made</h2>
-    </div>
-    <div class="container-xl">
-
-        <div class="our-works__filter">
-            <button class="tab tab--active" data-type="all">All</button>
-            <button class="tab" data-type="works-type-1">Windows</button>
-            <button class="tab" data-type="works-type-2">Glass</button>
-            <button class="tab" data-type="works-type-3">Doors</button>
-            <button class="tab" data-type="works-type-4">Mirrors</button>
-            <button class="tab" data-type="works-type-5">Shower Doors</button>
-        </div>
-        <div class="our-works__list parent">
-            <figure class="div1 filter-card" data-type="works-type-1">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-            <figure class="div2 filter-card" data-type="works-type-2">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-            <figure class="div3 filter-card" data-type="works-type-3">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-            <figure class="div4 filter-card" data-type="works-type-4">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-            <figure class="div5 filter-card" data-type="works-type-5">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-            <figure class="div6 filter-card" data-type="works-type-5">
-                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-            </figure>
-        </div>
-
-        </div>
-   
-</section> -->
-
-
-
 
 <section id="front-banner-doors" class="contrast-banner container-fluid">
     <div class="contrast-banner__container">
