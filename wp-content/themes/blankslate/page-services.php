@@ -593,6 +593,132 @@
 
 
 
+
+<form id="contactForm" onsubmit="submitCform(); return false;"> 
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Your Name" required>
+
+<label id="website" for="website">website:</label>
+<input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Yourid@gmail.com" required>
+
+<label for="subject">Subject:</label>
+<input type="text" id="subject" name="subject" placeholder="The title of your message" required>
+
+<label for="message">Message:</label>
+<textarea rows="3" id="message" name="message" placeholder="Type your message here" required>
+</textarea>	
+
+<input id="mybtn" type="submit" value="SEND MESSAGE">
+<span id="status"> </span>
+<input type="hidden" id="formid" name="formid" value="1001">
+
+
+</form>
+
+<script>
+
+const contactForm = document.querySelector("form#contactForm");
+
+function submitCform() {
+document.querySelector("form#contactForm #mybtn").disabled = "true"
+document.querySelector("form#contactForm #mybtn").value = 'Please wait...'
+
+var formdata = new FormData(contactForm);
+
+formdata.append('action', 'submitmyform') 
+AjaxCform(formdata) 
+}
+
+async function AjaxCform(formdata) {
+  const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
+  const response = await fetch(url, {
+      method: 'POST',
+      body: formdata,
+  });
+  const data = await response.json();
+	
+	if (data['statuse'] == 'ok'){			
+			document.querySelector("form#contactForm").innerHTML = `<div id="success">
+			${data['reply']}
+			</div>`			
+	} else if (data['statuse'] == 'er') {
+			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
+			Ops, ${data['reply']}
+			</div>`
+			document.querySelector("form#contactForm #mybtn").disabled = false
+			document.querySelector("form#contactForm #mybtn").value = 'Try again'
+	}}	
+</script>
+
+<style>
+#website {display: none;}
+form#contactForm {
+    max-width: 95%;
+    width: 550px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 29px -22px #afa9a9;
+    background-color: white;
+}
+#er {
+    color: #f21515;
+    background-color: #fff0f0;
+    font-weight: bold;
+    border: 3px solid #f21515;
+    border-radius: 5px;
+    padding: 10px 10px;
+    max-width: fit-content;
+	margin: 15px auto;
+}
+#success {
+    color: #23a238;
+    background-color: azure;
+    font-weight: bold;
+    border: 3px solid #23a238;
+    border-radius: 5px;
+    padding: 10px 10px;
+    max-width: fit-content;
+	margin: 15px auto;
+}
+label {
+    display: block;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+#contactForm input::placeholder,#contactForm textarea::placeholder {
+    color: #b5b5b5;
+}
+#contactForm input[placeholder],#contactForm textarea[placeholder] {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+form#contactForm input#mybtn {
+    margin-top: 15px;
+    display: block;
+    height: 3rem;
+    color: white;
+    background: #0088a7;
+    padding: 0px 23px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form#contactForm input[type="text"], form#contactForm input[type="email"], form#contactForm textarea {
+    width: 100%;
+    border: 1px solid #f1f0f0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-top: 3px;
+}
+	
+</style>	
+
+
+
 <?php get_footer(); ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
