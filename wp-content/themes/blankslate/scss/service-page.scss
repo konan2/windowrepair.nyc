@@ -339,6 +339,11 @@ input:checked+label:before {
     margin-top: 20px;
 }
 
+.clients-block,
+.swiper-google-reviews {
+    margin-top: 40px;
+}
+
 .swiper-google-reviews .swiper-slide,
 .swiper-best-solutions .swiper-slide {
     padding: 15px;
@@ -401,8 +406,15 @@ input:checked+label:before {
 .swiper-google-reviews .swiper-pagination,
 .swiper-best-solutions .swiper-pagination,
 .tabs-show-photos-block-21 .swiper-pagination,
-.swiper-best-quality .swiper-pagination {
+.swiper-best-quality .swiper-pagination,
+.clients .swiper-pagination {
     position: static;
+}
+
+.swiper-google-reviews .swiper-pagination {
+    @media (max-width:768px) {
+    margin-top: 15px;
+    }
 }
 
 .swiper-google-reviews .swiper-button-next:after,
@@ -412,7 +424,9 @@ input:checked+label:before {
 .tabs-show-photos-block-21 .swiper-button-next:after,
 .tabs-show-photos-block-21 .swiper-button-prev:after,
 .swiper-best-quality .swiper-button-next:after,
-.swiper-best-quality .swiper-button-prev:after {
+.swiper-best-quality .swiper-button-prev:after,
+.clients .swiper-button-next:after,
+.clients .swiper-button-prev:after {
     font-size: 13px;
 }
 
@@ -423,12 +437,20 @@ input:checked+label:before {
 .tabs-show-photos-block-21 .swiper-button-next,
 .tabs-show-photos-block-21 .swiper-button-prev,
 .swiper-best-quality .swiper-button-next,
-.swiper-best-quality .swiper-button-prev {
+.swiper-best-quality .swiper-button-prev,
+.clients .swiper-button-next,
+.clients .swiper-button-prev {
     width: 18px;
     height: 18px;
     top: unset;
     bottom: 0;
 
+}
+
+.clients .swiper-button-next,
+.clients .swiper-button-prev {
+    top: 50%;
+    bottom: unset;
 }
 
 .swiper-google-reviews .swiper-button-prev,
@@ -466,7 +488,8 @@ input:checked+label:before {
 .swiper-google-reviews .swiper-pagination-bullet,
 .swiper-best-solutions .swiper-pagination-bullet,
 .tabs-show-photos-block-21 .swiper-pagination-bullet,
-.swiper-best-quality .swiper-pagination-bullet {
+.swiper-best-quality .swiper-pagination-bullet,
+.clients .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background: $primary-muted-bg;
@@ -475,10 +498,20 @@ input:checked+label:before {
 .swiper-google-reviews .swiper-pagination-bullet-active,
 .swiper-best-solutions .swiper-pagination-bullet-active,
 .tabs-show-photos-block-21 .swiper-pagination-bullet-active,
-.swiper-best-quality .swiper-pagination-bullet-active {
+.swiper-best-quality .swiper-pagination-bullet-active,
+.clients .swiper-pagination-bullet-active {
     background: $primary-text-emphasis;
 }
 
+.clients .swiper-slide {
+    padding: 5px;
+}
+
+.swiper-slide__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 //Our work
 
@@ -632,3 +665,14 @@ input:checked+label:before {
 }
 
 
+//page styles
+
+// .page-template-page-services .contact-banner-section {
+//     @media (max-width: 990px) {
+//     margin-bottom: 0!important;
+//     }
+// }
+
+// .page-template-page-services .company-history {
+//     padding-top: 0;
+// }
