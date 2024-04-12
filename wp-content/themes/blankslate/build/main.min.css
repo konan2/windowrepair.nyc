@@ -14369,7 +14369,7 @@ input:checked + label:before {
 .not-found-block__title {
   margin: 0;
 }
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .not-found-block__img {
     width: 300px;
   }
