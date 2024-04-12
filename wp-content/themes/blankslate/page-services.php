@@ -213,7 +213,7 @@
         <p class="text-body-secondary">Within a decade we were able to complete different jobs and made happy more than 12000 clients and counting</p>
     </div>
 
-    <div class="container-xl position-relative">
+    <div class="clients-block container-xl position-relative">
         <div class="swiper-button-prev"></div>
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -275,7 +275,7 @@
     </div>
 </section>
 
-<section  class="clients container-fluid">
+<section  class="clients-google-reviews container-fluid">
     <div class="container-xl text-center">
         <h2>what <span class="text-primary-emphasis">other’s says</span></h2>
         <p class="text-body-secondary">Our professional glaziers are always going above and beyond to satisfy every customer, as customer satisfaction is our top priority</p>
