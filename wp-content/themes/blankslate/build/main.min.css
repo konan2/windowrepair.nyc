@@ -13959,7 +13959,6 @@ input:checked + label:before {
   border-bottom: 1px solid #fff;
   padding-bottom: 16px;
 }
-
 .show-comment-form:after {
   content: " ";
   display: block;
