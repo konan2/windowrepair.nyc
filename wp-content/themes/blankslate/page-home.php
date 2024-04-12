@@ -148,10 +148,10 @@
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-<section id="front-banner-mirrors" class="front-banner-mirrors container-fluid">
-    <div class="front-banner-mirrors__container container-xl">
+<section id="front-banner-mirrors" class="contrast-banner container-fluid">
+    <div class="contrast-banner__container container-xl">
         <div class="row">
-            <div class="col-md-5 flex-column justify-content-center pe-0">
+            <div class="contrast-banner__text col-md-5 flex-column justify-content-center pe-0">
                 <h2>One Call Can Solve All Your Window, Doors and Mirrors Problems</h2>
                 <p class="mb-2">We created easy to use online appointment booking system where you can schedule your next window repair or glass replacement service in seconds.</p>
                 <button class="btn btn-light mt-4">Request a call</button>
@@ -455,16 +455,29 @@
    
     <!-- Другие карточки здесь -->
 </div>
-
-    
-       
    
 </section>
 
 
 
 
-
+<section id="front-banner-doors" class="contrast-banner container-fluid">
+    <div class="contrast-banner__container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565"  />
+            </div>
+            <div class="contrast-banner__text col-md-4 flex-column align-items-center">
+                <h2>Start your project today</h2>
+                <p class="mb-2 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+                <button class="btn btn-primary mt-4">Call us now</button>
+            </div>
+            <div class="col-md-4">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="540" height="565"  />
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

@@ -12207,10 +12207,11 @@ ul {
   background-image: url(../img/person.svg);
 }
 
-.front-banner-mirrors {
+.contrast-banner {
   background-color: #FCF4DA;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+.contrast-banner__text {
+  padding: 60px 0;
 }
 
 .best-solutions__list {
@@ -12269,6 +12270,14 @@ ul {
   min-width: 255px;
   min-height: 255px;
   text-align: center;
+}
+
+#front-banner-mirrors img {
+  margin: 32px 0;
+}
+
+#front-banner-doors img {
+  margin-top: 20px;
 }
 
 .our-services__filter {
