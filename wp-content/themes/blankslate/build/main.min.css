@@ -13239,7 +13239,7 @@ address {
   border-radius: 15px;
   font-style: normal;
 }
-.our-services__button:hover {
+.our-services__list-item:hover .our-services__button {
   color: #2C5697;
   background-color: #FFFF33;
 }
@@ -13329,6 +13329,10 @@ address {
   }
 }
 
+#brands-slider .swiper-button-prev, #brands-slider .swiper-button-next {
+  top: 50%;
+}
+
 .certification {
   background-color: #D6E3F9;
   padding: 60px 0;
@@ -13337,6 +13341,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 142px;
 }
 .certification .card img {
   max-width: 120px;

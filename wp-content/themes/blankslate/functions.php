@@ -131,4 +131,25 @@ add_action( 'init', 'custom_page_sections_post_type' );
 
 
 
+function custom_post_shortcode($atts) {
+  // Параметры шорткода
+  $atts = shortcode_atts(array(
+      'post_id' => 0, // ID поста
+  ), $atts);
+
+  // Получаем содержимое поста по его ID
+  $post_content = '';
+  if ($atts['post_id'] > 0) {
+      $post = get_post($atts['post_id']);
+      if ($post) {
+          $post_content = apply_filters('the_content', $post->post_content);
+      }
+  }
+
+  return $post_content;
+}
+
+add_shortcode('show_section', 'custom_post_shortcode');
+
+
 ?>

@@ -311,10 +311,11 @@
         padding: 6px 16px;
         border-radius: 15px;
         font-style: normal;
-        &:hover{
-            color: $primary;
-            background-color: #FFFF33;
-        }
+        
+    }
+    &__list-item:hover .our-services__button{
+        color: $primary;
+        background-color: #FFFF33;
     }
     &__list-item{
         display: flex;
@@ -401,6 +402,12 @@
     }
 }
 
+#brands-slider{
+    .swiper-button-prev, .swiper-button-next{
+        top: 50%;
+    }
+}
+
 .certification{
     background-color: #D6E3F9;
     padding: 60px 0;
@@ -408,6 +415,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 142px;
         img{
             max-width: 120px;
             height: auto;
