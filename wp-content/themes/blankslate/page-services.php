@@ -593,9 +593,6 @@
 
 
 
-<?php get_template_part('section-counters'); ?>
-<?php get_template_part('section-quality-services'); ?>
-
 <?php get_footer(); ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
