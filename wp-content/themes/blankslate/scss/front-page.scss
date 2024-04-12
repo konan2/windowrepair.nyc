@@ -200,6 +200,21 @@
             height: 100%;
         }
     }
+    &__button{
+        text-transform: none;
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: normal;
+        color: #0E192D;
+        background-color: #D6E3F9;
+        padding: 6px 16px;
+        border-radius: 15px;
+        font-style: normal;
+        &:hover{
+            color: $primary;
+            background-color: #FFFF33;
+        }
+    }
     &__list-item{
         display: flex;
         min-height: 450px;

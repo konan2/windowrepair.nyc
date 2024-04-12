@@ -252,7 +252,7 @@
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
-                        <button class="btn btn-primary btn-sm">Windows</button>
+                        <button class="btn btn-primary btn-sm our-services__button">Windows</button>
                     </div>
                 </div>
             </article>
@@ -264,7 +264,7 @@
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
-                        <button class="btn btn-primary btn-sm">Windows</button>
+                        <button class="btn btn-primary btn-sm our-services__button">Windows</button>
                     </div>
                 </div>
             </article>
@@ -276,7 +276,7 @@
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
-                        <button class="btn btn-primary btn-sm">Windows</button>
+                        <button class="btn btn-primary btn-sm our-services__button">Windows</button>
                     </div>
                 </div>
             </article>
@@ -288,7 +288,7 @@
                     <div class="our-services__list-item-wrapper">
                         <h5 class="our-services__list-item-title">Windows</h5>
                         <p class="our-services__list-item-text fw-light">Choose from our wide selection of custom made aluminium windows.</p>
-                        <button class="btn btn-primary btn-sm">Windows</button>
+                        <button class="btn btn-primary btn-sm our-services__button">Windows</button>
                     </div>
                 </div>
             </article>
@@ -413,50 +413,45 @@
 
 
 
-<section id="our-works" class="our-works container-fluid">
+<!-- <section id="our-works" class="our-works container-fluid">
     <div class="container-xl text-center">
         <strong class="text-primary-emphasis">Our work</strong>
         <h2>latest projects we made</h2>
     </div>
     <div class="container-xl">
 
+        <div class="our-works__filter">
+            <button class="tab tab--active" data-type="all">All</button>
+            <button class="tab" data-type="works-type-1">Windows</button>
+            <button class="tab" data-type="works-type-2">Glass</button>
+            <button class="tab" data-type="works-type-3">Doors</button>
+            <button class="tab" data-type="works-type-4">Mirrors</button>
+            <button class="tab" data-type="works-type-5">Shower Doors</button>
+        </div>
+        <div class="our-works__list parent">
+            <figure class="div1 filter-card" data-type="works-type-1">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+            <figure class="div2 filter-card" data-type="works-type-2">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+            <figure class="div3 filter-card" data-type="works-type-3">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+            <figure class="div4 filter-card" data-type="works-type-4">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+            <figure class="div5 filter-card" data-type="works-type-5">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+            <figure class="div6 filter-card" data-type="works-type-5">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+            </figure>
+        </div>
 
-    <div class="our-works__filter">
-    <button class="tab tab--active" data-type="all">All</button>
-    <button class="tab" data-type="works-type-1">Windows</button>
-    <button class="tab" data-type="works-type-2">Glass</button>
-    <button class="tab" data-type="works-type-3">Doors</button>
-    <button class="tab" data-type="works-type-4">Mirrors</button>
-    <button class="tab" data-type="works-type-5">Shower Doors</button>
-</div>
-
-<div class="our-works__list parent">
-    <figure class="div1 filter-card" data-type="works-type-1">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-    <figure class="div2 filter-card" data-type="works-type-2">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-    <figure class="div3 filter-card" data-type="works-type-3">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-    <figure class="div4 filter-card" data-type="works-type-4">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-    <figure class="div5 filter-card" data-type="works-type-5">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-    <figure class="div6 filter-card" data-type="works-type-5">
-        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
-    </figure>
-
-
-
+        </div>
    
-    <!-- Другие карточки здесь -->
-</div>
-   
-</section>
+</section> -->
 
 
 

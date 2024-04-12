@@ -40,8 +40,16 @@ h5{
     font-size: 22px;
 }
 
+h6{
+    font-size: 20px;
+}
+
 p{
     margin: 8px 0;
+}
+
+.icon{
+    display: inline-block;
 }
 
 // Buttons
@@ -56,20 +64,15 @@ p{
     color: $primary;
 }
 
-.btn-sm{
-    text-transform: none;
-    font-size: 12px;
-    line-height: 1.5;
-    font-weight: normal;
-    color: #0E192D;
-    background-color: #D6E3F9;
-    padding: 6px 16px;
-    border-radius: 15px;
-    font-style: normal;
-    &:hover{
-        color: $primary;
-        background-color: #FFFF33;
-    }
+.btn-medium{
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-secondary{
+    color: $primary;
+    background-color: $emphasis-color;
 }
 
 
@@ -241,6 +244,12 @@ ul {
     border-radius: 16px;
     box-shadow: 0px 1px 17px 0px #0E192D12;
     padding: 10px;
+}
+
+// Address
+
+address{
+    margin: 0;
 }
 
 // Tabs
