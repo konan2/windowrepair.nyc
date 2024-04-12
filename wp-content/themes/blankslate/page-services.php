@@ -245,27 +245,29 @@
 
 <section class="company-history container-fluid">
     <div class="company-history__wrapper container-xl">
-        <div class="row">
-            <div class="col-md-5 flex-column justify-content-center">
-                <span class="text-primary-emphasis">About us</span>
-                <h1>Company history</h1>
-                <p class="text-body-secondary">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.
+        <div class="company-history-block row">
+            <div class="company-history-block__left col-md-5 flex-column justify-content-center">
+                <span class="text-primary-emphasis poppins-bold">About us</span>
+                <h2>Company history</h2>
+                <p class="text-body-secondary">Window Repair and Installation services from us will address frame repair problems for many types of windows that include Double Hung Window, Picture Window, Bay Windows, Casement Window, Bow Windows, and Basement Window.</p>
+                
+                <p class="text-body-secondary">
                     If you are fed up with the noise and the dirt of the city that makes way into your clean home, then we can proffer you a simple, sensible, and affordable solution to get rid of the noise.</p>
                 <a href="#" class="btn btn-primary mt-4">Read more</a>
             </div>
-            <div class="col-md-6 offset-md-1">
+            <div class="company-history-block__right col-md-6 offset-md-1">
                 <div class="row gy-4">
                     <div class="col-md-6">
-                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                        <img src="../wp-content/themes/blankslate/img/company-history-img-01.png" alt="Company history - 01"   />    
                     </div>
                     <div class="col-md-6">
-                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                        <img src="../wp-content/themes/blankslate/img/company-history-img-02.png" alt="Company history - 02"  />    
                     </div>
                     <div class="col-md-6">
-                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                        <img src="../wp-content/themes/blankslate/img/company-history-img-03.png" alt="Company history - 03"  />    
                     </div>
                     <div class="col-md-6">
-                        <img src="../wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="255"  />    
+                        <img src="../wp-content/themes/blankslate/img/company-history-img-04.png" alt="Company history - 04"  />    
                     </div>
                 </div>
             </div>
@@ -720,14 +722,8 @@ const swiperBestQuality = new Swiper('.swiper-best-quality', {
         },
         768: {
             slidesPerView: 2,
-        },
-        1100: {
-            slidesPerView: 3,
-        },
-        1300: {
-            slidesPerView: 4,
-        },
-    }
+        }
+        }
 });
 }
 }
