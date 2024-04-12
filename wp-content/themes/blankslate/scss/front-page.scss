@@ -34,6 +34,16 @@
 .counters{
     &__item{
         position: relative;
+
+        @media (max-width:990px) {
+            width: 50%;
+        }
+
+        @media (max-width:550px) {
+            &:nth-child(-n+2) {
+                margin-bottom: 32px; 
+            }
+        }
     }
     &__value{
         color: $primary-muted-bg;
@@ -41,6 +51,16 @@
         line-height: 1;
         height: 90px;
         display: block;
+
+        @media (max-width:550px) {
+            font-size: 58px;
+            height: 58px;
+            }
+
+         @media (max-width:400px) {
+            font-size: 54px;
+            height: 54px;
+            }
     }
     &__text{
         position: absolute;
@@ -49,9 +69,71 @@
         transform: translateY(-50%) translateX(-50%);
         color: #0E192D;
         font-size: 22px;
+
+        @media (max-width:550px) {
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 24px;
+            width: 100%;
+            }
     }
 }
 
+.company-history__wrapper .offset-md-1 {
+    @media (max-width: 1150px) {
+        margin-left: 3%;
+    }
+
+    @media (max-width: 990px) {
+        width: 100%;
+        background-color: #D6E3F9;
+        padding: 16px 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.company-history-block {
+    @media (max-width: 990px) {
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+}
+
+.company-history-block__left {
+    @media (max-width: 990px) {
+        width: 100%;
+    }
+}
+
+.company-history-block__right>.gy-4 {
+    @media (max-width: 990px) {
+        margin: 0;
+        max-width: 550px;
+        justify-content: center;
+    }
+    @media (max-width:768px) {
+        max-width: 450px;
+    }
+}
+
+.company-history-block__right>.gy-4>.col-md-6 {
+    @media (max-width: 768px) {
+        width: max-content; 
+        padding: 0 8px;
+
+        &:nth-child(-n+2) {
+            margin-top: 0;
+        }
+
+        &:nth-last-child(-n+2) {
+            margin-top: 16px;
+        }
+    }
+}
 
 // quality-services
 
@@ -63,6 +145,19 @@
         border: 2px solid $primary-muted-bg;
         border-radius: 16px;
         box-shadow: 0 1px 17px rgb(14 25 45 / 7%);
+        max-width: 350px;
+
+        @media (max-width:550px) {
+            padding: 20px;
+            margin-top: 0;
+
+           > h4 {
+                font-size: 20px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+            }
+        }
+
     }
     &__icon{
         border-radius: 100%;
@@ -74,6 +169,12 @@
         margin-bottom: 8px;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (max-width:550px) {
+           background-size: 38px;
+           width: 60px;
+           height: 60px;
+        }
     }
 }
 
@@ -242,11 +343,23 @@
 
 
 .company-history{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto!important;
     position: relative;
     padding: 60px 0;
     img{
         max-height: 255px;
         max-width: 255px;
+
+        @media (max-width: 1150px) {
+            max-height: 240px;
+            max-width: 240px;
+        }
+        @media (max-width: 768px) {
+            max-height: 152px;
+            max-width: 152px;
+        }
     }
     &__wrapper{
         position: relative;
@@ -257,18 +370,22 @@
         height: 660px;
         width: 515px;
         position: absolute;
-        right: 25%;
-        transform: translateX(50%);
+        right: 0;
+        // transform: translateX(50%);
         top: 0;
         background-color: #D6E3F9;
         z-index: -2;
+
+        @media (max-width: 990px) {
+            display: none;
+        }
     }
     &::before{
         content: '';
         position: absolute;
         z-index: 1;
-        right: 25%;
-        transform: translateX(50%);
+        right: 0;
+        // transform: translateX(50%);
         top: 0;
         display: block;
         height: 660px;
@@ -277,6 +394,10 @@
         background-size: calc(50% + 8px) calc(50% + 5px);
         background-position: -16px -16px;
         z-index: -1;
+
+        @media (max-width: 990px) {
+            display: none;
+        }
     }
 }
 
