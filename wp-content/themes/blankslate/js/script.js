@@ -53,7 +53,7 @@ swiperContainers.forEach(function(container) {
 
 
 
-/// Filter
+/// Filter services
 
 const radioButtons = document.querySelectorAll('#our-services .filter-radio');
 
@@ -74,6 +74,45 @@ radioButtons.forEach(function(radioButton) {
       }
     });
   });
+});
+
+
+///////////////////////
+
+
+/// Filter works
+const tabs = document.querySelectorAll('#our-works .tab');
+const cards = document.querySelectorAll('#our-works .filter-card');
+
+// Добавляем обработчик событий для каждой вкладки
+tabs.forEach(function(tab) {
+  tab.addEventListener('click', function() {
+    
+    // Удаляем класс .tab--active у всех элементов с классом .tab
+    tabs.forEach(function(otherTab) {
+      otherTab.classList.remove('tab--active');
+    });
+
+    // Добавляем класс .tab--active к текущему элементу
+    this.classList.add('tab--active');
+
+    const type = this.dataset.type; // Получаем значение атрибута data-type элемента
+
+    // Перебираем все карточки и проверяем их data-type
+    cards.forEach(function(card) {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = 'block'; // Показываем карточку, если она соответствует выбранному типу или если выбран фильтр "все"
+      } 
+      else {
+        card.style.display = 'none'; // Скрываем карточку, если она не соответствует выбранному типу
+      }
+    });
+  });
+
+  // Установим активный таб по умолчанию
+  // if (tab.dataset.type === 'all') {
+  //   tab.click();
+  // }
 });
 
 

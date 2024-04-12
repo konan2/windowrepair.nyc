@@ -390,15 +390,85 @@
 
 
 
-<section class="container-fluid">
+<section class="certification container-fluid">
     <div class="container-xl">
         <div class="row">
             <div class="col-md-6 flex-column justify-content-center">
-                <h2>OUR MANUFACTURING</h2>
-                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2>OUR CERTIFICATION</h2>
+                <p class="text-body-secondary">We are recognized all over New York and New Jersey - our </br> awards throughit.</p>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 row">
+                <div class="col-4"><div class="card">
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="120" height="120"  />  
+                </div></div>
+                <div class="col-4"><div class="card">
+                <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="120" height="120"  />  
+                </div></div>
+                <div class="col-4"><div class="card">
+                    <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="120" height="120"  />  
+                </div></div>
+            </div>
     </div>
 </section>
+
+
+
+<section id="our-works" class="our-works container-fluid">
+    <div class="container-xl text-center">
+        <strong class="text-primary-emphasis">Our work</strong>
+        <h2>latest projects we made</h2>
+    </div>
+    <div class="container-xl">
+
+
+    <div class="our-works__filter">
+    <button class="tab tab--active" data-type="all">All</button>
+    <button class="tab" data-type="works-type-1">Windows</button>
+    <button class="tab" data-type="works-type-2">Glass</button>
+    <button class="tab" data-type="works-type-3">Doors</button>
+    <button class="tab" data-type="works-type-4">Mirrors</button>
+    <button class="tab" data-type="works-type-5">Shower Doors</button>
+</div>
+
+<div class="our-works__list parent">
+    <figure class="div1 filter-card" data-type="works-type-1">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+    <figure class="div2 filter-card" data-type="works-type-2">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+    <figure class="div3 filter-card" data-type="works-type-3">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+    <figure class="div4 filter-card" data-type="works-type-4">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+    <figure class="div5 filter-card" data-type="works-type-5">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+    <figure class="div6 filter-card" data-type="works-type-5">
+        <img src="http://localhost/window-repair-nyc/wp-content/uploads/2024/04/img1.jpg" alt="" width="255" height="450" />
+    </figure>
+
+
+
+   
+    <!-- Другие карточки здесь -->
+</div>
+
+    
+       
+   
+</section>
+
+
+
+
+
+
+
+
+
+
 
 <?php get_footer();?>

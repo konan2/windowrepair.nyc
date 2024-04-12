@@ -232,3 +232,35 @@ ul {
     }
 
 }
+
+
+// Cards
+
+.card{
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 1px 17px 0px #0E192D12;
+    padding: 10px;
+}
+
+// Tabs
+
+.tab{
+    height: 36px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid transparent;
+    line-height: 1.5;
+    margin: 0 16px;
+    font-weight: 600;
+    color: #BCBCBC;
+    transition: all .2s linear;
+    background: none;
+    &--active{
+        color: $primary;
+        border-color: $primary;
+    }
+    &:hover{
+        color: #789AEE;
+    }
+}

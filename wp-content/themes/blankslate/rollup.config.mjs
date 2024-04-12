@@ -14,10 +14,7 @@ export default [
       }
     },
     plugins: [
-      terser({compress: {drop_console: true, module: true}}),
-
-      // Другие плагины Rollup, которые у вас уже есть, если есть
-      //autoReload, // Добавляем плагин автоматической перезагрузки
+      //terser({compress: {drop_console: true, module: true}}),
     ]
   },
   {
