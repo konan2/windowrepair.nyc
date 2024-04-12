@@ -63,6 +63,19 @@
         border: 2px solid $primary-muted-bg;
         border-radius: 16px;
         box-shadow: 0 1px 17px rgb(14 25 45 / 7%);
+        max-width: 350px;
+
+        @media (max-width:550px) {
+            padding: 20px;
+            margin-top: 0;
+
+           > h4 {
+                font-size: 20px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+            }
+        }
+
     }
     &__icon{
         border-radius: 100%;
@@ -74,6 +87,12 @@
         margin-bottom: 8px;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (max-width:550px) {
+           background-size: 38px;
+           width: 60px;
+           height: 60px;
+        }
     }
 }
 

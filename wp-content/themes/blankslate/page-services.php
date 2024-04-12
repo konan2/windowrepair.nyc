@@ -30,48 +30,54 @@
 <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
 <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-<div class="quality-services__wrapper row row-cols-1"><article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+<div class="swiper-best-quality">
+<div class="quality-services__wrapper row row-cols-1 swiper-wrapper">
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+   </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
 </div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
-<article class="col-4">
-<div class="quality-services__item">
-<span class="quality-services__icon"></span>
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-</div>
-</article>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 </div>
 </div>
 </section>
@@ -687,7 +693,46 @@ $(document).ready(function() {
         },
     }
 });
-   
+
+function initSwipersBestQuality() {
+  if (window.innerWidth < 990) {
+const swiperBestQuality = new Swiper('.swiper-best-quality', {
+    grabCursor: true,
+    slidesPerView: 4,
+    initialSlide: 0,
+    speed: 1000,
+    pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        550: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1100: {
+            slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 4,
+        },
+    }
+});
+}
+}
+initSwipersBestQuality();
+
     </script>
 
     
