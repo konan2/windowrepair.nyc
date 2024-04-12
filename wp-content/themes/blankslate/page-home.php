@@ -173,42 +173,50 @@
 
     <div class="container-xl">
         <ul class="best-solutions__list row">
-            <li class="best-solutions__item col-3 justify-content-center">
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <li class="col-3">
+                <div class="best-solutions__item justify-content-center">
+                    <div class="best-solutions__item-wrapper">
+                        <div class="best-solutions__item-content">
+                            <div>
+                                <h5 class="best-solutions__item-title">Design Visit</h5>
+                                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <li class="col-3">
+                <div class="best-solutions__item justify-content-center">
+                    <div class="best-solutions__item-wrapper">
+                        <div class="best-solutions__item-content">
+                            <div>
+                                <h5 class="best-solutions__item-title">Design Visit</h5>
+                                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <li class="col-3">
+                <div class="best-solutions__item justify-content-center">
+                    <div class="best-solutions__item-wrapper">
+                        <div class="best-solutions__item-content">
+                            <div>
+                                <h5 class="best-solutions__item-title">Design Visit</h5>
+                                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </li>  
-            <li class="best-solutions__item col-3 justify-content-center">
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <li class="col-3">
+                <div class="best-solutions__item justify-content-center">
+                    <div class="best-solutions__item-wrapper">
+                        <div class="best-solutions__item-content">
+                            <div>
+                                <h5 class="best-solutions__item-title">Design Visit</h5>
+                                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
                         </div>
                     </div>
                 </div>
