@@ -4,6 +4,6 @@
 error-logs.txt
 wp-config.php
 wp-content/themes/blankslate/node_modules
-node_modules
-wp-content/themes/blankslate/build
-build
+node_modules/
+wp-content/themes/blankslate/build/*
+build/

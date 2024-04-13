@@ -1,12 +1,6 @@
-// import Modal from '../node_modules/bootstrap/js/src/modal';
-// import Tab from '../node_modules/bootstrap/js/src/tab';
-// import Dropdown from '../node_modules/bootstrap/js/src/dropdown';
-// import Tooltip from '../node_modules/bootstrap/js/src/tooltip';
-// import Carousel from '../node_modules/bootstrap/js/src/carousel';
-
-//import '../node_modules/bootstrap/js/src/carousel';
+import 'bootstrap/js/dist/util';
+import 'bootstrap/js/dist/collapse';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
-
 
 window.addEventListener('DOMContentLoaded',function () {
 
