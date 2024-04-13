@@ -260,7 +260,12 @@ input:checked+label:before {
     border-bottom: 1px solid #fff;
     padding-bottom: 16px;
 
-}
+    @media (max-width: 550px) {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    }
+
 
 .show-comment-form:after {
     content: " ";

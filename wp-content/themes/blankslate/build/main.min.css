@@ -13959,6 +13959,12 @@ input:checked + label:before {
   border-bottom: 1px solid #fff;
   padding-bottom: 16px;
 }
+@media (max-width: 550px) {
+  .show-comment-form {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
 
 .show-comment-form:after {
   content: " ";
@@ -14369,7 +14375,7 @@ input:checked + label:before {
 .not-found-block__title {
   margin: 0;
 }
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .not-found-block__img {
     width: 300px;
   }
