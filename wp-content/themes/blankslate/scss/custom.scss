@@ -7,6 +7,7 @@ body{
     line-height: 1.5;
     font-weight: 400;
     font-style: normal;
+    min-width: 360px;
 }
 
 // Fonts
@@ -87,9 +88,13 @@ p{
 // Images
 
 img{
-    display: block;
+    display: inline-block;
     max-width: 100%;
     height: auto;
+}
+
+figure{
+    margin: 0;
 }
 
 .img-preview--video::before{
@@ -118,7 +123,7 @@ img{
 .post-list{
     padding: 0; 
     list-style: none;
-    margin: 16px 0 0 0;
+    margin: 8px 0 24px 8px;
     &__item{
         position: relative;
         padding: 0;
@@ -178,6 +183,9 @@ ul {
 .form-check-inline{
     cursor: pointer;
     margin-right: 24px;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .form-check-input:checked{
@@ -193,8 +201,12 @@ ul {
 }
 
 .page-wrapper > section:not(:first-child){
-    margin: 40px 0;
+    margin-top: 80px;
+    @media (max-width: 576px) {
+        margin-top: 60px;
+      }
 }
+
 
 // Carousel 
 
@@ -203,7 +215,7 @@ ul {
     &-button-prev, &-button-next{
         width: 18px;
         height: 18px;
-        top: 40px
+        top: 80px
     }
     &-slide__card{
         background-color: #fff;
@@ -212,14 +224,21 @@ ul {
         min-height: 96px;
         box-shadow: 0px 1px 16px 0px #0E192D12;
     }
-    &-button-prev{
-        left: -18px
-    }
-    &-button-next{
-        right: -18px;
-    }
+    // &-button-prev{
+    //     left: -18px
+    // }
+    // &-button-next{
+    //     right: -18px;
+    // }
+    @media (max-width: 576px) {
+        &-button-prev{
+            left: 15px;
+        }
+        &-button-next{
+            right: 15px;
+        }
+      }
     &-slide{
-        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -244,6 +263,14 @@ ul {
 
 }
 
+
+.mobile-slider{
+    position: relative;
+    .swiper-button-prev, .swiper-button-next{
+        top: auto;
+        bottom: 5px;
+    }
+}
 
 // Cards
 
@@ -281,3 +308,4 @@ address{
         color: #789AEE;
     }
 }
+
