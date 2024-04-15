@@ -13910,7 +13910,8 @@ input:checked + label:before {
     margin-left: unset;
   }
 }
-body.page-template-page-services {
+body.page-template-page-services,
+body.page-template-page-services-hub {
   min-width: auto;
 }
 
