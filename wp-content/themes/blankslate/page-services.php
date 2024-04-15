@@ -15,7 +15,7 @@
 
 <section id="counters" class="counters container-fluid">
 <div class="container-xl">
-<div class="row row-cols-1 row-cols-md-4 text-center">
+<div class="row row-cols-1 row-cols-md-4 text-center counters-service__item">
 <h3 class="counters__item"><span class="counters__value">11 203</span> <span class="counters__text">Happy clients</span></h3>
 <h3 class="counters__item"><span class="counters__value">4.67</span> <span class="counters__text">Average rating</span></h3>
 <h3 class="counters__item"><span class="counters__value">14 420</span> <span class="counters__text">Jobs complete</span></h3>
@@ -25,13 +25,13 @@
 </section>
 
 
-<section id="quality-services" class="quality-services container-fluid">
+<section id="quality-services" class="quality-services container-fluid quality-services-serv-page">
 <div class="container-xl text-center">
 <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
 <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
 <div class="swiper-best-quality">
-<div class="quality-services__wrapper row row-cols-1 swiper-wrapper">
+<div class="quality-services__wrapper row row-cols-1 swiper-wrapper quality-services-serv-page">
     <article class="col-4 swiper-slide">
         <div class="quality-services__item">
             <span class="quality-services__icon"></span>
@@ -243,7 +243,7 @@
     </div>
 </section>
 
-<section class="company-history container-fluid">
+<section class="company-history container-fluid company-history-serv-page">
     <div class="company-history__wrapper container-xl">
         <div class="company-history-block row">
             <div class="company-history-block__left col-md-5 flex-column justify-content-center">
@@ -785,6 +785,43 @@ $(document).ready(function() {
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
+
+var swiperContainers = document.querySelectorAll('.swiper');
+
+swiperContainers.forEach(function(container) {
+  new Swiper(container, {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 4,
+    initialSlide: 0,
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 1000,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      550: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1300: {
+        slidesPerView: 4,
+      },
+    }
+  });
+});
    
    const swiperIconsPartners = new Swiper('.swiper-google-reviews', {
     loop: true,

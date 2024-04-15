@@ -13795,6 +13795,73 @@ input:checked + label:before {
     margin-left: unset;
   }
 }
+body.page-template-page-services {
+  min-width: auto;
+}
+
+@media (max-width: 990px) {
+  .counters-service__item .counters__item {
+    width: 50%;
+  }
+}
+
+.quality-services-serv-page .quality-services__item {
+  max-width: 350px;
+}
+
+.company-history-serv-page .company-history img {
+  max-width: 255px;
+}
+@media (max-width: 1150px) {
+  .company-history-serv-page .company-history img {
+    max-height: 240px;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 990px) {
+  .company-history-serv-page {
+    padding-top: 0;
+  }
+}
+
+.company-history-serv-page .company-history__wrapper {
+  position: relative;
+}
+
+@media (max-width: 990px) {
+  .company-history-serv-page.company-history::after {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .company-history-serv-page.company-history::before {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .quality-services-serv-page .container-xl,
+  .quality-services-serv-page .swiper-best-quality .swiper-slide {
+    padding: 0;
+  }
+}
+.company-history-serv-page img {
+  max-height: 255px;
+  max-width: 255px;
+}
+@media (max-width: 1150px) {
+  .company-history-serv-page img {
+    max-height: 240px;
+    max-width: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .company-history-serv-page img {
+    max-height: 152px;
+    max-width: 152px;
+  }
+}
+
 .not-found-section {
   padding: 40px 0;
 }
