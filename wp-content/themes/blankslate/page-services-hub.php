@@ -286,9 +286,6 @@
 </section>
 
 
-<?php get_template_part('section-counters'); ?>
-<?php get_template_part('section-quality-services'); ?>
-
 <?php get_footer(); ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -311,61 +308,21 @@
     });
 
 
-    $(document).ready(function(){
-     var defaultCity = 'new-york';
-     showDistricts(defaultCity);
+  //   $(document).ready(function(){
+  //    var defaultCity = 'new-york';
+  //    showDistricts(defaultCity);
    
-     function showDistricts(city) {
-     $('.new-york, .new-jersey, .connecticut').hide();
-     $('.' + city).show();
-     $(".filter-button-city").removeClass("active");
-     $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
-     }
+  //    function showDistricts(city) {
+  //    $('.new-york, .new-jersey, .connecticut').hide();
+  //    $('.' + city).show();
+  //    $(".filter-button-city").removeClass("active");
+  //    $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
+  //    }
 
-    $(".filter-button-city").click(function(){
-    var city = $(this).attr('data-filter-city');
-    showDistricts(city);
-    });
-  });
+  //   $(".filter-button-city").click(function(){
+  //   var city = $(this).attr('data-filter-city');
+  //   showDistricts(city);
+  //   });
+  // });
 </script>
 
-<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<script>
-   
-//    const swiperBestSolutions = new Swiper('.swiper-best-solutions', {
-//     grabCursor: true,
-//     slidesPerView: 4,
-//     initialSlide: 0,
-//     speed: 1000,
-//     pagination: {
-//           el: ".swiper-pagination",
-//           clickable: true,
-//         },
-//     navigation: {
-//           nextEl: ".swiper-button-next",
-//           prevEl: ".swiper-button-prev",
-//         },
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 1,
-//         },
-//         550: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1100: {
-//             slidesPerView: 3,
-//         },
-//         1300: {
-//             slidesPerView: 4,
-//         },
-//     }
-// });
-</script>
