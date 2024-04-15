@@ -1,0 +1,50 @@
+//section about us hero
+
+.rewiews-table-section.services-hero-section {
+    background: url("../img/rewiews-hero-img.png") no-repeat;
+    background-position: center;
+
+    @media (max-width: 768px) {
+        background-position: 50% center;
+    }
+
+    @media (max-width: 550px) {
+        background: #D6E3F9;
+    }
+}
+
+@media (max-width: 550px) {
+    .rewiews-table-section.services-hero-section:after {
+        background: url("../img/rewiews-hero-img-sm.png") no-repeat;
+        background-size: cover;
+    }
+}
+
+.rewiews-table-section .main-title-block {
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+//google rewiews table section
+
+.google-reviews-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+
+    @media (max-width:990px) {
+        row-gap: 32px;
+        column-gap: 20px;
+    }
+
+    @media (max-width:550px) {
+        margin-top: 32px;
+    }
+}

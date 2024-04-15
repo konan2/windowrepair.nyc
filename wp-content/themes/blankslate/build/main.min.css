@@ -14353,6 +14353,17 @@ input:checked + label:before {
   padding: 32px 20px;
   max-width: 350px;
 }
+@media (max-width: 990px) {
+  .google-reviews-item {
+    max-width: 320px;
+    padding: 20px 16px;
+  }
+}
+@media (max-width: 550px) {
+  .google-reviews-item {
+    padding: 20px 16px;
+  }
+}
 .google-reviews-item__top {
   display: flex;
   flex-direction: row;
@@ -14937,6 +14948,58 @@ body.page-template-page-services-hub {
 
 .section-tabs-our-team-block .item-our-team-block:hover {
   box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
+}
+
+.rewiews-table-section.services-hero-section {
+  background: url("../img/rewiews-hero-img.png") no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .rewiews-table-section.services-hero-section {
+    background-position: 50% center;
+  }
+}
+@media (max-width: 550px) {
+  .rewiews-table-section.services-hero-section {
+    background: #D6E3F9;
+  }
+}
+
+@media (max-width: 550px) {
+  .rewiews-table-section.services-hero-section:after {
+    background: url("../img/rewiews-hero-img-sm.png") no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .rewiews-table-section .main-title-block {
+    width: 100%;
+  }
+}
+
+.google-reviews-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+}
+@media (max-width: 990px) {
+  .google-reviews-table {
+    row-gap: 32px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .google-reviews-table {
+    margin-top: 32px;
+  }
 }
 
 .footer {
