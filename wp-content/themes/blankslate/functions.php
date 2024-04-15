@@ -14,6 +14,17 @@
 //  add_action( 'wp_default_scripts', 'remove_jquery_migrate' );
 
 
+add_action( 'init', 'true_jquery_register' );
+ 
+function true_jquery_register() {
+	if ( !is_admin() ) {
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', ( 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' ), false, null, true );
+		wp_enqueue_script( 'jquery' );
+	}
+}
+
+
 function include_my_scripts() {
 
   // Подключаем стили
