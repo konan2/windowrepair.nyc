@@ -1,7 +1,8 @@
 .header{
+    position: relative;
     background-color: #fff;
     &__menu-button{
-        margin-left: 48px;
+        margin-left: 30px;
     }
 }
 
@@ -18,7 +19,6 @@
         min-height: 84px;
     }
     &-container{
-        position: relative;
         display: flex;
         justify-content: flex-end;
         .navbar-brand{
@@ -70,9 +70,6 @@
 }
 
 .header__menu{
-    &-wrapper{
-        position: relative;
-    }
     &-container{
         justify-content: flex-end;
         padding-top: 16px;
@@ -80,7 +77,7 @@
     }
     .nav-item{
         margin: 0 25px;
-        position: relative;
+        
     }
     &.navbar-nav .nav-link{
         padding: 0;
@@ -90,8 +87,101 @@
             color: $primary;
         }
     }
+    .dropdown-menu__arrows{
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+    .dropdown-toggle{
+        .icon{
+            margin-left: 4px;
+        }
+        &::after{
+            display: none;
+        }
+        &.show{
+            .icon{
+                transform: rotate(180deg);
+            }
+            position: relative;
+            color: #789AEE;
+            z-index: 1001;
+            .dropdown-menu__arrows{
+                display: block;
+                &:after, &:before {
+                    bottom: -26px;
+                    left: 50%;
+                    border: solid transparent;
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                }
+                
+                &:after {
+                    border-bottom-color: #fff;
+                    border-width: 15px;
+                    margin-left: -15px;
+                }
+                &:before {
+                    border-bottom-color: #D6E3F9;
+                    border-width: 16px;
+                    margin-left: -16px;
+                }
+            }
+        }
+    }
+
+    
+    .dropdown-menu{
+        margin: 0;
+        padding: 32px 0;
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #D6E3F9;
+        border-bottom: 1px solid #D6E3F9;
+        .post-list__item{
+            font-weight: normal;
+            color: #7A7A7A;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    &-title{
+        font-weight: bold;
+        color: $primary;
+    }
+    &-submenu{  
+        margin: 20px 0;
+    }
+}
+
+
+
+.simple-menu-dropdown{
+    position: relative;
+    .dropdown-menu{
+        top: 50px;
+        border: 1px solid #D6E3F9;
+        padding: 0 16px 16px 16px;
+    }
 }
 
 .navbar{
     padding: 0;
+}
+
+
+
+/// Mobile 
+
+.header__menu-container.show{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
 }
