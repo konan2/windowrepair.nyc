@@ -476,10 +476,11 @@
     <div class="manufacturing__wrapper container-xl container">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="order-1 order-md-0 p-0 p-md-3">
-                
+                <div class="d-flex">
                     <div class="img-preview img-preview--video">
                         <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/manufacturing-video-preview.png" alt="" width="475" height="475" />
                     </div>
+                </div>    
 
             </div>
             <div class="flex-column justify-content-center">

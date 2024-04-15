@@ -18,6 +18,7 @@
         </nav>
     </header> -->
 
+    
 
     <header id="header" class="header">
         <section class="header__contacts">
@@ -119,16 +120,29 @@
                             <a class="nav-link active" href="/">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/docs/5.0/examples/">Residential</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Residential</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://icons.getbootstrap.com/">Commercial</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Commercial</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://themes.getbootstrap.com/">About Us</a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                </ul>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://blog.getbootstrap.com/" >Contact Us</a>
+                        <a class="nav-link" href="#" >Contact Us</a>
                         </li>
                     </ul>
                     <a class="btn btn-secondary btn-medium header__menu-button" href="/docs/5.0/getting-started/download/">Request a call</a>

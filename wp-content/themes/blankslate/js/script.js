@@ -1,5 +1,6 @@
 import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/dropdown';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 
 window.addEventListener('DOMContentLoaded',function () {
