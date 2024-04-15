@@ -399,7 +399,77 @@
 </div>
 </section>
 
+<section  class="clients-google-reviews container-fluid">
+    <div class="container-xl text-center">
+        <h2>what <span class="text-primary-emphasis">other’s says</span></h2>
+        <p class="text-body-secondary">Our professional glaziers are always going above and beyond to satisfy every customer, as customer satisfaction is our top priority</p>
+    </div>
 
+
+    <div class="swiper-google-reviews">
+            <div class="swiper-wrapper">
+        
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Kurt Bates</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Marc Anthony</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Kurt Bates</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="google-reviews-item">
+                        <div class="google-reviews-item__top">
+                            <div class="google-reviews-item__title">
+                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                            </div>
+                        </div>
+                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
+                   </div>
+                </div>
+           </div>
+           <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+   </div>
+</section>
 
 
 <section class="manufacturing">
@@ -457,6 +527,201 @@
     </div>
 </section>
 
+<section class="our-work-section">
+   <div class="container-xl text-center">
+        <strong class="text-primary-emphasis">Our work</strong>
+        <h2>latest projects we made</h2>
+    </div>
+
+    <div class="container">
+    <div class="tabs-show-photos-block-21">
+        <div class="photos-tabs-22">
+            <a href="#tab_04" data-tab="tab_04" class="p-nav-tab active"> All</a>
+            <a href="#tab_05" data-tab="tab_05" class="p-nav-tab "> Windows </a>
+            <a href="#tab_06" data-tab="tab_06" class="p-nav-tab"> Glass </a>
+            <a href="#tab_06" data-tab="tab_07" class="p-nav-tab"> Doors </a>
+            <a href="#tab_07" data-tab="tab_08" class="p-nav-tab"> Mirrors </a>
+            <a href="#tab_08" data-tab="tab_09" class="p-nav-tab"> Shower Doors </a>
+        </div>
+
+            <div id="tab_04" class="b-tab active">
+                <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-4">
+                        <div class="swiper-wrapper"> 
+                            <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>  
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+            <div id="tab_05" class="b-tab">
+                <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-5">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+            <div id="tab_06" class="b-tab">
+                <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-6">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+            <div id="tab_07" class="b-tab">
+                <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-7">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+            <div id="tab_08" class="b-tab">
+            <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-8">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                </div>
+            </div>
+            <div id="tab_09" class="b-tab">
+            <div class="block-show-photos">
+                <div class="swiper-show-photos swiper-show-photos-9">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-1.png" alt="Latest projects we made - 01 "/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-2.png" alt="Latest projects we made - 02"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-3.png" alt="Latest projects we made - 03"/>   
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-4.png" alt="Latest projects we made - 04"/>  
+                        </div>
+                        <div class="swiper-slide photo-slide">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-5.png" alt="Latest projects we made - 05"/>      
+                        </div>
+                        <div class="swiper-slide photo-slide ">
+                            <img class="swiper-show-photos__img" src="../wp-content/themes/blankslate/img/our-work-6.png" alt="Latest projects we made - 06"/>   
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+</section>
+
 <!-- [show_section post_id="53"] -->
 
 <section id="windows-banner" class="windows-banner contrast-banner container-fluid">
@@ -482,6 +747,55 @@
     </div>
 </section>
 
+
+
+<section class="areas-section">
+     <div class="container">
+
+     <div class="areas-block">
+
+      <div class="areas-block__left">
+        <h2 class="areas-block__title">AREAS WE SERVICES</h2>
+        <p class="areas-block__desc">Choose your state</p>
+       
+         <div class="row areas-list">
+            <div class="col-auto areas-list__city">
+                <button class="btn btn-default filter-button-city poppins-semibold " data-filter-city="connecticut">CONNECTICUT</button>
+                <button class="btn btn-default filter-button-city poppins-semibold" data-filter-city="new-jersey">NEW JERSEY</button>
+                <button class="btn btn-default filter-button-city poppins-semibold active" data-filter-city="new-york">NEW YORK </button>
+            </div>
+            <div class="col-6 areas-list__location">
+                <button class="btn poppins-semibold new-york" >New York City</button>
+                <button class="btn poppins-semibold new-york" >New Rochelle</button>
+                <button class="btn poppins-semibold new-york" >Hempstead </button>
+                <button class="btn poppins-semibold new-york" >White Plains </button>
+                <button class="btn poppins-semibold new-york" >Yonkers </button>
+
+                <button class="btn poppins-semibold new-jersey" >Jersey City </button>
+                <button class="btn poppins-semibold new-jersey" >Newark </button>
+                <button class="btn poppins-semibold new-jersey" >Paterson </button>
+                <button class="btn poppins-semibold new-jersey" >Elizabeth </button>
+                <button class="btn poppins-semibold new-jersey" >Edison </button>
+                <button class="btn poppins-semibold new-jersey" >Clifton </button>
+                <button class="btn poppins-semibold new-jersey" >Union City </button>
+
+                <button class="btn poppins-semibold connecticut" >Stamford </button>
+                <button class="btn poppins-semibold connecticut" >Norwalk </button>
+                <button class="btn poppins-semibold connecticut" >Bridgeport </button>
+            </div>
+         </div>
+     </div>
+
+
+     <div class="areas-block__right">
+        <div class="ratio ratio-16x9">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96714.68291250926!2d-74.05953969406828!3d40.75468158321536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20Nowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1672242259543!5m2!1spl!2spl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </div>
+
+     </div>
+     </div>
+</section>
 
 
 <?php get_footer();?>
