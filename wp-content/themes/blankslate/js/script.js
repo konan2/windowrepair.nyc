@@ -2,6 +2,7 @@ import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
+import $ from 'jquery';
 
 window.addEventListener('DOMContentLoaded',function () {
 
@@ -417,4 +418,62 @@ const swiperShowPhotossss4 = new Swiper('.swiper-show-photos-4', {
 }
 initSwipers();
 
+});
+
+//Tabs map
+
+$(document).ready(function(){
+  var defaultCity = 'new-york';
+  showDistricts(defaultCity);
+
+  function showDistricts(city) {
+  $('.new-york, .new-jersey, .connecticut').hide();
+  $('.' + city).show();
+  $(".filter-button-city").removeClass("active");
+  $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
+  }
+
+ $(".filter-button-city").click(function(){
+ var city = $(this).attr('data-filter-city');
+ showDistricts(city);
+ });
+});
+
+
+var showCommentBtn = document.getElementById('show-comment-btn');
+var commentForm = document.getElementById('comment-form');
+
+if (showCommentBtn) {
+  showCommentBtn.addEventListener('click', function() {
+      if (commentForm && commentForm.style.display === 'none') {
+          commentForm.style.display = 'block';
+          showCommentBtn.style.display = 'none';
+      }
+  });
+}
+
+//Counter block
+
+$(document).ready(function() {
+ $('.counters__value').each(function () {
+     var value = parseFloat($(this).text().replace(/,/g, '').replace(/\s/g, ''));
+
+     var isDecimal = value % 1 !== 0;
+
+     $(this).prop('Counter', 0).animate({
+         Counter: value
+     }, {
+         duration: 4000,
+         easing: 'swing',
+         step: function (now) {
+             var formattedValue;
+             if (isDecimal) {
+                 formattedValue = now.toLocaleString('en', {minimumFractionDigits: 1, maximumFractionDigits: 2, useGrouping: false}).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+             } else {
+                 formattedValue = Math.ceil(now).toLocaleString('en').replace(/,/g, " ");
+             }
+             $(this).text(formattedValue);
+         }
+     });
+ });
 });
