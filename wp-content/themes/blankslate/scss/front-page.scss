@@ -32,7 +32,7 @@
         position: relative;
         z-index: 1;
     }
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
         &::after,  &::before{
             width: 100%;
         }
@@ -254,7 +254,6 @@
                 padding-top: 0;
                 margin-bottom: 20px;
             }
-        
         }
     }
 }

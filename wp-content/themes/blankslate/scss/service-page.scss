@@ -284,16 +284,12 @@ input:checked+label:before {
 
 .contact-banner-section {
     background: url("../img/request-banner.png") no-repeat;
-    height: 367px;
     background-position: center;
+    background-size: cover;
+    min-height: 367px;
     display: flex;
     align-items: center;
     padding: 60px 0;
-
-    @media (max-width: 990px) {
-        height: auto;
-        background-size: cover;
-    }
 
     @media (max-width:768px) {
         padding: 32px 0;

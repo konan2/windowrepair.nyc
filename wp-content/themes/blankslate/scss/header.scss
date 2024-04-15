@@ -8,33 +8,42 @@
 .header__contacts{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #2C5697;
     min-height: 64px;
+    padding: 10px 0;
     color: #fff;
     font-size: 12px;
+    @media (max-width: 992px) {
+        min-height: 84px;
+    }
     &-container{
         position: relative;
-        padding-top: 10px;
-        padding-bottom: 10px;
         display: flex;
         justify-content: flex-end;
         .navbar-brand{
-            position: absolute;
-            top: 7px;
-            left: 0;
             margin: 0;
             padding: 0;
+            margin-bottom: -50%;
+            @media (max-width: 992px) {
+                margin-bottom: 0;
+            }
+            @media (max-width: 992px) {
+                &__image{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
         }
     }
     &-item{
-        padding: 0 20px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
-        &:last-child{
-            padding-right: 0;
-        }
-        &:not(:last-child){
-            border-right: 1px solid #D6E3F9;
+        @media (min-width: 992px) {
+            &:not(:first-of-type){
+                border-left: 1px solid #D6E3F9;
+            }
         }
     }
     a{
@@ -52,10 +61,12 @@
     background-color: #fff;
     border-radius: 100%;
     color: $primary;
-    margin-right: 0;
+    margin-left: 12px;
     height: 18px;
     width: 18px;
-    margin-right: 12px;
+    &:first-child{
+        margin-left: 0;
+    }
 }
 
 .header__menu{
@@ -78,4 +89,8 @@
             color: $primary;
         }
     }
+}
+
+.navbar{
+    padding: 0;
 }

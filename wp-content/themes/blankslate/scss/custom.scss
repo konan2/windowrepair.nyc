@@ -59,6 +59,7 @@ p{
 
 .icon{
     display: inline-block;
+    vertical-align: text-bottom;
 }
 
 // Buttons
@@ -224,12 +225,14 @@ ul {
         min-height: 96px;
         box-shadow: 0px 1px 16px 0px #0E192D12;
     }
-    // &-button-prev{
-    //     left: -18px
-    // }
-    // &-button-next{
-    //     right: -18px;
-    // }
+    &-button-prev{
+        //left: -18px;
+        left: 0;
+    }
+    &-button-next{
+        //right: -18px;
+        right: 0;
+    }
     @media (max-width: 576px) {
         &-button-prev{
             left: 15px;
@@ -269,6 +272,11 @@ ul {
     .swiper-button-prev, .swiper-button-next{
         top: auto;
         bottom: 5px;
+    }
+    @media (min-width: 576px) {
+        .swiper-button-prev, .swiper-button-next{
+            display: none;
+        }
     }
 }
 

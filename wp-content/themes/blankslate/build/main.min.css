@@ -1,41 +1,5 @@
 @charset "UTF-8";
 @import "../node_modules/swiper/swiper-bundle.min.css";
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -12056,6 +12020,7 @@ p {
 
 .icon {
   display: inline-block;
+  vertical-align: text-bottom;
 }
 
 .btn {
@@ -12206,6 +12171,12 @@ ul {
   min-height: 96px;
   box-shadow: 0px 1px 16px 0px rgba(14, 25, 45, 0.0705882353);
 }
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
 @media (max-width: 576px) {
   .swiper-button-prev {
     left: 15px;
@@ -12242,6 +12213,11 @@ ul {
 .mobile-slider .swiper-button-prev, .mobile-slider .swiper-button-next {
   top: auto;
   bottom: 5px;
+}
+@media (min-width: 576px) {
+  .mobile-slider .swiper-button-prev, .mobile-slider .swiper-button-next {
+    display: none;
+  }
 }
 
 .card {
@@ -12285,35 +12261,48 @@ address {
 .header__contacts {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #2C5697;
   min-height: 64px;
+  padding: 10px 0;
   color: #fff;
   font-size: 12px;
 }
+@media (max-width: 992px) {
+  .header__contacts {
+    min-height: 84px;
+  }
+}
 .header__contacts-container {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   justify-content: flex-end;
 }
 .header__contacts-container .navbar-brand {
-  position: absolute;
-  top: 7px;
-  left: 0;
   margin: 0;
   padding: 0;
+  margin-bottom: -50%;
+}
+@media (max-width: 992px) {
+  .header__contacts-container .navbar-brand {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .header__contacts-container .navbar-brand__image {
+    width: 60px;
+    height: 60px;
+  }
 }
 .header__contacts-item {
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
 }
-.header__contacts-item:last-child {
-  padding-right: 0;
-}
-.header__contacts-item:not(:last-child) {
-  border-right: 1px solid #D6E3F9;
+@media (min-width: 992px) {
+  .header__contacts-item:not(:first-of-type) {
+    border-left: 1px solid #D6E3F9;
+  }
 }
 .header__contacts a {
   text-decoration: none;
@@ -12329,10 +12318,12 @@ address {
   background-color: #fff;
   border-radius: 100%;
   color: #2C5697;
-  margin-right: 0;
+  margin-left: 12px;
   height: 18px;
   width: 18px;
-  margin-right: 12px;
+}
+.header__social-icon:first-child {
+  margin-left: 0;
 }
 
 .header__menu-wrapper {
@@ -12353,6 +12344,10 @@ address {
 }
 .header__menu.navbar-nav .nav-link.active {
   color: #2C5697;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .front-banner {
@@ -12388,7 +12383,7 @@ address {
   position: relative;
   z-index: 1;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .front-banner::after, .front-banner::before {
     width: 100%;
   }
@@ -13442,17 +13437,12 @@ input:checked + label:before {
 
 .contact-banner-section {
   background: url("../img/request-banner.png") no-repeat;
-  height: 367px;
   background-position: center;
+  background-size: cover;
+  min-height: 367px;
   display: flex;
   align-items: center;
   padding: 60px 0;
-}
-@media (max-width: 990px) {
-  .contact-banner-section {
-    height: auto;
-    background-size: cover;
-  }
 }
 @media (max-width: 768px) {
   .contact-banner-section {
