@@ -660,24 +660,76 @@ input:checked+label:before {
     }
 }
 
-// @media (max-width: 550px) {
-
-//     .quality-services .container-xl,
-//     .swiper-best-quality .swiper-slide {
-//         padding: 0;
-//     }
-
-// }
-
 
 //page styles
 
-// .page-template-page-services .contact-banner-section {
-//     @media (max-width: 990px) {
-//     margin-bottom: 0!important;
-//     }
-// }
+body.page-template-page-services {
+    min-width: auto;
+}
 
-// .page-template-page-services .company-history {
-//     padding-top: 0;
-// }
+.counters-service__item .counters__item {
+    @media (max-width: 990px) {
+          width: 50%;
+      }
+}
+
+.quality-services-serv-page .quality-services__item {
+    max-width: 350px;
+}
+
+.company-history-serv-page .company-history img {
+    max-width: 255px;
+
+    @media (max-width: 1150px) {
+
+          max-height: 240px;
+          max-width: 240px;
+
+}
+}
+
+.company-history-serv-page {
+    @media (max-width:990px) {
+        padding-top: 0;
+    }
+}
+
+.company-history-serv-page .company-history__wrapper {
+    position: relative;
+  }
+
+  @media (max-width:990px) {
+    .company-history-serv-page.company-history::after {
+      display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .company-history-serv-page.company-history::before {
+      display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .quality-services-serv-page .container-xl,
+    .quality-services-serv-page .swiper-best-quality .swiper-slide {
+      padding: 0;
+    }
+  }
+
+  .company-history-serv-page img {
+        max-height: 255px;
+        max-width: 255px;
+
+        @media (max-width: 1150px) {
+            max-height: 240px;
+            max-width: 240px;
+        }
+        @media (max-width: 768px) {
+            max-height: 152px;
+            max-width: 152px;
+        }
+    }
+
+
+
