@@ -13,34 +13,32 @@
 </section>
 
 
-<section id="benefits" class="benefits">
+<section id="core-values" class="core-values">
 <div class="container-xl container">
-<div class="row row-cols-1 row-cols-md-2"> 
-    <div class="pt-4 pt-md-0">
-       
-        <h2>Our core <span class="text-primary-emphasis">values</span></h2>
-    
-        <ul class="post-list post-list__checkboxes">
-            <li class="">
-                <h3>Free consultation</h3>
+<div class="row row-cols-1 row-cols-md-2  core-values-block"> 
+    <div class="pt-md-0 core-values-block__left">
+        <h2 class="core-values__title">Our core <span class="text-primary-emphasis">values</span></h2>
+        <ul class="core-values-list">
+            <li class="core-values-list__item">
+                <h3 class="poppins-bold">Free consultation</h3>
                 <p>We offer free quotse and consultation over the phone, with noobligation for you to procced. Service support 27/7</p>
             </li>
-            <li class="">
-                <h3>Professional team</h3>
+            <li class="core-values-list__item">
+                <h3  class="poppins-bold">Professional team</h3>
                 <p>All of our experts and specialized technicians are higly trained and qualified to fit your needs. Quick departure of expert.</p>
             </li>
-            <li class="">
-                <h3>Modern tools</h3>
+            <li class="core-values-list__item">
+                <h3 class="poppins-bold">Modern tools</h3>
                 <p>Our certified technicians use the most modern equipment and tools to fix your damage </p>
             </li>
-            <li class="">
-                <h3>Modern tools</h3>
+            <li class="core-values-list__item">
+                <h3 class="poppins-bold">Modern tools</h3>
                 <p>Our certified technicians use the most modern equipment and tools to fix your damage  </p>
             </li>
         </ul>
     </div>
-    <div class="px-0 px-sm-3">
-        <img class="alignnone size-full wp-image-23" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/img2-1.png" alt="" width="445" height="542" />
+    <div class="px-0 px-sm-3 core-values-block__right">
+        <img class="alignnone size-full wp-image-23" src="../wp-content/themes/blankslate/img/core-values-img.png" alt="" width="445" height="542" />
     </div>
    
     </div>
@@ -256,7 +254,7 @@
             </div>
         </div>
       
-    </div>
+   
 </section>
 
 <section  class="clients-google-reviews container-fluid">

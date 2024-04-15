@@ -161,7 +161,7 @@ add_shortcode('show_section', 'custom_post_shortcode');
 
 
 
-// redpishi.com Contact Form
+// Contact Form
 
 add_action('wp_ajax_submitmyform','submitmyform');
 add_action('wp_ajax_nopriv_submitmyform','submitmyform');
