@@ -126,18 +126,24 @@
 
 	<div class="form-wrap">	
         <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
-		<form id="survey-form" class="form-wrap__rows">
+
+		<form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows">
 			<div class="row">
 					<div class="form-group">
-						<label id="name-label" for="name">Full name*</label>
-						<input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
+						<label for="name">Full name*</label>
+						<input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
 					</div>
 			</div>
+
+            <label id="website" for="website">website:</label>
+            <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+            <!-- <label for="email">Email:</label>
+           <input type="email" id="email" name="email" placeholder="Yourid@gmail.com" required> -->
 			
 			<div class="row">
 					<div class="form-group">
-						<label id="number-label" for="number">Phone number*</label>
-						<input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="age" id="number" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+						<label for="Phone">Phone number*</label>
+						<input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
 					</div>
             </div>
 
@@ -159,8 +165,8 @@
 
            <div class="row">
 					<div class="form-group">
-						<label>What's the problem*</label>
-						<select id="dropdown" name="role" class="form-control" required>
+						<label for="problem">What's the problem*</label>
+						<select id="problem" name="problem" class="form-control" required>
 							<option disabled selected value>Window replacement</option>
 							<option value="windowRepair">Window Repair</option>
 							<option value="windowInstallation">Window Installation</option>
@@ -171,14 +177,14 @@
 				    </div>
 			</div>
 
-            <button id="show-comment-btn" class="show-comment-form">Would you like to leave a comment?</button>
+            <button type="button" id="show-comment-btn" class="show-comment-form">Would you like to leave a comment?</button>
 
             <div id="comment-form" style="display: none;">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Leave a comment</label>
-                            <textarea  id="comments" class="form-control" name="comment" placeholder="How can we help?"></textarea>
+                            <label for="message">Leave a comment</label>
+                            <textarea  id="message" class="form-control" name="message" placeholder="How can we help?"></textarea>
                         </div>
                     </div>
                 </div>
@@ -191,7 +197,9 @@
 			
 			<div class="row">
               <div class="col-md-12">
-                <button type="submit" id="submit" class="btn btn-primary">BOOK ONLINE</button>
+                <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button>
+                <span id="status"> </span>
+                <input type="hidden" id="formid" name="formid" value="1001">
               </div>
 			</div>
 
@@ -594,7 +602,7 @@
 
 
 
-<form id="contactForm" onsubmit="submitCform(); return false;"> 
+<!-- <form id="contactForm" onsubmit="submitCform(); return false;"> 
 
 <label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -617,7 +625,7 @@
 <input type="hidden" id="formid" name="formid" value="1001">
 
 
-</form>
+</form> -->
 
 <script>
 
@@ -656,14 +664,14 @@ async function AjaxCform(formdata) {
 
 <style>
 #website {display: none;}
-form#contactForm {
+/* form#contactForm {
     max-width: 95%;
     width: 550px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 15px 29px -22px #afa9a9;
     background-color: white;
-}
+} */
 #er {
     color: #f21515;
     background-color: #fff0f0;
@@ -684,12 +692,12 @@ form#contactForm {
     max-width: fit-content;
 	margin: 15px auto;
 }
-label {
+/* label {
     display: block;
     padding-top: 15px;
     margin-left: 10px;
-}
-#contactForm input::placeholder,#contactForm textarea::placeholder {
+} */
+/* #contactForm input::placeholder,#contactForm textarea::placeholder {
     color: #b5b5b5;
 }
 #contactForm input[placeholder],#contactForm textarea[placeholder] {
@@ -713,7 +721,7 @@ form#contactForm input[type="text"], form#contactForm input[type="email"], form#
     border-radius: 5px;
     padding: 3px 10px;
     margin-top: 3px;
-}
+} */
 	
 </style>	
 

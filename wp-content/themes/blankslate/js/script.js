@@ -500,6 +500,7 @@ $(document).ready(function(){
  });
 });
 
+//Button add comment (form)
 
 var showCommentBtn = document.getElementById('show-comment-btn');
 var commentForm = document.getElementById('comment-form');
