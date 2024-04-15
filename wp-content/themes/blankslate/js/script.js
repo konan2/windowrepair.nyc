@@ -4,6 +4,7 @@ import 'bootstrap/js/dist/dropdown';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
+
 window.addEventListener('DOMContentLoaded',function () {
 
   
