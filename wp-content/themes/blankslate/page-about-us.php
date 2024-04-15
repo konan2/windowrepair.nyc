@@ -3,13 +3,165 @@
 
 <?php get_header(); ?>
 
-<section class="services-hero-section">
+<section class="services-hero-section about-us-section">
     <div class="container">
         <div class="col-sm-6 main-title-block">
             <h1 class="services-hero-section__title">Company History</h1>
             <p  class="services-hero-section__desc">Home Service has been in operation in  since 2010. We are a family-owned and family-run business, which means customers receive more care than at a franchise or large corporation. </p>
         </div>
     </div> 
+</section>
+
+
+<section id="benefits" class="benefits">
+<div class="container-xl container">
+<div class="row row-cols-1 row-cols-md-2"> 
+    <div class="pt-4 pt-md-0">
+       
+        <h2>Our core <span class="text-primary-emphasis">values</span></h2>
+    
+        <ul class="post-list post-list__checkboxes">
+            <li class="">
+                <h3>Free consultation</h3>
+                <p>We offer free quotse and consultation over the phone, with noobligation for you to procced. Service support 27/7</p>
+            </li>
+            <li class="">
+                <h3>Professional team</h3>
+                <p>All of our experts and specialized technicians are higly trained and qualified to fit your needs. Quick departure of expert.</p>
+            </li>
+            <li class="">
+                <h3>Modern tools</h3>
+                <p>Our certified technicians use the most modern equipment and tools to fix your damage </p>
+            </li>
+            <li class="">
+                <h3>Modern tools</h3>
+                <p>Our certified technicians use the most modern equipment and tools to fix your damage  </p>
+            </li>
+        </ul>
+    </div>
+    <div class="px-0 px-sm-3">
+        <img class="alignnone size-full wp-image-23" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/img2-1.png" alt="" width="445" height="542" />
+    </div>
+   
+    </div>
+</div>
+</section>
+
+
+
+<section class="certification">
+    <div class="container-xl container">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="flex-column justify-content-center">
+                <h2>OUR CERTIFICATION</h2>
+                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut </p>
+            </div>
+            <div>
+                <div class="row mt-3 mt-md-0">
+                    <div class="col">
+                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-1.png" alt="" width="120" height="120" /></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-2.png" alt="" width="80" height="120" /></div>
+                    </div>
+                    <div class="col">
+                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-3.png" alt="" width="120" height="82" /></div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container-xl text-center">
+        <h2>Our Professional team</h2>
+        <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+
+    <div class="section-tabs-our-team-block">
+          <div class="swiper-container-our-team-block">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-our-team-block">
+                  <div class="item-our-team-block__top">
+                    <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />
+                  </div>
+                  <div class="item-our-team-block__bottom">
+                    <div>
+                      <h4 class="poppins-bold">Thomas Brandon</h4>
+                      <span class="poppins-medium">Senior technician</span>
+                    </div>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="item-our-team-block">
+                <div class="item-our-team-block__top">
+                  <img src="../wp-content/themes/blankslate/img/our-team-02.png" alt="team-member-02" />
+                </div>
+                <div class="item-our-team-block__bottom">
+                  <div>
+                    <h4 class="poppins-bold">Eddie Lake</h4>
+                    <span class="poppins-medium">Senior technician</span>
+                  </div>
+                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide"><div class="item-our-team-block">
+                <div class="item-our-team-block__top">
+                  <img src="../wp-content/themes/blankslate/img/our-team-03.png" alt="team-member-03" />
+                </div>
+                <div class="item-our-team-block__bottom">
+                  <div>
+                  <h4 class="poppins-bold">Joshua Jones</h4>
+                    <span class="poppins-medium">Senior technician</span>
+                  </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+              </div></div>
+              <div class="swiper-slide">
+                  <div class="item-our-team-block">
+                <div class="item-our-team-block__top">
+                  <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />
+                </div>
+                <div class="item-our-team-block__bottom">
+                  <div>
+                    <h4 class="poppins-bold">Joshua Jones</h4>
+                    <span class="poppins-medium">Senior technician</span>
+                  </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="item-our-team-block">
+                <div class="item-our-team-block__top">
+                  <img src="../wp-content/themes/blankslate/img/our-team-02.png" alt="team-member-02" />
+                </div>
+                <div class="item-our-team-block__bottom">
+                  <div>
+                  <h4 class="poppins-bold">Joshua Jones</h4>
+                    <span class="poppins-medium">Senior technician</span>
+                  </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+             <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
 </section>
 
 <section id="best-solutions" class="best-solutions container-fluid">
@@ -230,3 +382,7 @@
 
 <?php get_footer(); ?>
 
+
+
+
+   

@@ -334,38 +334,38 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
+
 <script>
    
-   const swiperBestSolutions = new Swiper('.swiper-best-solutions', {
-    grabCursor: true,
-    slidesPerView: 4,
-    initialSlide: 0,
-    speed: 1000,
-    pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-    navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        550: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1100: {
-            slidesPerView: 3,
-        },
-        1300: {
-            slidesPerView: 4,
-        },
-    }
-});
+//    const swiperBestSolutions = new Swiper('.swiper-best-solutions', {
+//     grabCursor: true,
+//     slidesPerView: 4,
+//     initialSlide: 0,
+//     speed: 1000,
+//     pagination: {
+//           el: ".swiper-pagination",
+//           clickable: true,
+//         },
+//     navigation: {
+//           nextEl: ".swiper-button-next",
+//           prevEl: ".swiper-button-prev",
+//         },
+//     breakpoints: {
+//         320: {
+//             slidesPerView: 1,
+//         },
+//         550: {
+//             slidesPerView: 1,
+//         },
+//         768: {
+//             slidesPerView: 2,
+//         },
+//         1100: {
+//             slidesPerView: 3,
+//         },
+//         1300: {
+//             slidesPerView: 4,
+//         },
+//     }
+// });
 </script>

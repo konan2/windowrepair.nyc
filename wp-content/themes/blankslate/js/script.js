@@ -180,6 +180,66 @@ const bestSolutionsSlider = new Swiper('#best-solutions-carousel', {
   }
 });
 
+const swiperBestSolutions = new Swiper('.swiper-best-solutions', {
+  grabCursor: true,
+  slidesPerView: 4,
+  initialSlide: 0,
+  speed: 1000,
+  pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  breakpoints: {
+      320: {
+          slidesPerView: 1,
+      },
+      550: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
+      1100: {
+          slidesPerView: 3,
+      },
+      1300: {
+          slidesPerView: 4,
+      },
+  }
+});
+
+var swiperOurTeam = new Swiper(".swiper-container-our-team-block", {
+  slidesPerView: 3,
+  grabCursor: true,
+  spaceBetween: 5,
+  speed: 1000,
+  // freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+    breakpoints: {
+    360: {
+    slidesPerView: 1,
+    spaceBetween: 0
+    },
+ 550: {
+    slidesPerView: 2,
+   },
+  990: {
+slidesPerView: 3,
+},
+    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const swiperIconsPartners = new Swiper('.swiper-google-reviews', {
   loop: true,
   grabCursor: true,

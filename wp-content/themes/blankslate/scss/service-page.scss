@@ -38,12 +38,18 @@
     }
 }
 
+
 @media (max-width: 550px) {
     .services-hero-section:after {
         content: ' ';
         background: url("../img/services/section-hero-serv-img-sm.png") no-repeat;
         height: 330px;
         width: 100%;
+        background-size: cover;
+    }
+
+    .about-us-section:after {
+        background: url("../img/about-us-hero-sm.png") no-repeat;
         background-size: cover;
     }
 }
@@ -331,7 +337,8 @@ input:checked+label:before {
 .swiper-google-reviews,
 .swiper-best-solutions,
 .tabs-show-photos-block-21,
-.swiper-best-quality {
+.swiper-best-quality,
+.section-tabs-our-team-block  {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -408,7 +415,8 @@ input:checked+label:before {
 .swiper-best-solutions .swiper-pagination,
 .tabs-show-photos-block-21 .swiper-pagination,
 .swiper-best-quality .swiper-pagination,
-.clients .swiper-pagination {
+.clients .swiper-pagination,
+.section-tabs-our-team-block .swiper-pagination {
     position: static;
 }
 
@@ -427,7 +435,9 @@ input:checked+label:before {
 .swiper-best-quality .swiper-button-next:after,
 .swiper-best-quality .swiper-button-prev:after,
 .clients .swiper-button-next:after,
-.clients .swiper-button-prev:after {
+.clients .swiper-button-prev:after,
+.section-tabs-our-team-block .swiper-button-next:after,
+.section-tabs-our-team-block .swiper-button-prev:after {
     font-size: 13px;
 }
 
@@ -440,7 +450,9 @@ input:checked+label:before {
 .swiper-best-quality .swiper-button-next,
 .swiper-best-quality .swiper-button-prev,
 .clients .swiper-button-next,
-.clients .swiper-button-prev {
+.clients .swiper-button-prev,
+.section-tabs-our-team-block .swiper-button-next,
+.section-tabs-our-team-block .swiper-button-prev {
     width: 18px;
     height: 18px;
     top: unset;
@@ -457,7 +469,8 @@ input:checked+label:before {
 .swiper-google-reviews .swiper-button-prev,
 .swiper-best-solutions .swiper-button-prev,
 .tabs-show-photos-block-21 .swiper-button-prev,
-.swiper-best-quality .swiper-button-prev {
+.swiper-best-quality .swiper-button-prev,
+.section-tabs-our-team-block .swiper-button-prev {
     left: 35%;
 
     @media (max-width:550px) {
@@ -468,7 +481,8 @@ input:checked+label:before {
 .swiper-google-reviews .swiper-button-next,
 .swiper-best-solutions .swiper-button-next,
 .tabs-show-photos-block-21 .swiper-button-next,
-.swiper-best-quality .swiper-button-next {
+.swiper-best-quality .swiper-button-next,
+.section-tabs-our-team-block .swiper-button-next {
     right: 35%;
 
     @media (max-width:550px) {
@@ -490,7 +504,8 @@ input:checked+label:before {
 .swiper-best-solutions .swiper-pagination-bullet,
 .tabs-show-photos-block-21 .swiper-pagination-bullet,
 .swiper-best-quality .swiper-pagination-bullet,
-.clients .swiper-pagination-bullet {
+.clients .swiper-pagination-bullet,
+.section-tabs-our-team-block .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background: $primary-muted-bg;
@@ -500,7 +515,8 @@ input:checked+label:before {
 .swiper-best-solutions .swiper-pagination-bullet-active,
 .tabs-show-photos-block-21 .swiper-pagination-bullet-active,
 .swiper-best-quality .swiper-pagination-bullet-active,
-.clients .swiper-pagination-bullet-active {
+.clients .swiper-pagination-bullet-active,
+.section-tabs-our-team-block .swiper-pagination-bullet-active {
     background: $primary-text-emphasis;
 }
 
