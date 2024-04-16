@@ -524,20 +524,6 @@ $(document).ready(function(){
  });
 });
 
-//Button add comment (form)
-
-var showCommentBtn = document.getElementById('show-comment-btn');
-var commentForm = document.getElementById('comment-form');
-
-if (showCommentBtn) {
-  showCommentBtn.addEventListener('click', function() {
-      if (commentForm && commentForm.style.display === 'none') {
-          commentForm.style.display = 'block';
-          showCommentBtn.style.display = 'none';
-      }
-  });
-}
-
 //Counter block
 
 $(document).ready(function() {

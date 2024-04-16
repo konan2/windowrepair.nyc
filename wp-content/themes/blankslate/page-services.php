@@ -661,6 +661,22 @@ async function AjaxCform(formdata) {
 			document.querySelector("form#contactForm #mybtn").disabled = false
 			document.querySelector("form#contactForm #mybtn").value = 'Try again'
 	}}	
+
+
+
+ //Button add comment (form)
+
+var showCommentBtn = document.getElementById('show-comment-btn');
+var commentForm = document.getElementById('comment-form');
+
+if (showCommentBtn) {
+  showCommentBtn.addEventListener('click', function() {
+      if (commentForm && commentForm.style.display === 'none') {
+          commentForm.style.display = 'block';
+          showCommentBtn.style.display = 'none';
+      }
+  });
+}
 </script>
 
 <style>
@@ -681,7 +697,7 @@ async function AjaxCform(formdata) {
     border-radius: 5px;
     padding: 10px 10px;
     max-width: fit-content;
-	margin: 15px auto;
+    margin: 135px auto;
 }
 #success {
     display: flex;
@@ -690,7 +706,7 @@ async function AjaxCform(formdata) {
     font-weight: bold;
     padding: 10px 10px;
     max-width: fit-content;
-	margin: 15px auto;
+    margin: 135px auto;
 }
 
 #success:before {

@@ -213,7 +213,7 @@ function form1($tomyform , $headersmyform) {
 		
 	if ( wp_mail( $tomyform, $subject, $message, $headersmyform )  )	{
 				$system['statuse']='ok';
-				$system['reply']='<h2>Thank you.</h2> <br>
+				$system['reply']='<h2>Thank you.</h2>
         <p>We will contact you. Shortly.</p>';
 				echo json_encode($system, JSON_UNESCAPED_UNICODE);
 				exit; die();
