@@ -657,10 +657,10 @@ async function AjaxCform(formdata) {
 			</div>`			
 	} else if (data['statuse'] == 'er') {
 			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
-			Ops, ${data['reply']}
+			${data['reply']}
 			</div>`
 			document.querySelector("form#contactForm #mybtn").disabled = false
-			document.querySelector("form#contactForm #mybtn").value = 'Try again'
+			document.querySelector("form#contactForm #mybtn").value = 'Please try again.'
 	}}	
 
 

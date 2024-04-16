@@ -219,7 +219,8 @@ function form1($tomyform , $headersmyform) {
 				exit; die();
 				
 		} else { 	$system['statuse']='er';
-					$system['reply']='Sorry, There is a problem in sending your form, please email us your message.';
+					$system['reply']='<h2>We are sorry </h2>
+          <p>Something went wrong.</p>';
 					echo json_encode($system, JSON_UNESCAPED_UNICODE);
 					exit; die();
     				 }}
