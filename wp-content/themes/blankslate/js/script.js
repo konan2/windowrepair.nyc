@@ -597,3 +597,18 @@ $(document).ready(function() {
     }
   });
 });
+
+
+//add form on the btn call us
+
+$(document).ready(function() {
+  $('#showContactForm').click(function() {
+      $('.form-wrap').fadeIn();
+      $('#contactFormBackdrop').fadeIn();
+  });
+
+  $('#contactFormBackdrop').click(function() {
+      $('.form-wrap').fadeOut();
+      $(this).fadeOut();
+  });
+});
