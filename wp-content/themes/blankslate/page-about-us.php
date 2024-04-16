@@ -47,7 +47,7 @@
 
 
 
-<section class="certification">
+<section class="certification about-us-sec-certific">
     <div class="container-xl container">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="flex-column justify-content-center">

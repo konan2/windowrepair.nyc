@@ -16,3 +16,17 @@
         font-size: 16px;
     }
 }
+
+.block-recent-articles {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.row-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}

@@ -15052,6 +15052,19 @@ body.page-template-page-services-hub {
   box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
 }
 
+@media (max-width: 440px) {
+  .certification.about-us-sec-certific .card {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 440px) {
+  .certification.about-us-sec-certific .card > img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
 .rewiews-table-section.services-hero-section {
   background: url("../img/rewiews-hero-img.png") no-repeat;
   background-position: center;
@@ -15118,6 +15131,20 @@ body.page-template-page-services-hub {
 .main-post-content p {
   color: #7A7A7A;
   font-size: 16px;
+}
+
+.block-recent-articles {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.row-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer {
