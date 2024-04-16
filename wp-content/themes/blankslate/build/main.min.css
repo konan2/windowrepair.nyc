@@ -13092,43 +13092,30 @@ address {
 
 .header__menu-container {
   justify-content: flex-end;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .header__menu .nav-item {
   margin: 0 25px;
+  padding: 25px 0;
 }
-.header__menu.navbar-nav .nav-link {
-  padding: 0;
-  color: #2C5697;
-  font-weight: 600;
-}
-.header__menu.navbar-nav .nav-link.active {
-  color: #2C5697;
-}
-.header__menu .dropdown-menu__arrows {
-  display: none;
-  position: absolute;
-  width: 100%;
-}
-.header__menu .dropdown-toggle .icon {
-  margin-left: 4px;
-}
-.header__menu .dropdown-toggle::after {
-  display: none;
-}
-.header__menu .dropdown-toggle.show {
+.header__menu .nav-item:hover .dropdown-toggle {
   position: relative;
-  color: #789AEE;
   z-index: 1001;
 }
-.header__menu .dropdown-toggle.show .icon {
+.header__menu .nav-item:hover .nav-link {
+  color: #789AEE;
+}
+.header__menu .nav-item:hover .dropdown-menu {
+  display: block;
+  left: 0;
+  top: 100%;
+}
+.header__menu .nav-item:hover .icon {
   transform: rotate(180deg);
 }
-.header__menu .dropdown-toggle.show .dropdown-menu__arrows {
+.header__menu .nav-item:hover .dropdown-menu__arrows {
   display: block;
 }
-.header__menu .dropdown-toggle.show .dropdown-menu__arrows:after, .header__menu .dropdown-toggle.show .dropdown-menu__arrows:before {
+.header__menu .nav-item:hover .dropdown-menu__arrows:after, .header__menu .nav-item:hover .dropdown-menu__arrows:before {
   bottom: -26px;
   left: 50%;
   border: solid transparent;
@@ -13138,15 +13125,38 @@ address {
   position: absolute;
   pointer-events: none;
 }
-.header__menu .dropdown-toggle.show .dropdown-menu__arrows:after {
+.header__menu .nav-item:hover .dropdown-menu__arrows:after {
   border-bottom-color: #fff;
   border-width: 15px;
   margin-left: -15px;
 }
-.header__menu .dropdown-toggle.show .dropdown-menu__arrows:before {
+.header__menu .nav-item:hover .dropdown-menu__arrows:before {
   border-bottom-color: #D6E3F9;
   border-width: 16px;
   margin-left: -16px;
+}
+.header__menu.navbar-nav .nav-link {
+  padding: 0;
+  color: #2C5697;
+  font-weight: 600;
+}
+.header__menu .dropdown-menu__arrows {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.header__menu .dropdown-toggle {
+  position: relative;
+}
+.header__menu .dropdown-toggle .icon {
+  margin-left: 4px;
+}
+.header__menu .dropdown-toggle::after {
+  display: none;
+}
+.header__menu .dropdown-toggle:hover {
+  position: relative;
+  z-index: 1001;
 }
 .header__menu .dropdown-menu {
   margin: 0;
