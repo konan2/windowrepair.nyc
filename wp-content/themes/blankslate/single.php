@@ -17,41 +17,37 @@
 
         <?php endwhile; endif; ?>
 
-    <div class="categories">
+      <div class="categories">
+        <?php
+        $current_category_id = get_query_var('cat');
+        $categories = get_categories();
+            if (!empty($categories)) {
+                echo '<div class="dropdown-post-category">';
+                echo '<button class="btn dropdown-toggle-post-category" type="button" id="dropdownPostButton" data-toggle="dropdown_post_category" aria-haspopup="true" aria-expanded="false">All Blog Categories</button>';
+                echo '<div class="dropdown-cat" aria-labelledby="dropdownPostButton">';
 
-    <?php
-// Отримання всіх категорій статей
-$categories = get_categories();
-
-// Перевірка, чи є категорії
-if (!empty($categories)) {
-    echo '<div class="dropdown">';
-    echo '<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Blog Categories</button>';
-    echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">';
-    // Виведення категорій та створення посилань на сторінку блогу
-    foreach ($categories as $category) {
-        $category_link = get_category_link($category->term_id);
-        echo '<a class="dropdown-item" href="' . esc_url($category_link) . '">' . esc_html($category->name) . '</a>';
-    }
-    echo '</div>';
-    echo '</div>';
-} else {
-    echo '<p>No categories found.</p>';
-}
-?>
-</div>
+                foreach ($categories as $category) {
+                    $category_link = get_category_link($category->term_id);
+                    $active_class = ($category->term_id == $current_category_id) ? 'active' : ''; 
+                    echo '<a class="dropdown-item ' . esc_attr($active_class) . '" href="' . esc_url($category_link) . '">' . esc_html($category->name) . '</a>';
+                }
+                echo '</div>';
+                echo '</div>';
+            } else {
+                echo '<p>No categories found.</p>';
+            }
+            ?>
+      </div>
     </div>
   </div>
 </div>
 
 
-<div class="main-post-content">
+<div class="main-other-post-content">
     <div class="container">
          <div>
             <?php
-            // Функція, яка відображає компонент блоку з останніми статтями
             function display_recent_articles_block() {
-                // Отримуємо останні три статті
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 3,
@@ -60,35 +56,25 @@ if (!empty($categories)) {
                 );
                 $query = new WP_Query($args);
 
-                // Перевіряємо, чи є статті
                 if ($query->have_posts()) {
                     echo '<div class="recent-articles">';
-                    echo '<h2>Other articles</h2>';
+                    echo '<h2 class="recent-articles__title">Other articles</h2>';
                     echo '<ul class="block-recent-articles">';
                     while ($query->have_posts()) {
                         $query->the_post();
                         echo '<li class="item-our-team-block">';
 
-                           if (has_post_thumbnail()) {
-                            echo '<div class="item-our-team-block__top">' . get_the_post_thumbnail() . '</div>'; // Фото статті
-                        }
+                        //    if (has_post_thumbnail()) {
+                            echo '<div class="item-our-team-block__top">' . '   <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />' . '</div>'; 
+                        // }
                    
-
-                        
-
-
-                          echo ' <div class="item-our-team-block__bottom">
-                          <span class="post-category">' . get_the_category_list(', ') . '</span>'; // Категорія статті
-                          echo '<h4>' . get_the_title() . '</h4>'; // Заголовок статті
-                           echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; // Початок опису статті
-
-
-                           echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; // Заголовок статті
-                        echo '<span class="post-date">' . get_the_date() . '</span></div></div>'; // Дата статті
-                      
-                     
-
-                          echo '</li>';
+                        echo ' <div class="item-our-team-block__bottom">
+                          <span class="post-category">' . get_the_category_list(', ') . '</span>'; 
+                        echo '<h4>' . get_the_title() . '</h4>'; 
+                        echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
+                        echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
+                        echo '<span class="post-date">' . get_the_date() . '</span></div></div>'; 
+                    echo '</li>';
                     }
                     echo '</ul>';
                     echo '</div>';
@@ -99,7 +85,6 @@ if (!empty($categories)) {
             }
             ?>
 
-            <!-- Виклик функції для відображення компонента блоку -->
             <?php display_recent_articles_block(); ?>
         </div>
  </div>
