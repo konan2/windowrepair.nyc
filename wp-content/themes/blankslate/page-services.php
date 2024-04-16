@@ -681,15 +681,8 @@ if (showCommentBtn) {
 </script>
 
 <style>
-#website {display: none;}
-/* form#contactForm {
-    max-width: 95%;
-    width: 550px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 15px 29px -22px #afa9a9;
-    background-color: white;
-} */
+/* #website {display: none;}
+
 #er {
     color: #f21515;
     background-color: #fff0f0;
@@ -722,37 +715,9 @@ if (showCommentBtn) {
     #success h2 {
         margin:0;
         margin-bottom: 16px;
-    }
-/* label {
-    display: block;
-    padding-top: 15px;
-    margin-left: 10px;
-} */
-/* #contactForm input::placeholder,#contactForm textarea::placeholder {
-    color: #b5b5b5;
-}
-#contactForm input[placeholder],#contactForm textarea[placeholder] {
-    font-size: 1rem;
-    line-height: 2rem;
-}
-form#contactForm input#mybtn {
-    margin-top: 15px;
-    display: block;
-    height: 3rem;
-    color: white;
-    background: #0088a7;
-    padding: 0px 23px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-form#contactForm input[type="text"], form#contactForm input[type="email"], form#contactForm textarea {
-    width: 100%;
-    border: 1px solid #f1f0f0;
-    border-radius: 5px;
-    padding: 3px 10px;
-    margin-top: 3px;
-} */
+    } */
+
+
 	
 </style>	
 
