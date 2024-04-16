@@ -13224,6 +13224,7 @@ address {
     bottom: 0;
     left: 0;
     overflow-y: scroll;
+    z-index: 2;
     background-color: #fff;
   }
   .header__menu-container .header__menu-button {
