@@ -157,3 +157,17 @@
 .section-tabs-our-team-block .item-our-team-block:hover {
     box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
 }
+
+
+.certification.about-us-sec-certific .card {
+    @media (max-width: 440px) {
+        min-height: 100px;
+    }
+}
+
+.certification.about-us-sec-certific .card > img {
+    @media (max-width: 440px) {
+        height: 70px;
+        width: 70px;
+    }
+}

@@ -168,11 +168,11 @@
 					<div class="form-group">
 						<label for="problem">What's the problem*</label>
 						<select id="problem" name="problem" class="form-control" required>
-							<option disabled selected value>Window replacement</option>
-							<option value="windowRepair">Window Repair</option>
-							<option value="windowInstallation">Window Installation</option>
-							<option value="windowCapping">Window Capping</option>
-							<option value="woodenWindowsRestoration">Wooden Windows Restoration</option>
+							<option selected value="window_Replacement">Window replacement</option>
+							<option value="window_Repair">Window Repair</option>
+							<option value="window_Installation">Window Installation</option>
+							<option value="window_Capping">Window Capping</option>
+							<option value="wooden_Windows_Restoration">Wooden Windows Restoration</option>
 							<option value="other">Other</option>
 						</select>
 				    </div>
@@ -657,10 +657,10 @@ async function AjaxCform(formdata) {
 			</div>`			
 	} else if (data['statuse'] == 'er') {
 			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
-			Ops, ${data['reply']}
+			${data['reply']}
 			</div>`
 			document.querySelector("form#contactForm #mybtn").disabled = false
-			document.querySelector("form#contactForm #mybtn").value = 'Try again'
+			document.querySelector("form#contactForm #mybtn").value = 'Please try again.'
 	}}	
 
 

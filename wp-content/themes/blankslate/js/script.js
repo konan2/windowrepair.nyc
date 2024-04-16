@@ -549,3 +549,34 @@ $(document).ready(function() {
      });
  });
 });
+
+
+//blog filter posts
+
+$(document).ready(function() {
+  $('.item-our-team-block:visible:first').addClass('first-element'); 
+
+  $('.filter-button').click(function() {
+    var category = $(this).data('filter');
+    $('.filter-button').removeClass('active');
+    $(this).addClass('active');
+
+    var categorySlug = category.replace(/\s+/g, '-').toLowerCase();
+    filterArticlesByCategory(categorySlug);
+  });
+});
+
+function filterArticlesByCategory(category) {
+  $('.item-our-team-block').hide().removeClass('first-element'); 
+  if (category === 'all') {
+    $('.item-our-team-block').show();
+  } else {
+    $('.item-our-team-block').each(function() {
+      var postCategory = $(this).find('.post-category').text().toLowerCase().replace(/\s+/g, '-');
+      if (postCategory.indexOf(category) !== -1) {
+        $(this).show();
+      }
+    });
+  }
+  $('.item-our-team-block:visible:first').addClass('first-element');
+}

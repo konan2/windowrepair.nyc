@@ -14771,18 +14771,7 @@ body.page-template-page-services-hub {
   display: none;
 }
 
-#er {
-  color: #f21515;
-  background-color: #fff0f0;
-  font-weight: bold;
-  border: 3px solid #f21515;
-  border-radius: 5px;
-  padding: 10px 10px;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  margin: 135px auto;
-}
-
+#er,
 #success {
   display: flex;
   flex-direction: column;
@@ -14794,6 +14783,15 @@ body.page-template-page-services-hub {
   margin: 135px auto;
 }
 
+#er:before {
+  content: " ";
+  background: url("../img/error.svg") no-repeat;
+  height: 90px;
+  width: 90px;
+  background-size: 90px;
+  margin-bottom: 32px;
+}
+
 #success:before {
   content: " ";
   background: url("../img/check.svg") no-repeat;
@@ -14803,7 +14801,9 @@ body.page-template-page-services-hub {
   margin-bottom: 32px;
 }
 
-#success h2, #success .h2 {
+#success h2, #success .h2,
+#er h2,
+#er .h2 {
   margin: 0;
   margin-bottom: 16px;
 }
@@ -15101,6 +15101,19 @@ body.page-template-page-services-hub {
   box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
 }
 
+@media (max-width: 440px) {
+  .certification.about-us-sec-certific .card {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 440px) {
+  .certification.about-us-sec-certific .card > img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
 .rewiews-table-section.services-hero-section {
   background: url("../img/rewiews-hero-img.png") no-repeat;
   background-position: center;
@@ -15153,6 +15166,226 @@ body.page-template-page-services-hub {
   }
 }
 
+.main-post-content {
+  padding: 80px 0 20px;
+}
+.main-post-content h1, .main-post-content .h1 {
+  color: #0E192D;
+  font-size: 42px;
+}
+.main-post-content h2, .main-post-content .h2 {
+  color: #2C5697;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.main-post-content h1 a, .main-post-content .h1 a {
+  text-decoration: none;
+  color: #0E192D;
+}
+.main-post-content p {
+  color: #7A7A7A;
+  font-size: 16px;
+  padding-bottom: 60px;
+  margin-bottom: 0;
+}
+.main-post-content__block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+@media (max-width: 990px) {
+  .main-post-content__block {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.categories {
+  max-width: 245px;
+}
+
+.block-recent-articles {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width: 990px) {
+  .block-recent-articles {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+.row-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-other-post-content {
+  padding-bottom: 80px;
+}
+
+.recent-articles__title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .block-recent-articles .item-our-team-block {
+    max-width: 290px;
+  }
+}
+@media (max-width: 990px) {
+  .block-recent-articles .item-our-team-block {
+    max-width: 350px;
+  }
+}
+.block-recent-articles .post-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #7A7A7A;
+}
+
+.dropdown-toggle-post-category {
+  text-align: left;
+  padding: 16px 21px;
+  background: #2C5697;
+  text-transform: capitalize;
+  border-radius: unset;
+  color: #fff;
+  width: 100%;
+  font-style: normal;
+  position: relative;
+}
+
+.dropdown-toggle-post-category:hover {
+  background: #789AEE;
+  color: #fff;
+}
+
+.dropdown-toggle-post-category:after {
+  content: " ";
+  display: block;
+  top: 23px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.dropdown-cat .dropdown-item {
+  height: 56px;
+  border-bottom: 1px solid #D6E3F9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #7A7A7A;
+  font-weight: 600;
+  padding-left: 24px;
+  width: 245px;
+}
+
+.block-recent-articles .item-our-team-block:hover {
+  box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
+}
+
+.block-recent-articles .post-category > a {
+  text-decoration: none;
+  color: #789AEE;
+}
+
+.block-recent-articles .item-our-team-block__bottom h4, .block-recent-articles .item-our-team-block__bottom .h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.block-recent-articles .item-our-team-block__top img {
+  max-height: 180px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row-bottom > a {
+  color: #2C5697;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.row-bottom > a:after {
+  content: " ";
+  display: block;
+  top: 8px;
+  right: -15px;
+  width: 10px;
+  height: 10px;
+  border: solid #2C5697;
+  border-width: 0 3px 3px 0;
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.row-bottom > span {
+  color: #2C5697;
+}
+
+.blog-services-section.services-section {
+  background: #fff;
+}
+
+@media (min-width: 990px) {
+  .blog-services-section .block-recent-articles {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block {
+    flex-basis: 33.3333333333%;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block.first-element {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 20px;
+    flex-direction: row;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block.first-element img {
+    width: 520px;
+    height: 425px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    border-radius: 16px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block.first-element .post-category > a {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block.first-element .post-excerpt {
+    -webkit-line-clamp: unset;
+  }
+  .blog-services-section .item-our-team-block:first-child .row-bottom > span {
+    font-weight: 500;
+  }
+  .blog-services-section .block-recent-articles .item-our-team-block:first-child h4, .blog-services-section .block-recent-articles .item-our-team-block:first-child .h4 {
+    font-size: 22px;
+  }
+}
 .footer {
   background: #D6E3F9;
   padding-top: 103px;
