@@ -125,9 +125,10 @@
     
 
 	<div class="form-wrap">	
-        <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
+       
 
-		<form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows">
+		<form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
+        <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
 			<div class="row">
 					<div class="form-group">
 						<label for="name">Full name*</label>
@@ -683,15 +684,28 @@ async function AjaxCform(formdata) {
 	margin: 15px auto;
 }
 #success {
-    color: #23a238;
-    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
-    border: 3px solid #23a238;
-    border-radius: 5px;
     padding: 10px 10px;
     max-width: fit-content;
 	margin: 15px auto;
 }
+
+#success:before {
+        content: ' ';
+        background: url("../img/check.svg") no-repeat;
+        height: 75px;
+        width: 75px;
+        background-size: 75px;
+        margin-bottom:32px;
+    }
+
+    #success h2 {
+        margin:0;
+        margin-bottom: 16px;
+    }
 /* label {
     display: block;
     padding-top: 15px;
