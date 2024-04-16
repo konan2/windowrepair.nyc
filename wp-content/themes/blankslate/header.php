@@ -12,11 +12,7 @@
     <div class="page-wrapper">
 
     
-    <!-- <header id="header">
-        <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-        </nav>
-    </header> -->
+   
 
     
 
@@ -117,11 +113,12 @@
         <section class="navbar navbar-expand-lg">
             <div class="header__menu-wrapper container-xl">
                 <nav class="collapse navbar-collapse header__menu-container" id="bdNavbar">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
-                        </svg>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
+                            </svg>
                     </button>
+                
                 <ul class="navbar-nav flex-column flex-lg-row flex-wrap bd-navbar-nav pt-2 py-md-0 header__menu">
                     <li class="nav-item">
                         <a class="nav-link active" href="/">Services</a>
@@ -218,10 +215,39 @@
                     <a class="nav-link" href="#" >Contact Us</a>
                     </li>
                 </ul>
+                
                 <button class="btn btn-secondary btn-medium header__menu-button">Request a call</button>
                 </nav>
             </div>
         </section>
+        <!-- <section class="navbar navbar-expand-lg">
+            <div class="header__menu-wrapper container-xl">
+                <nav class="collapse navbar-collapse header__menu-container" id="bdNavbar" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
+                            </svg>
+                    </button>
+                
+                    
+
+                   
+                    <?php
+                       wp_nav_menu(array(
+                        'theme_location' => 'primary', // Идентификатор местоположения меню
+                        'container' => 'ul', // Обертка для меню, в данном случае <ul>
+                        'menu_class' => 'navbar-nav flex-column flex-lg-row flex-wrap bd-navbar-nav pt-2 py-md-0 header__menu', // Классы меню
+                        'fallback_cb' => false, // Отключаем стандартный вывод меню при его отсутствии
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', // Обертка для элементов меню, теперь включает вложенные элементы
+                        'walker' => new Custom_Bootstrap_Walker_Nav_Menu(), // Используем наш кастомный класс обходчика
+                    ));
+                        ?>
+
+                <button class="btn btn-secondary btn-medium header__menu-button">Request a call</button>
+                    
+                </nav>
+            </div>
+        </section> -->
     </header>
 
 <main id="content" role="main" class="page-wrapper">

@@ -1,0 +1,76 @@
+
+
+.contact-us{
+    color: #fff;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/contact-us-bg.png);
+    background-size: cover;
+    p{
+        max-width: 444px;
+        color: #D6E3F9;
+    }
+    &__contacts{
+        margin-top: 0!important;
+    }
+}
+
+.contact-item-container{
+    border-bottom: 1px solid #D6E3F9;
+    @media (max-width:992px) {
+        margin-top: 10px;
+        padding-bottom: 8px;
+    }
+}
+
+.contact-item{
+    margin: 40px 0;
+    @media (max-width:992px) {
+        margin: 24px 0;
+    }
+    @media (min-width:1200px) {
+        width: auto;
+        flex: none;
+        padding-right: 30px;
+    }
+    
+    .icon{
+        color: #789AEE;
+        margin-right: 6px;
+    }
+    &__header{
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+    }
+    &__header-title{
+        margin: 0;
+    }
+    &__body{
+
+    }
+}
+
+.contact-areas{
+    margin-bottom: 40px;
+    .map{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__form{
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea{
+        min-height: 80px;
+    }
+    @media (max-width:990px) {
+        .row{
+            width: 100%;
+        }
+    }
+}
