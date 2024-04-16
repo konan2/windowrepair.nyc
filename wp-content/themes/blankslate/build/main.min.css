@@ -15148,6 +15148,7 @@ body.page-template-page-services-hub {
 @media (max-width: 990px) {
   .main-post-content__block {
     flex-direction: column;
+    gap: 0;
   }
 }
 

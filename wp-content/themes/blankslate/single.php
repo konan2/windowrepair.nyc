@@ -65,7 +65,7 @@
                         echo '<li class="item-our-team-block">';
 
                         //    if (has_post_thumbnail()) {
-                            echo '<div class="item-our-team-block__top">' . '   <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />' . '</div>'; 
+                            echo '<div class="item-our-team-block__top">' . '   <img src=".https://mrglazier.com/wp-content/uploads/2024/03/Rectangle-117.png" alt="post-image" />' . '</div>'; 
                         // }
                    
                         echo ' <div class="item-our-team-block__bottom">
