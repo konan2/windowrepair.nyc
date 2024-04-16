@@ -15260,6 +15260,7 @@ body.page-template-page-services-hub {
   border-radius: unset;
   color: #fff;
   width: 100%;
+  min-width: 245px;
   font-style: normal;
   position: relative;
 }
@@ -15340,6 +15341,10 @@ body.page-template-page-services-hub {
 
 .row-bottom > span {
   color: #2C5697;
+}
+
+.categories .show {
+  display: block !important;
 }
 
 .blog-services-section.services-section {

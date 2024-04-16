@@ -580,3 +580,20 @@ function filterArticlesByCategory(category) {
   }
   $('.item-our-team-block:visible:first').addClass('first-element');
 }
+
+//toggle btn categories
+
+$(document).ready(function() {
+  $('.dropdown-cat').hide(); 
+  $('.dropdown-toggle-post-category').click(function() {
+    $('.dropdown-cat').toggleClass('show');
+  });
+
+  $(document).on('click', function(event) {
+    var dropdownCat = $('.dropdown-cat');
+    var dropdownToggle = $('.dropdown-toggle-post-category');
+    if (!dropdownCat.is(event.target) && !dropdownToggle.is(event.target) && dropdownCat.has(event.target).length === 0) {
+      dropdownCat.removeClass('show'); 
+    }
+  });
+});
