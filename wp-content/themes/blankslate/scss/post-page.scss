@@ -15,6 +15,16 @@
         color: #7A7A7A;
         font-size: 16px;
     }
+
+    &__block{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.categories {
+    max-width: 245px;
 }
 
 .block-recent-articles {

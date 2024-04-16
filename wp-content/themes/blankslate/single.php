@@ -11,9 +11,10 @@
 
 <div class="main-post-content">
     <div class="container">
+        <div class="main-post-content__block">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'entry' ); ?>
-        <?php if ( comments_open() && !post_password_required() ) { comments_template( '', true ); } ?>
+
         <?php endwhile; endif; ?>
 
     <div class="categories">
@@ -24,17 +25,21 @@ $categories = get_categories();
 
 // Перевірка, чи є категорії
 if (!empty($categories)) {
-    echo '<ul>';
+    echo '<div class="dropdown">';
+    echo '<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Blog Categories</button>';
+    echo '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">';
     // Виведення категорій та створення посилань на сторінку блогу
     foreach ($categories as $category) {
         $category_link = get_category_link($category->term_id);
-        echo '<li><a href="' . esc_url($category_link) . '">' . esc_html($category->name) . '</a></li>';
+        echo '<a class="dropdown-item" href="' . esc_url($category_link) . '">' . esc_html($category->name) . '</a>';
     }
-    echo '</ul>';
+    echo '</div>';
+    echo '</div>';
 } else {
     echo '<p>No categories found.</p>';
 }
 ?>
+</div>
     </div>
   </div>
 </div>
@@ -100,7 +105,5 @@ if (!empty($categories)) {
  </div>
 </div>
 
-<footer class="footer">
-<?php get_template_part( 'nav', 'below-single' ); ?>
-</footer>
+
 <?php get_footer(); ?>

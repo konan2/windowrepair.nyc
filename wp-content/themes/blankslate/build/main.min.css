@@ -15132,6 +15132,15 @@ body.page-template-page-services-hub {
   color: #7A7A7A;
   font-size: 16px;
 }
+.main-post-content__block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.categories {
+  max-width: 245px;
+}
 
 .block-recent-articles {
   display: flex;
