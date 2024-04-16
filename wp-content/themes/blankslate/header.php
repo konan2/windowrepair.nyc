@@ -117,104 +117,108 @@
         <section class="navbar navbar-expand-lg">
             <div class="header__menu-wrapper container-xl">
                 <nav class="collapse navbar-collapse header__menu-container" id="bdNavbar">
-                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 header__menu">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Residential<i class="icon">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 6.29251L3.64576 4.625L9.00349 10.0459L14.3612 4.625L16 6.29251L9 13.375L2 6.29369V6.29251Z" fill="currentColor"/>
-                                </svg>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                <ul class="navbar-nav flex-column flex-lg-row flex-wrap bd-navbar-nav pt-2 py-md-0 header__menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Residential
+                            <i class="icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 6.29251L3.64576 4.625L9.00349 10.0459L14.3612 4.625L16 6.29251L9 13.375L2 6.29369V6.29251Z" fill="currentColor"/>
+                            </svg>
+                            </i>
+                            <span class="dropdown-menu__arrows"></span>
+                        </a>
+                        
+                        <div class="dropdown-menu container-fluid">
+                            <div class="container-xl">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4">
+                                    <section class="col">
+                                        <span class="header__menu-title">WINDOW SERVICES</span>
+                                        <ul class="header__menu-submenu post-list">
+                                            <li class="post-list__item"><a href="#">Window Replacement</a></li>
+                                            <li class="post-list__item"><a href="#">Window Repair</a></li>
+                                            <li class="post-list__item"><a href="#">Window Installation</a></li>
+                                            <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
+                                            <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
+                                        </ul>
+                                    </section>
+                                    <section class="col">
+                                        <span class="header__menu-title">WINDOW SERVICES</span>
+                                        <ul class="header__menu-submenu post-list">
+                                            <li class="post-list__item"><a href="#">Window Replacement</a></li>
+                                            <li class="post-list__item"><a href="#">Window Repair</a></li>
+                                            <li class="post-list__item"><a href="#">Window Installation</a></li>
+                                            <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
+                                            <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
+                                        </ul>
+                                    </section>
+                                    <section class="col">
+                                        <span class="header__menu-title">WINDOW SERVICES</span>
+                                        <ul class="header__menu-submenu post-list">
+                                            <li class="post-list__item"><a href="#">Window Replacement</a></li>
+                                            <li class="post-list__item"><a href="#">Window Repair</a></li>
+                                            <li class="post-list__item"><a href="#">Window Installation</a></li>
+                                            <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
+                                            <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
+                                        </ul>
+                                    </section>
+                                    <section class="col">
+                                        <span class="header__menu-title">WINDOW SERVICES</span>
+                                        <ul class="header__menu-submenu post-list">
+                                            <li class="post-list__item"><a href="#">Window Replacement</a></li>
+                                            <li class="post-list__item"><a href="#">Window Repair</a></li>
+                                            <li class="post-list__item"><a href="#">Window Installation</a></li>
+                                            <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
+                                            <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
+                                        </ul>
+                                    </section>
+                                </div>   
+                            </div> 
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Commercial<i class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 6.29251L3.64576 4.625L9.00349 10.0459L14.3612 4.625L16 6.29251L9 13.375L2 6.29369V6.29251Z" fill="currentColor"/>
+                        </svg>
 
-
-                                </i>
-                                <span class="dropdown-menu__arrows"></span>
-                            </a>
-                            
-                            <div class="dropdown-menu container-fluid">
-                                <div class="container-xl">
-                                    <div class="row">
-                                        <section class="col">
-                                            <span class="header__menu-title">WINDOW SERVICES</span>
-                                            <ul class="header__menu-submenu post-list">
-                                                <li class="post-list__item"><a href="#">Window Replacement</a></li>
-                                                <li class="post-list__item"><a href="#">Window Repair</a></li>
-                                                <li class="post-list__item"><a href="#">Window Installation</a></li>
-                                                <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
-                                                <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
-                                            </ul>
-                                        </section>
-                                        <section class="col">
-                                            <span class="header__menu-title">WINDOW SERVICES</span>
-                                            <ul class="header__menu-submenu post-list">
-                                                <li class="post-list__item"><a href="#">Window Replacement</a></li>
-                                                <li class="post-list__item"><a href="#">Window Repair</a></li>
-                                                <li class="post-list__item"><a href="#">Window Installation</a></li>
-                                                <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
-                                                <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
-                                            </ul>
-                                        </section>
-                                        <section class="col">
-                                            <span class="header__menu-title">WINDOW SERVICES</span>
-                                            <ul class="header__menu-submenu post-list">
-                                                <li class="post-list__item"><a href="#">Window Replacement</a></li>
-                                                <li class="post-list__item"><a href="#">Window Repair</a></li>
-                                                <li class="post-list__item"><a href="#">Window Installation</a></li>
-                                                <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
-                                                <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
-                                            </ul>
-                                        </section>
-                                        <section class="col">
-                                            <span class="header__menu-title">WINDOW SERVICES</span>
-                                            <ul class="header__menu-submenu post-list">
-                                                <li class="post-list__item"><a href="#">Window Replacement</a></li>
-                                                <li class="post-list__item"><a href="#">Window Repair</a></li>
-                                                <li class="post-list__item"><a href="#">Window Installation</a></li>
-                                                <li class="post-list__item"><a href="#">Wooden Windows Restoration</a></li>
-                                                <li class="post-list__item"><a href="#">Window Capping or Moldings Replacement</a></li>
-                                            </ul>
-                                        </section>
-                                    </div>   
-                                </div> 
-                            </div>
-                            
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Commercial<i class="icon">
+                            </i>
+                            <span class="dropdown-menu__arrows"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item simple-menu-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us<i class="icon">
                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 6.29251L3.64576 4.625L9.00349 10.0459L14.3612 4.625L16 6.29251L9 13.375L2 6.29369V6.29251Z" fill="currentColor"/>
                             </svg>
 
-                                </i>
-                                <span class="dropdown-menu__arrows"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog</a></li>
-                                </ul>
-                        </li>
-                        <li class="nav-item simple-menu-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us<i class="icon">
-                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 6.29251L3.64576 4.625L9.00349 10.0459L14.3612 4.625L16 6.29251L9 13.375L2 6.29369V6.29251Z" fill="currentColor"/>
-                                </svg>
+                            </i>
+                            <span class="dropdown-menu__arrows"></span>
+                        </a>
 
-                                </i>
-                                <span class="dropdown-menu__arrows"></span>
-                            </a>
-
-                            <ul class="dropdown-menu header__menu-submenu post-list">
-                                    <li><a class="post-list__item dropdown-item" href="#">Reviews</a></li>
-                                    <li><a class="post-list__item dropdown-item" href="#">Blog</a></li>
-                                </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#" >Contact Us</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-secondary btn-medium header__menu-button" href="/docs/5.0/getting-started/download/">Request a call</a>
+                        <ul class="dropdown-menu header__menu-submenu post-list">
+                                <li><a class="post-list__item dropdown-item" href="#">Reviews</a></li>
+                                <li><a class="post-list__item dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" >Contact Us</a>
+                    </li>
+                </ul>
+                <button class="btn btn-secondary btn-medium header__menu-button">Request a call</button>
                 </nav>
             </div>
         </section>

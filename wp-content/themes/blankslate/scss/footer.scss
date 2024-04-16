@@ -20,5 +20,20 @@
         display: block;
         margin-top: -62px;
     }
+    &__menu-buttons-wrapper{
+        display: none;
+        @media (max-width: 992px) {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            z-index: 1111;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            padding: 8px 20px;
+            box-shadow: 0px 1px 17px 0px #0E192D12;
+        }
+    }
 }
 
