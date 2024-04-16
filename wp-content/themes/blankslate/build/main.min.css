@@ -15260,6 +15260,13 @@ body.page-template-page-services-hub {
   font-size: 20px;
 }
 
+.block-recent-articles .item-our-team-block__top img {
+  max-height: 180px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .row-bottom > a {
   color: #2C5697;
   font-family: "Poppins", sans-serif;
