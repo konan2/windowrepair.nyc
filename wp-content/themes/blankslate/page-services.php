@@ -198,7 +198,8 @@
 			
 			<div class="row">
               <div class="col-md-12">
-                <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button>
+                <!-- <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button> -->
+                <input id="mybtn" type="submit" value="BOOK ONLINE" class="btn btn-primary">
                 <span id="status"> </span>
                 <input type="hidden" id="formid" name="formid" value="1001">
               </div>
