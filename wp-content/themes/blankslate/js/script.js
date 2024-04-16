@@ -561,7 +561,8 @@ $(document).ready(function() {
     $('.filter-button').removeClass('active');
     $(this).addClass('active');
 
-    filterArticlesByCategory(category);
+    var categorySlug = category.replace(/\s+/g, '-').toLowerCase();
+    filterArticlesByCategory(categorySlug);
   });
 });
 
@@ -571,7 +572,8 @@ function filterArticlesByCategory(category) {
     $('.item-our-team-block').show();
   } else {
     $('.item-our-team-block').each(function() {
-      if ($(this).find('.post-category').text().toLowerCase().indexOf(category) !== -1) {
+      var postCategory = $(this).find('.post-category').text().toLowerCase().replace(/\s+/g, '-');
+      if (postCategory.indexOf(category) !== -1) {
         $(this).show();
       }
     });
