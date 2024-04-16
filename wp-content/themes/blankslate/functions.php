@@ -209,12 +209,12 @@ function form1($tomyform , $headersmyform) {
 	$message .= "<br><br>---------<br>";
 	$message .= "UserAgent: ".str_replace(array("(", ")"), "", $userAgent[0])."<br>";
 	$message .= "User IP: ".$_SERVER['REMOTE_ADDR']."<br>";
-	$subject = 'Contact Form';
+	$subject = 'Contact Form - windowrepair.nyc';
 		
 	if ( wp_mail( $tomyform, $subject, $message, $headersmyform )  )	{
 				$system['statuse']='ok';
-				$system['reply']='Thank you for getting in touch! <br>
-We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!';
+				$system['reply']='<h2>Thank you.</h2> <br>
+        <p>We will contact you. Shortly.</p>';
 				echo json_encode($system, JSON_UNESCAPED_UNICODE);
 				exit; die();
 				
