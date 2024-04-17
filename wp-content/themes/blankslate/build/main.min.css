@@ -13848,6 +13848,7 @@ address {
   background-position: center;
   display: flex;
   align-items: center;
+  background-size: cover;
 }
 .services-hub-hero-section__title {
   color: #fff;
@@ -14206,6 +14207,7 @@ address {
   background-position: center;
   display: flex;
   align-items: center;
+  background-size: cover;
 }
 .services-hero-section__title {
   color: #fff;
@@ -15119,6 +15121,7 @@ body.page-template-page-services-hub {
 .about-us-section.services-hero-section {
   background: url("../img/about-us-hero.png") no-repeat;
   background-position: center;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .about-us-section.services-hero-section {
@@ -15286,9 +15289,33 @@ body.page-template-page-services-hub {
   z-index: 1000;
 }
 
+@media (max-width: 550px) {
+  .form-wrap.btn-call-us {
+    max-width: 380px;
+    width: 335px;
+  }
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #FFD221;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .rewiews-table-section.services-hero-section {
   background: url("../img/rewiews-hero-img.png") no-repeat;
   background-position: center;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .rewiews-table-section.services-hero-section {
