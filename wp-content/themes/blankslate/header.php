@@ -133,7 +133,7 @@
                     ));
                         ?>
 
-                <button class="btn btn-secondary btn-medium header__menu-button">Request a call</button>
+                <button class="btn btn-secondary btn-medium header__menu-button" data-bs-toggle="modal" data-bs-target="#request-call">Request a call</button>
                     
                 </nav>
             </div>
@@ -143,7 +143,50 @@
     
 
 
+<div class="modal fade" id="request-call" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal__content">
+        <form id="request-call-form" onsubmit="submitCform(); return false;" class="form-wrap form-wrap__rows"> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
+                </svg>
 
+                </button>
+                <h3 class="form-wrap__title poppins-bold">ENTER YOUR PHONE NUMBER AND WE WILL CONTACT YOU</h3>
+            <div class="row">
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="form-group">
+                        <label for="Phone">Phone number</label>
+                        <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+                    </div>
+            </div>
+        
+        
+            
+            <div class="row-agree">
+                <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
+                <label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                <!-- <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button> -->
+                <input id="mybtn" type="submit" value="Send request" class="btn btn-secondary w-100">
+                <span id="status"> </span>
+                <input type="hidden" id="formid" name="formid" value="1001">
+                </div>
+            </div>
+
+        </form>
+    </div>
+  </div>
+</div>
 
     
 

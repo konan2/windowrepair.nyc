@@ -13015,6 +13015,32 @@ address {
   color: #789AEE;
 }
 
+.modal-dialog {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.modal__content {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+.modal__content .btn-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 8px;
+  top: 8px;
+  color: #fff;
+  background: none;
+  padding: 0;
+}
+.modal__content form {
+  position: relative;
+}
+
 .header {
   position: relative;
   background-color: #fff;

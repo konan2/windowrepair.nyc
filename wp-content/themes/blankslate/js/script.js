@@ -1,13 +1,12 @@
 import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
+import 'bootstrap/js/dist/modal';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
 
 window.addEventListener('DOMContentLoaded',function () {
-
-  
 
  // Add overflow hidden while menu opened
  

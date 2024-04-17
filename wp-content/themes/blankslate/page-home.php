@@ -30,55 +30,78 @@
 <h3 class="counters__item"><span class="counters__value">28</span> <span class="counters__text">Qualified stafs</span></h3>
 </div>
 </div>
-</section><section id="quality-services" class="quality-services">
-<div class="container-xl text-center container">
+</section>
+
+
+
+
+
+
+<section id="quality-services" class="quality-services container-fluid quality-services-serv-page">
+<div class="container-xl text-center">
 <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
 <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
+<div class="swiper-best-quality">
+<div class="quality-services__wrapper row row-cols-1 swiper-wrapper quality-services-serv-page">
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+   </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
+    <article class="col-4 swiper-slide">
+        <div class="quality-services__item">
+            <span class="quality-services__icon"></span>
+            <h4>Sameday Service</h4>
+            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+        </div>
+    </article>
 </div>
-<div id="swiper-best-quality" class="swiper-best-quality container">
-<div class="quality-services__wrapper row row-cols-md-3 swiper-wrapper"><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+</div>
+</div>
+</section>
 
-</div>
-</article><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 
-</div>
-</article><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 
-</div>
-</article><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 
-</div>
-</article><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 
-</div>
-</article><article class="swiper-slide">
-<div class="quality-services__item">
-<h4>Sameday Service</h4>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 
-</div>
-</article></div>
-<div class="swiper-pagination"></div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-</div>
-</section><section id="benefits" class="benefits">
+
+
+<section id="benefits" class="benefits">
 <div class="container-xl container">
 <div class="row row-cols-1 row-cols-md-2">
 <div class="px-0 px-sm-3"><img class="alignnone size-full wp-image-23" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/img2-1.png" alt="" width="445" height="542" /></div>
