@@ -612,3 +612,4 @@ $(document).ready(function() {
       $(this).fadeOut();
   });
 });
+
