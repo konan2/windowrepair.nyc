@@ -31,11 +31,14 @@
             <div>
             <?php
 function display_recent_articles_block($category = 'all') {
+    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; 
+
     $args = array(
         'post_type' => 'post',
         'posts_per_page' => 4,
         'orderby' => 'date',
         'order' => 'DESC',
+        'paged' => $paged, 
     );
     if ($category !== 'all') {
         $args['category_name'] = $category;
@@ -48,7 +51,9 @@ function display_recent_articles_block($category = 'all') {
         while ($query->have_posts()) {
             $query->the_post();
             echo '<li class="item-our-team-block">';
-            echo '<div class="item-our-team-block__top">' . '<img src="https://mrglazier.com/wp-content/uploads/2024/03/Rectangle-117.png" alt="post-image" />' . '</div>'; 
+            if (has_post_thumbnail()) {
+                echo '<div class="item-our-team-block__top"><img src="' . get_the_post_thumbnail_url() . '" alt="Featured Image"></div>'; 
+            }
             echo '<div class="item-our-team-block__bottom">';
             echo '<span class="post-category">' . get_the_category_list(', ') . '</span>'; 
             echo '<h4>' . get_the_title() . '</h4>'; 
@@ -59,6 +64,18 @@ function display_recent_articles_block($category = 'all') {
         }
         echo '</ul>';
         echo '</div>';
+
+
+        echo '<div class="pagination">';
+        echo paginate_links( array(
+            'total' => $query->max_num_pages, 
+            'current' => max( 1, $paged ), 
+            'format' => '?paged=%#%',
+            'prev_text' => '&laquo; Previous', 
+            'next_text' => 'Next &raquo;', 
+        ) );
+        echo '</div>';
+
         wp_reset_postdata();
     } else {
         echo '<p>No other articles found.</p>';
@@ -66,7 +83,7 @@ function display_recent_articles_block($category = 'all') {
 }
 
 display_recent_articles_block();
-            ?>
+?>
 
 
         </div>
