@@ -167,7 +167,12 @@
                     </div>
             </div>
         
-        
+            <div class="row">
+                    <div class="form-group">
+            <label id="website" for="website">website:</label>
+            <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+            </div>
+            </div>
             
             <div class="row-agree">
                 <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
@@ -182,8 +187,7 @@
                 <input type="hidden" id="formid" name="formid" value="1001">
                 </div>
             </div>
-            <label id="website" for="website">website:</label>
-            <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+            
 
         </form>
     </div>
