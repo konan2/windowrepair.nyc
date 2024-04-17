@@ -188,6 +188,45 @@
   </div>
 </div>
 
+<script>
+
+window.addEventListener('DOMContentLoaded',function () {
+
+const requestCallForm = document.querySelector("form#request-call-form");
+
+function submitCform() {
+document.querySelector("form#request-call-form #mybtn").disabled = "true"
+document.querySelector("form#request-call-form #mybtn").value = 'Please wait...'
+
+var formdata = new FormData(requestCallForm);
+
+formdata.append('action', 'submitmyform') 
+AjaxCform(formdata) 
+}
+
+async function AjaxCform(formdata) {
+  const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
+  const response = await fetch(url, {
+      method: 'POST',
+      body: formdata,
+  });
+  const data = await response.json();
+	
+	if (data['statuse'] == 'ok'){			
+			document.querySelector("form#request-call-form").innerHTML = `<div id="success">
+			${data['reply']}
+			</div>`			
+	} else if (data['statuse'] == 'er') {
+			document.querySelector("form#request-call-form span#status").innerHTML = `<div id="er">
+			Ops, ${data['reply']}
+			</div>`
+			document.querySelector("form#request-call-form #mybtn").disabled = false
+			document.querySelector("form#request-call-form #mybtn").value = 'Try again'
+	}}	
+
+});
+  </script>  
+
     
 
 <main id="content" role="main" class="page-wrapper">
