@@ -14509,9 +14509,6 @@ input:checked + label:before {
   }
 }
 
-.contact-banner {
-  max-width: 1030px;
-}
 .contact-banner__title {
   text-align: center;
   color: #fff;
