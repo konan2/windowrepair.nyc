@@ -14348,21 +14348,21 @@ address {
   gap: 24px;
 }
 
-.repair-form .btn-primary {
+.form-wrap .btn-primary {
   background: #FFD221;
   color: #2C5697;
   width: 100%;
   border-radius: 12px;
 }
 
-.repair-form label {
+.form-wrap label {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.repair-form .form-control {
+.form-wrap .form-control {
   height: 48px;
 }
 
@@ -14402,7 +14402,7 @@ input:checked + label:before {
   background-color: #FFD221;
 }
 
-.repair-form input[type=checkbox]:checked + label:after {
+.form-wrap input[type=checkbox]:checked + label:after {
   content: "";
   display: block;
   position: absolute;
@@ -14415,7 +14415,7 @@ input:checked + label:before {
   transform: rotate(45deg);
 }
 
-.repair-form .form-group input[type=checkbox]:checked + label:after {
+.form-wrap .form-group input[type=checkbox]:checked + label:after {
   top: 5px;
 }
 
