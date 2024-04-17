@@ -84,6 +84,48 @@
 
 </div>
 
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(event) {
+            var dropdownMenu = this.nextElementSibling;
+            if (dropdownMenu && !dropdownMenu.classList.contains('show')) {
+                closeOtherDropdowns(this);
+            }
+        });
+    });
+
+    // Добавляем обработчики событий клика для вложенных элементов меню
+    var dropdownMenus = document.querySelectorAll('.dropdown-menu');
+    dropdownMenus.forEach(function(menu) {
+        menu.addEventListener('click', function(event) {
+            event.stopPropagation(); // Предотвращаем всплытие события клика
+        });
+    });
+
+    function closeOtherDropdowns(currentToggle) {
+        var openDropdowns = document.querySelectorAll('.dropdown-toggle');
+        openDropdowns.forEach(function(toggle) {
+            if (toggle !== currentToggle) {
+                var dropdownMenu = toggle.nextElementSibling;
+                if (dropdownMenu && dropdownMenu.classList.contains('show')) {
+                    dropdownMenu.classList.remove('show');
+                }
+            }
+        });
+    }
+
+    document.addEventListener('click', function() {
+        closeOtherDropdowns(null); // передаем null для закрытия всех меню
+    });
+});
+</script>
+
+
+
 <?php wp_footer(); ?>
 </body>
 </html>
