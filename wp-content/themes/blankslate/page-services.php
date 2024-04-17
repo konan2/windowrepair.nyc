@@ -653,37 +653,79 @@
 
 <script>
 
-const contactForm = document.querySelector("form#contactForm");
+// const contactForm = document.querySelector("form#contactForm");
 
-function submitCform() {
-document.querySelector("form#contactForm #mybtn").disabled = "true"
-document.querySelector("form#contactForm #mybtn").value = 'Please wait...'
+// function submitCform() {
+// document.querySelector("form#contactForm #mybtn").disabled = "true"
+// document.querySelector("form#contactForm #mybtn").value = 'Please wait...'
 
-var formdata = new FormData(contactForm);
+// var formdata = new FormData(contactForm);
 
-formdata.append('action', 'submitmyform') 
-AjaxCform(formdata) 
-}
+// formdata.append('action', 'submitmyform') 
+// AjaxCform(formdata) 
+// }
 
-async function AjaxCform(formdata) {
-  const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
-  const response = await fetch(url, {
-      method: 'POST',
-      body: formdata,
-  });
-  const data = await response.json();
+// async function AjaxCform(formdata) {
+//   const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
+//   const response = await fetch(url, {
+//       method: 'POST',
+//       body: formdata,
+//   });
+//   const data = await response.json();
 	
-	if (data['statuse'] == 'ok'){			
-			document.querySelector("form#contactForm").innerHTML = `<div id="success">
-			${data['reply']}
-			</div>`			
-	} else if (data['statuse'] == 'er') {
-			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
-			${data['reply']}
-			</div>`
-			document.querySelector("form#contactForm #mybtn").disabled = false
-			document.querySelector("form#contactForm #mybtn").value = 'Please try again.'
-	}}	
+// 	if (data['statuse'] == 'ok'){			
+// 			document.querySelector("form#contactForm").innerHTML = `<div id="success">
+// 			${data['reply']}
+// 			</div>`			
+// 	} else if (data['statuse'] == 'er') {
+// 			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
+// 			${data['reply']}
+// 			</div>`
+// 			document.querySelector("form#contactForm #mybtn").disabled = false
+// 			document.querySelector("form#contactForm #mybtn").value = 'Please try again.'
+// 	}}	
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const allForms = document.querySelectorAll("form.form-wrap__rows");
+
+    allForms.forEach(function(form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const submitButton = form.querySelector("button[type='submit']");
+            submitButton.disabled = true;
+            submitButton.textContent = 'Please wait...';
+            
+            const formData = new FormData(form);
+            formData.append('action', 'submitmyform');
+            
+            ajaxSubmitForm(formData, form);
+        });
+    });
+});
+
+async function ajaxSubmitForm(formData, form) {
+    const url = `${location.protocol}//${window.location.hostname}/wp-admin/admin-ajax.php?action=submitmyform`;
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            body: formData,
+        });
+        const data = await response.json();
+
+        if (data['status'] === 'ok') {
+            form.innerHTML = `<div id="success">${data['reply']}</div>`;
+        } else if (data['status'] === 'er') {
+            const statusElement = form.querySelector("span#status");
+            statusElement.innerHTML = `<div id="er">${data['reply']}</div>`;
+            const submitButton = form.querySelector("button[type='submit']");
+            submitButton.disabled = false;
+            submitButton.textContent = 'Please try again.';
+        }
+    } catch (error) {
+        console.error('Error submitting form:', error);
+    }
+}
 
 
 
