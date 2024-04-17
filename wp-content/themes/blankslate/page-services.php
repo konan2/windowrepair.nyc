@@ -247,8 +247,89 @@
         <div class="contact-banner">
              <h2 class="contact-banner__title">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not</h2>
              <p class="contact-banner__desc">All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
-             <button class=" btn btn-light contact-banner__btn" type="button">request a call</button>
+             <button id="showContactForm" class=" btn btn-light contact-banner__btn" type="button">request a call</button>
     </div>
+
+    <div class="form-wrap btn-call-us">	
+            <form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
+            <button type="button" id="closeContactForm" class="close">&times;</button>
+              <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
+                <div class="row">
+                        <div class="form-group">
+                            <label for="name">Full name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                        </div>
+                </div>
+
+            <label id="website" for="website">website:</label>
+            <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+			
+			<div class="row">
+					<div class="form-group">
+						<label for="Phone">Phone number*</label>
+						<input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+					</div>
+            </div>
+
+            <div class="row">
+					<div class="form-group">
+						<label>Choose a service*</label>
+                        <div class="row">
+                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repair" checked>
+                                <label class="custom-control-label" for="repair">Repair</label>
+                            </div>
+                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" name="install" value="install" id="install">
+                                <label class="custom-control-label" for="install">Install</label>
+                            </div>
+                        </div>
+					</div>
+            </div>
+
+           <div class="row">
+					<div class="form-group">
+						<label for="problem">What's the problem*</label>
+						<select id="problem" name="problem" class="form-control" required>
+							<option selected value="window_Replacement">Window replacement</option>
+							<option value="window_Repair">Window Repair</option>
+							<option value="window_Installation">Window Installation</option>
+							<option value="window_Capping">Window Capping</option>
+							<option value="wooden_Windows_Restoration">Wooden Windows Restoration</option>
+							<option value="other">Other</option>
+						</select>
+				    </div>
+			</div>
+
+            <button type="button" id="show-comment-btn" class="show-comment-form">Would you like to leave a comment?</button>
+
+            <div id="comment-form" style="display: none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Leave a comment</label>
+                            <textarea  id="message" class="form-control" name="message" placeholder="How can we help?"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-agree">
+				<input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
+				<label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
+            </div>
+			
+			<div class="row">
+              <div class="col-md-12">
+                <input id="mybtn" type="submit" value="BOOK ONLINE" class="btn btn-primary">
+                <span id="status"> </span>
+                <input type="hidden" id="formid" name="formid" value="1001">
+              </div>
+			</div>
+
+		</form>
+      </div>
+      <div id="contactFormBackdrop" style="display: none;"></div>
        
     </div>
 </section>
