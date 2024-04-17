@@ -104,6 +104,7 @@
     border-radius: unset;
     color: #fff;
     width: 100%;
+    min-width: 245px;
     font-style: normal;
     position: relative;
 }
@@ -184,4 +185,8 @@
 
 .row-bottom>span {
     color: $primary;
+}
+
+.categories .show {
+    display: block!important;
 }

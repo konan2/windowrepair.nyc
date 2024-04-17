@@ -15149,6 +15149,28 @@ body.page-template-page-services-hub {
   }
 }
 
+#contactFormBackdrop {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.form-wrap.btn-call-us {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
 .rewiews-table-section.services-hero-section {
   background: url("../img/rewiews-hero-img.png") no-repeat;
   background-position: center;
@@ -15295,6 +15317,7 @@ body.page-template-page-services-hub {
   border-radius: unset;
   color: #fff;
   width: 100%;
+  min-width: 245px;
   font-style: normal;
   position: relative;
 }
@@ -15375,6 +15398,10 @@ body.page-template-page-services-hub {
 
 .row-bottom > span {
   color: #2C5697;
+}
+
+.categories .show {
+  display: block !important;
 }
 
 .blog-services-section.services-section {
