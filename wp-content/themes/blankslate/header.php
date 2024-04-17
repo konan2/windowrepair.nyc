@@ -143,7 +143,7 @@
     
 
 
-<div class="modal fade" id="request-call" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="request-call" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content modal__content">
         <form id="request-call-form" onsubmit="submitCform(); return false;" class="form-wrap form-wrap__rows"> 
@@ -167,12 +167,10 @@
                     </div>
             </div>
         
-            <div class="row">
-                    <div class="form-group">
+           
             <label id="website" for="website">website:</label>
             <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
-            </div>
-            </div>
+           
             
             <div class="row-agree">
                 <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
@@ -196,7 +194,7 @@
 
 <script>
 
-window.addEventListener('DOMContentLoaded',function () {
+
 
 const requestCallForm = document.querySelector("form#request-call-form");
 
@@ -230,7 +228,7 @@ async function AjaxCform(formdata) {
 			document.querySelector("form#request-call-form #mybtn").value = 'Try again'
 	}}	
 
-});
+
   </script>  
 
     
