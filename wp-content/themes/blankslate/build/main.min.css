@@ -15569,7 +15569,7 @@ body.page-template-page-services-hub {
   display: block !important;
 }
 
-.main-post-content__block img {
+.main-post-content__block .wp-post-image {
   display: none;
 }
 
