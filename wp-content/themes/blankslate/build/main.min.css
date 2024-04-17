@@ -13195,6 +13195,7 @@ address {
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu .dropdown-menu {
     flex-direction: column;
+    align-items: flex-start;
   }
   .dropdown-menu.container-xl > .menu-item {
     width: 25%;
@@ -13212,25 +13213,6 @@ address {
   }
   .header__menu.navbar-nav .menu-level-2 > .drop-down-wrapper > .dropdown-menu {
     padding: 0;
-  }
-  .nav-item.menu-level-3 {
-    position: relative;
-    padding: 0;
-    padding-left: 14px;
-    margin: 8px 0;
-    font-weight: bold;
-    line-height: 26px;
-    color: #7A7A7A;
-  }
-  .nav-item.menu-level-3:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 9px;
-    width: 6px;
-    height: 6px;
-    background: currentColor;
-    border-radius: 100%;
   }
   .menu-item-has-children.menu-level-1 > .dropdown-toggle::before, .menu-item-has-children.menu-level-1 > .dropdown-toggle::after {
     content: "";
@@ -13262,6 +13244,39 @@ address {
     display: none;
   }
 }
+.menu-level-2 {
+  color: #2C5697;
+}
+.menu-level-2 .nav-link {
+  text-transform: uppercase;
+}
+
+.nav-item.menu-level-3 {
+  position: relative;
+  padding: 0;
+  padding-left: 14px;
+  margin: 8px 0;
+  font-weight: bold;
+  line-height: 26px;
+  color: #7A7A7A;
+}
+.nav-item.menu-level-3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 100%;
+}
+.nav-item.menu-level-3:hover {
+  color: #789AEE;
+}
+.nav-item.menu-level-3:active {
+  color: #2C5697;
+}
+
 @media (max-width: 992px) {
   .menu-level-1 > .drop-down-wrapper > .dropdown-menu {
     margin-top: 16px;
@@ -13270,9 +13285,6 @@ address {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .menu-level-2 .nav-link {
-    text-transform: uppercase;
   }
   .header__menu .nav-item {
     margin: 0;
@@ -13360,6 +13372,10 @@ address {
 .header__menu.navbar-nav .menu-item.simple-menu .drop-down-wrapper .nav-link {
   color: currentColor;
   text-transform: none;
+}
+
+.nav-item::before, .nav-item::after {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .front-banner {
