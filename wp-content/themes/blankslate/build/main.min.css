@@ -13018,6 +13018,7 @@ address {
 .header {
   position: relative;
   background-color: #fff;
+  z-index: 2;
 }
 .header__menu-button {
   margin-left: 30px;
