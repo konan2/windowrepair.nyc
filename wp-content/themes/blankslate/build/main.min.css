@@ -13050,6 +13050,8 @@ address {
   margin: 0;
   padding: 0;
   margin-bottom: -60px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .header__contacts-container .navbar-brand {
@@ -13332,6 +13334,34 @@ address {
     border-top: 1px solid #D6E3F9;
   }
 }
+.header__menu.navbar-nav .menu-item.simple-menu {
+  position: relative;
+}
+.header__menu.navbar-nav .menu-item.simple-menu .dropdown-menu {
+  padding: 10px 8px;
+  min-width: 152px;
+}
+.header__menu.navbar-nav .menu-item.simple-menu .menu-item {
+  color: #7A7A7A;
+  width: auto;
+  position: relative;
+  padding: 6px 0 6px 16px;
+}
+.header__menu.navbar-nav .menu-item.simple-menu .menu-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 100%;
+}
+.header__menu.navbar-nav .menu-item.simple-menu .drop-down-wrapper .nav-link {
+  color: currentColor;
+  text-transform: none;
+}
+
 .front-banner {
   position: relative;
 }
@@ -15537,6 +15567,8 @@ body.page-template-page-services-hub {
 .footer-brand {
   display: block;
   margin-top: -62px;
+  width: 105px;
+  height: 105px;
 }
 .footer__menu-buttons-wrapper {
   display: none;

@@ -29,6 +29,8 @@
             margin: 0;
             padding: 0;
             margin-bottom: -60px;
+            position: relative;
+            z-index: 1;
             @media (max-width: 992px) {
                 margin-bottom: 0;
             }
@@ -365,5 +367,38 @@
     }
     .menu-level-1:first-child{
         border-top: 1px solid#D6E3F9;
+    }
+}
+
+.header__menu.navbar-nav{
+    .menu-item.simple-menu{
+        .dropdown-menu{
+            padding: 10px 8px;
+            min-width: 152px;
+        }
+        .menu-item{
+            color: #7A7A7A;
+            width: auto;
+            position: relative;
+            padding: 6px 0 6px 16px;
+           
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 13px;
+                width: 6px;
+                height: 6px;
+                background: currentColor;
+                border-radius: 100%;
+            }
+        }
+        position: relative;
+        .drop-down-wrapper{
+            .nav-link{
+                color: currentColor;
+                text-transform: none;
+            }
+        }
     }
 }
