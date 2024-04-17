@@ -216,11 +216,11 @@ async function AjaxCform(formdata) {
   });
   const data = await response.json();
 	
-	if (data['status'] == 'ok'){			
+	if (data['statuse'] == 'ok'){			
 			document.querySelector("form#request-call-form").innerHTML = `<div id="success">
 			${data['reply']}
 			</div>`			
-	} else if (data['status'] == 'er') {
+	} else if (data['statuse'] == 'er') {
 			document.querySelector("form#request-call-form span#status").innerHTML = `<div id="er">
 			Ops, ${data['reply']}
 			</div>`
