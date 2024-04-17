@@ -603,13 +603,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#showContactForm').click(function() {
-      $('.form-wrap').fadeIn();
+      $('.form-wrap.btn-call-us').fadeIn();
       $('#contactFormBackdrop').fadeIn();
   });
 
-  $('#contactFormBackdrop').click(function() {
-      $('.form-wrap').fadeOut();
-      $(this).fadeOut();
+  $('#contactFormBackdrop, #closeContactForm').click(function() {
+      $('.form-wrap.btn-call-us').fadeOut();
+      $('#contactFormBackdrop').fadeOut();
   });
 });
-

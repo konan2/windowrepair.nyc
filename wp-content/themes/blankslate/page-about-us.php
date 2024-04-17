@@ -251,18 +251,17 @@
 
             <div class="form-wrap btn-call-us">	
             <form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
-        <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
-			<div class="row">
-					<div class="form-group">
-						<label for="name">Full name*</label>
-						<input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
-					</div>
-			</div>
+            <button type="button" id="closeContactForm" class="close">&times;</button>
+              <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
+                <div class="row">
+                        <div class="form-group">
+                            <label for="name">Full name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                        </div>
+                </div>
 
             <label id="website" for="website">website:</label>
             <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
-            <!-- <label for="email">Email:</label>
-           <input type="email" id="email" name="email" placeholder="Yourid@gmail.com" required> -->
 			
 			<div class="row">
 					<div class="form-group">
@@ -321,7 +320,6 @@
 			
 			<div class="row">
               <div class="col-md-12">
-                <!-- <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button> -->
                 <input id="mybtn" type="submit" value="BOOK ONLINE" class="btn btn-primary">
                 <span id="status"> </span>
                 <input type="hidden" id="formid" name="formid" value="1001">
