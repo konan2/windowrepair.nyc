@@ -3,6 +3,7 @@
 .about-us-section.services-hero-section {
     background: url("../img/about-us-hero.png") no-repeat;
     background-position: center;
+    background-size: cover;
 
     @media (max-width: 768px) {
         background-position: 50% center;
