@@ -263,7 +263,7 @@
                 
                 <p class="text-body-secondary">
                     If you are fed up with the noise and the dirt of the city that makes way into your clean home, then we can proffer you a simple, sensible, and affordable solution to get rid of the noise.</p>
-                <a href="#" class="btn btn-primary mt-4">Read more</a>
+                <a href="https://test.windowrepair.nyc/about-us/" class="btn btn-primary mt-4">Read more</a>
             </div>
             <div class="company-history-block__right col-md-6 offset-md-1">
                 <div class="row gy-4">
@@ -601,33 +601,6 @@
      </div>
 </section>
 
-
-
-
-<!-- <form id="contactForm" onsubmit="submitCform(); return false;"> 
-
-<label for="name">Name:</label>
-<input type="text" id="name" name="name" placeholder="Your Name" required>
-
-<label id="website" for="website">website:</label>
-<input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
-
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" placeholder="Yourid@gmail.com" required>
-
-<label for="subject">Subject:</label>
-<input type="text" id="subject" name="subject" placeholder="The title of your message" required>
-
-<label for="message">Message:</label>
-<textarea rows="3" id="message" name="message" placeholder="Type your message here" required>
-</textarea>	
-
-<input id="mybtn" type="submit" value="SEND MESSAGE">
-<span id="status"> </span>
-<input type="hidden" id="formid" name="formid" value="1001">
-
-
-</form> -->
 
 <script>
 
