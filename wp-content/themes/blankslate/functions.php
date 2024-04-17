@@ -269,7 +269,7 @@ add_shortcode('show_section', 'custom_post_shortcode');
 
 
 
-
+add_theme_support( 'post-thumbnails' );
 
 
 // Contact Form

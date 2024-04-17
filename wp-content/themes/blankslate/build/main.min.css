@@ -15569,6 +15569,10 @@ body.page-template-page-services-hub {
   display: block !important;
 }
 
+.main-post-content__block img {
+  display: none;
+}
+
 .blog-services-section.services-section {
   background: #fff;
 }

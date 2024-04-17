@@ -64,9 +64,9 @@
                         $query->the_post();
                         echo '<li class="item-our-team-block">';
 
-                        //    if (has_post_thumbnail()) {
-                            echo '<div class="item-our-team-block__top">' . '   <img src="https://mrglazier.com/wp-content/uploads/2024/03/Rectangle-117.png" alt="post-image" />' . '</div>'; 
-                        // }
+                           if (has_post_thumbnail()) {
+                            echo '<div class="item-our-team-block__top"><img src="' . get_the_post_thumbnail_url() . '" alt="Featured Image"></div>'; 
+                        }
                    
                         echo ' <div class="item-our-team-block__bottom">
                           <span class="post-category">' . get_the_category_list(', ') . '</span>'; 
