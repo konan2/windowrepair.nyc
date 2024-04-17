@@ -110,7 +110,7 @@
                 </div>
             </div> 
         </section>
-        <section class="navbar navbar-expand-lg">
+        <!-- <section class="navbar navbar-expand-lg">
             <div class="header__menu-wrapper container-xl">
                 <nav class="collapse navbar-collapse header__menu-container" id="bdNavbar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -219,8 +219,8 @@
                 <button class="btn btn-secondary btn-medium header__menu-button">Request a call</button>
                 </nav>
             </div>
-        </section>
-        <!-- <section class="navbar navbar-expand-lg">
+        </section> -->
+        <section class="navbar navbar-expand-lg">
             <div class="header__menu-wrapper container-xl">
                 <nav class="collapse navbar-collapse header__menu-container" id="bdNavbar" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -247,7 +247,7 @@
                     
                 </nav>
             </div>
-        </section> -->
+        </section>
     </header>
 
 <main id="content" role="main" class="page-wrapper">
