@@ -13162,11 +13162,6 @@ address {
   padding: 0;
 }
 
-.menu-level-2 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .menu-level-2 .nav-link {
   text-transform: uppercase;
 }
@@ -13267,6 +13262,14 @@ address {
 @media (max-width: 992px) {
   .menu-level-1 > .drop-down-wrapper > .dropdown-menu {
     margin-top: 16px;
+  }
+  .menu-level-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu-level-2 .nav-link {
+    text-transform: uppercase;
   }
   .header__menu .nav-item {
     margin: 0;
