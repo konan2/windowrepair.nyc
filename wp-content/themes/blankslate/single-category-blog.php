@@ -22,6 +22,14 @@
       <div class="categories">
         <?php
         $current_category_id = get_query_var('cat');
+       
+        $parent_category_slug = 'blog'; // Замените на слаг вашей родительской категории
+        $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+
+        $categories = get_categories(array(
+            'parent' => $parent_category->term_id
+        ));
+
         $categories = get_categories();
             if (!empty($categories)) {
                 echo '<div class="dropdown-post-category">';
