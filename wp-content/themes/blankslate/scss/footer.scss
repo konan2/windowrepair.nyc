@@ -1,24 +1,15 @@
 .footer {
     background: #D6E3F9;
     padding-top: 103px;
-    padding-bottom: 75px;
+    padding-bottom: 95px;
     &__title{
         margin: 12px 0;
         font-weight: bold;
     }
-    &__menu{
-        &-item{
-            margin: 8px 0;
-            line-height: 1.5;
-            color: $primary;
-            a{
-                text-decoration: none;
-            }
-        }
-    }
     &-brand{
-        display: block;
+        display: inline-block;
         margin-top: -62px;
+        margin-bottom: 20px;
         width: 105px;
         height: 105px;
     }
@@ -39,3 +30,18 @@
     }
 }
 
+
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    color: $primary;
+    margin-bottom: 12px;
+    .menu-item, .footer__menu-item{
+        margin: 8px 0;
+        line-height: 1.5;
+        color: $primary;
+        a{
+            text-decoration: none;
+        }
+    }
+}

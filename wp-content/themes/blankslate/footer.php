@@ -48,20 +48,16 @@
          </div>
          <nav class="col-lg-3">
                <h6 class="footer__title">USEFUL LINKS</h6>
-               <ul class="footer__menu">
-                  <li class="footer__menu-item">
-                     <a class="footer-list__link" href="#">About Us</a>
-                  </li>
-                  <li class="footer__menu-item">
-                     <a class="footer-list__link" href="#">Services</a>
-                  </li>
-                  <li class="footer__menu-item">
-                     <a class="footer-list__link" href="#">Contact</a>
-                  </li>
-                  <li class="footer__menu-item">
-                     <a class="footer-list__link" href="#">Blog</a>
-                  </li>
-               </ul>
+               <?php
+                       wp_nav_menu(array(
+                        'theme_location' => 'footer', // Идентификатор местоположения меню
+                        'container' => 'ul', // Обертка для меню, в данном случае <ul>
+                        'menu_class' => 'footer__menu', // Классы меню
+                        'fallback_cb' => false, // Отключаем стандартный вывод меню при его отсутствии
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' // Обертка для элементов меню, теперь включает вложенные элементы
+
+                    ));
+               ?>
          </nav>
          <div class="col-lg-3">
             <h6 class="footer__title">OPENING HOURS</h6>
