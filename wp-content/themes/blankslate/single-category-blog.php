@@ -1,4 +1,3 @@
-<?php /* Template Name: Single Category Blog Template */ ?>
 
 <?php get_header(); ?>
 
