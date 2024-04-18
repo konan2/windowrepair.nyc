@@ -1,4 +1,4 @@
-.header{
+.page-wrapper > .header{
     position: relative;
     background-color: #fff;
     z-index: 2;
@@ -223,7 +223,7 @@
     color: $primary;
     text-transform: uppercase;
     margin: 0 0 12px 0;
-    pointer-events: none;
+    //pointer-events: none;
    }
    .icon{
         display: none;
@@ -388,8 +388,11 @@
 
 .header__menu.navbar-nav{
     .menu-item.simple-menu{
+        .drop-down-wrapper{
+            right: auto;
+        }
         .dropdown-menu{
-            padding: 10px 8px;
+            padding: 10px 8px 10px 16px;
             min-width: 152px;
         }
         .menu-item{

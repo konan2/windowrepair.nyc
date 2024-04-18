@@ -13040,15 +13040,15 @@ address {
   position: relative;
 }
 
-.header {
+.page-wrapper > .header {
   position: relative;
   background-color: #fff;
   z-index: 2;
 }
-.header__menu-button {
+.page-wrapper > .header__menu-button {
   margin-left: 30px;
 }
-.header .dropup, .header .dropend, .header .dropdown, .header .dropstart, .header .dropup-center, .header .dropdown-center {
+.page-wrapper > .header .dropup, .page-wrapper > .header .dropend, .page-wrapper > .header .dropdown, .page-wrapper > .header .dropstart, .page-wrapper > .header .dropup-center, .page-wrapper > .header .dropdown-center {
   position: initial;
 }
 
@@ -13231,7 +13231,6 @@ address {
     color: #2C5697;
     text-transform: uppercase;
     margin: 0 0 12px 0;
-    pointer-events: none;
   }
   .header__menu.navbar-nav .menu-level-2 .icon {
     display: none;
@@ -13374,8 +13373,11 @@ address {
 .header__menu.navbar-nav .menu-item.simple-menu {
   position: relative;
 }
+.header__menu.navbar-nav .menu-item.simple-menu .drop-down-wrapper {
+  right: auto;
+}
 .header__menu.navbar-nav .menu-item.simple-menu .dropdown-menu {
-  padding: 10px 8px;
+  padding: 10px 8px 10px 16px;
   min-width: 152px;
 }
 .header__menu.navbar-nav .menu-item.simple-menu .menu-item {
