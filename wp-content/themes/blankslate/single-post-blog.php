@@ -58,14 +58,15 @@
             
 
             function display_recent_articles_block() {
-
+                $parent_category_slug = 'blog'; 
+                $parent_category = get_term_by('slug', $parent_category_slug, 'category');
             
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 3,
                     'orderby' => 'date',
                     'order' => 'DESC',
-                    'category__in' => intval($parent_category->term_id)
+                    'category__in' => $parent_category->term_id
                 );
                 $query = new WP_Query($args);
 

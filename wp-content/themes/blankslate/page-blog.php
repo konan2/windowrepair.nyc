@@ -37,14 +37,15 @@
 
 function display_recent_articles_block($category = 'all') {
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; 
-
+    $parent_category_slug = 'blog'; 
+    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
     $args = array(
         'post_type' => 'post',
         'posts_per_page' => 4,
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
-        'category__in' => intval($parent_category->term_id)
+        'category__in' => $parent_category->term_id
 
     );
     if ($category !== 'all') {
