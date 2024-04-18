@@ -13045,7 +13045,7 @@ address {
   background-color: #fff;
   z-index: 2;
 }
-.page-wrapper > .header__menu-button {
+.page-wrapper > .header .header__menu-button {
   margin-left: 30px;
 }
 .page-wrapper > .header .dropup, .page-wrapper > .header .dropend, .page-wrapper > .header .dropdown, .page-wrapper > .header .dropstart, .page-wrapper > .header .dropup-center, .page-wrapper > .header .dropdown-center {
@@ -13386,6 +13386,9 @@ address {
   width: auto;
   position: relative;
   padding: 6px 0 6px 16px;
+}
+.header__menu.navbar-nav .menu-item.simple-menu .menu-item:hover {
+  color: #789AEE;
 }
 .header__menu.navbar-nav .menu-item.simple-menu .menu-item:before {
   content: "";
