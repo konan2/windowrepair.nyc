@@ -13269,8 +13269,9 @@ address {
 .menu-level-2 {
   color: #2C5697;
 }
-.menu-level-2 .nav-link {
+.menu-level-2 > .nav-link {
   text-transform: uppercase;
+  pointer-events: none;
 }
 
 .nav-item.menu-level-3 {

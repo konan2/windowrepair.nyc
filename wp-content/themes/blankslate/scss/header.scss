@@ -257,15 +257,16 @@
 
 .menu-level-2 > .dropdown-toggle::after{
     display: none;
-}
+    }
 
 }
 
 
 .menu-level-2{
     color: $primary;
-    .nav-link{
+    & > .nav-link{   
         text-transform: uppercase;
+        pointer-events: none;
     }
 }
 
