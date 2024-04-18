@@ -2,8 +2,8 @@
 <?php
 $post = $wp_query->post;
 if ( in_category('blog') ) {
-include(TEMPLATEPATH . '/single-post-blog.php');
+    include(get_template_directory() . '/single-post-blog.php');
 } else {
-include(TEMPLATEPATH . '/single-post.php');
+    include(get_template_directory() . '/single-post.php');
 }
 ?>
