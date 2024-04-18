@@ -12,7 +12,7 @@
 <footer id="footer" class="footer" role="contentinfo">
    <div class="container-xl">
       <div class="row text-center text-lg-start">
-         <div class="col-lg-4">
+         <div class="col-lg-4 footer__contacts-menu">
             <a class="footer-brand" href="<?php echo home_url(); ?>" aria-label="">
                <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g clip-path="url(#clip0_916_395)">

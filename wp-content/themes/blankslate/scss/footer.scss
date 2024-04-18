@@ -9,7 +9,7 @@
     &-brand{
         display: inline-block;
         margin-top: -62px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width: 105px;
         height: 105px;
     }
@@ -43,5 +43,11 @@
         a{
             text-decoration: none;
         }
+    }
+}
+
+.footer__contacts-menu{
+    .footer__menu-item{
+        margin: 10px 0;
     }
 }

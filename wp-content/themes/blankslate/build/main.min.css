@@ -12784,7 +12784,6 @@ p {
 
 .icon {
   display: inline-block;
-  vertical-align: text-bottom;
 }
 
 .btn {
@@ -15629,7 +15628,7 @@ body.page-template-page-services-hub {
 .footer-brand {
   display: inline-block;
   margin-top: -62px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 105px;
   height: 105px;
 }
@@ -15664,4 +15663,8 @@ body.page-template-page-services-hub {
 }
 .footer__menu .menu-item a, .footer__menu .footer__menu-item a {
   text-decoration: none;
+}
+
+.footer__contacts-menu .footer__menu-item {
+  margin: 10px 0;
 }
