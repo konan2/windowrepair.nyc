@@ -5,7 +5,7 @@
   $args = array(
     'post_type' => 'post', // Тип записи (в данном случае - посты)
     'posts_per_page' => -1, // Количество постов (-1 для получения всех)
-    'category' => $parent_category->term_id, // ID категории
+    'category__in' => $parent_category->term_id, // ID категории
   );
 
 ?>
@@ -59,15 +59,15 @@
                      $categories = get_the_category();
                      if ($categories) {
                       // Получаем первую категорию и используем ее название в качестве класса
-                      $category_class = sanitize_title($categories[0]->name);
-                      echo '<div class="service_item col filter ' . $category_class . '">';
-                      echo '<div class="service_item__bl">';
-                      echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
-                      echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
-                      echo '</a>';
-                      echo '</div>';
-                      echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
-                      echo '</div>';
+                        $category_class = sanitize_title($categories[0]->name);
+                        echo '<div class="service_item col filter ' . $category_class . '">';
+                        echo '<div class="service_item__bl">';
+                        echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
+                        echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
+                        echo '</a>';
+                        echo '</div>';
+                        echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
+                        echo '</div>';
                   }
 
                  }
