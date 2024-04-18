@@ -13336,6 +13336,9 @@ address {
   .menu-level-1 .drop-down-wrapper {
     min-width: 100%;
   }
+  .nav-item.menu-level-3:before {
+    top: 26px;
+  }
   .menu-level-3 .nav-link {
     display: block;
   }
