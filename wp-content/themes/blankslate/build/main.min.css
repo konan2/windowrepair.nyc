@@ -13284,6 +13284,7 @@ address {
 }
 .nav-item.menu-level-3 .nav-link {
   text-transform: none;
+  font-weight: normal;
 }
 .nav-item.menu-level-3:after {
   content: "";
