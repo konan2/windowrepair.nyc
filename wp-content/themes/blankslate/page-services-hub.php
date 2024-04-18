@@ -1,12 +1,34 @@
 <?php /* Template Name: Service Hub Template */ ?>
 <?php 
-  $parent_category = get_term_by('slug', 'Residential', 'category');
+   $parent_category = get_term_by('slug', 'Residential', 'category');
+    
+   
+   // Получаем список дочерних категорий
+    $subcategories = get_terms(array(
+      'taxonomy' => 'category', // Таксономия (в данном случае - категории)
+      'child_of' => $parent_category->term_id, // ID родительской категории
+  ));
+
+    // Создаем простой массив из значений term_id
+    $subcategories_ids = array();
+
+    // Проходимся по каждой подкатегории
+    foreach ($subcategories as $subcategory) {
+        // Добавляем term_id в массив $subcategories_ids
+        $subcategories_ids[] = $subcategory->term_id;
+    }
+
+
+  // echo '<pre>';
+  // print_r($subcategories_ids);
+  // echo '</pre>';
 
   $args = array(
     'post_type' => 'post', // Тип записи (в данном случае - посты)
     'posts_per_page' => -1, // Количество постов (-1 для получения всех)
-    'category__in' => $parent_category->term_id, // ID категории
+    'category__in' => $subcategories_ids, // ID категории
   );
+
 
 ?>
 <?php get_header(); ?>
@@ -33,14 +55,8 @@
               // Добавляем кнопку "All" в начало списка кнопок
               echo '<button class="btn btn-default filter-button active" data-filter="all">All</button>';
 
-              // Получаем список дочерних категорий
-              $parent_category_id = $parent_category->term_id; // ID родительской категории
-              $child_categories = get_categories(array(
-                  'parent' => $parent_category_id, // Получаем только дочерние категории данной родительской категории
-              ));
-
               // Создаем кнопки для каждой дочерней категории
-              foreach ($child_categories as $category) {
+              foreach ($subcategories as $category) {
                   $category_name = $category->name;
                   $category_slug = $category->slug;
                   // Создаем кнопку
