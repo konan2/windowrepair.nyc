@@ -42,7 +42,7 @@ function display_recent_articles_block($category = 'all') {
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
-        'parent' => $parent_category->term_id
+        'parent' => 2
 
     );
     if ($category !== 'all') {

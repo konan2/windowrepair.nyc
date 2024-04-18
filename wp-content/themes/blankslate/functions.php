@@ -97,6 +97,11 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
   }
 }
 
+
+
+
+
+
 function custom_single_template($template) {
     // Проверяем, является ли текущая страница страницей одной записи
     if (is_single()) {
