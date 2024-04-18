@@ -686,47 +686,42 @@
 // 	}}	
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const allForms = document.querySelectorAll("form.form-wrap__rows");
+document.addEventListener('DOMContentLoaded', function () {
+    var submitButtons = document.querySelectorAll("form button[type='submit']");
 
-    allForms.forEach(function(form) {
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-            const submitButton = form.querySelector("button[type='submit']");
-            submitButton.disabled = true;
-            submitButton.textContent = 'Please wait...';
-            
-            const formData = new FormData(form);
-            formData.append('action', 'submitmyform');
-            
-            ajaxSubmitForm(formData, form);
+    submitButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); 
+            submitCform(this.closest('form')); 
         });
     });
 });
 
-async function ajaxSubmitForm(formData, form) {
-    const url = `${location.protocol}//${window.location.hostname}/wp-admin/admin-ajax.php?action=submitmyform`;
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            body: formData,
-        });
-        const data = await response.json();
+function submitCform(form) {
+    form.querySelector("button[type='submit']").disabled = true;
+    form.querySelector("button[type='submit']").textContent = 'Please wait...';
 
-        if (data['status'] === 'ok') {
-            form.innerHTML = `<div id="success">${data['reply']}</div>`;
-        } else if (data['status'] === 'er') {
-            const statusElement = form.querySelector("span#status");
-            statusElement.innerHTML = `<div id="er">${data['reply']}</div>`;
-            const submitButton = form.querySelector("button[type='submit']");
-            submitButton.disabled = false;
-            submitButton.textContent = 'Please try again.';
-        }
-    } catch (error) {
-        console.error('Error submitting form:', error);
-    }
+    var formdata = new FormData(form);
+    formdata.append('action', 'submitmyform');
+    AjaxCform(formdata, form);
 }
 
+async function AjaxCform(formdata, form) {
+    const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
+    const response = await fetch(url, {
+        method: 'POST',
+        body: formdata,
+    });
+    const data = await response.json();
+
+    if (data['statuse'] === 'ok') {
+        form.innerHTML = `<div id="success">${data['reply']}</div>`;
+    } else if (data['statuse'] === 'er') {
+        form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
+        form.querySelector("button[type='submit']").disabled = false;
+        form.querySelector("button[type='submit']").textContent = 'Please try again.';
+    }
+}
 
 
  //Button add comment (form)
