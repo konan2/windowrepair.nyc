@@ -78,16 +78,6 @@
                         $query->the_post();
 
                         $categories = get_the_category();
-                        if (!empty($categories)) {
-                            // Получаем ID родительской категории (если она есть)
-                            $parent_category_id = $categories[0]->parent;
-                            
-                            // Фильтруем категории, исключая родительскую категорию
-                            $child_categories = array_filter($categories, function($category) use ($parent_category_id) {
-                                return $category->term_id !== $parent_category_id;
-                            });
-                            
-                        }
 
 
                         echo '<li class="item-our-team-block">';
@@ -97,7 +87,7 @@
                         }
                    
                         echo ' <div class="item-our-team-block__bottom">
-                          <span class="post-category">' . $child_categories[0]->name . '</span>'; 
+                          <span class="post-category">' . $categories[0]->name . '</span>'; 
                         echo '<h4>' . get_the_title() . '</h4>'; 
                         echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
                         echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
