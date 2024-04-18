@@ -13171,6 +13171,8 @@ address {
 .header__menu .icon {
   margin-left: 4px;
   color: #2C5697;
+  position: relative;
+  top: -1px;
 }
 .header__menu .dropdown-menu {
   margin: 0;
@@ -13188,10 +13190,6 @@ address {
 
 .navbar {
   padding: 0;
-}
-
-.menu-level-2 .nav-link {
-  text-transform: uppercase;
 }
 
 .dropdown-toggle::after {
@@ -13283,6 +13281,9 @@ address {
   font-weight: bold;
   line-height: 26px;
   color: #7A7A7A;
+}
+.nav-item.menu-level-3 .nav-link {
+  text-transform: none;
 }
 .nav-item.menu-level-3:after {
   content: "";

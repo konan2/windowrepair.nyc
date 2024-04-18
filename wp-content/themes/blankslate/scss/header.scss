@@ -135,14 +135,9 @@
         .icon{
             margin-left: 4px;
             color: $primary;
+            position: relative;
+            top: -1px;
         }
-        // &::after{
-        //     display: none;
-        // }
-        // &:hover{
-        //     position: relative;
-        //     z-index: 1001;
-        // }
     
 
     
@@ -170,14 +165,6 @@
 .navbar{
     padding: 0;
 }
-
-
-.menu-level-2{
-    .nav-link{
-        text-transform: uppercase;
-    }
-}
-
 
 .dropdown-toggle::after{
     display: none;
@@ -290,6 +277,9 @@
     font-weight: bold;
     line-height: 26px;
     color: #7A7A7A;
+    .nav-link{
+        text-transform: none;
+    }
     &:after{
         content: "";
         position: absolute;
