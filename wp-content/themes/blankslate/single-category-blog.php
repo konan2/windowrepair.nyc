@@ -1,4 +1,8 @@
 <?php /* Template Name: Single Category Blog Template */ ?>
+<?php
+    $parent_category_slug = 'blog'; 
+    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+ ?>
 
 <?php get_header(); ?>
 
@@ -23,8 +27,6 @@
         <?php
         $current_category_id = get_query_var('cat');
        
-        $parent_category_slug = 'blog'; // Замените на слаг вашей родительской категории
-        $parent_category = get_term_by('slug', $parent_category_slug, 'category');
 
         $categories = get_categories(array(
             'parent' => $parent_category->term_id
@@ -59,8 +61,6 @@
             <?php
             
             function display_recent_articles_block() {
-                $parent_category_slug = 'blog'; 
-                $parent_category = get_term_by('slug', $parent_category_slug, 'category');
 
                 $args = array(
                     'post_type' => 'post',

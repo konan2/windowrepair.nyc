@@ -1,3 +1,7 @@
+<?php
+    $parent_category_slug = 'blog'; 
+    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+ ?>
 
 <?php get_header(); ?>
 
@@ -21,9 +25,9 @@
       <div class="categories">
         <?php
         $current_category_id = get_query_var('cat');
-        $parent_category_id = 2; // Blog category id
+        
         $categories = get_categories(array(
-            'parent' => $parent_category_id,
+            'parent' => $parent_category->term_id
         ));
             if (!empty($categories)) {
                 echo '<div class="dropdown-post-category">';
@@ -54,8 +58,6 @@
             
 
             function display_recent_articles_block() {
-                $parent_category_slug = 'blog'; 
-                $parent_category = get_term_by('slug', $parent_category_slug, 'category');
 
                 $args = array(
                     'post_type' => 'post',
