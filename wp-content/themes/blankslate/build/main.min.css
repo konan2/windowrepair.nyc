@@ -13274,6 +13274,10 @@ address {
   pointer-events: none;
 }
 
+.simple-menu .menu-level-2 > .nav-link {
+  pointer-events: initial;
+}
+
 .nav-item.menu-level-3 {
   position: relative;
   padding: 0;
