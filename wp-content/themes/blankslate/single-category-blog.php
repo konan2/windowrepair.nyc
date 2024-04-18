@@ -92,7 +92,7 @@
                         }
                    
                         echo ' <div class="item-our-team-block__bottom">
-                          <span class="post-category">' . $categories[0]->name . '</span>'; 
+                          <span class="post-category">' . $categories[1]->name . '</span>'; 
                         echo '<h4>' . get_the_title() . '</h4>'; 
                         echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
                         echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
