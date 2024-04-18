@@ -14059,6 +14059,9 @@ address {
   height: 120px;
   overflow: hidden;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service_item:hover .service_item__image,
