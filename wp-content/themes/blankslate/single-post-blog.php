@@ -76,6 +76,7 @@
                     echo '<ul class="block-recent-articles">';
                     while ($query->have_posts()) {
                         $query->the_post();
+                        $categories = get_the_category();
                         echo '<li class="item-our-team-block">';
 
                            if (has_post_thumbnail()) {
@@ -83,7 +84,7 @@
                         }
                    
                         echo ' <div class="item-our-team-block__bottom">
-                          <span class="post-category">' . get_the_category() . '</span>'; 
+                          <span class="post-category">' . $categories[0]->name . '</span>'; 
                         echo '<h4>' . get_the_title() . '</h4>'; 
                         echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
                         echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 

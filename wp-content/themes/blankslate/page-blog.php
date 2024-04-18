@@ -57,13 +57,15 @@ function display_recent_articles_block($category = 'all') {
         echo '<div class="recent-articles">';
         echo '<ul class="block-recent-articles">';
         while ($query->have_posts()) {
+            
             $query->the_post();
+            $categories = get_the_category();
             echo '<li class="item-our-team-block">';
             if (has_post_thumbnail()) {
                 echo '<div class="item-our-team-block__top"><img src="' . get_the_post_thumbnail_url() . '" alt="Featured Image"></div>'; 
             }
             echo '<div class="item-our-team-block__bottom">';
-            echo '<span class="post-category">' . get_the_category() . '</span>'; 
+            echo '<span class="post-category">' . $categories[0]->name . '</span>'; 
             echo '<h4>' . get_the_title() . '</h4>'; 
             echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
             echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
