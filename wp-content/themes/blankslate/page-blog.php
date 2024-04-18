@@ -44,7 +44,7 @@ function display_recent_articles_block($category = 'all') {
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
-        'category__in' => $parent_category->term_id
+        'category__in' => intval($parent_category->term_id)
 
     );
     if ($category !== 'all') {

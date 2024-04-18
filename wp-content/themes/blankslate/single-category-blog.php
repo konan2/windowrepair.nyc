@@ -67,7 +67,7 @@
                     'posts_per_page' => 3,
                     'orderby' => 'date',
                     'order' => 'DESC',
-                    'category__in' => $parent_category->term_id
+                    'category__in' => intval($parent_category->term_id)
                 );
                 $query = new WP_Query($args);
 
