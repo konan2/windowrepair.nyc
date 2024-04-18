@@ -1,5 +1,8 @@
 <?php /* Template Name: Blog Template */ ?>
-
+<?php
+    $parent_category_slug = 'blog'; 
+    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+ ?>
 
 <?php get_header(); ?>
 
@@ -39,6 +42,8 @@ function display_recent_articles_block($category = 'all') {
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
+        'parent' => $parent_category->term_id
+
     );
     if ($category !== 'all') {
         $args['category_name'] = $category;
