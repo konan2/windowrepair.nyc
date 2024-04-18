@@ -97,6 +97,23 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
   }
 }
 
+function custom_single_template($template) {
+    // Проверяем, является ли текущая страница страницей одной записи
+    if (is_single()) {
+        // Получаем объект текущей записи
+        global $post;
+        
+        // Проверяем, относится ли текущая запись к определенной категории
+        if (in_category('blog', $post)) { // Замените 'your-category-slug' на слаг вашей категории
+            // Устанавливаем шаблон для этой категории
+            $template = get_template_directory() . '/single-post-blog.php';
+        }
+    }
+    
+    return $template;
+}
+add_filter('template_include', 'custom_single_template');
+
 
 //Remove JQuery migrate
  

@@ -1,8 +1,6 @@
 
 <?php get_header(); ?>
 
-<h1>Blog post template</h1>
-
 <section class="services-hero-section">
     <div class="container">
         <div class="col-sm-6 main-title-block">
