@@ -57,7 +57,7 @@ function display_recent_articles_block($category = 'all') {
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
-        'category__in' => $category_ids
+        'category__in' => 2
 
     );
     if ($category !== 'all') {

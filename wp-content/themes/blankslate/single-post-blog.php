@@ -79,7 +79,7 @@
                     'posts_per_page' => 3,
                     'orderby' => 'date',
                     'order' => 'DESC',
-                    'category__in' => $category_ids
+                    'category__in' => 2
                 );
                 $query = new WP_Query($args);
 
