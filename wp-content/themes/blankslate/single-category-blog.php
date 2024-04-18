@@ -22,12 +22,7 @@
       <div class="categories">
         <?php
         $current_category_id = get_query_var('cat');
-
-        $parent_category_id = 2; // Blog category id
-        $categories = get_categories(array(
-            'parent' => $parent_category_id,
-        ));
-
+        $categories = get_categories();
             if (!empty($categories)) {
                 echo '<div class="dropdown-post-category">';
                 echo '<button class="btn dropdown-toggle-post-category" type="button" id="dropdownPostButton" data-toggle="dropdown_post_category" aria-haspopup="true" aria-expanded="false">All Blog Categories</button>';
