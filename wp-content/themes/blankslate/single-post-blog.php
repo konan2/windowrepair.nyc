@@ -83,7 +83,7 @@
                         }
                    
                         echo ' <div class="item-our-team-block__bottom">
-                          <span class="post-category">' . get_the_category_list(', ') . '</span>'; 
+                          <span class="post-category">' . get_the_category() . '</span>'; 
                         echo '<h4>' . get_the_title() . '</h4>'; 
                         echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
                         echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
