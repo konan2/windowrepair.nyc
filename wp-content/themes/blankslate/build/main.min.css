@@ -13377,8 +13377,9 @@ address {
   right: auto;
 }
 .header__menu.navbar-nav .menu-item.simple-menu .dropdown-menu {
-  padding: 10px 8px 10px 16px;
-  min-width: 152px;
+  padding: 10px 16px;
+  border-left: 1px solid #D6E3F9;
+  border-right: 1px solid #D6E3F9;
 }
 .header__menu.navbar-nav .menu-item.simple-menu .menu-item {
   color: #7A7A7A;
@@ -13390,7 +13391,7 @@ address {
   content: "";
   position: absolute;
   left: 0;
-  top: 13px;
+  top: 15px;
   width: 6px;
   height: 6px;
   background: currentColor;
