@@ -59,12 +59,27 @@
 
             function display_recent_articles_block() {
 
+                $parent_category_slug = 'blog'; 
+                $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+                $category_id = $parent_category->term_id; // Замените на нужный вам ID категории
+                $categories = get_categories(array(
+                    'parent' => $category_id,
+                    'hide_empty' => false, // Включаем пустые категории
+                ));
+
+                // Добавляем ID родительской категории в массив
+                $category_ids = array($category_id);
+                foreach ($categories as $cat) {
+                    $category_ids[] = $cat->term_id;
+                }
+
+
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 3,
                     'orderby' => 'date',
                     'order' => 'DESC',
-                    'category' => 2
+                    'category__in' => $category_ids
                 );
                 $query = new WP_Query($args);
 

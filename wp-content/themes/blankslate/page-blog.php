@@ -4,6 +4,7 @@
     $parent_category = get_term_by('slug', $parent_category_slug, 'category');
  ?>
 
+
 <?php get_header(); ?>
 
 <section class="services-hero-section">
@@ -33,8 +34,22 @@
             </div>
             <div>
             <?php
+
 function display_recent_articles_block($category = 'all') {
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; 
+
+   
+    $category_id = $parent_category->term_id; // Замените на нужный вам ID категории
+    $categories = get_categories(array(
+        'parent' => $category_id,
+        'hide_empty' => false, // Включаем пустые категории
+    ));
+
+    // Добавляем ID родительской категории в массив
+    $category_ids = array($category_id);
+    foreach ($categories as $cat) {
+        $category_ids[] = $cat->term_id;
+    }
 
     $args = array(
         'post_type' => 'post',
@@ -42,7 +57,7 @@ function display_recent_articles_block($category = 'all') {
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => $paged, 
-        'parent' => 2
+        'category__in' => $category_ids
 
     );
     if ($category !== 'all') {
