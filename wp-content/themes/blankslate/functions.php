@@ -1,5 +1,30 @@
 <?php
 
+// Регистрируем меню
+function register_my_menus() {
+    register_nav_menus(
+      array(
+        'primary' => __( 'Primary Menu' ),
+        'footer' => __( 'Footer Menu' ),
+        // Здесь можно добавить другие местоположения меню
+      )
+    );
+}
+add_action( 'init', 'register_my_menus' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
   // Добавляем элемент списка перед элементом
   public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
@@ -102,6 +127,18 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 function custom_single_template($template) {
     // Проверяем, является ли текущая страница страницей одной записи
     if (is_single()) {
@@ -167,17 +204,6 @@ add_action( 'wp_enqueue_scripts', 'include_my_scripts' );
 
 
 
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'primary' => __( 'Primary Menu' ),
-      'footer' => __( 'Footer Menu' ),
-      // Здесь можно добавить другие местоположения меню
-    )
-  );
-}
-add_action( 'init', 'register_my_menus' );
-  
   
   // let's add "*active*" as a class to the li
   
