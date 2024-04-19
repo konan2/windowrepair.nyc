@@ -229,26 +229,3 @@
 <?php get_footer(); ?>
 
 
-
-    <script>
-   
-
-
-  //   $(document).ready(function(){
-  //    var defaultCity = 'new-york';
-  //    showDistricts(defaultCity);
-   
-  //    function showDistricts(city) {
-  //    $('.new-york, .new-jersey, .connecticut').hide();
-  //    $('.' + city).show();
-  //    $(".filter-button-city").removeClass("active");
-  //    $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
-  //    }
-
-  //   $(".filter-button-city").click(function(){
-  //   var city = $(this).attr('data-filter-city');
-  //   showDistricts(city);
-  //   });
-  // });
-</script>
-
