@@ -30,7 +30,7 @@
 <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
 <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-<div class="swiper-best-quality">
+<div class="swiper-best-solutions">
 <div class="quality-services__wrapper row row-cols-1 swiper-wrapper quality-services-serv-page">
     <article class="col-4 swiper-slide">
         <div class="quality-services__item">

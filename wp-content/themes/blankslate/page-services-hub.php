@@ -224,24 +224,10 @@
 
 <?php get_footer(); ?>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
     <script>
-    $(document).ready(function(){
-        $(".filter-button").click(function(){
-            var value = $(this).attr('data-filter');
-
-            $(".filter-button").removeClass("active"); 
-            $(this).addClass("active"); 
-
-            if(value == "all") {
-                $('.filter').show('1000');
-            } else {
-                $(".filter").not('.'+value).hide('3000');
-                $('.filter').filter('.'+value).show('3000');
-            }
-        });
-    });
+   
 
 
   //   $(document).ready(function(){

@@ -27,7 +27,7 @@
 <h2>we <span class="text-primary-emphasis">provide</span> best quality services</h2>
 <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
-<div class="swiper-best-quality">
+<div id="swiper-best-quality" class="swiper-best-quality mobile-slider">
 <div class="quality-services__wrapper row row-cols-1 swiper-wrapper quality-services-serv-page">
     <article class="col-4 swiper-slide">
         <div class="quality-services__item">
@@ -214,7 +214,7 @@
 
 
 
-<section id="clients" class="clients container-fluid">
+<section id="clients" class="clients">
     <div class="container-xl text-center">
     <h2>our business <span class="text-primary-emphasis">clients</span></h2>
         <p class="text-body-secondary">Within a decade we were able to complete different jobs and made happy more than 12000 clients and counting</p>
@@ -222,7 +222,7 @@
 
     <div class="clients-block container-xl position-relative">
         <div class="swiper-button-prev"></div>
-        <div class="swiper">
+        <div id="brands-slider" class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><div class="swiper-slide__card"><img src="../wp-content/uploads/2024/04/crystal.png" alt="" width="128" height="43" /></div></div>
                 <div class="swiper-slide"><div class="swiper-slide__card"><img src="../wp-content/uploads/2024/04/logo-2.png" alt="" width="160" height="60" /></div></div>
@@ -746,53 +746,5 @@ if (showCommentBtn) {
 
 <?php get_footer(); ?>
 
-
-<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-
-var swiperContainers = document.querySelectorAll('.swiper');
-
-swiperContainers.forEach(function(container) {
-  new Swiper(container, {
-    loop: true,
-    grabCursor: true,
-    slidesPerView: 4,
-    initialSlide: 0,
-    speed: 1000,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 1000,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      550: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1300: {
-        slidesPerView: 4,
-      },
-    }
-  });
-});
-   
- 
-
-    </script>
 
     
