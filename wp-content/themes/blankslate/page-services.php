@@ -686,7 +686,7 @@
 // 	}}	
 
 
-document.addEventListener('DOMContentLoaded', function () {
+
     var submitButtons = document.querySelectorAll("form button[type='submit']");
 
     submitButtons.forEach(function (button) {
@@ -695,7 +695,7 @@ document.addEventListener('DOMContentLoaded', function () {
             submitCform(this.closest('form')); 
         });
     });
-});
+
 
 function submitCform(form) {
     form.querySelector("button[type='submit']").disabled = true;
