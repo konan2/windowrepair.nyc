@@ -332,91 +332,10 @@ function custom_post_shortcode($atts) {
 add_shortcode('show_section', 'custom_post_shortcode');
 
 
-
-
-
-
 add_theme_support( 'post-thumbnails' );
 
 
 // Contact Form
-
-// add_action('wp_ajax_submitmyform','submitmyform');
-// add_action('wp_ajax_nopriv_submitmyform','submitmyform');
-
-// function submitmyform(){
-// $tomyform = 'leads@windowrepairnyc.com'; 
-
-// $system = array();
-// if ($_POST['website'] != '') {
-// 	$system['statuse']='er';
-// 	$system['reply']='Suspicious activity was detected, That’s all we know.';	
-// 	echo json_encode($system, JSON_UNESCAPED_UNICODE);	
-//     exit; die(); }
-	
-// foreach($_POST as $key => $value) {
-//     if (strpos($value, '"') !== FALSE) {
-// 	$system['statuse']='er';
-// 	$system['reply']='The character entered in the form is not acceptable, please contact the site support.';	
-// 	echo json_encode($system, JSON_UNESCAPED_UNICODE);  
-// 	exit; die(); }}
-
-// $siteURL = get_site_url(); 
-// $frommyform = 'info@'.substr($siteURL, strpos($siteURL, ".") + 1);
-// $headersmyform = "From: $frommyform\n";
-// $headersmyform .= "MIME-Version: 1.0\n";
-// $headersmyform .= "Content-type: text/html; charset=UTF-8\n";		
-
-// function form1($tomyform , $headersmyform) { 
-// 	unset($_POST['formid'], $_POST['website'], $_POST['action']);	
-// 	$system = array();
-// 	$post = array();
-	
-// 	foreach($_POST as $key => $value) { 
-// 		if(strpos($value, "\n") !== FALSE) {
-// 			$post[] = $key.': <b>'.nl2br(filter_var($value,FILTER_SANITIZE_STRING)).'</b>';
-// 		}
-// 		else {
-// 			if ((strpos($value, "@") !== FALSE)) {
-// 				$post[] = $key.': <b>'.nl2br(filter_var($value,FILTER_SANITIZE_EMAIL)).'</b>';
-// 			} else {$post[] = $key.': <b>'.filter_var($value,FILTER_SANITIZE_STRING).'</b>';}
-// 		}}
-// 	$Agent = $_SERVER['HTTP_USER_AGENT'];
-// 	preg_match('!\(.*?\)!',$Agent , $userAgent);
-// 	$message = join("<br />",$post);
-// 	$message .= "<br><br>---------<br>";
-// 	$message .= "UserAgent: ".str_replace(array("(", ")"), "", $userAgent[0])."<br>";
-// 	$message .= "User IP: ".$_SERVER['REMOTE_ADDR']."<br>";
-// 	$subject = 'Contact Form - windowrepair.nyc';
-		
-// 	if ( wp_mail( $tomyform, $subject, $message, $headersmyform )  )	{
-// 				$system['statuse']='ok';
-// 				$system['reply']='<h2>Thank you.</h2>
-//         <p>We will contact you. Shortly.</p>';
-// 				echo json_encode($system, JSON_UNESCAPED_UNICODE);
-// 				exit; die();
-				
-// 		} else { 	$system['statuse']='er';
-// 					$system['reply']='Sorry, There is a problem in sending your form, please email us your message.';
-// 					echo json_encode($system, JSON_UNESCAPED_UNICODE);
-// 					exit; die();
-//     				 }}
-
-// if ($_POST['formid']) {
-	
-// 	$id = $_POST['formid'];
-// 	if ($id == '1001'){ form1($tomyform , $headersmyform ); }
-// 	else if ($id == '1002'){ form2($tomyform , $headersmyform ); }
-// 	else { 	
-// 	$system['statuse']='er';
-// 	$system['reply']='The form is not authorized, please contact the site support.';
-// 	echo json_encode($system, JSON_UNESCAPED_UNICODE);   	
-// 	exit; die(); }}} 
-
-
-
-
-
 
 add_action('wp_ajax_submitmyform', 'submitmyform');
 add_action('wp_ajax_nopriv_submitmyform', 'submitmyform');
@@ -449,7 +368,7 @@ function submitmyform() {
     $headersmyform .= "MIME-Version: 1.0\n";
     $headersmyform .= "Content-type: text/html; charset=UTF-8\n";
 
-    // Функція для відправки форми
+
     function sendForm($tomyform, $headersmyform)
     {
         unset($_POST['formid'], $_POST['website'], $_POST['action']);
@@ -492,7 +411,7 @@ function submitmyform() {
 
     if ($_POST['formid']) {
         $id = $_POST['formid'];
-        // Викликаємо функцію sendForm() з відповідними параметрами
+
         sendForm($tomyform, $headersmyform);
     }
 }
