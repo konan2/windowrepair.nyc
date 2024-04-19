@@ -93,36 +93,36 @@ tabs.forEach(function(tab) {
 /// Swipers
 
 
-// const bestQualityServicesSlider = new Swiper('.swiper-best-quality', {
-//   loop: true,
-//   grabCursor: true,
-//   slidesPerView: 3,
-//   initialSlide: 0,
-//   speed: 1000,
-//   autoplay: false,
-//   pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//       },
-//   navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
-//   breakpoints: {
-//       320: {
-//           slidesPerView: 1,
-//       },
-//       550: {
-//           slidesPerView: 2,
-//       },
-//       768: {
-//           slidesPerView: 3,
-//       },
-//       1300: {
-//           slidesPerView: 6,
-//       },
-//   }
-// });
+const bestQualityServicesSlider = new Swiper('.swiper-best-quality', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 3,
+  initialSlide: 0,
+  speed: 1000,
+  autoplay: false,
+  pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  breakpoints: {
+      320: {
+          slidesPerView: 1,
+      },
+      550: {
+          slidesPerView: 2,
+      },
+      768: {
+          slidesPerView: 3,
+      },
+      1300: {
+          slidesPerView: 6,
+      },
+  }
+});
 
 const brandSlider = new Swiper('#brands-slider', {
   loop: true,
