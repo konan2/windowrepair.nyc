@@ -13339,13 +13339,10 @@ address {
 @media (max-width: 992px) {
   .navbar-collapse.header__menu-container {
     transform: translateX(100%);
-    height: 100% !important;
-    transition: transform 0.35s ease;
+    min-height: 100vh;
+    transition: transform ease-in-out 0.25s;
   }
-  .navbar-collapse.header__menu-container.collapse:not(.show) {
-    display: flex;
-  }
-  .navbar-collapse.header__menu-container.show, .navbar-collapse.header__menu-container.collapsing {
+  .navbar-collapse.header__menu-container.collapse.show {
     transform: translateX(0%);
   }
   .drop-down-wrapper > .dropdown-menu {
