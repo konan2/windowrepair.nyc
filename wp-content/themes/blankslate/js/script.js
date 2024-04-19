@@ -661,6 +661,61 @@ $(document).ready(function() {
 });
 
 
+// all form
+
+var submitButtons = document.querySelectorAll("form input[type='submit']");
+
+    submitButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); 
+            submitCform(this.closest('form')); 
+        });
+});
+
+
+function submitCform(form) {
+    form.querySelector("input[type='submit']").disabled = true;
+    form.querySelector("input[type='submit']").textContent = 'Please wait...';
+
+    var formdata = new FormData(form);
+    formdata.append('action', 'submitmyform');
+    AjaxCform(formdata, form);
+}
+
+async function AjaxCform(formdata, form) {
+    const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
+    const response = await fetch(url, {
+        method: 'POST',
+        body: formdata,
+    });
+    const data = await response.json();
+
+    if (data['statuse'] === 'ok') {
+        form.innerHTML = `<div id="success">${data['reply']}</div>`;
+    } else if (data['statuse'] === 'er') {
+        form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
+        form.querySelector("input[type='submit']").disabled = false;
+        form.querySelector("input[type='submit']").textContent = 'Please try again.';
+    }
+}
+
+
+
+ //Button add comment (form)
+
+var showCommentBtn = document.getElementById('show-comment-btn');
+var commentForm = document.getElementById('comment-form');
+
+if (showCommentBtn) {
+  showCommentBtn.addEventListener('click', function() {
+      if (commentForm && commentForm.style.display === 'none') {
+          commentForm.style.display = 'block';
+          showCommentBtn.style.display = 'none';
+      }
+  });
+}
+
+
 //add form on the btn call us
 
 $(document).ready(function() {
@@ -674,3 +729,5 @@ $(document).ready(function() {
       $('#contactFormBackdrop').fadeOut();
   });
 });
+
+
