@@ -88,6 +88,10 @@
         display: inline-block;
     }
 
+    .current-menu-item .nav-link{
+        color: $primary;
+    }
+
     .dropdown-menu .dropdown-menu{
         position: initial;
     }
@@ -370,6 +374,11 @@
             border-bottom: 0;
         }
         &.menu-level-2{
+            &.menu-item-has-children{
+                & > .nav-link{
+                    color: #0E192D;
+                }
+            }
             .dropdown-menu{
                 .menu-level-3:last-child{
                     border-bottom: 0;

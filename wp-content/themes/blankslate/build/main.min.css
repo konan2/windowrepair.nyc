@@ -13137,6 +13137,9 @@ address {
 .header__menu .nav-link {
   display: inline-block;
 }
+.header__menu .current-menu-item .nav-link {
+  color: #2C5697;
+}
 .header__menu .dropdown-menu .dropdown-menu {
   position: initial;
 }
@@ -13378,6 +13381,9 @@ address {
   }
   .header__menu .nav-item:last-child {
     border-bottom: 0;
+  }
+  .header__menu .nav-item.menu-level-2.menu-item-has-children > .nav-link {
+    color: #0E192D;
   }
   .header__menu .nav-item.menu-level-2 .dropdown-menu .menu-level-3:last-child {
     border-bottom: 0;
