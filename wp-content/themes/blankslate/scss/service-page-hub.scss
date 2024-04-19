@@ -153,13 +153,16 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__title {
+    &__title a{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
         color: $primary;
         font-size: 12px;
         text-align: center;
         line-height: 18px;
         margin: 0;
         width: 85%;
+        text-decoration: none;
 
         transition-property: text-decoration, color;
         transition-duration: 350ms;
@@ -182,8 +185,8 @@
     }
 }
 
-.service_item:hover .service_item__title,
-.service_item:focus .service_item__title {
+.service_item:hover .service_item__title a,
+.service_item:focus .service_item__title a {
     color: $primary-text-emphasis;
     text-decoration: underline;
 }
@@ -196,6 +199,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+        height: 100%;
+        display: flex;
+    }
 }
 
 .service_item:hover .service_item__image,
