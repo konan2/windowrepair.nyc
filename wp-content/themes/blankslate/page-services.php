@@ -687,7 +687,7 @@
 
 
 
-    var submitButtons = document.querySelectorAll("form button[type='submit']");
+    var submitButtons = document.querySelectorAll("form input[type='submit']");
 
     submitButtons.forEach(function (button) {
         button.addEventListener('click', function (event) {
@@ -698,8 +698,8 @@
 
 
 function submitCform(form) {
-    form.querySelector("button[type='submit']").disabled = true;
-    form.querySelector("button[type='submit']").textContent = 'Please wait...';
+    form.querySelector("input[type='submit']").disabled = true;
+    form.querySelector("input[type='submit']").textContent = 'Please wait...';
 
     var formdata = new FormData(form);
     formdata.append('action', 'submitmyform');
@@ -718,8 +718,8 @@ async function AjaxCform(formdata, form) {
         form.innerHTML = `<div id="success">${data['reply']}</div>`;
     } else if (data['statuse'] === 'er') {
         form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
-        form.querySelector("button[type='submit']").disabled = false;
-        form.querySelector("button[type='submit']").textContent = 'Please try again.';
+        form.querySelector("input[type='submit']").disabled = false;
+        form.querySelector("input[type='submit']").textContent = 'Please try again.';
     }
 }
 
