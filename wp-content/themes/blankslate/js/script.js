@@ -92,37 +92,41 @@ tabs.forEach(function(tab) {
 
 /// Swipers
 
-
-const bestQualityServicesSlider = new Swiper('.swiper-best-quality', {
-  loop: true,
-  grabCursor: true,
-  slidesPerView: 3,
-  initialSlide: 0,
-  speed: 1000,
-  autoplay: false,
-  pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-  navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  breakpoints: {
-      320: {
-          slidesPerView: 1,
-      },
-      550: {
-          slidesPerView: 2,
-      },
-      768: {
-          slidesPerView: 3,
-      },
-      1300: {
-          slidesPerView: 6,
-      },
-  }
-});
+// function bestQualityServices() {
+//   if (window.innerWidth < 768) {
+//     const bestQualityServicesSlider = new Swiper('.swiper-best-quality', {
+//       loop: true,
+//       grabCursor: true,
+//       slidesPerView: 3,
+//       initialSlide: 0,
+//       speed: 1000,
+//       autoplay: false,
+//       pagination: {
+//             el: ".swiper-pagination",
+//             clickable: true,
+//           },
+//       navigation: {
+//             nextEl: ".swiper-button-next",
+//             prevEl: ".swiper-button-prev",
+//           },
+//       breakpoints: {
+//           320: {
+//               slidesPerView: 1,
+//           },
+//           550: {
+//               slidesPerView: 2,
+//           },
+//           768: {
+//               slidesPerView: 3,
+//           },
+//           1300: {
+//               slidesPerView: 6,
+//           },
+//       }
+//     });
+//     }
+// }
+// bestQualityServices();
 
 const brandSlider = new Swiper('#brands-slider', {
   loop: true,
@@ -322,42 +326,63 @@ const swiperIconsPartners = new Swiper('.swiper-google-reviews', {
 
 
 
+////////////////////////////////
+let swiperBestQuality;
 
-function initSwipersBestQuality() {
-  if (window.innerWidth < 768) {
-      const swiperBestQuality = new Swiper('#swiper-best-quality', {
-          loop: true,
-          grabCursor: true,
-          slidesPerView: 1,
-          initialSlide: 0,
-          speed: 1000,
-          pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-          },
-          navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-              320: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-              },
-              550: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-              },
-              768: {
-                  slidesPerView: 2,
-              }
-          }
-      });
-  }
+function initSwiperBestQuality() {
+    if (window.innerWidth < 992) {
+        swiperBestQuality = new Swiper('#swiper-best-quality', {
+            loop: true,
+            grabCursor: true,
+            slidesPerView: 1,
+            initialSlide: 0,
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                550: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    }
 }
 
+function destroySwiperBestQuality() {
+    if (swiperBestQuality) {
+        swiperBestQuality.destroy();
+        swiperBestQuality = undefined;
+    }
+}
 
-initSwipersBestQuality();
+// Инициализируем слайдер при загрузке страницы
+initSwiperBestQuality();
+
+// Слушаем событие изменения размера окна
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992) {
+        destroySwiperBestQuality();
+    } else {
+        initSwiperBestQuality();
+    }
+});
+
+
+///////////////////////////////
 
 
 function Tabs() {

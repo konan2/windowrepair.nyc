@@ -346,6 +346,19 @@ input:checked+label:before {
     margin-top: 20px;
 }
 
+.quality-services__wrapper{
+    flex-wrap: nowrap;
+}
+@media (min-width: 992px) {
+    .quality-services__wrapper{
+        flex-wrap: wrap;
+    }
+    .swiper-best-quality .swiper-slide{
+        width: 33.3%!important;
+        
+    }
+}
+
 .clients-block,
 .swiper-google-reviews {
     margin-top: 40px;
@@ -669,7 +682,7 @@ input:checked+label:before {
 //Section Best Quality
 @media (min-width: 991px) {
     .swiper-best-quality .swiper-slide {
-        width: 33.33333333%;
+        //width: 33.33333333%;
     }
 }
 
