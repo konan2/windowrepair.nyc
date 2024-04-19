@@ -350,9 +350,6 @@
         padding: 0;
         border-bottom: 1px solid #D6E3F9;
         position: relative;
-        // &:hover .icon{
-        //     color: #789AEE;
-        // }
         .nav-link{
             padding: 16px 20px;
             &:hover, &.show{
@@ -381,10 +378,13 @@
             }
         }
     }
-    .menu-level-1{
+    .header__menu .menu-level-1{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        &:last-child{
+            border-bottom: 1px solid #D6E3F9;
+        }
         .nav-link{
             flex-grow: 1;
         }

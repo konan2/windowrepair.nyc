@@ -13385,15 +13385,18 @@ address {
   .header__menu .nav-item.menu-level-2 .dropdown-menu .menu-level-3:last-child {
     border-bottom: 0;
   }
-  .menu-level-1 {
+  .header__menu .menu-level-1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
-  .menu-level-1 .nav-link {
+  .header__menu .menu-level-1:last-child {
+    border-bottom: 1px solid #D6E3F9;
+  }
+  .header__menu .menu-level-1 .nav-link {
     flex-grow: 1;
   }
-  .menu-level-1 .drop-down-wrapper {
+  .header__menu .menu-level-1 .drop-down-wrapper {
     min-width: 100%;
   }
   .menu-level-3 .nav-link {
