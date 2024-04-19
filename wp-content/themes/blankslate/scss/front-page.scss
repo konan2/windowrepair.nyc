@@ -266,26 +266,13 @@
     }
     &-slide{
         position: relative;
-        &:nth-child(1) .best-solutions__item::before{
-            content: "01"; 
-        }
-        &:nth-child(2) .best-solutions__item::before{
-            content: "02"; 
-        }
-        &:nth-child(3) .best-solutions__item::before{
-            content: "03"; 
-        }
-        &:nth-child(4) .best-solutions__item::before{
-            content: "04"; 
-        }
 
     }
     &__item{
         display: flex;
         position: relative;
         width: 255px;
-        &::before{
-            content: "01"; /* Отобразить значение счетчика */
+        &-counter{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -293,16 +280,15 @@
             font-size: 22px;
             line-height: 1.1;
             font-weight: bold;
-            position: absolute; /* Абсолютное позиционирование */
-            right: 30px; /* Расположить слева */
-            top: 27px; /* Расположить сверху */
+            position: absolute; 
+            right: 30px;
+            top: 27px;
             z-index: 1;
-            width: 46px; /* Ширина элемента счетчика */
-            height: 46px; /* Высота элемента счетчика */
-            background-color: $emphasis-color; /* Цвет фона элемента счетчика */
-            border-radius: 50%; /* Сделать элемент счетчика круглым */
+            width: 46px; 
+            height: 46px; 
+            background-color: $emphasis-color; 
+            border-radius: 50%; 
         }
-        
     }
     &__item-title{
         color: $emphasis-color;

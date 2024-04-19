@@ -174,6 +174,7 @@
 
           <div class="swiper-slide">
             <div class="best-solutions__item">
+                <div class="best-solutions__item-counter">01</div>
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -187,6 +188,7 @@
 
           <div class="swiper-slide">
             <div class="best-solutions__item">
+            <div class="best-solutions__item-counter">02</div>
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -200,6 +202,7 @@
             
           <div class="swiper-slide"> 
             <div class="best-solutions__item">
+                <div class="best-solutions__item-counter">03</div>
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
@@ -213,6 +216,7 @@
 
           <div class="swiper-slide">            
             <div class="best-solutions__item">
+                <div class="best-solutions__item-counter">04</div>
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
