@@ -13379,9 +13379,6 @@ address {
   .header__menu .nav-item:last-child {
     border-bottom: 0;
   }
-  .header__menu .nav-item.menu-level-2 .dropdown-menu {
-    padding-bottom: 0;
-  }
   .header__menu .nav-item.menu-level-2 .dropdown-menu .menu-level-3:last-child {
     border-bottom: 0;
   }
