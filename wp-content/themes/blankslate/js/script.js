@@ -11,25 +11,15 @@ window.addEventListener('DOMContentLoaded',function () {
  // Add overflow hidden while menu opened
  
 
-  const navbarCollapse = document.querySelector('.navbar-collapse');
-  const navbarToggler = document.querySelector('.navbar-toggler');
-  const htmlElement = document.documentElement;
 
-  navbarToggler.addEventListener('click', function() {
-    if (navbarCollapse.classList.contains('show')) {
-      htmlElement.style.overflow = '';
-    } else {
-      htmlElement.style.overflow = 'hidden';
-    }
-  });
 
-  navbarCollapse.addEventListener('shown.bs.collapse', function () {
-    htmlElement.style.overflow = 'hidden';
-  });
+  // navbarCollapse.addEventListener('shown.bs.collapse', function () {
+  //   htmlElement.classList.toggle("modal-opened")
+  // });
 
-  navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-    htmlElement.style.overflow = '';
-  });
+  // navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+  //   htmlElement.classList.toggle("modal-opened")
+  // });
 
 
 

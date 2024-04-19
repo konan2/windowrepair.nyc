@@ -61,6 +61,14 @@ p{
     display: inline-block;
 }
 
+
+.modal-opened{
+    body{
+        // height: 100vh;
+        // overflow: hidden;
+    }
+}
+
 // Buttons
 
 .btn {
@@ -277,6 +285,10 @@ ul {
             display: none;
         }
     }
+}
+
+.swiper-button-prev, .swiper-button-next{
+    z-index: 1;
 }
 
 // Cards
