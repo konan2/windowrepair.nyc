@@ -13138,7 +13138,7 @@ address {
   display: inline-block;
 }
 .header__menu .current-menu-item .nav-link {
-  color: #2C5697;
+  color: #2C5697 !important;
 }
 .header__menu .dropdown-menu .dropdown-menu {
   position: initial;
