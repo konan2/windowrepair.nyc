@@ -25,6 +25,24 @@ add_action( 'init', 'register_my_menus' );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
   // Добавляем элемент списка перед элементом
   public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
@@ -121,6 +139,7 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
       $output .= "{$n}{$t}</ul>{$n}{$t}</div>{$n}";
   }
 }
+
 
 
 
@@ -250,67 +269,67 @@ add_action( 'wp_enqueue_scripts', 'include_my_scripts' );
 
 
 
-function custom_page_sections_post_type() {
-  $labels = array(
-      'name'               => __( 'Page Sections', 'text-domain' ),
-      'singular_name'      => __( 'Page Section', 'text-domain' ),
-      'menu_name'          => __( 'Page Sections', 'text-domain' ),
-      'name_admin_bar'     => __( 'Page Section', 'text-domain' ),
-      'add_new'            => __( 'Add New', 'text-domain' ),
-      'add_new_item'       => __( 'Add New Page Section', 'text-domain' ),
-      'new_item'           => __( 'New Page Section', 'text-domain' ),
-      'edit_item'          => __( 'Edit Page Section', 'text-domain' ),
-      'view_item'          => __( 'View Page Section', 'text-domain' ),
-      'all_items'          => __( 'All Page Sections', 'text-domain' ),
-      'search_items'       => __( 'Search Page Sections', 'text-domain' ),
-      'parent_item_colon'  => __( 'Parent Page Sections:', 'text-domain' ),
-      'not_found'          => __( 'No page sections found.', 'text-domain' ),
-      'not_found_in_trash' => __( 'No page sections found in Trash.', 'text-domain' )
-  );
+// function custom_page_sections_post_type() {
+//   $labels = array(
+//       'name'               => __( 'Page Sections', 'text-domain' ),
+//       'singular_name'      => __( 'Page Section', 'text-domain' ),
+//       'menu_name'          => __( 'Page Sections', 'text-domain' ),
+//       'name_admin_bar'     => __( 'Page Section', 'text-domain' ),
+//       'add_new'            => __( 'Add New', 'text-domain' ),
+//       'add_new_item'       => __( 'Add New Page Section', 'text-domain' ),
+//       'new_item'           => __( 'New Page Section', 'text-domain' ),
+//       'edit_item'          => __( 'Edit Page Section', 'text-domain' ),
+//       'view_item'          => __( 'View Page Section', 'text-domain' ),
+//       'all_items'          => __( 'All Page Sections', 'text-domain' ),
+//       'search_items'       => __( 'Search Page Sections', 'text-domain' ),
+//       'parent_item_colon'  => __( 'Parent Page Sections:', 'text-domain' ),
+//       'not_found'          => __( 'No page sections found.', 'text-domain' ),
+//       'not_found_in_trash' => __( 'No page sections found in Trash.', 'text-domain' )
+//   );
 
-  $args = array(
-      'labels'             => $labels,
-      'public'             => true,
-      'publicly_queryable' => true,
-      'show_ui'            => true,
-      'show_in_menu'       => true,
-      'query_var'          => true,
-      'rewrite'            => array( 'slug' => 'page-section' ),
-      'capability_type'    => 'post',
-      'has_archive'        => false,
-      'hierarchical'       => false,
-      'menu_position'      => null,
-      'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
-      'menu_icon'          => 'dashicons-layout',
-  );
+//   $args = array(
+//       'labels'             => $labels,
+//       'public'             => true,
+//       'publicly_queryable' => true,
+//       'show_ui'            => true,
+//       'show_in_menu'       => true,
+//       'query_var'          => true,
+//       'rewrite'            => array( 'slug' => 'page-section' ),
+//       'capability_type'    => 'post',
+//       'has_archive'        => false,
+//       'hierarchical'       => false,
+//       'menu_position'      => null,
+//       'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+//       'menu_icon'          => 'dashicons-layout',
+//   );
 
-  register_post_type( 'page-section', $args );
-}
-add_action( 'init', 'custom_page_sections_post_type' );
-
-
+//   register_post_type( 'page-section', $args );
+// }
+// add_action( 'init', 'custom_page_sections_post_type' );
 
 
 
-function custom_post_shortcode($atts) {
-  // Параметры шорткода
-  $atts = shortcode_atts(array(
-      'post_id' => 0, // ID поста
-  ), $atts);
 
-  // Получаем содержимое поста по его ID
-  $post_content = '';
-  if ($atts['post_id'] > 0) {
-      $post = get_post($atts['post_id']);
-      if ($post) {
-          $post_content = apply_filters('the_content', $post->post_content);
-      }
-  }
 
-  return $post_content;
-}
+// function custom_post_shortcode($atts) {
+//   // Параметры шорткода
+//   $atts = shortcode_atts(array(
+//       'post_id' => 0, // ID поста
+//   ), $atts);
 
-add_shortcode('show_section', 'custom_post_shortcode');
+//   // Получаем содержимое поста по его ID
+//   $post_content = '';
+//   if ($atts['post_id'] > 0) {
+//       $post = get_post($atts['post_id']);
+//       if ($post) {
+//           $post_content = apply_filters('the_content', $post->post_content);
+//       }
+//   }
+
+//   return $post_content;
+// }
+
+// add_shortcode('show_section', 'custom_post_shortcode');
 
 
 
