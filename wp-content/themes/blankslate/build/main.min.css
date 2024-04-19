@@ -13360,9 +13360,6 @@ address {
     border-bottom: 1px solid #D6E3F9;
     position: relative;
   }
-  .header__menu .nav-item:hover .icon {
-    color: #789AEE;
-  }
   .header__menu .nav-item .nav-link {
     padding: 16px 20px;
   }

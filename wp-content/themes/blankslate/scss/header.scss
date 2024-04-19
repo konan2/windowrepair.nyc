@@ -350,9 +350,9 @@
         padding: 0;
         border-bottom: 1px solid #D6E3F9;
         position: relative;
-        &:hover .icon{
-            color: #789AEE;
-        }
+        // &:hover .icon{
+        //     color: #789AEE;
+        // }
         .nav-link{
             padding: 16px 20px;
             &:hover, &.show{
