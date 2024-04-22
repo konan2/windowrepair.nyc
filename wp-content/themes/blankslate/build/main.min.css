@@ -15455,7 +15455,7 @@ body.page-template-page-services-hub {
 }
 
 .rewiews-table-section.services-hero-section {
-  background: url("../img/rewiews-hero-img.png") no-repeat;
+  background: url("../img/rewiews-hero-img.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -15472,7 +15472,7 @@ body.page-template-page-services-hub {
 
 @media (max-width: 550px) {
   .rewiews-table-section.services-hero-section:after {
-    background: url("../img/rewiews-hero-img-sm.png") no-repeat;
+    background: url("../img/rewiews-hero-img-sm.webp") no-repeat;
     background-size: cover;
   }
 }
