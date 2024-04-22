@@ -14030,13 +14030,16 @@ address {
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.service_item__title {
+.service_item__title a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   color: #2C5697;
   font-size: 12px;
   text-align: center;
   line-height: 18px;
   margin: 0;
   width: 85%;
+  text-decoration: none;
   transition-property: color, -webkit-text-decoration;
   transition-property: text-decoration, color;
   transition-property: text-decoration, color, -webkit-text-decoration;
@@ -14055,8 +14058,8 @@ address {
   cursor: pointer;
 }
 
-.service_item:hover .service_item__title,
-.service_item:focus .service_item__title {
+.service_item:hover .service_item__title a,
+.service_item:focus .service_item__title a {
   color: #789AEE;
   text-decoration: underline;
 }
@@ -14069,6 +14072,10 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.service_item__bl a {
+  height: 100%;
+  display: flex;
 }
 
 .service_item:hover .service_item__image,

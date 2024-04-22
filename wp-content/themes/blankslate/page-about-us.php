@@ -253,86 +253,54 @@
                     <button id="showContactForm" class="btn btn-primary mt-4">Call us now</button>
             </div>
 
-            <div class="form-wrap btn-call-us">	
-            <form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
-            <button type="button" id="closeContactForm" class="close">&times;</button>
-              <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
-                <div class="row">
-                        <div class="form-group">
-                            <label for="name">Full name*</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
-                        </div>
-                </div>
+            <div class="modal fade" id="request-call" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal__content">
+        <form id="request-call-form" onsubmit="submitCform(); return false;" class="form-wrap form-wrap__rows"> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
+                </svg>
 
+                </button>
+                <h3 class="form-wrap__title poppins-bold">ENTER YOUR PHONE NUMBER AND WE WILL CONTACT YOU</h3>
+            <div class="row">
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="form-group">
+                        <label for="Phone">Phone number</label>
+                        <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+                    </div>
+            </div>
+        
+           
             <label id="website" for="website">website:</label>
             <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
-			
-			<div class="row">
-					<div class="form-group">
-						<label for="Phone">Phone number*</label>
-						<input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
-					</div>
+           
+            
+            <div class="row-agree">
+                <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
+                <label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
             </div>
 
             <div class="row">
-					<div class="form-group">
-						<label>Choose a service*</label>
-                        <div class="row">
-                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repair" checked>
-                                <label class="custom-control-label" for="repair">Repair</label>
-                            </div>
-                            <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" name="install" value="install" id="install">
-                                <label class="custom-control-label" for="install">Install</label>
-                            </div>
-                        </div>
-					</div>
-            </div>
-
-           <div class="row">
-					<div class="form-group">
-						<label for="problem">What's the problem*</label>
-						<select id="problem" name="problem" class="form-control" required>
-							<option selected value="window_Replacement">Window replacement</option>
-							<option value="window_Repair">Window Repair</option>
-							<option value="window_Installation">Window Installation</option>
-							<option value="window_Capping">Window Capping</option>
-							<option value="wooden_Windows_Restoration">Wooden Windows Restoration</option>
-							<option value="other">Other</option>
-						</select>
-				    </div>
-			</div>
-
-            <button type="button" id="show-comment-btn" class="show-comment-form">Would you like to leave a comment?</button>
-
-            <div id="comment-form" style="display: none;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="message">Leave a comment</label>
-                            <textarea  id="message" class="form-control" name="message" placeholder="How can we help?"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-agree">
-				<input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
-				<label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
-            </div>
-			
-			<div class="row">
-              <div class="col-md-12">
-                <input id="mybtn" type="submit" value="BOOK ONLINE" class="btn btn-primary">
+                <div class="col-md-12">
+              
+                <input id="mybtn" type="submit" value="Send request" class="btn btn-secondary w-100">
                 <span id="status"> </span>
                 <input type="hidden" id="formid" name="formid" value="1001">
-              </div>
-			</div>
+                </div>
+            </div>
+            
 
-		</form>
-      </div>
-      <div id="contactFormBackdrop" style="display: none;"></div>
+        </form>
+    </div>
+  </div>
+</div>
 
             <div class="windows-banner__decor col-6 col-md-4 align-items-end order-2 order-md-3">
                 <img src="<?php echo get_template_directory_uri() ?>/img/windows-2.png" alt="">
@@ -466,56 +434,3 @@
 <?php get_footer(); ?>
 
 
-
-
-   
-<script>
-
-const contactForm = document.querySelector("form#contactForm");
-
-function submitCform() {
-document.querySelector("form#contactForm #mybtn").disabled = "true"
-document.querySelector("form#contactForm #mybtn").value = 'Please wait...'
-
-var formdata = new FormData(contactForm);
-
-formdata.append('action', 'submitmyform') 
-AjaxCform(formdata) 
-}
-
-async function AjaxCform(formdata) {
-  const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
-  const response = await fetch(url, {
-      method: 'POST',
-      body: formdata,
-  });
-  const data = await response.json();
-	
-	if (data['statuse'] == 'ok'){			
-			document.querySelector("form#contactForm").innerHTML = `<div id="success">
-			${data['reply']}
-			</div>`			
-	} else if (data['statuse'] == 'er') {
-			document.querySelector("form#contactForm span#status").innerHTML = `<div id="er">
-			${data['reply']}
-			</div>`
-			document.querySelector("form#contactForm #mybtn").disabled = false
-			document.querySelector("form#contactForm #mybtn").value = 'Please try again.'
-	}}	
-
-
-
- //Button add comment (form)
-
-var showCommentBtn = document.getElementById('show-comment-btn');
-var commentForm = document.getElementById('comment-form');
-
-if (showCommentBtn) {
-  showCommentBtn.addEventListener('click', function() {
-      if (commentForm && commentForm.style.display === 'none') {
-          commentForm.style.display = 'block';
-          showCommentBtn.style.display = 'none';
-      }
-  });
-}
-</script>
