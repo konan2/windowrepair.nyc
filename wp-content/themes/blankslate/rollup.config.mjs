@@ -17,8 +17,9 @@ export default [
       del({ targets: 'build/*.js' }),
       resolve(), // Разрешить импорты из node_modules
       commonjs(), // Преобразовать CommonJS модули в ES6
-      terser() // Минифицировать выходной JavaScript
-      //terser({compress: {drop_console: true, module: true}}),
+      terser({
+        compress: { drop_console: false }, // Не удалять console.log()
+      }),
     ]
   },
   {

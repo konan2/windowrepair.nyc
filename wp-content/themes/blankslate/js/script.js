@@ -92,42 +92,6 @@ tabs.forEach(function(tab) {
 
 /// Swipers
 
-// function bestQualityServices() {
-//   if (window.innerWidth < 768) {
-//     const bestQualityServicesSlider = new Swiper('.swiper-best-quality', {
-//       loop: true,
-//       grabCursor: true,
-//       slidesPerView: 3,
-//       initialSlide: 0,
-//       speed: 1000,
-//       autoplay: false,
-//       pagination: {
-//             el: ".swiper-pagination",
-//             clickable: true,
-//           },
-//       navigation: {
-//             nextEl: ".swiper-button-next",
-//             prevEl: ".swiper-button-prev",
-//           },
-//       breakpoints: {
-//           320: {
-//               slidesPerView: 1,
-//           },
-//           550: {
-//               slidesPerView: 2,
-//           },
-//           768: {
-//               slidesPerView: 3,
-//           },
-//           1300: {
-//               slidesPerView: 6,
-//           },
-//       }
-//     });
-//     }
-// }
-// bestQualityServices();
-
 const brandSlider = new Swiper('#brands-slider', {
   loop: true,
   grabCursor: true,
@@ -663,6 +627,9 @@ $(document).ready(function() {
 
 // all form
 
+
+window.addEventListener('DOMContentLoaded',function () {
+
 var submitButtons = document.querySelectorAll("form input[type='submit']");
 
     submitButtons.forEach(function (button) {
@@ -715,6 +682,9 @@ if (showCommentBtn) {
   });
 }
 
+
+
+}); /// end of dome ready
 
 //add form on the btn call us
 
