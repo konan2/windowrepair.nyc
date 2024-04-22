@@ -250,7 +250,7 @@
             <div class="col-12 col-md-4 contrast-banner__text flex-column align-items-center text-center order-1 order-md-2">
                     <h2>Start your project today</h2>
                     <p class="mb-2 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-                    <button id="showContactForm" class="btn btn-primary mt-4">Call us now</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#request-call" id="showContactForm" class="btn btn-primary mt-4">Call us now</button>
             </div>
 
             <div class="modal fade" id="request-call" tabindex="-1" aria-hidden="true">
