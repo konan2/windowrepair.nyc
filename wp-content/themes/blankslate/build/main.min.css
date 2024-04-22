@@ -13500,6 +13500,7 @@ address {
   align-items: center;
   background-color: transparent;
   border: 0;
+  width: auto;
 }
 .modal__content .btn-close {
   position: absolute;
@@ -13510,6 +13511,7 @@ address {
   color: #fff;
   background: none;
   padding: 0;
+  z-index: 1;
 }
 .modal__content form {
   position: relative;
