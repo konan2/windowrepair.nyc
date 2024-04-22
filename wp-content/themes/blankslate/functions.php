@@ -15,10 +15,23 @@ add_action( 'init', 'register_my_menus' );
 
 
 
+// Remove gutenberg
+
+add_filter( 'wp_enqueue_scripts', 'true_dequeue_gutenberg_styles', 999 );
+ 
+function true_dequeue_gutenberg_styles() {
+ 
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'global-styles' ); // глобальные CSS-переменные
+ 
+}
 
 
+// Remove Emoji
 
-
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
 
 
 
