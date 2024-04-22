@@ -68,11 +68,11 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
       }
       // Строим начало элемента списка
       $classes = empty($item->classes) ? array() : (array) $item->classes;
-      $classes[] = 'nav-item'; // Добавляем класс "nav-item"
-      $classes[] = 'menu-level-' . ($depth + 1); // Добавляем класс "menu-level-N" для уровня вложенности
-      $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
-      $class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
-      $output .= $indent . '<li ' . $id . $class_names .'>';
+        $classes[] = 'nav-item'; // Добавляем класс "nav-item"
+        $classes[] = 'menu-level-' . ($depth + 1); // Добавляем класс "menu-level-N" для уровня вложенности
+        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
+        $class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
+        $output .= $indent . '<li' . $class_names .'>'; // Уберите $id из строки
       // Строим ссылку
       $atts = array();
       $atts['href'] = !empty($item->url) ? $item->url : '';

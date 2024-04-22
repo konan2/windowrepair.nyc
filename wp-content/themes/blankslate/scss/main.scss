@@ -1,12 +1,11 @@
 @import "fonts";
 @import "variable-overrides"; 
-//@import "../node_modules/swiper/swiper-bundle.min.css";
 @import "swiper";
+
 @import "../node_modules/bootstrap/scss/bootstrap"; 
 @import "custom";
 
 
-@import "modals";
 @import "header";
 @import "front-page";
 @import "service-page-hub";
