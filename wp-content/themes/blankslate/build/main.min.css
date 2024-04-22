@@ -14389,7 +14389,7 @@ address {
     background-size: cover;
   }
   .about-us-section:after {
-    background: url("../img/about-us-hero-sm.png") no-repeat;
+    background: url("../img/about-us-hero-sm.webp") no-repeat;
     background-size: cover;
   }
 }
@@ -15278,7 +15278,7 @@ body.page-template-page-services-hub {
 
 @media (max-width: 550px) {
   .about-us-section.services-hero-section:after {
-    background: url("../img/about-us-hero-sm.png") no-repeat;
+    background: url("../img/about-us-hero-sm.webp") no-repeat;
     background-size: cover;
   }
 }
