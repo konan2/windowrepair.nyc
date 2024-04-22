@@ -15103,7 +15103,7 @@ body.page-template-page-services-hub {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../img/contact-us-bg.png);
+  background-image: url(../img/contact-us-bg.webp);
   background-size: cover;
 }
 .contact-us p {
