@@ -13791,6 +13791,10 @@ address {
 }
 .best-solutions__item-title {
   color: #FFD221;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 24px;
   text-shadow: 2px 0 #0E192D, -2px 0 #0E192D, 0 2px #0E192D, 0 -2px #0E192D, 1px 1px #0E192D, -1px -1px #0E192D, 1px -1px #0E192D, -1px 1px #0E192D;
 }
 .best-solutions__item-content {

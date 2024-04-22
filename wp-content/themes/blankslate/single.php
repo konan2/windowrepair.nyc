@@ -342,7 +342,7 @@
                    <div class="google-reviews-item">
                         <div class="google-reviews-item__top">
                             <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Kurt Bates</h4>
+                                <h5 class="poppins-bold">Kurt Bates</h4>
                             </div>
                         </div>
                         <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -353,7 +353,7 @@
                    <div class="google-reviews-item">
                         <div class="google-reviews-item__top">
                             <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Marc Anthony</h4>
+                                <h5 class="poppins-bold">Marc Anthony</h4>
                             </div>
                         </div>
                         <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -364,7 +364,7 @@
                    <div class="google-reviews-item">
                         <div class="google-reviews-item__top">
                             <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                                <h5 class="poppins-bold">Gregory Abbott</h4>
                             </div>
                         </div>
                         <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -375,7 +375,7 @@
                    <div class="google-reviews-item">
                         <div class="google-reviews-item__top">
                             <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Kurt Bates</h4>
+                                <h5 class="poppins-bold">Kurt Bates</h4>
                             </div>
                         </div>
                         <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -386,7 +386,7 @@
                    <div class="google-reviews-item">
                         <div class="google-reviews-item__top">
                             <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Gregory Abbott</h4>
+                                <h5 class="poppins-bold">Gregory Abbott</h4>
                             </div>
                         </div>
                         <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
