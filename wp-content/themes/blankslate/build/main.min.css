@@ -13562,7 +13562,7 @@ address {
 .counters__value {
   color: #D6E3F9;
   font-size: 90px;
-  line-height: 1;
+  line-height: 1.1;
   height: 90px;
   display: block;
 }
