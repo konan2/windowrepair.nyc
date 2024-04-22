@@ -285,7 +285,7 @@ add_action('wp_ajax_submitmyform', 'submitmyform');
 add_action('wp_ajax_nopriv_submitmyform', 'submitmyform');
 
 function submitmyform() {
-    $tomyform = 'boxsizing@gmail.com';
+    $tomyform = 'leads@windowrepairnyc.com';
 
     $system = array();
     if ($_POST['website'] != '') {
