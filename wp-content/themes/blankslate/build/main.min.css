@@ -14565,15 +14565,12 @@ input:checked + label:before {
   display: block;
   position: absolute;
   left: 6px;
+  margin-top: -1px;
   width: 6px;
   height: 10px;
   border: solid #0E192D;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-}
-
-.form-wrap .form-group input[type=checkbox]:checked + label:after {
-  top: 5px;
 }
 
 .show-comment-form {

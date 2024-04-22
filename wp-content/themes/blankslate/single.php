@@ -124,7 +124,7 @@
 	<div class="form-wrap">	
        
 
-		<form id="contactForm" class="form-wrap__rows"> 
+		<form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
         <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
 			<div class="row">
 					<div class="form-group">

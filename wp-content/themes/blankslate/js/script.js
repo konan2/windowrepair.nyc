@@ -634,15 +634,19 @@ var submitButtons = document.querySelectorAll("form input[type='submit']");
 
     submitButtons.forEach(function (button) {
         button.addEventListener('click', function (event) {
-            event.preventDefault(); 
-            submitCform(this.closest('form')); 
+          var form = this.closest('form');
+          if (form.checkValidity()) { // Проверка формы
+              event.preventDefault(); 
+              console.log("test")
+              submitCform(this.closest('form')); 
+            }
         });
 });
 
 
 function submitCform(form) {
     form.querySelector("input[type='submit']").disabled = true;
-    form.querySelector("input[type='submit']").textContent = 'Please wait...';
+    form.querySelector("input[type='submit']").value = 'Please wait...';
 
     var formdata = new FormData(form);
     formdata.append('action', 'submitmyform');
