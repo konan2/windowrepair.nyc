@@ -53,4 +53,57 @@ background: #fff;
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    font-weight: 600;
 }
+
+
+.pagination .prev,
+.pagination .next  {
+    text-decoration: none;
+    position: relative;
+    color: $primary;
+    }
+
+.pagination .prev  {
+margin-right: 60px!important;
+}
+
+.pagination .next {
+    margin-left: 60px;
+    }
+
+ .page-numbers {
+    text-decoration: none;
+    color: #7A7A7A;
+  }
+
+  .page-numbers.current {
+    color: $primary-text-emphasis;
+  }
+
+    .page-numbers:not(:last-child) {
+margin-right: 12px;
+    }
+
+
+    .pagination .next:after,
+    .pagination .prev:before{
+        content: " ";
+        display: block;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border: solid $primary;
+        border-width: 0 3px 3px 0;
+        position: absolute;
+    }
+
+    .pagination .next:after {
+        right: -25px;
+        transform: rotate(-45deg);
+    }
+
+    .pagination .prev:before {
+        left: -25px;
+        transform: rotate(135deg);
+    }

@@ -84,8 +84,8 @@ function display_recent_articles_block($category = 'all') {
             'total' => $query->max_num_pages, 
             'current' => max( 1, $paged ), 
             'format' => '?paged=%#%',
-            'prev_text' => '&laquo; Prev', 
-            'next_text' => 'Next &raquo;', 
+            'prev_text' => 'Prev', 
+            'next_text' => 'Next', 
         ) );
         echo '</div>';
 
