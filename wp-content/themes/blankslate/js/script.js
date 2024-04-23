@@ -690,16 +690,45 @@ if (showCommentBtn) {
 
 }); /// end of dome ready
 
-//add form on the btn call us
+
+//scroll categories
 
 $(document).ready(function() {
-  $('#showContactForm').click(function() {
-      $('.form-wrap.btn-call-us').fadeIn();
-      $('#contactFormBackdrop').fadeIn();
+  var tabsContainer = $('.services_tabs_scrl');
+  var scrollArrowLeft = $('.scroll-arrow-left');
+  var scrollArrowRight = $('.scroll-arrow-right');
+
+
+  function checkScrollPosition() {
+      if (tabsContainer.scrollLeft() > 0) {
+          scrollArrowLeft.show();
+      } else {
+          scrollArrowLeft.hide();
+      }
+      if (tabsContainer.width() + tabsContainer.scrollLeft() < tabsContainer.prop('scrollWidth')) {
+          scrollArrowRight.show();
+
+      } else {
+          scrollArrowRight.hide();
+      }
+  }
+
+  tabsContainer.on('scroll', checkScrollPosition);
+  $(window).on('resize', checkScrollPosition);
+
+
+  scrollArrowLeft.on('click', function() {
+      tabsContainer.animate({
+          scrollLeft: Math.max(tabsContainer.scrollLeft() - 200, 0)
+      }, 500);
   });
 
-  $('#contactFormBackdrop, #closeContactForm').click(function() {
-      $('.form-wrap.btn-call-us').fadeOut();
-      $('#contactFormBackdrop').fadeOut();
+
+  scrollArrowRight.on('click', function() {
+      tabsContainer.animate({
+          scrollLeft: Math.min(tabsContainer.scrollLeft() + 200, tabsContainer.prop('scrollWidth') - tabsContainer.width())
+      }, 500);
   });
+
+  checkScrollPosition();
 });

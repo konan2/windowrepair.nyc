@@ -58,6 +58,7 @@
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(15, 17, 20, 0.06);
     transition: box-shadow 250ms;
+    max-width: 350px;
     &:hover{
         box-shadow: 0 0 10px rgba(21, 23, 27, 0.2);
     }
@@ -235,4 +236,12 @@
 .blog .blog-item-container:first-child .blog-item .blog-item__image img {
 height: 100%;
 object-fit: cover;
+}
+
+.blog .blog-item-container:first-child .blog-item {
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+        max-width: 350px;
+    }
 }

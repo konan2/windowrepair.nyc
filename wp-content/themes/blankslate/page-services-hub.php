@@ -37,6 +37,7 @@
                    <p class="text-body-secondary">Professional team of repair technicians with 12 years experience.</p>
                 </div>
             </div>
+            <div class="services_tabs_scrl">
             <div class="services_tabs">
             <?php 
      
@@ -53,6 +54,9 @@
               }
             }
               ?>
+            </div>   
+             <div class="scroll-arrow scroll-arrow-left"></div>
+            <div class="scroll-arrow scroll-arrow-right"></div>
             </div>
             <div class="row services_list">
             <?php 
