@@ -163,13 +163,16 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 // Определяем длину обрезанного текста в 20 слов
 function custom_excerpt_length( $length ) {
-    return 100; // Замените 20 на желаемое количество слов
+    return 90; // Замените 20 на желаемое количество слов
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length' );
 
 // После этого вызов the_excerpt() будет выводить только 20 слов
 
-
+function custom_excerpt_more( $more ) {
+    return '...'; // Замените '' на то, что вы хотите использовать вместо [...]
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
 
 
@@ -179,17 +182,28 @@ function custom_single_template($template) {
     if (is_single()) {
         // Получаем объект текущей записи
         global $post;
-        
-        // Проверяем, относится ли текущая запись к определенной категории
-        if (in_category('blog', $post)) { // Замените 'your-category-slug' на слаг вашей категории
-            // Устанавливаем шаблон для этой категории
-            $template = get_template_directory() . '/single-post-blog.php';
+
+        // Получаем ID категории "blog"
+        $blog_category_id = get_cat_ID('blog');
+
+        // Получаем все категории текущей записи
+        $categories = get_the_category($post->ID);
+
+        // Проверяем, есть ли среди категорий дочерняя категория категории "blog"
+        foreach ($categories as $category) {
+            if ($blog_category_id && cat_is_ancestor_of($blog_category_id, $category->term_id)) {
+                // Устанавливаем шаблон для этой категории
+                $template = get_template_directory() . '/single-post-blog.php';
+                break; // Прерываем цикл, если найдена соответствующая категория
+            }
         }
     }
     
     return $template;
 }
 add_filter('template_include', 'custom_single_template');
+
+
 
 
 

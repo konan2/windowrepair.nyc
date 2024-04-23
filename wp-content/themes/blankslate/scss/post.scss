@@ -1,0 +1,32 @@
+
+.post{
+    display: flex;
+    flex-direction: column;
+    &__title{
+        margin: 0 0 16px 0;
+    }
+    &__content{
+        color: #7A7A7A;
+        p{
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+        ul{
+            margin: 0 0 16px 0;
+            padding: 0 0 0 18px;
+            list-style: initial;
+        }
+        h3{
+            color: $primary;
+            text-transform: none;
+            margin-top: 46px;
+            margin-bottom: 16px;
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+}
+
+.posts-container{
+    margin-bottom: 80px;
+}

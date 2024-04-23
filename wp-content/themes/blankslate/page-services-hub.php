@@ -17,14 +17,6 @@
         // Добавляем term_id в массив $subcategories_ids
         $subcategories_ids[] = $subcategory->term_id;
     }
-
-  $args = array(
-    'post_type' => 'post', // Тип записи (в данном случае - посты)
-    'posts_per_page' => -1, // Количество постов (-1 для получения всех)
-    'category__in' => $subcategories_ids, // ID категории
-  );
-
-
 ?>
 <?php get_header(); ?>
 
@@ -47,6 +39,8 @@
             </div>
             <div class="services_tabs">
             <?php 
+     
+            if (!empty($subcategories_ids)) {
               // Добавляем кнопку "All" в начало списка кнопок
               echo '<button class="btn btn-default filter-button active" data-filter="all">All</button>';
 
@@ -57,36 +51,45 @@
                   // Создаем кнопку
                   echo '<button class="btn btn-default filter-button" data-filter="' . $category_slug . '">' . $category_name . '</button>';
               }
+            }
               ?>
             </div>
             <div class="row services_list">
             <?php 
+            $args = array(
+                'post_type' => 'post', // Тип записи (в данном случае - посты)
+                'posts_per_page' => -1, // Количество постов (-1 для получения всех)
+                'category__in' => $subcategories_ids, // ID категории
+              );
              $query = new WP_Query($args);
-
-             if ($query->have_posts()) {
-                 while ($query->have_posts()) {
-                     $query->the_post();
-                     // Получаем категории текущего поста
-                     $categories = get_the_category();
-                     if ($categories) {
-                      // Получаем первую категорию и используем ее название в качестве класса
-                        $category_class = sanitize_title($categories[0]->name);
-                        echo '<div class="service_item col filter ' . $category_class . '">';
-                        echo '<div class="service_item__bl">';
-                        echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
-                        echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
-                        echo '</a>';
-                        echo '</div>';
-                        echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
-                        echo '</div>';
-                  }
-
-                 }
-                 wp_reset_postdata(); // Восстанавливаем оригинальные данные поста
-             } else {
-                 // Если постов в этой категории нет
-                 echo 'Нет постов в данной категории.';
-             }
+             if (!empty($subcategories_ids)) {
+                if ($query->have_posts()) {
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                        // Получаем категории текущего поста
+                        $categories = get_the_category();
+                        foreach ($categories as $category) {
+                            if ($category->parent !== 0) {
+                        
+                                echo '<div class="service_item col filter ' . sanitize_title($category->name) . '">';
+                                echo '<div class="service_item__bl">';
+                                echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
+                                echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
+                                echo '</a>';
+                                echo '</div>';
+                                echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
+                                echo '</div>';
+                            }
+                        }
+                       
+                    }
+                    wp_reset_postdata(); // Восстанавливаем оригинальные данные поста
+                }
+            }
+            else {
+                // Если постов в этой категории нет
+                echo 'No posts';
+            }
             ?>
 
 

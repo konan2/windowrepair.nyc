@@ -51,48 +51,6 @@
 
 
 .blog-item{
-    @media (min-width: 768px) {
-        &-container:first-child{
-            width: 100%;
-            .blog-item{
-                display: flex;
-                padding: 20px 40px 20px 20px;
-                .blog-item__text-wrapper{
-                    padding: 0;
-                    width: 50%;
-                }
-                .blog-item__image{
-                    padding-right: 40px;
-                    width: 50%;
-                    max-height: 427px;
-                    img{
-                        border-radius: 20px;
-                    }
-                }
-            }
-            .blog-item__text-excerpt{
-                display: block;
-            }
-            .blog-item__text-wrapper{
-                display: flex;
-                flex-direction: column;
-            }
-            .blog-item__text-excerpt{
-                flex-grow: 1;
-            }
-            .blog-item__category{
-                font-size: 18px;
-                margin-bottom: 8px;
-                font-weight: 700;
-            }
-            .blog-item__title{
-                margin-bottom: 16px;
-            }
-            .blog-item__footer{
-                margin-bottom: 20px;
-            }
-        }
-    }
     background-color: #fff;
     border-radius: 20px;
     padding: 0;
@@ -157,6 +115,52 @@
     }
 }
 
+.blog{
+    .blog-item{
+        @media (min-width: 768px) {
+            &-container:first-child{
+                width: 100%;
+                .blog-item{
+                    display: flex;
+                    padding: 20px 40px 20px 20px;
+                    .blog-item__text-wrapper{
+                        padding: 0;
+                        width: 50%;
+                    }
+                    .blog-item__image{
+                        padding-right: 40px;
+                        width: 50%;
+                        max-height: 427px;
+                        img{
+                            border-radius: 20px;
+                        }
+                    }
+                }
+                .blog-item__text-excerpt{
+                    display: block;
+                }
+                .blog-item__text-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .blog-item__text-excerpt{
+                    flex-grow: 1;
+                }
+                .blog-item__category{
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                }
+                .blog-item__title{
+                    margin-bottom: 16px;
+                }
+                .blog-item__footer{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
 
 
 .pagination{

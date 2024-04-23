@@ -18,13 +18,6 @@
         $subcategories_ids[] = $subcategory->term_id;
     }
 
-  $args = array(
-    'post_type' => 'post', // Тип записи (в данном случае - посты)
-    'posts_per_page' => -1, // Количество постов (-1 для получения всех)
-    'category__in' => $subcategories_ids, // ID категории
-  );
-
-
 ?>
 
 
@@ -75,7 +68,7 @@
 
             </div>
 
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="blog row row-cols-1 row-cols-md-3">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <article class="blog-item-container">
                         <div class="blog-item">

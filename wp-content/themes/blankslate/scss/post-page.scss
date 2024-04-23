@@ -41,6 +41,9 @@
 
 .categories {
     max-width: 245px;
+    @media (max-width: 768px) {
+        margin-top: 24px;
+    }
 }
 
 .block-recent-articles {

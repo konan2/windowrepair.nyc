@@ -1,3 +1,5 @@
+<?php /* Template for services item */ ?>
+
 <?php get_header(); ?>
 
 <section class="services-hero-section">
