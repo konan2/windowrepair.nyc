@@ -153,6 +153,7 @@
         transition-property: transform;
         transition-duration: 350ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        object-fit: cover;
     }
 
     &__title {
