@@ -15903,6 +15903,8 @@ body.page-template-page-services-hub {
 
 .blog .blog-item-container:first-child .blog-item .blog-item__image img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
