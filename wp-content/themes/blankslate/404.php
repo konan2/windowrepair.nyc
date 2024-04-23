@@ -16,40 +16,37 @@
             <p class="services-block__desc poppins-semibold">Maybe you were looking for</p>
 
             <div class="row services_list">
-                <div class="service_item col filter center windows">
-                    <div class="service_item__bl">
-                       <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Window Replacement - 01">
-                     </div>
-                    <h3 class="service_item__title poppins-medium">Window Replacement</h3>
-                </div>
+            <?php 
+$args = array(
+    'posts_per_page' => 5, 
+);
 
-                <div class="service_item col filter windows">
-                  <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_repair.png" alt="Our services Window Repair - 02">
-                  </div>
-                <h3 class="service_item__title poppins-medium">Window Repair</h3>
-                </div>
+$query = new WP_Query($args);
 
-                <div class="service_item col filter windows">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_installation.png" alt="Our services Window Installation - 03">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Window Installation</h3>
-                </div>
+if ($query->have_posts()) {
+    while ($query->have_posts()) {
+        $query->the_post();
+       
+        $categories = get_the_category();
+        if ($categories) {
+           
+            $category_class = sanitize_title($categories[0]->name);
+            echo '<div class="service_item col filter ' . $category_class . '">';
+            echo '<div class="service_item__bl">';
+            echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
+            echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
+            echo '</a>';
+            echo '</div>';
+            echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
+            echo '</div>';
+        }
+    }
+    wp_reset_postdata(); 
+} else {
 
-                <div class="service_item col filter windows">
-                 <div class="service_item__bl">
-                  <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/door_glass_replacement.png" alt="Our services Window Capping - 04">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Window Capping</h3>
-                </div>
-
-                <div class="service_item col filter mirrors">
-                 <div class="service_item__bl">
-                   <img class="service_item__image" src="../wp-content/themes/blankslate/img/services/window_replacement.png" alt="Our services Mirror Installation - 18">
-                 </div>
-                <h3 class="service_item__title poppins-medium">Mirror Installation</h3>
-                </div>
+    echo 'Немає постів у даній категорії.';
+}
+?>
             </div>
 
             <a href="https://test.windowrepair.nyc/service/" class="services-block__link poppins-semibold">See more</a>
