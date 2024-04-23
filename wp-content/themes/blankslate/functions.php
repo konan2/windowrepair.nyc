@@ -161,10 +161,13 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 
 
+// Определяем длину обрезанного текста в 20 слов
+function custom_excerpt_length( $length ) {
+    return 100; // Замените 20 на желаемое количество слов
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length' );
 
-
-
-
+// После этого вызов the_excerpt() будет выводить только 20 слов
 
 
 

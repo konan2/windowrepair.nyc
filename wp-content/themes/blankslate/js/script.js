@@ -703,5 +703,3 @@ $(document).ready(function() {
       $('#contactFormBackdrop').fadeOut();
   });
 });
-
-

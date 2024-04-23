@@ -78,6 +78,13 @@
     }
 }
 
+
+.header__logo-image{
+    @media (max-width: 992px) {
+        max-width: 60px;
+    }
+}
+
 .header__menu{
     color: $primary;
     &-container{

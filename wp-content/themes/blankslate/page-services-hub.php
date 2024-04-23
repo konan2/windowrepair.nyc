@@ -18,11 +18,6 @@
         $subcategories_ids[] = $subcategory->term_id;
     }
 
-
-  // echo '<pre>';
-  // print_r($subcategories_ids);
-  // echo '</pre>';
-
   $args = array(
     'post_type' => 'post', // Тип записи (в данном случае - посты)
     'posts_per_page' => -1, // Количество постов (-1 для получения всех)
@@ -44,10 +39,10 @@
 
 <section class="services-section">
         <div class="container">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+            <div class="gallery">
                 <div class="middle-title-block">
                    <h2 class="services-section__title">ALl list of services we provided</h2>
-                   <p class="services-section__desc">Professional team of repair technicians with 12 years experience.</p>
+                   <p class="text-body-secondary">Professional team of repair technicians with 12 years experience.</p>
                 </div>
             </div>
             <div class="services_tabs">

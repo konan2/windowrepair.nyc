@@ -6,6 +6,9 @@
 <meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet"> -->
 
 <?php wp_head(); ?>
 </head>
@@ -18,7 +21,7 @@
             <div class="header__contacts-container container-xl text-center">
                 <span class="navbar-brand flex-grow-1 d-flex">
                     <a href="<?php echo home_url(); ?>" aria-label="Go to homepage">
-                        <img src="<?php echo get_template_directory_uri() . '/img/logo.webp'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
+                        <img class="header__logo-image" src="<?php echo get_template_directory_uri() . '/img/logo.webp'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
                     </a>
                 </span>
                 <div class="header__contacts-item d-none d-lg-flex">
