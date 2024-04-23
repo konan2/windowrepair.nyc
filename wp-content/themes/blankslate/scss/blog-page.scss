@@ -133,7 +133,6 @@
                         max-height: 427px;
                         img{
                             border-radius: 20px;
-                            height: 100%;
                         }
                     }
                 }
@@ -233,4 +232,6 @@
 
 
 
-    
+.blog .blog-item-container:first-child .blog-item .blog-item__image img {
+height: 100%;
+}

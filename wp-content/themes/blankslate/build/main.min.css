@@ -15812,7 +15812,6 @@ body.page-template-page-services-hub {
   }
   .blog .blog-item-container:first-child .blog-item .blog-item__image img {
     border-radius: 20px;
-    height: 100%;
   }
   .blog .blog-item-container:first-child .blog-item__text-excerpt {
     display: block;
@@ -15900,6 +15899,10 @@ body.page-template-page-services-hub {
 }
 .page-numbers.current {
   color: #789AEE;
+}
+
+.blog .blog-item-container:first-child .blog-item .blog-item__image img {
+  height: 100%;
 }
 
 .footer {
