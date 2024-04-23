@@ -14469,13 +14469,27 @@ address {
     background-size: cover;
   }
 }
+.advantages-section {
+  background: #FCF4DA;
+  position: relative;
+}
+
 .advantages-section .container-bg {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  background: #FCF4DA;
 }
 
+.advantages-block__left > img {
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 1280px) {
+  .advantages-block__left > img {
+    position: static;
+  }
+}
 .advantages-block {
   display: flex;
   flex-direction: row;
@@ -14489,6 +14503,7 @@ address {
 .advantages-block__left {
   display: flex;
   align-items: center;
+  width: 45%;
 }
 .advantages-block__right {
   max-width: 605px;
@@ -14529,6 +14544,11 @@ address {
   gap: 16px;
 }
 
+@media (max-width: 1280px) {
+  .advantages-block__left {
+    width: auto;
+  }
+}
 @media (max-width: 550px) {
   .repair-form-section {
     margin-top: 30px !important;
