@@ -87,7 +87,7 @@
               <div class="swiper-slide">
                 <div class="item-our-team-block">
                   <div class="item-our-team-block__top">
-                    <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />
+                    <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-01.webp" />
                   </div>
                   <div class="item-our-team-block__bottom">
                     <div>
@@ -101,7 +101,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="../wp-content/themes/blankslate/img/our-team-02.png" alt="team-member-02" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-02.webp" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -114,7 +114,7 @@
               </div>
               <div class="swiper-slide"><div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="../wp-content/themes/blankslate/img/our-team-03.png" alt="team-member-03" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-03.webp" alt="team-member-03" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -127,7 +127,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="../wp-content/themes/blankslate/img/our-team-01.png" alt="team-member-01" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-01.webp" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -141,7 +141,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="../wp-content/themes/blankslate/img/our-team-02.png" alt="team-member-02" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-02.webp" alt="team-member-02" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
