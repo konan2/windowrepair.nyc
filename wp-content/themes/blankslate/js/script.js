@@ -345,6 +345,20 @@ window.addEventListener('resize', () => {
     }
 });
 
+///// Certification swiper
+
+var certificatesSlider = new Swiper("#certification", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 3,
+  initialSlide: 0,
+  spaceBetween: 30,
+  speed: 1000,
+  autoplay: {
+      delay: 1000,
+  }
+});
+
 
 ///////////////////////////////
 
