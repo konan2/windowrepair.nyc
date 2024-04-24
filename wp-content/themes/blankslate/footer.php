@@ -14,7 +14,7 @@
       <div class="row text-center text-lg-start">
          <div class="col-lg-4 footer__contacts-menu">
             <a class="footer-brand" href="<?php echo home_url(); ?>" aria-label="Go to homepage">
-                <img src="<?php echo get_template_directory_uri() . '/img/logo.webp'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
+                <img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
             </a>
             <ul class="footer__menu">
                <li class="footer__menu-item">    

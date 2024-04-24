@@ -45,6 +45,7 @@
                    <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </div>
             </div>
+            <div class="services_tabs_scrl">
             <div class="services_tabs">
             <?php
                 // Получаем ID текущей категории, если мы находимся на странице категории
@@ -66,6 +67,9 @@
                 }
                 ?>
 
+            </div>
+            <div class="scroll-arrow scroll-arrow-left"></div>
+            <div class="scroll-arrow scroll-arrow-right"></div>
             </div>
 
             <div class="blog row row-cols-1 row-cols-md-3">
@@ -100,7 +104,7 @@
                     'end_size'           => 1,     // количество страниц на концах
                     'mid_size'           => 2,     // количество страниц вокруг текущей
                     'prev_next'          => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
-                    'prev_text'          => __('Previous'),
+                    'prev_text'          => __('Prev'),
                     'next_text'          => __('Next'),
                     'add_args'           => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
                     'add_fragment'       => '',     // Текст который добавиться ко всем ссылкам.

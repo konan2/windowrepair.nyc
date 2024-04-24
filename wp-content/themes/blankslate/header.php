@@ -21,7 +21,7 @@
             <div class="header__contacts-container container-xl text-center">
                 <span class="navbar-brand flex-grow-1 d-flex">
                     <a href="<?php echo home_url(); ?>" aria-label="Go to homepage">
-                        <img class="header__logo-image" src="<?php echo get_template_directory_uri() . '/img/logo.webp'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
+                        <img class="header__logo-image" src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
                     </a>
                 </span>
                 <div class="header__contacts-item d-none d-lg-flex">
