@@ -14349,7 +14349,7 @@ address {
 .scroll-arrow {
   position: sticky;
   top: 12%;
-  right: 0;
+  right: -1px;
   z-index: 999;
   font-size: 20px;
   cursor: pointer;
