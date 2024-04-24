@@ -103,6 +103,15 @@
     &:hover,
     &:focus {
         color: $primary-text-emphasis;
+        background-color: #D6E3F9;
+    }
+}
+
+.blog_tabs .filter-button {
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
     }
 }
 
@@ -421,7 +430,7 @@
 .scroll-arrow {
     position: sticky;
     top: 12%;
-    right: 0;
+    right: -1px;
     z-index: 999;
     font-size: 20px;
     cursor: pointer;
@@ -433,7 +442,11 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding: 5px;
+    padding: 7px;
+}
+
+.blog_tabs .scroll-arrow {
+    background-color: #fff;
 }
 
 .scroll-arrow:after {

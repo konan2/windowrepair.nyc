@@ -45,7 +45,7 @@
                    <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </div>
             </div>
-            <div class="services_tabs_scrl">
+            <div class="services_tabs_scrl blog_tabs">
             <div class="services_tabs">
             <?php
                 // Получаем ID текущей категории, если мы находимся на странице категории
