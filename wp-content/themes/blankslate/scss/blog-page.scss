@@ -241,7 +241,7 @@ object-fit: cover;
 .blog .blog-item-container:first-child .blog-item {
     max-width: 100%;
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         max-width: 350px;
     }
 }
