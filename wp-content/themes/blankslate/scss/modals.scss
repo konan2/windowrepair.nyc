@@ -3,6 +3,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    max-width: max-content;
 }
 
 .modal__content{
@@ -24,4 +25,8 @@
     form{
         position: relative;
     }
+}
+
+.modal-backdrop.show{
+    opacity: .7;
 }

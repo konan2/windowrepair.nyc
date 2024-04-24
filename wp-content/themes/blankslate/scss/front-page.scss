@@ -44,9 +44,9 @@
 
 /// Section counters
 .counters{
+    font-family: "Bebas Neue", sans-serif;
     &__item{
         position: relative;
-
         @media (max-width:550px) {
             &:nth-child(-n+2) {
                 margin-bottom: 32px; 
@@ -57,6 +57,10 @@
         color: $primary-muted-bg;
         font-size: 90px;
         line-height: 1.1;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 110%;
         height: 90px;
         display: block;
 
@@ -74,6 +78,10 @@
         position: absolute;
         left: 50%;
         top: 50%;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 110%;
         transform: translateY(-50%) translateX(-50%);
         color: #0E192D;
         font-size: 22px;
@@ -158,17 +166,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        p{
+            margin-bottom: 0;
+        }
         @media (max-width:550px) {
             padding: 20px;
             margin-top: 0;
-
-           > h4 {
-                font-size: 20px;
-                font-family: "Poppins", sans-serif;
-                font-weight: 700;
-            }
         }
-
+        h4 {
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+        }
     }
     &__icon{
         border-radius: 100%;
@@ -177,7 +186,7 @@
         height: 80px;
         background-color: $primary-text-emphasis;
         color: #fff;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         background-repeat: no-repeat;
         background-position: center;
 
@@ -281,8 +290,8 @@
             line-height: 1.1;
             font-weight: bold;
             position: absolute; 
-            right: 30px;
-            top: 27px;
+            right: 32px;
+            top: 20px;
             z-index: 1;
             width: 46px; 
             height: 46px; 
@@ -296,8 +305,7 @@
         font-style: italic;
         font-weight: 900;
         line-height: 24px;
-        text-shadow: 2px 0 #0E192D, -2px 0 #0E192D, 0 2px #0E192D, 0 -2px #0E192D,
-        1px 1px #0E192D, -1px -1px #0E192D, 1px -1px #0E192D, -1px 1px #0E192D;;
+        text-shadow: -0 -2px 1px #000000,   0   -2px 1px #000000,  -0    2px 1px #000000,   0    2px 1px #000000,  -2px -0   1px #000000,   2px -0   1px #000000,  -2px  0   1px #000000,   2px  0   1px #000000,  -1px -2px 1px #000000,   1px -2px 1px #000000,  -1px  2px 1px #000000,   1px  2px 1px #000000,  -2px -1px 1px #000000,   2px -1px 1px #000000,  -2px  1px 1px #000000,   2px  1px 1px #000000,  -2px -2px 1px #000000,   2px -2px 1px #000000,  -2px  2px 1px #000000,   2px  2px 1px #000000,  -2px -2px 1px #000000,   2px -2px 1px #000000,  -2px  2px 1px #000000,   2px  2px 1px #000000;
     }
     &__item-content{
         width: 100%;
@@ -379,6 +387,7 @@
         &-title{
             margin: 0;
             text-transform: none;
+            color: #fff;
         }
         &-text{
             font-size: 12px;
@@ -399,7 +408,6 @@
 .company-history{
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto!important;
     position: relative;
     padding: 60px 0;
     img{

@@ -1,76 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("../fonts/bebasneuethin.woff2") format("woff2"), url("../fonts/bebasneuethin.woff") format("woff"), url("../fonts/bebasneuethin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Light"), local("BebasNeue-Light"), url("../fonts/bebasneuelight.woff2") format("woff2"), url("../fonts/bebasneuelight.woff") format("woff"), url("../fonts/bebasneuelight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("../fonts/bebasneuebook.woff2") format("woff2"), url("../fonts/bebasneuebook.woff") format("woff"), url("../fonts/bebasneuebook.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/Poppinsregular.woff2") format("woff2"), url("../fonts/Poppinsregular.woff") format("woff"), url("../fonts/Poppinsregular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Poppins-BoldSemiBold"), local("Poppins-SemiBold"), url("../fonts/Poppinspoppins-boldsemibold.woff2") format("woff2"), url("../fonts/Poppinspoppins-boldsemibold.woff") format("woff"), url("../fonts/Poppinspoppins-boldsemibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Italic"), local("Poppins-Italic"), url("../fonts/Poppinsitalic.woff2") format("woff2"), url("../fonts/Poppinsitalic.woff") format("woff"), url("../fonts/Poppinsitalic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Poppins-SemiBoldMedium"), local("Poppins-Medium"), url("../fonts/Poppinspoppins-semiboldmedium.woff2") format("woff2"), url("../fonts/Poppinspoppins-semiboldmedium.woff") format("woff"), url("../fonts/Poppinspoppins-semiboldmedium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"), url("../fonts/Poppinsextralight.woff2") format("woff2"), url("../fonts/Poppinsextralight.woff") format("woff"), url("../fonts/Poppinsextralight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Bold Italic"), local("Poppins-BoldItalic"), url("../fonts/Poppinsbolditalic.woff2") format("woff2"), url("../fonts/Poppinsbolditalic.woff") format("woff"), url("../fonts/Poppinsbolditalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins Bold"), local("Poppins-Bold"), url("../fonts/Poppinsbold.woff2") format("woff2"), url("../fonts/Poppinsbold.woff") format("woff"), url("../fonts/Poppinsbold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 /**
  * Swiper 11.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -12769,14 +12697,15 @@ body {
   font-weight: 400;
   font-style: normal;
   min-width: 360px;
+  color: #7a7a7a;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, .h1, h2, .h2 {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%;
   letter-spacing: 1px;
+  line-height: 110%;
   margin: 8px 0;
   color: #0E192D;
 }
@@ -12797,6 +12726,10 @@ h2, .h2 {
   h2, .h2 {
     font-size: 28px;
   }
+}
+
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: #0E192D;
 }
 
 h3, .h3 {
@@ -12881,9 +12814,8 @@ p {
   font-style: italic;
   text-transform: uppercase;
 }
-
-.btn-light {
-  background-color: #fff;
+.btn:hover {
+  background-color: #FFFF33;
   color: #2C5697;
 }
 
@@ -12891,6 +12823,11 @@ p {
   padding: 8px 20px;
   font-weight: 700;
   font-size: 18px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2C5697;
 }
 
 .btn-secondary {
@@ -13050,6 +12987,9 @@ ul {
   position: static;
   margin: 0;
   margin-top: 40px;
+}
+.swiper-pagination:empty {
+  margin-top: 0;
 }
 .swiper-pagination-bullet {
   background-color: #789AEE;
@@ -13520,6 +13460,8 @@ address {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .modal__content {
@@ -13541,6 +13483,10 @@ address {
 }
 .modal__content form {
   position: relative;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
 }
 
 .front-banner {
@@ -13582,6 +13528,9 @@ address {
   }
 }
 
+.counters {
+  font-family: "Bebas Neue", sans-serif;
+}
 .counters__item {
   position: relative;
 }
@@ -13594,6 +13543,10 @@ address {
   color: #D6E3F9;
   font-size: 90px;
   line-height: 1.1;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 110%;
   height: 90px;
   display: block;
 }
@@ -13613,6 +13566,10 @@ address {
   position: absolute;
   left: 50%;
   top: 50%;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 110%;
   transform: translateY(-50%) translateX(-50%);
   color: #0E192D;
   font-size: 22px;
@@ -13695,16 +13652,19 @@ address {
   align-items: center;
   justify-content: center;
 }
+.quality-services__item p {
+  margin-bottom: 0;
+}
 @media (max-width: 550px) {
   .quality-services__item {
     padding: 20px;
     margin-top: 0;
   }
-  .quality-services__item > h4, .quality-services__item > .h4 {
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-  }
+}
+.quality-services__item h4, .quality-services__item .h4 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 .quality-services__icon {
   border-radius: 100%;
@@ -13713,7 +13673,7 @@ address {
   height: 80px;
   background-color: #789AEE;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -13812,8 +13772,8 @@ address {
   line-height: 1.1;
   font-weight: bold;
   position: absolute;
-  right: 30px;
-  top: 27px;
+  right: 32px;
+  top: 20px;
   z-index: 1;
   width: 46px;
   height: 46px;
@@ -13826,7 +13786,7 @@ address {
   font-style: italic;
   font-weight: 900;
   line-height: 24px;
-  text-shadow: 2px 0 #0E192D, -2px 0 #0E192D, 0 2px #0E192D, 0 -2px #0E192D, 1px 1px #0E192D, -1px -1px #0E192D, 1px -1px #0E192D, -1px 1px #0E192D;
+  text-shadow: 0 -2px 1px #000000, 0 -2px 1px #000000, 0 2px 1px #000000, 0 2px 1px #000000, -2px 0 1px #000000, 2px 0 1px #000000, -2px 0 1px #000000, 2px 0 1px #000000, -1px -2px 1px #000000, 1px -2px 1px #000000, -1px 2px 1px #000000, 1px 2px 1px #000000, -2px -1px 1px #000000, 2px -1px 1px #000000, -2px 1px 1px #000000, 2px 1px 1px #000000, -2px -2px 1px #000000, 2px -2px 1px #000000, -2px 2px 1px #000000, 2px 2px 1px #000000, -2px -2px 1px #000000, 2px -2px 1px #000000, -2px 2px 1px #000000, 2px 2px 1px #000000;
 }
 .best-solutions__item-content {
   width: 100%;
@@ -13903,6 +13863,7 @@ address {
 .our-services__list-item-title {
   margin: 0;
   text-transform: none;
+  color: #fff;
 }
 .our-services__list-item-text {
   font-size: 12px;
@@ -13920,7 +13881,6 @@ address {
 .company-history {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto !important;
   position: relative;
   padding: 60px 0;
 }
@@ -14684,7 +14644,7 @@ input:checked + label:before {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .quality-services__wrapper {
