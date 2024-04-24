@@ -12922,7 +12922,7 @@ ul {
 
 .form-check-inline {
   cursor: pointer;
-  margin-right: 24px;
+  margin-right: 20px;
 }
 .form-check-inline:last-child {
   margin-right: 0;
@@ -13852,6 +13852,19 @@ address {
 .our-services__list-item:hover .our-services__button {
   color: #2C5697;
   background-color: #FFFF33;
+}
+.our-services .filter-card {
+  margin-bottom: 32px;
+}
+@media (max-width: 576px) {
+  .our-services .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-services .our-services .filter-card {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
 }
 .our-services__list-item {
   display: flex;

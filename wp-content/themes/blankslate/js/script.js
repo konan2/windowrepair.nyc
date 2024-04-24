@@ -26,28 +26,6 @@ window.addEventListener('DOMContentLoaded',function () {
 
 
 
-/// Filter services
-
-const radioButtons = document.querySelectorAll('#our-services .filter-radio');
-
-// Добавляем обработчик событий для каждой радио кнопки
-radioButtons.forEach(function(radioButton) {
-  radioButton.addEventListener('change', function() {
-    const type = this.dataset.type; // Получаем значение атрибута data-type радио кнопки
-
-    // Получаем все карточки
-    const cards = document.querySelectorAll('#our-services .filter-card');
-
-    // Перебираем все карточки и проверяем их data-type
-    cards.forEach(function(card) {
-      if (type === 'all' || card.dataset.type === type) {
-        card.style.display = 'block'; // Показываем карточку, если она соответствует выбранному типу или если выбран фильтр "все"
-      } else {
-        card.style.display = 'none'; // Скрываем карточку, если она не соответствует выбранному типу
-      }
-    });
-  });
-});
 
 
 ///////////////////////
@@ -358,6 +336,95 @@ var certificatesSlider = new Swiper("#certification", {
       delay: 1000,
   }
 });
+
+
+///// Our-services-slider swiper
+
+
+// breakpoint where swiper will be destroyed
+// and switches to a dual-column layout
+const breakpoint = window.matchMedia('(max-width: 576px)');
+
+// keep track of swiper instances to destroy later
+let ourServicesSlider;
+
+const breakpointChecker = function () {
+  // if larger viewport and multi-row layout needed
+  if (breakpoint.matches === true) {
+    // clean up old instances and inline styles when available
+    if (ourServicesSlider !== undefined) ourServicesSlider.destroy(true, true);
+
+    // or/and do nothing
+    return;
+    // else if a small viewport and single column layout needed
+  } else if (breakpoint.matches === false) {
+    // fire small viewport version of swiper
+    enableOurServicesSlider();
+  }
+};
+
+const enableOurServicesSlider = function () {
+  const visibleSlides = document.querySelectorAll('#our-services-slider .swiper-slide:not(.hidden)');
+  const initialSlide = Array.from(visibleSlides).indexOf(visibleSlides[0]);
+
+  ourServicesSlider = new Swiper('#our-services-slider', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 4,
+    initialSlide: initialSlide,
+    spaceBetween: 30,
+    speed: 1000,
+    autoplay: {
+      delay: 1000,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
+};
+
+// keep an eye on viewport size changes
+breakpoint.addListener(breakpointChecker);
+
+// kickstart
+breakpointChecker();
+
+/// Filter services
+
+const radioButtons = document.querySelectorAll('#our-services .filter-radio');
+
+// Добавляем обработчик событий для каждой радио кнопки
+radioButtons.forEach(function (radioButton) {
+  radioButton.addEventListener('change', function () {
+    const type = this.dataset.type; // Получаем значение атрибута data-type радио кнопки
+
+    // Получаем все карточки
+    const cards = document.querySelectorAll('#our-services .filter-card');
+
+    // Перебираем все карточки и проверяем их data-type
+    cards.forEach(function (card) {
+      if (type === 'all' || card.dataset.type === type) {
+        card.classList.remove('d-none'); // Показываем карточку, если она соответствует выбранному типу или если выбран фильтр "все"
+      } else {
+        card.classList.add('d-none'); // Скрываем карточку, если она не соответствует выбранному типу
+      }
+    });
+    
+    if (ourServicesSlider !== undefined) {
+      ourServicesSlider.destroy(true, true);
+      enableOurServicesSlider();
+    }
+  });
+});
+
 
 
 ///////////////////////////////

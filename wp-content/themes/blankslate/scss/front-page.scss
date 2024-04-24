@@ -378,6 +378,19 @@
         color: $primary;
         background-color: #FFFF33;
     }
+    .filter-card{
+        margin-bottom: 32px;
+    }
+    @media (max-width: 576px) {
+        .swiper-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        .our-services .filter-card{
+            width: 100%!important;
+            margin-right: 0!important;
+        }
+    }
     &__list-item{
         display: flex;
         min-height: 450px;
