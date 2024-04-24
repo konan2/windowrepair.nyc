@@ -107,6 +107,14 @@
     }
 }
 
+.blog_tabs .filter-button {
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
+    }
+}
+
 .filter-button.active {
 
     border-bottom: 4px solid $primary;
