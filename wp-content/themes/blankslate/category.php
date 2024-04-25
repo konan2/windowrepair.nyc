@@ -2,7 +2,7 @@
 <?php 
 
      // blog page url
-   $blog_page_id = 220; // Replace 123 with the ID of your page
+   $blog_page_id = 436; // Replace 123 with the ID of your page
    $blog_page_url = get_permalink($blog_page_id);
 
    $parent_category = get_term_by('slug', 'blog', 'category');

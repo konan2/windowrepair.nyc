@@ -3,7 +3,7 @@
 /* Template Name: Blog Template */ 
 
 // Получаем ID страницы блога
-$blog_page_id = 220; // Замените 123 на ID вашей страницы блога
+$blog_page_id = 436; // Замените 123 на ID вашей страницы блога
 $blog_page_url = get_permalink($blog_page_id);
 
 // Получаем информацию о родительской категории "blog"
