@@ -20,9 +20,15 @@ get_template_part(
 );
 ?>
 
-[show_section post_id="287"]
+<?php
+echo do_shortcode('[show_section post_id="287"]');
+?>
 
-[show_section post_id="288"]
+<?php
+echo do_shortcode('[show_section post_id="288"]');
+?>
+
+
 
 
 <section class="advantages-section">
@@ -137,18 +143,25 @@ get_template_part(
     </div>
 </section>
 
+<?php
+echo do_shortcode('[show_section post_id="291"]');
+?>
+<?php
+echo do_shortcode('[show_section post_id="295"]');
+?>
+<?php
+echo do_shortcode('[show_section post_id="290"]');
+?>
+<?php
+echo do_shortcode('[show_section post_id="292"]');
+?>
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
+<?php
+echo do_shortcode('[show_section post_id="294"]');
+?>
 
-[show_section post_id="291"]
-
-[show_section post_id="295"]
-
-[show_section post_id="290"]
-
-[show_section post_id="292"]
-
-[show_section post_id="293"]
-
-[show_section post_id="294"]
 
 
 
