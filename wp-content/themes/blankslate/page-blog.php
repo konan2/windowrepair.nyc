@@ -1,8 +1,25 @@
 <?php /* Template Name: Blog Template */ ?>
-<?php
-    $parent_category_slug = 'blog'; 
-    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
- ?>
+
+<?php 
+   $parent_category = get_term_by('slug', 'blog', 'category');
+    
+   
+   // Получаем список дочерних категорий
+    $subcategories = get_terms(array(
+      'taxonomy' => 'category', // Таксономия (в данном случае - категории)
+      'child_of' => $parent_category->term_id, // ID родительской категории
+  ));
+
+    // Создаем простой массив из значений term_id
+    $subcategories_ids = array();
+
+    // Проходимся по каждой подкатегории
+    foreach ($subcategories as $subcategory) {
+        // Добавляем term_id в массив $subcategories_ids
+        $subcategories_ids[] = $subcategory->term_id;
+    }
+
+?>
 
 
 <?php get_header(); ?>
@@ -10,101 +27,111 @@
 <section class="services-hero-section">
     <div class="container">
         <div class="col-sm-6 main-title-block">
-            <h1 class="services-hero-section__title">our news</h1>
-            <p  class="services-hero-section__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+            <h1 class="services-hero-section__title" itemprop="name"><?php echo $parent_category->name ?></h1>
+            <?php 
+            $category_description = $parent_category->description; // Получаем описание категории
+            if ( $category_description ) {
+                echo '<div class="services-hero-section__desc">' . $category_description . '</div>';
+            }
+            ?>
         </div>
     </div> 
 </section>
 
-<section class="services-section blog-services-section">
+<section class="blog-services-section">
         <div class="container">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+            <div class="gallery mb-4">
                 <div class="middle-title-block">
                    <h2 class="services-section__title">Recent blog posts</h2>
-                   <p class="services-section__desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                   <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </div>
             </div>
+            <div class="services_tabs_scrl blog_tabs">
             <div class="services_tabs">
-                <button class="btn btn-default filter-button poppins-semibold active" data-filter="all">All</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="windows">Windows</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="glass">Glass </button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="doors">Doors</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="mirrors">Mirrors</button>
-                <button class="btn btn-default filter-button poppins-semibold" data-filter="shower-doors">Shower Doors</button>
-            </div>
-            <div>
             <?php
+                // Получаем ID текущей категории, если мы находимся на странице категории
+                $current_category_id = is_category() ? get_queried_object_id() : null;
 
-function display_recent_articles_block($category = 'all') {
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; 
-    $parent_category_slug = 'blog'; 
-    $parent_category = get_term_by('slug', $parent_category_slug, 'category');
-    $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 4,
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'paged' => $paged, 
-        'category__in' => $parent_category->term_id
+                // Добавляем кнопку "All" в начало списка кнопок
+                echo '<a href="' . get_category_link($parent_category->term_id) . '" class="btn btn-default filter-button' . ($current_category_id === $parent_category->term_id ? ' active' : '') . '">All</a>';
 
-    );
-    if ($category !== 'all') {
-        $args['category_name'] = $category;
-    }
-    $query = new WP_Query($args);
+                // Создаем кнопки для каждой дочерней категории
+                foreach ($subcategories as $category) {
+                    $category_name = $category->name;
+                    $category_url =  get_category_link($category->term_id);
+                    
+                    // Проверяем, находимся ли мы на странице этой категории
+                    $is_current_category = $current_category_id === $category->term_id;
 
-    if ($query->have_posts()) {
-        echo '<div class="recent-articles">';
-        echo '<ul class="block-recent-articles">';
-        while ($query->have_posts()) {
-            
-            $query->the_post();
-            
-            $categories = get_the_category();
+                    // Создаем кнопку и добавляем класс active, если категория активна
+                    echo '<a href="' . $category_url . '" class="btn btn-default filter-button' . ($is_current_category ? ' active' : '') . '">' . $category_name . '</a>';
+                }
+                ?>
+
+            </div>
+            <div class="scroll-arrow scroll-arrow-left"></div>
+            <div class="scroll-arrow scroll-arrow-right"></div>
+            </div>
+
+            <div class="blog row row-cols-1 row-cols-md-3">
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <article class="blog-item-container">
+                        <div class="blog-item">
+                            <div class="blog-item__image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Featured Image">
+                            </div>
+                            <div class="blog-item__text-wrapper">
+                                <div class="blog-item__category"><?php echo get_the_category_list( ', ' ); ?></div>
+                                <h4 class="blog-item__title"><?php the_title(); ?></h4>
+                                <div class="blog-item__text-excerpt text-body-secondary">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                                <div class="blog-item__footer">
+                                    <a class="read-more-button" href="<?php the_permalink(); ?>">Read more</a>
+                                    <span class="blog-item__date"><?php the_date( 'M j, Y' ); ?></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                <?php endwhile; else: ?>
+                    <p>No articles found.</p>
+                <?php endif; ?>
+                </div>
+        
+           
+                <?php 
+                $args = array(
+                    'show_all'           => false, // показаны все страницы участвующие в пагинации
+                    'end_size'           => 1,     // количество страниц на концах
+                    'mid_size'           => 2,     // количество страниц вокруг текущей
+                    'prev_next'          => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+                    'prev_text'          => __('Prev'),
+                    'next_text'          => __('Next'),
+                    'add_args'           => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
+                    'add_fragment'       => '',     // Текст который добавиться ко всем ссылкам.
+                    'screen_reader_text' => '',
+                    'aria_label'         => __( 'Posts' ), // aria-label="" для nav элемента. С WP 5.3
+                    'class'              => 'pagination',  // class="" для nav элемента. С WP 5.5
+                );
+
+                echo get_the_posts_pagination($args);
+                ?>
+    
+
+           
+
+    
+           
+               
+           
 
 
-            echo '<li class="item-our-team-block">';
-            if (has_post_thumbnail()) {
-                echo '<div class="item-our-team-block__top"><img src="' . get_the_post_thumbnail_url() . '" alt="Featured Image"></div>'; 
-            }
-            echo '<div class="item-our-team-block__bottom">';
-            echo '<span class="post-category">' . $categories[1]->name . '</span>'; 
-            echo '<h4>' . get_the_title() . '</h4>'; 
-            echo '<div class="post-excerpt">' . get_the_excerpt() . '</div>'; 
-            echo '<div class="row-bottom"><a href="' . get_permalink() . '">' . 'Read more' . '</a>'; 
-            echo '<span class="post-date">' . get_the_date() . '</span></div></div>'; 
-            echo '</li>';
-        }
-        echo '</ul>';
-        echo '</div>';
 
 
-        echo '<div class="pagination">';
-        echo paginate_links( array(
-            'total' => $query->max_num_pages, 
-            'current' => max( 1, $paged ), 
-            'format' => '?paged=%#%',
-            'prev_text' => 'Prev', 
-            'next_text' => 'Next', 
-        ) );
-        echo '</div>';
-
-        wp_reset_postdata();
-    } else {
-        echo '<p>No other articles found.</p>';
-    }
-}
-
-display_recent_articles_block();
-?>
 
 
-        </div>
+
         </div>
 </section>
 
 <?php get_footer(); ?>
-
-<script>
-
-</script>
