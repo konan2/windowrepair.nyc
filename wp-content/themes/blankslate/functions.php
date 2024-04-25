@@ -1,5 +1,25 @@
 <?php
 
+// Убираем имя родительской категории из url
+function remove_parent_category_from_category_url( $termlink, $term, $taxonomy ) {
+    // Проверяем, является ли термин категорией и имеет ли он родительскую категорию
+    if ( 'category' === $taxonomy && ! is_wp_error( $term ) && $term->parent > 0 ) {
+        // Получаем ID родительской категории
+        $parent_category_id = $term->parent;
+
+        // Получаем родительскую категорию
+        $parent_category = get_category( $parent_category_id );
+
+        // Удаляем имя родительской категории из URL
+        $termlink = str_replace( '/' . $parent_category->slug . '/', '/', $termlink );
+    }
+
+    return $termlink;
+}
+add_filter( 'term_link', 'remove_parent_category_from_category_url', 10, 3 );
+
+
+
 // Регистрируем меню
 function register_my_menus() {
     register_nav_menus(

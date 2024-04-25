@@ -1,5 +1,10 @@
 
 <?php 
+
+     // blog page url
+   $blog_page_id = 220; // Replace 123 with the ID of your page
+   $blog_page_url = get_permalink($blog_page_id);
+
    $parent_category = get_term_by('slug', 'blog', 'category');
     
    
@@ -52,7 +57,7 @@
                 $current_category_id = is_category() ? get_queried_object_id() : null;
 
                 // Добавляем кнопку "All" в начало списка кнопок
-                echo '<a href="' . get_category_link($parent_category->term_id) . '" class="btn btn-default filter-button' . ($current_category_id === $parent_category->term_id ? ' active' : '') . '">All</a>';
+                echo '<a href="' . $blog_page_url . '" class="btn btn-default filter-button' . ($current_category_id === $parent_category->term_id ? ' active' : '') . '">All</a>';
 
                 // Создаем кнопки для каждой дочерней категории
                 foreach ($subcategories as $category) {
