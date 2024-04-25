@@ -14463,9 +14463,13 @@ address {
   margin: 0 auto;
 }
 
+.advantages-block__left {
+  position: relative;
+}
+
 .advantages-block__left > img {
   position: absolute;
-  left: 0;
+  right: 0;
 }
 
 @media (max-width: 1280px) {
@@ -14748,11 +14752,6 @@ input:checked + label:before {
     width: 33.3% !important;
   }
 }
-.clients-block,
-.swiper-google-reviews {
-  margin-top: 40px;
-}
-
 .swiper-google-reviews .swiper-slide,
 .swiper-best-solutions .swiper-slide {
   padding: 15px;

@@ -39,6 +39,44 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 
 
+// Добавление пользовательского поля к посту
+function add_custom_field_meta_box() {
+    add_meta_box(
+        'custom-field-meta-box',
+        'Service description',
+        'render_custom_field_meta_box',
+        array('post', 'page'), // Укажите тип записи, для которой требуется добавить пользовательское поле
+        'normal',
+        'high'
+    );
+}
+
+add_action('add_meta_boxes', 'add_custom_field_meta_box');
+
+// Отображение пользовательского поля в административной области
+function render_custom_field_meta_box($post) {
+    $custom_field_value = get_post_meta($post->ID, 'short_description', true);
+    ?>
+    <input type="text" id="custom_field" name="custom_field" value="<?php echo esc_attr($custom_field_value); ?>" style="width: 100%" />
+    <?php
+}
+
+// Сохранение значения пользовательского поля при сохранении поста
+function save_custom_field($post_id) {
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+
+    if (isset($_POST['custom_field'])) {
+        update_post_meta($post_id, 'short_description', sanitize_text_field($_POST['custom_field']));
+    }
+}
+
+add_action('save_post', 'save_custom_field');
 
 
 
