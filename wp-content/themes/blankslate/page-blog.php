@@ -50,7 +50,7 @@
             <div class="services_tabs">
             <?php
                 // Получаем ID текущей категории, если мы находимся на странице категории
-                $current_category_id = is_category() ? get_queried_object_id() : null;
+                $current_category_id = $parent_category->term_id;
 
                 // Добавляем кнопку "All" в начало списка кнопок
                 echo '<a href="' . get_category_link($parent_category->term_id) . '" class="btn btn-default filter-button' . ($current_category_id === $parent_category->term_id ? ' active' : '') . '">All</a>';
