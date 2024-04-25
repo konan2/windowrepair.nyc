@@ -451,9 +451,20 @@ function submitmyform() {
 
 
 
+// Redirects
 
-
-
+// Функция для реализации редиректа
+function custom_redirect() {
+    // Проверяем, является ли текущая страница 'old-page'
+    if (is_page('location')) {
+        // Если это так, выполняем редирект на новую страницу 'new-page' с кодом 301
+        wp_redirect(home_url('/contact'), 301);
+        // Прекращаем выполнение скрипта, чтобы редирект сработал корректно
+        exit();
+    }
+}
+// Запускаем функцию custom_redirect() на хуке 'init'
+add_action('init', 'custom_redirect');
 
 
 
