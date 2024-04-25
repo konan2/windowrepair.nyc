@@ -1,6 +1,21 @@
 <?php
     $parent_category_slug = 'blog'; 
     $parent_category = get_term_by('slug', $parent_category_slug, 'category');
+
+    // Получаем список дочерних категорий
+    $subcategories = get_terms(array(
+        'taxonomy' => 'category', // Таксономия (в данном случае - категории)
+        'child_of' => $parent_category->term_id, // ID родительской категории
+    ));
+  
+      // Создаем простой массив из значений term_id
+      $subcategories_ids = array();
+  
+      // Проходимся по каждой подкатегории
+      foreach ($subcategories as $subcategory) {
+          // Добавляем term_id в массив $subcategories_ids
+          $subcategories_ids[] = $subcategory->term_id;
+      }
  ?>
 <?php /* Template for blog item */ ?>
 <?php get_header(); ?>
@@ -59,14 +74,13 @@
 <div class="posts-container row row-cols-1 row-cols-md-3">
 <?php 
     // Определите ID категорий, из которых вы хотите выводить посты
-    $category_ids = $subcategories_ids;
 
     $current_post_id = get_the_ID();
 
     $args = array(
         'post_type' => 'post',
         'posts_per_page' => 3, // Выводить максимум три поста
-        'category__in' => $category_ids, // Выводить посты только из указанных категорий
+        'category__in' => $subcategories_ids, // Выводить посты только из указанных категорий
         'post__not_in' => array($current_post_id),
     );
 
