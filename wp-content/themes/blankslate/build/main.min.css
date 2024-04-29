@@ -13761,6 +13761,16 @@ address {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 575px) {
+  .windows-banner__wrapper .contrast-banner__text {
+    align-items: flex-start !important;
+  }
+}
+@media (max-width: 575px) {
+  .windows-banner__wrapper .contrast-banner__text .text-body-secondary {
+    text-align: left !important;
+  }
+}
 
 .best-solutions__list {
   margin: 40px 0 0 0;

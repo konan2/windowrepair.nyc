@@ -263,6 +263,15 @@
                 padding-top: 0;
                 margin-bottom: 20px;
             }
+            @media (max-width: 575px) { 
+                align-items: flex-start!important;
+            }
+
+            .text-body-secondary {
+                @media (max-width: 575px) {
+                    text-align: left !important;
+                }
+            }
         }
     }
 }
