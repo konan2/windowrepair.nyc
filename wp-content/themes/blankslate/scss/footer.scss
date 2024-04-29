@@ -1,6 +1,6 @@
 .footer {
     background: #D6E3F9;
-    padding-top: 103px;
+    padding-top: 48px;
     padding-bottom: 95px;
     &__title{
         margin: 12px 0;
@@ -8,10 +8,8 @@
     }
     &-brand{
         display: inline-block;
-        margin-top: -62px;
+        margin-top: -8px;
         margin-bottom: 10px;
-        width: 105px;
-        height: 105px;
     }
     &__menu-buttons-wrapper{
         display: none;
@@ -40,8 +38,10 @@
         margin: 8px 0;
         line-height: 1.5;
         color: $primary;
+        font-weight: 500;
         a{
             text-decoration: none;
+            font-weight: 600;
         }
     }
 }
@@ -49,5 +49,42 @@
 .footer__contacts-menu{
     .footer__menu-item{
         margin: 10px 0;
+    }
+}
+
+.footer__menu .footer__menu-item .footer-link{
+    font-weight: 500;
+}
+
+.footer-payments{
+    margin-top: 64px;
+    .payment-card{
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 12px 8px;
+        width: 100%;
+        min-height: 36px;
+       
+        @media (max-width: 768px) {
+            margin: 8px;
+        }
+    }
+    .payments-cards{
+        @media (min-width: 768px) {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 0 8px;
+            margin: 0;
+        }
+        .payments-cards__item{
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (min-width: 768px) {
+                flex: 0 0 auto;
+                width: auto;
+            }
+        }
     }
 }

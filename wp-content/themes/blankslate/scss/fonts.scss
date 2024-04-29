@@ -40,15 +40,16 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins BoldSemiBold';
   src: local('Poppins Poppins-BoldSemiBold'), local('Poppins-SemiBold'), url('../fonts/Poppinspoppins-boldsemibold.woff2') format('woff2'), url('../fonts/Poppinspoppins-boldsemibold.woff') format('woff'), url('../fonts/Poppinspoppins-boldsemibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins Italic';
   src: local('Poppins Italic'), local('Poppins-Italic'), url('../fonts/Poppinsitalic.woff2') format('woff2'), url('../fonts/Poppinsitalic.woff') format('woff'), url('../fonts/Poppinsitalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
@@ -56,26 +57,26 @@
 
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins Poppins-SemiBoldMedium';
   src: local('Poppins Poppins-SemiBoldMedium'), local('Poppins-Medium'), url('../fonts/Poppinspoppins-semiboldmedium.woff2') format('woff2'), url('../fonts/Poppinspoppins-semiboldmedium.woff') format('woff'), url('../fonts/Poppinspoppins-semiboldmedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins ExtraLight';
   src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'), url('../fonts/Poppinsextralight.woff2') format('woff2'), url('../fonts/Poppinsextralight.woff') format('woff'), url('../fonts/Poppinsextralight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins Bold Italic';
   src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'), url('../fonts/Poppinsbolditalic.woff2') format('woff2'), url('../fonts/Poppinsbolditalic.woff') format('woff'), url('../fonts/Poppinsbolditalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins Bold';
   src: local('Poppins Bold'), local('Poppins-Bold'), url('../fonts/Poppinsbold.woff2') format('woff2'), url('../fonts/Poppinsbold.woff') format('woff'), url('../fonts/Poppinsbold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
