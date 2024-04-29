@@ -12804,6 +12804,8 @@ strong {
   position: relative;
   display: block;
   text-decoration: none;
+  width: -moz-max-content;
+  width: max-content;
 }
 .read-more-button:after {
   content: " ";
@@ -13652,6 +13654,10 @@ address {
   }
 }
 
+.company-history + .contact-banner-section {
+  margin-top: 0 !important;
+}
+
 .quality-services__item {
   margin-top: 30px;
   padding: 32px 20px;
@@ -13759,6 +13765,16 @@ address {
   .windows-banner__wrapper .contrast-banner__text {
     padding-top: 0;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .windows-banner__wrapper .contrast-banner__text {
+    align-items: flex-start !important;
+  }
+}
+@media (max-width: 575px) {
+  .windows-banner__wrapper .contrast-banner__text .text-body-secondary {
+    text-align: left !important;
   }
 }
 
@@ -13908,6 +13924,11 @@ address {
   width: 100%;
   position: relative;
   padding: 60px 0;
+}
+@media (max-width: 768px) {
+  .company-history {
+    margin-top: 0 !important;
+  }
 }
 .company-history img {
   max-height: 255px;
@@ -14383,6 +14404,15 @@ address {
   position: relative;
 }
 
+.services_tabs_scrl.our-work_tabs {
+  justify-content: center;
+}
+@media (max-width: 990px) {
+  .services_tabs_scrl.our-work_tabs {
+    justify-content: flex-start;
+  }
+}
+
 .scroll-arrow {
   position: sticky;
   top: 12%;
@@ -14761,6 +14791,15 @@ input:checked + label:before {
   overflow: hidden;
   position: relative;
   margin-top: 10px;
+}
+
+.swiper-google-reviews {
+  margin-top: 40px;
+}
+@media (max-width: 550px) {
+  .swiper-google-reviews {
+    margin-top: 20px;
+  }
 }
 
 .quality-services__wrapper {

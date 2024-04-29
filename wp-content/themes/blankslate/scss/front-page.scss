@@ -151,6 +151,10 @@
     }
 }
 
+.company-history + .contact-banner-section {
+    margin-top: 0!important;
+}
+
 // quality-services
 
 .quality-services{
@@ -262,6 +266,15 @@
             @media (max-width: 768px) {
                 padding-top: 0;
                 margin-bottom: 20px;
+            }
+            @media (max-width: 575px) { 
+                align-items: flex-start!important;
+            }
+
+            .text-body-secondary {
+                @media (max-width: 575px) {
+                    text-align: left !important;
+                }
             }
         }
     }
@@ -424,6 +437,11 @@
     width: 100%;
     position: relative;
     padding: 60px 0;
+
+    @media (max-width: 768px) {
+    margin-top: 0!important;
+    }
+
     img{
         max-height: 255px;
     }
