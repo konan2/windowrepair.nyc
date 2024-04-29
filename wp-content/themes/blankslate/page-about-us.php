@@ -47,29 +47,39 @@
 
 
 
-<section class="certification about-us-sec-certific">
-    <div class="container-xl container">
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="flex-column justify-content-center">
-                <h2>OUR CERTIFICATION</h2>
-                <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut </p>
-            </div>
-            <div>
-                <div class="row mt-3 mt-md-0">
-                    <div class="col">
-                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-1.png" alt="" width="120" height="120" /></div>
-                    </div>
-                    <div class="col">
-                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-2.png" alt="" width="80" height="120" /></div>
-                    </div>
-                    <div class="col">
-                        <div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/certificate-3.png" alt="" width="120" height="82" /></div>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="certification">
+<div class="container-xl">
+<div class="row row-cols-1 row-cols-md-2">
+<div class="flex-column justify-content-center">
+<h2>OUR CERTIFICATION</h2>
+<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+</div>
+<div id="certification" class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/image-399.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-550" /></div>
+</div>
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-5.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-549" /></div>
+</div>
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-4.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-548" /></div>
+</div>
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-3.svg" alt="" width="120" height="123" class="alignnone size-full wp-image-547" /></div>
+</div>
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-2.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-546" /></div>
+</div>
+<div class="swiper-slide">
+<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-1.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-545" /></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
 </section>
 
 
