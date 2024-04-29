@@ -12794,7 +12794,7 @@ p {
 
 .read-more-button {
   position: relative;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 .read-more-button:after {
