@@ -14391,7 +14391,8 @@ address {
   }
 }
 @media (max-width: 990px) {
-  .areas-block__left {
+  .areas-block__left,
+  .areas-block-contact {
     width: 100%;
     max-width: 720px;
     padding: 0 15px;
@@ -14399,7 +14400,8 @@ address {
   }
 }
 @media (max-width: 768px) {
-  .areas-block__left {
+  .areas-block__left,
+  .areas-block-contact {
     max-width: 540px;
   }
 }
@@ -15323,21 +15325,39 @@ body.page-template-page-services-hub {
     max-width: 322px;
   }
 }
-.contact-us {
-  color: #fff;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/contact-us-bg.webp);
+.contact-us.services-hero-section {
+  background: url("../img/contact-us-bg.webp") no-repeat;
+  background-position: center;
   background-size: cover;
 }
-.contact-us p {
+@media (max-width: 768px) {
+  .contact-us.services-hero-section {
+    background-position: 50% center;
+  }
+}
+@media (max-width: 550px) {
+  .contact-us.services-hero-section {
+    background: #D6E3F9;
+  }
+}
+.contact-us.services-hero-section p {
   max-width: 444px;
   color: #D6E3F9;
 }
-.contact-us__contacts {
+.contact-us.services-hero-section__contacts {
   margin-top: 0 !important;
+}
+
+@media (max-width: 550px) {
+  .contact-us.services-hero-section:after {
+    background: url("../img/contact-hero-bg-sm.webp") no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .contact-us .main-title-block {
+    width: 100%;
+  }
 }
 
 .contact-item-container {
@@ -15380,15 +15400,50 @@ body.page-template-page-services-hub {
 .contact-areas {
   margin-bottom: 40px;
 }
+@media (max-width: 990px) {
+  .contact-areas {
+    margin-bottom: 0;
+  }
+  .contact-areas .container-xl {
+    max-width: 100%;
+    padding: 0;
+    --bs-gutter-x: 0;
+  }
+  .contact-areas .container-xl .row {
+    padding-right: 0;
+    padding-left: 0;
+    --bs-gutter-x: 0;
+  }
+  .contact-areas .container-xl .row .order-1.order-xl-0 {
+    padding-left: 0;
+    padding-right: 0;
+    --bs-gutter-x: 0;
+  }
+}
 .contact-areas .map {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+@media (max-width: 990px) {
+  .contact-areas .map {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
 .contact-areas__form {
+  margin: 0 auto;
   margin-bottom: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 380px;
+}
+@media (max-width: 550px) {
+  .contact-areas__form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .contact-areas textarea {
   min-height: 80px;

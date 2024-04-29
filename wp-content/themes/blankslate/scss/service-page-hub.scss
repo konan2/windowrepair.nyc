@@ -399,7 +399,8 @@
 }
 
 @media (max-width: 990px) {
-    .areas-block__left {
+    .areas-block__left,
+    .areas-block-contact {
         width: 100%;
         max-width: 720px;
         padding: 0 15px;
@@ -408,7 +409,8 @@
 }
 
 @media (max-width: 768px) {
-    .areas-block__left {
+    .areas-block__left,
+    .areas-block-contact {
         max-width: 540px;
     }
 }
