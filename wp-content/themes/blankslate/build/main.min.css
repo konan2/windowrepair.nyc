@@ -12870,6 +12870,11 @@ figure {
   list-style: none;
   margin: 8px 0 24px 8px;
 }
+@media (max-width: 550px) {
+  .post-list {
+    margin: 8px 0 24px 0;
+  }
+}
 .post-list__item {
   position: relative;
   padding: 0;
@@ -14766,7 +14771,6 @@ input:checked + label:before {
 }
 @media (max-width: 990px) {
   .google-reviews-item {
-    max-width: 320px;
     padding: 20px 16px;
   }
 }

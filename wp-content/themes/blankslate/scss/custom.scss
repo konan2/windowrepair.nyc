@@ -192,6 +192,10 @@ figure{
     padding: 0; 
     list-style: none;
     margin: 8px 0 24px 8px;
+
+    @media (max-width:550px) {
+        margin: 8px 0 24px 0;
+    }
     &__item{
         position: relative;
         padding: 0;
