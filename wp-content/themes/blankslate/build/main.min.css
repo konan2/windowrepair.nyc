@@ -14397,6 +14397,15 @@ address {
   position: relative;
 }
 
+.services_tabs_scrl.our-work_tabs {
+  justify-content: center;
+}
+@media (max-width: 990px) {
+  .services_tabs_scrl.our-work_tabs {
+    justify-content: flex-start;
+  }
+}
+
 .scroll-arrow {
   position: sticky;
   top: 12%;
