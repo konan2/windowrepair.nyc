@@ -3,7 +3,7 @@
 <section class="not-found-section">
     <div class="container">
         <div class="not-found-block">
-            <img class="not-found-block__img" src="../wp-content/themes/blankslate/img/services-up-404.png" alt="Page not found - 01">
+            <img class="not-found-block__img" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/services-up-404.png" alt="Page not found - 01">
             <h1 class="not-found-block__title">Oops... Page not found</h1>
         </div>
     </div> 
