@@ -12878,6 +12878,11 @@ figure {
   list-style: none;
   margin: 8px 0 24px 8px;
 }
+@media (max-width: 550px) {
+  .post-list {
+    margin: 8px 0 24px 0;
+  }
+}
 .post-list__item {
   position: relative;
   padding: 0;
@@ -12970,6 +12975,7 @@ ul {
   min-height: 96px;
   box-shadow: 0px 1px 16px 0px rgba(14, 25, 45, 0.0705882353);
   width: 100%;
+  max-width: 255px;
 }
 .swiper-button-prev {
   left: 0;
@@ -13971,6 +13977,17 @@ address {
   min-height: 142px;
   width: 100%;
 }
+@media (max-width: 440px) {
+  .certification .card {
+    min-height: 100px;
+  }
+}
+@media (max-width: 440px) {
+  .certification .card img {
+    height: 70px;
+    width: 70px;
+  }
+}
 
 .our-works .our-works__filter {
   display: flex;
@@ -14773,7 +14790,6 @@ input:checked + label:before {
 }
 @media (max-width: 990px) {
   .google-reviews-item {
-    max-width: 320px;
     padding: 20px 16px;
   }
 }
@@ -14999,19 +15015,15 @@ input:checked + label:before {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 730px) {
   .photos-tabs-22 {
-    width: 400px;
     margin: 0 auto;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 600px) {
   .photos-tabs-22 {
-    width: 350px;
     margin: 0 auto;
   }
 }
@@ -15125,7 +15137,9 @@ body.page-template-page-services-hub {
 }
 @media (max-width: 550px) {
   .quality-services-serv-page .container-xl,
-  .quality-services-serv-page .swiper-best-quality .swiper-slide {
+  .quality-services-serv-page .swiper-best-quality .swiper-slide,
+  .swiper-google-reviews .swiper-slide,
+  .clients-google-reviews .container-xl {
     padding: 0;
   }
 }

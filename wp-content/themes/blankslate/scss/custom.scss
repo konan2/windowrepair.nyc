@@ -199,6 +199,10 @@ figure{
     padding: 0; 
     list-style: none;
     margin: 8px 0 24px 8px;
+
+    @media (max-width:550px) {
+        margin: 8px 0 24px 0;
+    }
     &__item{
         position: relative;
         padding: 0;
@@ -299,6 +303,7 @@ ul {
         min-height: 96px;
         box-shadow: 0px 1px 16px 0px #0E192D12;
         width: 100%;
+        max-width: 255px;
     }
     &-button-prev{
         //left: -18px;
