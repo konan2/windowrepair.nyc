@@ -13925,6 +13925,11 @@ address {
   position: relative;
   padding: 60px 0;
 }
+@media (max-width: 768px) {
+  .company-history {
+    margin-top: 0 !important;
+  }
+}
 .company-history img {
   max-height: 255px;
 }
