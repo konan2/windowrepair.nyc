@@ -13658,6 +13658,13 @@ address {
   margin-top: 0 !important;
 }
 
+@media (max-width: 768px) {
+  .single-post .company-history {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
 .quality-services__item {
   margin-top: 30px;
   padding: 32px 20px;
