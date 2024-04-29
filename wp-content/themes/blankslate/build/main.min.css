@@ -13655,7 +13655,7 @@ address {
 }
 
 .company-history + .contact-banner-section {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .quality-services__item {
@@ -14786,6 +14786,15 @@ input:checked + label:before {
   overflow: hidden;
   position: relative;
   margin-top: 10px;
+}
+
+.swiper-google-reviews {
+  margin-top: 40px;
+}
+@media (max-width: 550px) {
+  .swiper-google-reviews {
+    margin-top: 20px;
+  }
 }
 
 .quality-services__wrapper {

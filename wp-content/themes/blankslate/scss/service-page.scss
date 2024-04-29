@@ -367,6 +367,15 @@ input:checked+label:before {
     margin-top: 10px;
 }
 
+.swiper-google-reviews {
+    margin-top: 40px;
+
+    @media (max-width:550px) {
+        margin-top: 20px;
+
+    }
+}
+
 .quality-services__wrapper{
     flex-wrap: nowrap;
 }
