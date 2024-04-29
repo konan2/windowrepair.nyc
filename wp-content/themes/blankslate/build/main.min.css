@@ -13652,6 +13652,10 @@ address {
   }
 }
 
+.company-history + .contact-banner-section {
+  margin-top: 0;
+}
+
 .quality-services__item {
   margin-top: 30px;
   padding: 32px 20px;
