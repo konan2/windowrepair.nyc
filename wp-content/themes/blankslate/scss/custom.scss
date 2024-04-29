@@ -119,6 +119,7 @@ strong{
     position: relative;
     display: block;
     text-decoration: none;
+    width: max-content;
     &:after {
         content: " ";
         display: block;
