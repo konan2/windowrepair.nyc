@@ -616,20 +616,20 @@ input:checked+label:before {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 }
 
 @media (max-width:730px) {
     .photos-tabs-22 {
-        width: 400px;
+        // width: 400px;
         margin: 0 auto;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
 }
 
 @media (max-width: 600px) {
     .photos-tabs-22 {
-        width: 350px;
+        // width: 350px;
         margin: 0 auto;
     }
 }
