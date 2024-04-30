@@ -9,7 +9,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
 <?php get_header(); ?>
 
 
-<section class="contact-us">
+<section class="services-hero-section contact-us">
     <div class="container-xl container">
         <div class="col-sm-6 main-title-block">
             <h1 class="services-hero-section__title"><?php the_title() ?></h1>
@@ -33,7 +33,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
    
             <div class="container order-1 order-xl-0">
                 <div class="row row-cols-1">
-                    <div class="">
+                    <div class="areas-block-contact">
                         <h2 class="areas-block__title">AREAS WE SERVICES</h2>
                         <p class="areas-block__desc text-body-secondary">Choose your state</p>
                         <div class="row areas-list">

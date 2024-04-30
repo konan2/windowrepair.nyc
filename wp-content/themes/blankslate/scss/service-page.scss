@@ -2,7 +2,7 @@
 
 .services-hero-section {
     background: url("../img/services/section-hero-serv-img.png") no-repeat;
-    height: 300px;
+    height: 400px;
     background-position: center;
     display: flex;
     align-items: center;
@@ -190,8 +190,8 @@
     color: #fff;
 
     @media (max-width: 550px) {
-        max-width: 380px;
-        width: auto;
+        // max-width: 380px;
+        // width: auto;
     }
 
     &__title {
