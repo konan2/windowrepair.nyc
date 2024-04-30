@@ -55,6 +55,87 @@
     }
 }
 
+//service alone hero block banner
+
+.services-alone-hero-section {
+    background-color: #D6E3F9;
+    height: 400px;
+
+    @media (max-width: 768px) {
+        height: auto;
+
+    }
+
+    .container-bg {
+        height: 100%;
+    }
+}
+
+.alone-hero__block {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    }
+}
+
+
+.alone-hero__left {
+    max-width: 575px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+
+    .services-hero-section__title,
+    .services-hero-section__desc {
+            color: #0E192D!important;
+            // max-width: 430px;
+    }
+
+    .services-hero-section__desc {
+        @media (max-width: 768px) {
+            color: #7A7A7A!important;
+        }
+    }
+
+}
+
+.alone-hero__right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.alone-hero__right > img {
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        position: static;
+    }
+}
+
 //Advantages section
 .advantages-section {
     background: #FCF4DA;
@@ -62,7 +143,7 @@
 }
 
 .advantages-section .container-bg {
-    max-width: 1440px;
+    // max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
@@ -74,6 +155,9 @@
 .advantages-block__left > img {
     position: absolute;
     right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     }
     @media (max-width: 1280px) {
       .advantages-block__left > img {
