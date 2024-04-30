@@ -100,8 +100,8 @@
     &__right {
         max-width: 605px;
         padding-left: 60px;
-        padding-top: 37px;
-        padding-bottom: 37px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         @media (max-width: 990px) {
             padding-left: 0;
@@ -339,8 +339,9 @@ input:checked+label:before {
     &__desc {
         text-align: center;
         color: #D6E3F9;
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 40px;
+        max-width: 920px;
     }
 
 

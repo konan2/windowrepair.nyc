@@ -14417,7 +14417,8 @@ address {
 }
 
 .page-template-page-services-hub .contact-banner-section,
-.page-template-page-services-hub .certification {
+.page-template-page-services-hub .certification,
+.single-post .certification {
   margin-top: 0 !important;
 }
 
@@ -14514,8 +14515,8 @@ address {
 .advantages-block__right {
   max-width: 605px;
   padding-left: 60px;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (max-width: 990px) {
   .advantages-block__right {
@@ -14732,8 +14733,9 @@ input:checked + label:before {
 .contact-banner__desc {
   text-align: center;
   color: #D6E3F9;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
+  max-width: 920px;
 }
 .contact-banner__btn {
   display: block;
