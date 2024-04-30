@@ -37,14 +37,14 @@ echo do_shortcode('[show_section post_id="288"]');
             <img  src="../wp-content/themes/blankslate/img/services/advantages-block-img.png" alt="Advantages window repair services - 01">
         </div>
         <div class="advantages-block__right">
-            <h2 class="advantages-block__right-title">what window repair services do we have?</h2>
-            <p class="advantages-block__right-desc">Extensive experience, proven working methods and cooperation with manufacturv</p>
+            <h2 class="advantages-block__right-title">what mirror services do we have?</h2>
+            <p class="advantages-block__right-desc">Extensive experience, proven working methods and cooperation with manufacture. See all mirror services.</p>
             <ul class="advantages-block__right-list poppins-semibold">
-                <li>Window Replacement</li>
-                <li>Window Repair</li>
-                <li>Window Installation</li>
-                <li>Window Capping</li>
-                <li>Wooden Windows Restoration</li>
+                <li>Bathroom Mirrors</li>
+                <li>Custom Mirrors Installation</li>
+                <li>Mirror Replacement</li>
+                <li>Mirrored Closet Doors</li>
+                <li>Mirror Installation</li>
             </ul>
         </div>
       </div>
