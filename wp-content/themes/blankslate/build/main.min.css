@@ -14025,7 +14025,7 @@ address {
 
 .services-hub-hero-section {
   background: url("../img/services/services-hero-img.png") no-repeat;
-  height: 300px;
+  height: 400px;
   background-position: center;
   display: flex;
   align-items: center;
@@ -14132,7 +14132,7 @@ address {
 }
 
 .services_list {
-  row-gap: 40px;
+  row-gap: 30px;
   -moz-column-gap: 30px;
        column-gap: 30px;
   max-width: 1110px;
@@ -14159,10 +14159,9 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 160px;
-  min-width: 160px;
-  gap: 16px;
-  height: 212px;
+  max-width: 255px;
+  min-width: 255px;
+  height: 242px;
 }
 .service_item__image {
   width: 100%;
@@ -14174,6 +14173,7 @@ address {
 }
 .service_item__title {
   margin: 0;
+  margin-top: 10px;
 }
 .service_item__title a {
   font-family: "Poppins", sans-serif;
@@ -14209,8 +14209,8 @@ address {
 }
 
 .service_item__bl {
-  width: 120px;
-  height: 120px;
+  width: 215px;
+  height: 144px;
   overflow: hidden;
   border-radius: 8px;
   display: flex;
@@ -14464,9 +14464,14 @@ address {
   right: calc(100% - 20px);
 }
 
+.page-template-page-services-hub .contact-banner-section,
+.page-template-page-services-hub .certification {
+  margin-top: 0 !important;
+}
+
 .services-hero-section {
   background: url("../img/services/section-hero-serv-img.png") no-repeat;
-  height: 300px;
+  height: 400px;
   background-position: center;
   display: flex;
   align-items: center;
