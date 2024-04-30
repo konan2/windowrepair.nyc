@@ -106,8 +106,8 @@
 <section class="contact-banner-section">
 <div class="container container-xl">
 <div class="contact-banner">
-<h2 class="contact-banner__title">Our professionals offer you sincere advice as to whether the time has come to go for window repair and installation services or not</h2>
-<p class="contact-banner__desc">All you are required to do is just give us a call as and when you stumble upon the problem. Our representative immediately rushes to your home after getting the call and explains the entire process.</p>
+<h2 class="contact-banner__title">We started Window Repair NYC 8 years ago</h2>
+<p class="contact-banner__desc">Per a recent study, 84% of our customers say they would refer Window Repair NYC to their own friends and family. (Based on +6K actual customers surveyed)</p>
 <button class=" btn btn-secondary contact-banner__btn" type="button" data-bs-toggle="modal" data-bs-target="#request-call">request a call</button>
 </div>
 </div>
@@ -118,7 +118,7 @@
 <div class="row row-cols-1 row-cols-md-2">
 <div class="flex-column justify-content-center">
 <h2>OUR CERTIFICATION</h2>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-body-secondary">We are recognized all over New York and New Jersey - our awards throughit.</p>
 </div>
 <div id="certification" class="swiper">
 <div class="swiper-wrapper">
