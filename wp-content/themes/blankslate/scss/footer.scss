@@ -13,7 +13,7 @@
     }
     &__menu-buttons-wrapper{
         display: none;
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             display: flex;
             justify-content: center;
             position: fixed;
@@ -56,8 +56,29 @@
     font-weight: 500;
 }
 
+
+.footer__social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 100%;
+    color: $primary;
+    margin-left: 12px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 3px;
+    .icon{
+        display: flex;
+    }
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
 .footer-payments{
-    margin-top: 64px;
+    margin-top: 51px;
     .payment-card{
         background-color: #fff;
         border-radius: 16px;

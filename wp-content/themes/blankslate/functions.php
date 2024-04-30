@@ -137,7 +137,7 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
       $atts['class'] = 'nav-link'; // Добавляем класс "nav-link" для ссылки
       if ($args->walker->has_children) {
           $atts['class'] .= ' dropdown-toggle'; // Добавляем класс "dropdown-toggle" для ссылки с дочерними элементами
-          $atts['data-bs-toggle'] = 'dropdown'; // Добавляем атрибут "data-bs-toggle" для активации dropdown в Bootstrap
+          //$atts['data-bs-toggle'] = 'dropdown'; // Добавляем атрибут "data-bs-toggle" для активации dropdown в Bootstrap
           $atts['aria-expanded'] = 'false'; // Добавляем атрибут "aria-expanded" для accessibility
       }
       $attributes = '';

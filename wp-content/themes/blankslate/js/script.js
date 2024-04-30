@@ -5,6 +5,42 @@ import 'bootstrap/js/dist/modal';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
+// Функция для управления поведением dropdown меню на мобильных устройствах
+
+
+
+
+
+function manageMobileDropdown() {
+  var dropdowns = document.querySelectorAll('.header__menu-container a.nav-link.dropdown-toggle');
+  
+
+  if (window.innerWidth < 992) {
+      console.log('window.innerWidth < 992');
+      dropdowns.forEach((element) => {
+        element.setAttribute('data-bs-toggle', 'dropdown')
+      });
+      
+    } 
+  else{
+    console.log('window.innerWidth > 992')
+    dropdowns.forEach((element) => element.removeAttribute('data-bs-toggle'));
+
+  }
+}
+
+// Вызываем функцию manageMobileDropdown при загрузке страницы и изменении размера окна
+
+window.addEventListener('resize', manageMobileDropdown);
+window.addEventListener('load', manageMobileDropdown);
+
+
+
+
+
+
+
+
 
 window.addEventListener('DOMContentLoaded',function () {
 
