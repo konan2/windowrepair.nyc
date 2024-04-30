@@ -18,7 +18,7 @@
             <div class="row services_list">
             <?php 
 $args = array(
-    'posts_per_page' => 5, 
+    'posts_per_page' => 4, 
 );
 
 $query = new WP_Query($args);
