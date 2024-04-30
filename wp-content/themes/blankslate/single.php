@@ -1,4 +1,3 @@
-<?php /* Template for services item */ ?>
 
 <?php
 // Получаем значение пользовательского поля
@@ -8,6 +7,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
 
 <?php get_header(); ?>
 
+<h1>Single.php</h1>
 
 <?php
 get_template_part(
@@ -167,5 +167,3 @@ echo do_shortcode('[show_section post_id="294"]');
 
 <?php get_footer(); ?>
 
-
-    

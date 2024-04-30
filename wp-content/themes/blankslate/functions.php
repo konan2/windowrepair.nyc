@@ -1,5 +1,43 @@
 <?php
 
+
+// Функция для регистрации новой таксономии "Service"
+function custom_register_service_taxonomy() {
+    $labels = array(
+        'name'                       => _x( 'Services', 'taxonomy general name', 'textdomain' ),
+        'singular_name'              => _x( 'Service', 'taxonomy singular name', 'textdomain' ),
+        'search_items'               => __( 'Search Services', 'textdomain' ),
+        'popular_items'              => __( 'Popular Services', 'textdomain' ),
+        'all_items'                  => __( 'All Services', 'textdomain' ),
+        'edit_item'                  => __( 'Edit Service', 'textdomain' ),
+        'update_item'                => __( 'Update Service', 'textdomain' ),
+        'add_new_item'               => __( 'Add New Service', 'textdomain' ),
+        'new_item_name'              => __( 'New Service Name', 'textdomain' ),
+        'separate_items_with_commas' => __( 'Separate services with commas', 'textdomain' ),
+        'add_or_remove_items'        => __( 'Add or remove services', 'textdomain' ),
+        'choose_from_most_used'      => __( 'Choose from the most used services', 'textdomain' ),
+        'not_found'                  => __( 'No services found', 'textdomain' ),
+        'menu_name'                  => __( 'Services', 'textdomain' ),
+    );
+
+    $args = array(
+        'labels'                     => $labels,
+        'hierarchical'               => true, // Указываем, что таксономия будет иерархической
+        'public'                     => true,
+        'show_ui'                    => true,
+        'show_admin_column'          => true,
+        'show_in_nav_menus'          => true,
+        'show_tagcloud'              => true,
+        'rewrite'                    => array( 'slug' => 'service' ), // Устанавливаем желаемый slug
+    );
+
+    // Регистрируем таксономию
+    register_taxonomy( 'service', array( 'post' ), $args );
+}
+add_action( 'init', 'custom_register_service_taxonomy' );
+
+
+
 // Убираем имя родительской категории из url
 function remove_parent_category_from_category_url( $termlink, $term, $taxonomy ) {
     // Проверяем, является ли термин категорией и имеет ли он родительскую категорию
@@ -63,7 +101,7 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 function add_custom_field_meta_box() {
     add_meta_box(
         'custom-field-meta-box',
-        'Service description',
+        'Short description',
         'render_custom_field_meta_box',
         array('post', 'page'), // Укажите тип записи, для которой требуется добавить пользовательское поле
         'normal',
@@ -214,27 +252,6 @@ class Custom_Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 
 
-
-
-
-
-
-// Определяем длину обрезанного текста в 20 слов
-function custom_excerpt_length( $length ) {
-    return 90; // Замените 20 на желаемое количество слов
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length' );
-
-// После этого вызов the_excerpt() будет выводить только 20 слов
-
-function custom_excerpt_more( $more ) {
-    return '...'; // Замените '' на то, что вы хотите использовать вместо [...]
-}
-add_filter( 'excerpt_more', 'custom_excerpt_more' );
-
-
-
-
 function custom_single_template($template) {
     // Проверяем, является ли текущая страница страницей одной записи
     if (is_single()) {
@@ -260,6 +277,23 @@ function custom_single_template($template) {
     return $template;
 }
 add_filter('template_include', 'custom_single_template');
+
+
+
+
+// Определяем длину обрезанного текста в 20 слов
+function custom_excerpt_length( $length ) {
+    return 90; // Замените 20 на желаемое количество слов
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length' );
+
+// После этого вызов the_excerpt() будет выводить только 20 слов
+
+function custom_excerpt_more( $more ) {
+    return '...'; // Замените '' на то, что вы хотите использовать вместо [...]
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
+
 
 
 
