@@ -136,6 +136,7 @@
         row-gap: 20px;
         column-gap: 16px;
         margin: 0 auto;
+        justify-content: center;
     }
 
     @media (max-width: 550px) {
@@ -188,9 +189,10 @@
 
 
     @media (max-width:768px) {
-        max-width: 152px;
-        min-width: 152px;
-        padding: 20px 16px;
+        max-width: 320px;
+        min-width: 320px;
+        height: 218px;
+
     }
 }
 
@@ -216,6 +218,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width:768px) {
+        width: 280px;
+    }
 
     a {
         height: 100%;

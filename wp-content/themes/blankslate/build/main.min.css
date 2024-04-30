@@ -14090,6 +14090,7 @@ address {
     -moz-column-gap: 16px;
          column-gap: 16px;
     margin: 0 auto;
+    justify-content: center;
   }
 }
 @media (max-width: 550px) {
@@ -14138,9 +14139,9 @@ address {
 }
 @media (max-width: 768px) {
   .service_item {
-    max-width: 152px;
-    min-width: 152px;
-    padding: 20px 16px;
+    max-width: 320px;
+    min-width: 320px;
+    height: 218px;
   }
 }
 
@@ -14162,6 +14163,11 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .service_item__bl {
+    width: 280px;
+  }
 }
 .service_item__bl a {
   height: 100%;
