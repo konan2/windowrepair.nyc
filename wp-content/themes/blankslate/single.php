@@ -54,7 +54,7 @@ echo do_shortcode('[show_section post_id="288"]');
 <section class="container">
     <div class="row row-cols-1 row-cols-lg-2">
 
-        <div class="col order-1 order-xl-0">
+        <div class="post-content col order-1 order-xl-0">
             <?php the_content(); ?>
         </div>
 
