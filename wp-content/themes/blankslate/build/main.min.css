@@ -13222,12 +13222,11 @@ address {
     left: 0;
     right: 0;
     top: 100%;
-    border-top: 1px solid #D6E3F9;
-    border-bottom: 1px solid #D6E3F9;
     background-color: #fff;
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu {
     position: static !important;
+    max-width: 232px;
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu .dropdown-menu {
     flex-direction: column;
@@ -13252,7 +13251,7 @@ address {
     bottom: -26px;
   }
   .menu-item-has-children.menu-level-1 > .dropdown-toggle::before {
-    border-bottom-color: #D6E3F9;
+    border-bottom-color: #BCBCBC;
     bottom: -25px;
   }
   .menu-item-has-children.menu-level-1:hover > .dropdown-toggle::before, .menu-item-has-children.menu-level-1:hover > .dropdown-toggle::after {
@@ -13263,8 +13262,7 @@ address {
   }
   .header__menu.navbar-nav .menu-item .dropdown-menu {
     padding: 10px 16px;
-    border-left: 1px solid #D6E3F9;
-    border-right: 1px solid #D6E3F9;
+    border: 1px solid #BCBCBC;
   }
   .header__menu.navbar-nav .menu-item .drop-down-wrapper {
     right: initial;
@@ -13412,6 +13410,10 @@ address {
   .mobile-menu-item {
     display: block;
   }
+}
+
+.menu-level-1:last-child {
+  padding-right: 0;
 }
 
 .modal-dialog {
