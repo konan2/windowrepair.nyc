@@ -16287,3 +16287,11 @@ body.page-template-page-services-hub {
   margin-bottom: 80px;
   margin-top: 32px;
 }
+
+.post-content ul {
+  list-style: disc;
+  padding-left: 16px;
+}
+.post-content ul li {
+  margin-bottom: 16px;
+}
