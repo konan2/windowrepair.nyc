@@ -13223,10 +13223,12 @@ address {
     right: 0;
     top: 100%;
     background-color: #fff;
+    width: -moz-max-content;
+    width: max-content;
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu {
     position: static !important;
-    max-width: 232px;
+    max-width: 242px;
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu .dropdown-menu {
     flex-direction: column;
