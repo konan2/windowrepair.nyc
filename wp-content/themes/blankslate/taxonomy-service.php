@@ -1,4 +1,3 @@
-<?php /* Template Name: Service Hub Template */ ?>
 
 <?php
 $image_url = get_field('service_image', get_queried_object());
@@ -6,6 +5,7 @@ $image_url = get_field('service_image', get_queried_object());
 
 
 <?php get_header(); ?>
+
 
 <section class="services-hub-hero-section" <?php if ($image_url) : ?> style="background: url('<?php echo esc_url($image_url); ?>') no-repeat center; background-size: cover;" <?php endif; ?>>
 
