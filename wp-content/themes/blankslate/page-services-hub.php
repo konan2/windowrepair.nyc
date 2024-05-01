@@ -22,10 +22,10 @@
 
 <section class="services-hub-hero-section">
     <div class="container">
-        <div class="main-title-block">
-            <h1 class="services-hub-hero-section__title">Our services</h1>
-            <p  class="services-hub-hero-section__desc">Professional team of repair technicians with 12 years experience. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        </div>
+    <div class="main-title-block">
+        <h1 class="services-hub-hero-section__title"><?php the_title(); ?></h1>
+        <p class="services-hub-hero-section__desc"><?php the_content(); ?></p>
+    </div>
     </div> 
 </section>
 
