@@ -23,7 +23,6 @@ function manageMobileDropdown() {
       
     } 
   else{
-    console.log('window.innerWidth > 992')
     dropdowns.forEach((element) => element.removeAttribute('data-bs-toggle'));
 
   }

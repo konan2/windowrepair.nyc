@@ -1,23 +1,75 @@
 <?php /* Template Name: Service Hub Template */ ?>
-<?php 
-   
-   
-   // Получаем список дочерних категорий
-    $subcategories = get_terms(array(
-      'taxonomy' => 'service', 
-      
-  ));
 
-    // Создаем простой массив из значений term_id
-    $subcategories_ids = array();
-
-    // Проходимся по каждой подкатегории
-    foreach ($subcategories as $subcategory) {
-        // Добавляем term_id в массив $subcategories_ids
-        $subcategories_ids[] = $subcategory->term_id;
-    }
-?>
 <?php get_header(); ?>
+
+
+<?php
+get_header(); // Подключаем шапку сайта
+?>
+
+<main id="main" class="site-main">
+
+    <?php
+    // Проверяем, есть ли заголовок у текущей категории
+    if (is_category()) :
+    ?>
+        <header class="page-header">
+            <h1 class="page-title"><?php single_cat_title(); ?></h1>
+            <?php
+            // Выводим описание текущей категории, если оно задано
+            if (category_description()) :
+            ?>
+                <div class="category-description"><?php echo category_description(); ?></div>
+            <?php endif; ?>
+        </header><!-- .page-header -->
+    <?php endif; ?>
+
+    <div class="post-wrapper">
+        <?php
+        // Запрашиваем посты из текущей категории
+        if (have_posts()) :
+            while (have_posts()) :
+                the_post();
+        ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <header class="entry-header">
+                        <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <?php the_excerpt(); ?>
+                    </div><!-- .entry-content -->
+                </article><!-- #post-<?php the_ID(); ?> -->
+        <?php
+            endwhile;
+        else :
+            // Если в категории нет постов, выводим сообщение
+            echo 'No posts found';
+        endif;
+        ?>
+    </div><!-- .post-wrapper -->
+
+    <?php
+    // Выводим пагинацию, если она доступна
+    the_posts_pagination(array(
+        'prev_text' => __('Previous page', 'textdomain'),
+        'next_text' => __('Next page', 'textdomain'),
+    ));
+    ?>
+
+</main><!-- #main -->
+
+<?php
+get_sidebar(); // Подключаем сайдбар сайта
+get_footer(); // Подключаем подвал сайта
+?>
+
+
+
+
+
+
+
 
 <section class="services-hub-hero-section">
     <div class="container">
@@ -28,79 +80,7 @@
     </div> 
 </section>
 
-<section class="services-section">
-        <div class="container">
-            <div class="gallery">
-                <div class="middle-title-block">
-                   <h2 class="services-section__title">ALl list of services we provided</h2>
-                   <p class="text-body-secondary">Professional team of repair technicians with 12 years experience.</p>
-                </div>
-            </div>
-            <div class="services_tabs_scrl">
-            <div class="services_tabs">
-            <?php 
-     
-            if (!empty($subcategories_ids)) {
-              // Добавляем кнопку "All" в начало списка кнопок
-              echo '<button class="btn btn-default filter-button active" data-filter="all">All</button>';
 
-              // Создаем кнопки для каждой дочерней категории
-              foreach ($subcategories as $category) {
-                  $category_name = $category->name;
-                  $category_slug = $category->slug;
-                  // Создаем кнопку
-                  echo '<button class="btn btn-default filter-button" data-filter="' . $category_slug . '">' . $category_name . '</button>';
-              }
-            }
-              ?>
-            </div>   
-             <div class="scroll-arrow scroll-arrow-left"></div>
-            <div class="scroll-arrow scroll-arrow-right"></div>
-            </div>
-            <div class="row services_list">
-            <?php 
-            $args = array(
-                'post_type' => 'post', // Тип записи (в данном случае - посты)
-                'posts_per_page' => -1, // Количество постов (-1 для получения всех)
-                'category__in' => $subcategories_ids, // ID категории
-              );
-             $query = new WP_Query($args);
-             if (!empty($subcategories_ids)) {
-                if ($query->have_posts()) {
-                    while ($query->have_posts()) {
-                        $query->the_post();
-                        // Получаем категории текущего поста
-                        $categories = get_the_category();
-                        foreach ($categories as $category) {
-                            if ($category->parent !== 0) {
-                        
-                                echo '<div class="service_item col filter ' . sanitize_title($category->name) . '">';
-                                echo '<div class="service_item__bl">';
-                                echo '<a href="' . get_permalink() . '" title="' . get_the_title() . '">';
-                                echo '<img class="service_item__image" src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">';
-                                echo '</a>';
-                                echo '</div>';
-                                echo '<h3 class="service_item__title"><a href="' . get_permalink() . ' "title="' . get_the_title() . '">' . get_the_title() . '</a></h3>';
-                                echo '</div>';
-                            }
-                        }
-                       
-                    }
-                    wp_reset_postdata(); // Восстанавливаем оригинальные данные поста
-                }
-            }
-            else {
-                // Если постов в этой категории нет
-                echo 'No posts';
-            }
-            ?>
-
-
-
-                
-            </div>
-        </div>
-</section>
 
 <section class="contact-banner-section">
 <div class="container container-xl">
