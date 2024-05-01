@@ -39,6 +39,19 @@
     }
 }
 
+.advantages-block__right-desc{
+    ul{
+        color: $primary;
+        list-style-type: disc;
+        padding: 24px;
+        margin: 0;
+        li{
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
 
 @media (max-width: 550px) {
     .services-hero-section:after {

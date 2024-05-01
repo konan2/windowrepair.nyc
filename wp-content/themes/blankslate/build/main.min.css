@@ -14470,6 +14470,17 @@ address {
   }
 }
 
+.advantages-block__right-desc ul {
+  color: #2C5697;
+  list-style-type: disc;
+  padding: 24px;
+  margin: 0;
+}
+.advantages-block__right-desc ul li {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
 @media (max-width: 550px) {
   .services-hero-section:after {
     content: " ";

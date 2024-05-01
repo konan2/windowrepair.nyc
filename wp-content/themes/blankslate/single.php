@@ -28,23 +28,27 @@ echo do_shortcode('[show_section post_id="288"]');
 
 
 
+<?php
+// GEt term banner
+$terms = wp_get_post_terms(get_the_ID(), 'service');
+$term_id = $terms[0]->term_id;
+$term_title = get_term_meta($term_id, 'banner_title', true); 
+$term_text = get_term_meta($term_id, 'banner_text', true); 
+$term_image = get_field('banner_image', 'service' . '_' . $term_id);
+
+?>
+
+
 
 <section class="advantages-section">
     <div class="container-bg">
       <div class="advantages-block">
           <div class="advantages-block__left">
-            <img  src="../wp-content/themes/blankslate/img/services/advantages-block-img.png" alt="Advantages window repair services - 01">
+            <img  src="<?php echo $term_image ?>" alt="<?php echo $term_title ?>">
         </div>
         <div class="advantages-block__right">
-            <h2 class="advantages-block__right-title">what mirror services do we have?</h2>
-            <p class="advantages-block__right-desc">Extensive experience, proven working methods and cooperation with manufacture. See all mirror services.</p>
-            <ul class="advantages-block__right-list poppins-semibold">
-                <li>Bathroom Mirrors</li>
-                <li>Custom Mirrors Installation</li>
-                <li>Mirror Replacement</li>
-                <li>Mirrored Closet Doors</li>
-                <li>Mirror Installation</li>
-            </ul>
+            <h2 class="advantages-block__right-title"><?php echo $term_title ?></h2>
+            <div class="advantages-block__right-desc"><?php echo $term_text ?></div>
         </div>
       </div>
     </div>
