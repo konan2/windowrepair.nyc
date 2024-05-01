@@ -21,24 +21,21 @@
 <?php get_header(); ?>
 
 
-<?php
-get_template_part(
-    'single-template-part-header', // Имя файла шаблона без расширения
-    get_post_type(), // Передаем тип текущей записи
-    array(
-        'custom_title' => get_the_title(), // Передаем заголовок
-        'custom_text' => esc_html($custom_field_value) // Передаем текст
-    )
-);
-?>
+<section class="services-hub-hero-section">
+    <div class="container">
+    <div class="main-title-block">
+        <h1 class="services-hub-hero-section__title"><?php the_title(); ?></h1>
+        <div class="services-hub-hero-section__desc"><?php esc_html($custom_field_value); ?></div>
+    </div>
+    </div> 
+</section>
+
 
 <section class="services-section">
         <div class="container">
             <div class="gallery">
                 <div class="middle-title-block">
                     <?php the_content(); ?>
-                   <!-- <h2 class="services-section__title">ALl list of services we provided</h2>
-                   <p class="text-body-secondary">Professional team of repair technicians with 12 years experience.</p> -->
                 </div>
             </div>
             <div class="services_tabs_scrl">
