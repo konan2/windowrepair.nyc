@@ -13420,7 +13420,7 @@ address {
 
 .modal-dialog {
   height: 100%;
-  margin: 40px auto 80px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   max-width: -moz-max-content;
