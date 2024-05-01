@@ -13228,7 +13228,7 @@ address {
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu {
     position: static !important;
-    max-width: 242px;
+    max-width: 250px;
   }
   .header__menu > .menu-level-1:hover > .drop-down-wrapper .dropdown-menu .dropdown-menu {
     flex-direction: column;
