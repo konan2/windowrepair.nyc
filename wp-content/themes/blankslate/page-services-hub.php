@@ -31,7 +31,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
     <div class="container">
     <div class="main-title-block">
         <h1 class="services-hub-hero-section__title"><?php the_title(); ?></h1>
-        <div class="services-hub-hero-section__desc"><?php echo esc_html($custom_field_value); ?></div>
+        <div class="services-hub-hero-section__desc col-12 col-md-6"><?php echo esc_html($custom_field_value); ?></div>
     </div>
     </div> 
 </section>
