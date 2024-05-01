@@ -7,7 +7,6 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
 
 <?php get_header(); ?>
 
-
 <?php
 get_template_part(
     'single-template-part-header', // Имя файла шаблона без расширения
@@ -142,75 +141,19 @@ echo do_shortcode('[show_section post_id="288"]');
     </div>
 </section>
 
-<section id="brands-section" class="slider">
-<div class="container-xl text-center container">
-<h2>our <span class="text-primary-emphasis">brand partners</span> we work with</h2>
-<p class="text-body-secondary">We are proud to work with some of the biggest and most trusted companies in New York</p>
 
-</div>
-<div class="container-xl position-relative">
-<div class="swiper-button-prev"></div>
-<div id="brands-slider" class="swiper">
-<div class="swiper-wrapper">
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-327" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/marvin.png" alt="" width="128" height="37" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-332" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/crystal-2.png" alt="" width="128" height="43" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-333" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/reynaers.svg" alt="" width="128" height="48" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-334" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/alumil.svg" alt="" width="128" height="39" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-328" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/pella.png" alt="" width="250" height="auto" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-329" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/aluprof.svg" alt="" width="128" height="30" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-330" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/kawneer.svg" alt="" width="128" height="27" /></div>
-<div class="swiper-slide text-center"><img class="alignnone size-full wp-image-331" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/andrersen.svg" alt="" width="140" height="20" /></div>
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<div class="swiper-button-next"></div>
-</div>
-</section>
+<!-- Our brand partners we work with -->
+<?php
+echo do_shortcode('[show_section post_id="584"]');
+?>
 
-<section class="contact-banner-section">
-<div class="container container-xl">
-<div class="contact-banner">
-<h2 class="contact-banner__title">We started Window Repair NYC 8 years ago</h2>
-<p class="contact-banner__desc">Per a recent study, 84% of our customers say they would refer Window Repair NYC to their own friends and family. (Based on +6K actual customers surveyed)</p>
-<button class=" btn btn-secondary contact-banner__btn" type="button" data-bs-toggle="modal" data-bs-target="#request-call">request a call</button>
-</div>
-</div>
-</section>
+<!-- We started Window Repair NYC 8 years ago -->
+<?php
+echo do_shortcode('[show_section post_id="583"]');
+?>
 
-
-<section class="certification about-us-sec-certific">
-<div class="container-xl">
-<div class="row row-cols-1 row-cols-md-2">
-<div class="flex-column justify-content-center">
-<h2>OUR CERTIFICATION</h2>
-<p class="text-body-secondary">We are recognized all over New York and New Jersey - our awards throughit.</p>
-</div>
-<div id="certification" class="swiper">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/image-399.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-550" /></div>
-</div>
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-5.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-549" /></div>
-</div>
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-4.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-548" /></div>
-</div>
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-3.svg" alt="" width="120" height="123" class="alignnone size-full wp-image-547" /></div>
-</div>
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-2.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-546" /></div>
-</div>
-<div class="swiper-slide">
-<div class="card"><img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/Frame-1.svg" alt="" width="120" height="120" class="alignnone size-full wp-image-545" /></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
+<!-- Certification section -->
+<?php echo do_shortcode('[show_section post_id="580"]'); ?>
 
 <?php
 echo do_shortcode('[show_section post_id="294"]');

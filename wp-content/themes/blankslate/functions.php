@@ -1,6 +1,19 @@
 <?php
 
 
+// Убираем часть '/category/' из URL-адресов категорий
+add_filter('category_link', 'remove_category_slug', 10, 2);
+function remove_category_slug($category_link, $category_id) {
+    $category = get_category($category_id);
+    if (is_wp_error($category)) {
+        return $category_link;
+    }
+    return trailingslashit(get_option('home')) . user_trailingslashit($category->slug, 'category');
+}
+
+
+
+
 // Функция для регистрации новой таксономии "Service"
 function custom_register_service_taxonomy() {
     $labels = array(
@@ -28,34 +41,12 @@ function custom_register_service_taxonomy() {
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
-        'rewrite'                    => array( 'slug' => 'service' ), // Устанавливаем желаемый slug
     );
 
     // Регистрируем таксономию
     register_taxonomy( 'service', array( 'post' ), $args );
 }
 add_action( 'init', 'custom_register_service_taxonomy' );
-
-
-
-// Убираем имя родительской категории из url
-function remove_parent_category_from_category_url( $termlink, $term, $taxonomy ) {
-    // Проверяем, является ли термин категорией и имеет ли он родительскую категорию
-    if ( 'category' === $taxonomy && ! is_wp_error( $term ) && $term->parent > 0 ) {
-        // Получаем ID родительской категории
-        $parent_category_id = $term->parent;
-
-        // Получаем родительскую категорию
-        $parent_category = get_category( $parent_category_id );
-
-        // Удаляем имя родительской категории из URL
-        $termlink = str_replace( '/' . $parent_category->slug . '/', '/', $termlink );
-    }
-
-    return $termlink;
-}
-add_filter( 'term_link', 'remove_parent_category_from_category_url', 10, 3 );
-
 
 
 // Регистрируем меню

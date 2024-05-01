@@ -103,32 +103,32 @@
                      <div class="row payments-cards">
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/visa_card.svg" width="37" height="20" alt="Visa">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/visa_card.svg" width="37" height="20" alt="Visa">
                             </div>
                         </div>
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/master_card.svg" width="34" height="20" alt="Master Card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/master_card.svg" width="34" height="20" alt="Master Card">
                             </div>
                         </div>
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/disacover.svg" width="60" height="20" alt="Discover">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/disacover.svg" width="60" height="20" alt="Discover">
                             </div>
                         </div>
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/union_card.svg" width="32" height="20" alt="Union Pay">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/union_card.svg" width="32" height="20" alt="Union Pay">
                             </div>
                         </div>
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/paypal_card.svg" width="75" height="20" alt="PayPal">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/paypal_card.svg" width="75" height="20" alt="Pay Pal">
                             </div>
                         </div>
                         <div class="payments-cards__item col-4">
                             <div class="payment-card">
-                                <img src="wp-content/themes/blankslate/img/cards/american-express.svg" width="73" height="20" alt="American Express">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/cards/american-express.svg" width="73" height="20" alt="American Express">
                             </div>
                         </div>
                    </div>

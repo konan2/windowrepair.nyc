@@ -1,13 +1,9 @@
 // Hero section
 
 .services-hub-hero-section {
-    background: url("../img/services-hero-img.webp") no-repeat;
     height: 400px;
-    background-position: center;
     display: flex;
     align-items: center;
-    background-size: cover;
-
     &__title {
         color: #fff;
         margin: 0;
@@ -130,7 +126,7 @@
     row-gap: 30px;
     column-gap: 30px;
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 
     @media (max-width: 768px) {
         row-gap: 20px;
