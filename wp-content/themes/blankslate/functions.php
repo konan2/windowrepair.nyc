@@ -1,15 +1,7 @@
 <?php
 
 
-// Убираем часть '/category/' из URL-адресов категорий
-add_filter('category_link', 'remove_category_slug', 10, 2);
-function remove_category_slug($category_link, $category_id) {
-    $category = get_category($category_id);
-    if (is_wp_error($category)) {
-        return $category_link;
-    }
-    return trailingslashit(get_option('home')) . user_trailingslashit($category->slug, 'category');
-}
+
 
 
 
