@@ -270,7 +270,7 @@
     padding: 32px 20px;
     background: #2C5697;
     border-radius: 16px;
-    width: 380px;
+    max-width: 380px;
     color: #fff;
 
     @media (max-width: 550px) {
@@ -352,7 +352,7 @@ input:checked+label:before {
     display: block;
     position: absolute;
     left: 6px;
-    margin-top: -1px;
+    top: 3px;
     width: 6px;
     height: 10px;
     border: solid #0E192D;

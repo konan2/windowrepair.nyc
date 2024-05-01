@@ -13420,7 +13420,7 @@ address {
 
 .modal-dialog {
   height: 100%;
-  margin: 40px auto;
+  margin: 40px auto 80px auto;
   display: flex;
   align-items: center;
   max-width: -moz-max-content;
@@ -13431,13 +13431,15 @@ address {
   align-items: center;
   background-color: transparent;
   border: 0;
-  width: auto;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 100%;
 }
 .modal__content .btn-close {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 8px;
+  right: 26px;
   top: 8px;
   color: #fff;
   background: none;
@@ -14678,7 +14680,7 @@ address {
   padding: 32px 20px;
   background: #2C5697;
   border-radius: 16px;
-  width: 380px;
+  max-width: 380px;
   color: #fff;
 }
 .form-wrap__title {
@@ -14752,7 +14754,7 @@ input:checked + label:before {
   display: block;
   position: absolute;
   left: 6px;
-  margin-top: -1px;
+  top: 3px;
   width: 6px;
   height: 10px;
   border: solid #0E192D;

@@ -1,6 +1,6 @@
 .modal-dialog{
     height: 100%;
-    margin: 40px auto;
+    margin: 40px auto 80px auto;
     display: flex;
     align-items: center;
     max-width: max-content;
@@ -10,12 +10,14 @@
     align-items: center;
     background-color: transparent;
     border: 0;
-    width: auto;
+    width: 100%;
+    padding: 0 15px;
+    max-width: 100%;
     .btn-close{
         position: absolute;
         width: 24px;
         height: 24px;
-        right: 8px;
+        right: 26px;
         top: 8px;
         color: #fff;
         background: none;
