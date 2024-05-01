@@ -14427,7 +14427,9 @@ address {
 
 .page-template-page-services-hub .contact-banner-section,
 .page-template-page-services-hub .certification,
-.single-post .certification {
+.single-post .certification,
+.tax-service .certification,
+.tax-service .contact-banner-section {
   margin-top: 0 !important;
 }
 
