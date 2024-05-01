@@ -175,9 +175,9 @@
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         color: $primary;
-        font-size: 12px;
+        font-size: 16px;
         text-align: center;
-        line-height: 18px;
+        line-height: 24px;
         display: block;
         // width: 85%;
         text-decoration: none;
@@ -491,6 +491,7 @@
 //styles of page
 
 .page-template-page-services-hub .contact-banner-section,
-.page-template-page-services-hub .certification {
+.page-template-page-services-hub .certification,
+.single-post .certification{
     margin-top: 0!important;
 }
