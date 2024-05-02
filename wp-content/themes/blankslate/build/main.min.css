@@ -14023,6 +14023,9 @@ address {
     margin-top: -30px !important;
   }
 }
+.certification__right {
+  max-width: 495px;
+}
 .certification .card {
   display: flex;
   align-items: center;
