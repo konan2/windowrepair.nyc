@@ -2,9 +2,9 @@
 
 /* Template Name: Blog Template */ 
 
-// Получаем ID страницы блога
-$blog_page_id = 436; // Замените 123 на ID вашей страницы блога
-$blog_page_url = get_permalink($blog_page_id);
+$obj_id = get_queried_object_id();
+$blog_page_url = get_permalink($obj_id );
+
 
 // Получаем информацию о родительской категории "blog"
 $parent_category = get_term_by('slug', 'blog', 'category');
@@ -44,8 +44,7 @@ foreach ($subcategories as $subcategory) {
     <div class="container">
         <div class="gallery mb-4">
             <div class="middle-title-block">
-               <h2 class="services-section__title">Recent blog posts</h2>
-               <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+               <?php the_content(); ?>
             </div>
         </div>
         <div class="services_tabs_scrl blog_tabs">

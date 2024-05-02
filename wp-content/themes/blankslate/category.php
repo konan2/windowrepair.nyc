@@ -5,6 +5,9 @@
    $blog_page_id = 436; // Replace 123 with the ID of your page
    $blog_page_url = get_permalink($blog_page_id);
 
+   $page_blog_content = get_post($blog_page_id);
+
+
    $parent_category = get_term_by('slug', 'blog', 'category');
     
    
@@ -46,8 +49,7 @@
         <div class="container">
             <div class="gallery mb-4">
                 <div class="middle-title-block">
-                   <h2 class="services-section__title">Recent blog posts</h2>
-                   <p class="text-body-secondary">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <?php echo $page_blog_content->post_content; ?>
                 </div>
             </div>
             <div class="services_tabs_scrl blog_tabs">

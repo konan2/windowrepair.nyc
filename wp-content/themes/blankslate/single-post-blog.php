@@ -21,14 +21,10 @@
 <?php get_header(); ?>
 
 
-<section class="services-hero-section">
-    <div class="container-xl">
-        <div class="col-12 col-md-6">
-            <h1 class="services-hero-section__title">WHAT ARE THE BASICS OF  WINDOW REPAIR SERVICE ?</h1>
-            <p class="services-hero-section__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-    </div> 
-</section>
+
+<!-- WHAT ARE THE BASICS OF WINDOW REPAIR SERVICE ? section -->
+<?php echo do_shortcode('[show_section post_id="809"]'); ?>
+
 
 <section class="container-xl">
     <div class="row">
