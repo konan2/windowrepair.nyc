@@ -58,7 +58,7 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
 <section class="container">
     <div class="row row-cols-1 row-cols-lg-2">
 
-        <div class="post-content col-lg-6 order-lg-1 order-xl-0 mb-4">   
+        <div class="post-content col-lg-6 order-1 order-lg-0 mb-4">   
             <div class="collapse" id="collapseExample">
                 <?php the_content(); ?>
             </div>
@@ -68,7 +68,7 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
         </div>
         
 
-        <div class="col-lg-6 d-flex justify-content-center align-items-start order-lg-0 order-xl-1 mb-4">
+        <div class="col-lg-6 d-flex justify-content-center align-items-start order-0 order-lg-1 mb-4">
             <div class="form-wrap post-form">	
                 <form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
                     <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
