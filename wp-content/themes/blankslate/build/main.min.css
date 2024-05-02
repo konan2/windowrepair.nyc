@@ -14556,6 +14556,11 @@ address {
   margin-bottom: 16px;
   font-weight: bold;
 }
+@media (min-width: 990px) and (max-width: 1300px) {
+  .advantages-block__right-desc .row-cols-1.row-cols-md-2 {
+    margin-right: 4px;
+  }
+}
 
 @media (max-width: 550px) {
   .services-hero-section:after {
