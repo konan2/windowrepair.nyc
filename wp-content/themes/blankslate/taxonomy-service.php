@@ -40,7 +40,18 @@ $image_url = get_field('service_image', get_queried_object());
                                 <p>No image</p>
                             <?php endif; ?>
                         </div>
-                        <h3 class="service_item__title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                        <h3 class="service_item__title">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php
+                                    $title = get_the_title(); // Получаем заголовок текущей записи
+                                    // Разбиваем заголовок на массив слов
+                                    $words = explode(' ', $title);
+                                    // Вставляем <br> после первого слова
+                                    $first_word = array_shift($words); // Удаляем первое слово из массива                  
+                                    echo $first_word . "<br>" . implode(' ', $words);
+                                ?>
+                            </a>
+                        </h3>
                     </article>
             <?php
                 endwhile;

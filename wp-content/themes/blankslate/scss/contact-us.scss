@@ -74,7 +74,7 @@
 
 .contact-areas{
     margin-bottom: 40px;
-
+    margin-top: 70px!important;
     @media (max-width:990px) {
         margin-bottom: 0; 
         
@@ -115,7 +115,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 380px;
+        max-width: 100%;
 
         @media (max-width:550px) {
             padding-left: 20px;
@@ -128,6 +128,33 @@
     }
     @media (max-width:990px) {
         .row{
+            width: 100%;
+        }
+    }
+}
+
+.contact-form-wrapper{
+    width: 100%;
+    max-width: 506px;
+}
+
+.page-template-page-contact_us{
+    .areas-section{
+        padding: 0;
+    }
+    .areas-block{
+        flex-direction: column;
+        .areas-list{
+            min-height: 180px;
+        }
+        .areas-block__left{
+            margin-bottom: 40px;
+        }
+        .areas-block__right{
+            position: static;
+            height: auto;
+        }
+        .areas-block__left, .areas-block__right{
             width: 100%;
         }
     }

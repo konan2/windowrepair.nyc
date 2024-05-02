@@ -113,7 +113,7 @@
     .services-hero-section__title,
     .services-hero-section__desc {
             color: #0E192D!important;
-            // max-width: 430px;
+            max-width: 430px;
     }
 
     .services-hero-section__desc {
@@ -281,9 +281,9 @@
 
 .form-wrap {
     padding: 32px 20px;
+    padding-bottom: 20px;
     background: #2C5697;
     border-radius: 16px;
-    max-width: 380px;
     color: #fff;
 
     @media (max-width: 550px) {
@@ -318,6 +318,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    min-height: 20px;
 }
 
 .form-wrap .form-control {

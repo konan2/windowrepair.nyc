@@ -59,11 +59,14 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
     <div class="row row-cols-1 row-cols-lg-2">
 
         <div class="post-content col order-1 order-xl-0">
-            <?php the_content(); ?>
+            
+                <?php the_content(); ?>
+            
         </div>
+        
 
         <div class="col d-flex justify-content-center align-items-start order-0 order-xl-1 mb-4">
-            <div class="form-wrap">	
+            <div class="form-wrap post-form">	
                 <form id="contactForm" onsubmit="submitCform(); return false;" class="form-wrap__rows"> 
                     <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
                     <div class="row">

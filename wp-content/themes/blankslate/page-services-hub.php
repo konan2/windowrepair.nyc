@@ -116,7 +116,21 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
                                                 <p>No image</p>
                                             <?php endif; ?>
                                         </div>
-                                        <h3 class="service_item__title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                                        <h3 class="service_item__title">
+                                            <a href="<?php the_permalink(); ?>">
+                                            <?php
+                                                $title = get_the_title(); // Получаем заголовок текущей записи
+                                                // Разбиваем заголовок на массив слов
+                                                $words = explode(' ', $title);
+                                                // Вставляем <br> после первого слова
+                                                $first_word = array_shift($words); // Удаляем первое слово из массива
+                                            
+                                                echo $first_word; // Выводим первое слово
+                                                echo "<br>"; // Вставляем <br>
+                                                echo implode(' ', $words); // Выводим оставшиеся слов
+                                                ?>
+                                            </a>
+                                        </h3>
                                     </article>
 
                                     <?php 

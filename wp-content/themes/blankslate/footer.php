@@ -97,7 +97,7 @@
             </div>
             <div class="footer-payments row align-items-center justify-content-between">
                 <div class="col-12 col-xl-4">
-                    <h6 class="base-font-size my-3">All major cards accepted</h6>
+                    <h6 class="base-font-size my-3"><strong>All major cards accepted</strong></h6>
                 </div>
                 <div class="col-12 col-xl-8 d-flex justify-content-center justify-content-lg-start">
                      <div class="row payments-cards">

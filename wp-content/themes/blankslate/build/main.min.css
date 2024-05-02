@@ -13520,6 +13520,7 @@ address {
 }
 .modal__content form {
   position: relative;
+  max-width: 380px;
 }
 
 .modal-backdrop.show {
@@ -14163,7 +14164,7 @@ address {
   -moz-column-gap: 30px;
        column-gap: 30px;
   max-width: 1110px;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .services_list {
@@ -14608,6 +14609,7 @@ address {
 .alone-hero__left .services-hero-section__title,
 .alone-hero__left .services-hero-section__desc {
   color: #0E192D !important;
+  max-width: 430px;
 }
 @media (max-width: 768px) {
   .alone-hero__left .services-hero-section__desc {
@@ -14763,9 +14765,9 @@ address {
 
 .form-wrap {
   padding: 32px 20px;
+  padding-bottom: 20px;
   background: #2C5697;
   border-radius: 16px;
-  max-width: 380px;
   color: #fff;
 }
 .form-wrap__title {
@@ -14792,6 +14794,7 @@ address {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-height: 20px;
 }
 
 .form-wrap .form-control {
@@ -15532,6 +15535,7 @@ body.page-template-page-services-hub {
 }
 .contact-areas {
   margin-bottom: 40px;
+  margin-top: 70px !important;
 }
 @media (max-width: 990px) {
   .contact-areas {
@@ -15570,7 +15574,7 @@ body.page-template-page-services-hub {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 380px;
+  max-width: 100%;
 }
 @media (max-width: 550px) {
   .contact-areas__form {
@@ -15585,6 +15589,31 @@ body.page-template-page-services-hub {
   .contact-areas .row {
     width: 100%;
   }
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 506px;
+}
+
+.page-template-page-contact_us .areas-section {
+  padding: 0;
+}
+.page-template-page-contact_us .areas-block {
+  flex-direction: column;
+}
+.page-template-page-contact_us .areas-block .areas-list {
+  min-height: 180px;
+}
+.page-template-page-contact_us .areas-block .areas-block__left {
+  margin-bottom: 40px;
+}
+.page-template-page-contact_us .areas-block .areas-block__right {
+  position: static;
+  height: auto;
+}
+.page-template-page-contact_us .areas-block .areas-block__left, .page-template-page-contact_us .areas-block .areas-block__right {
+  width: 100%;
 }
 
 .about-us-section.services-hero-section {
@@ -16377,4 +16406,10 @@ body.page-template-page-services-hub {
 }
 .post-content ul li {
   margin-bottom: 16px;
+}
+
+.post-form {
+  position: sticky;
+  top: 64px;
+  left: 0;
 }

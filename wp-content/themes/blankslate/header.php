@@ -19,7 +19,7 @@
         <section class="header__contacts">
             <div class="header__contacts-container container-xl text-center">
                 <span class="navbar-brand flex-grow-1 d-flex">
-                    <a href="<?php echo home_url(); ?>" aria-label="Go to homepage">
+                    <a href="<?php echo home_url(); ?>" aria-label="<?php bloginfo( 'name' ); ?>">
                         <img class="header__logo-image" src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="<?php bloginfo( 'name' ); ?>" width="105" height="105">
                     </a>
                 </span>
@@ -34,12 +34,12 @@
                 <div class="header__contacts-item flex-grow-1 flex-lg-grow-0 justify-content-end">
                     <div class="flex-column align-items-center">
                         <p class="m-0 text-uppercase">EMERGENCY SERVICE</p>
-                        <a href="tel:+496170961709" aria-label="Call us">+1 646 255 2766</a>
+                        <a href="tel:+496170961709" aria-label="Call us"><strong>+1 646 255 2766</strong></a>
                     </div>
                 </div>
                 <div class="header__contacts-item d-none flex-column d-lg-flex">
                     <p class="m-0 text-uppercase">OPENING HOURS</p>
-                    <time>Mon-Sat: 8AM to 8PM</time>
+                    <time><strong>Mon-Sat: 8AM to 8PM</strong></time>
                 </div>
                 <div class="header__contacts-item d-none d-lg-flex pe-0">
                     <button class="btn btn-secondary btn-medium" data-bs-toggle="modal" data-bs-target="#request-call">Request a call</button>
