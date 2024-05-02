@@ -12882,7 +12882,7 @@ strong {
 .read-more-button:after {
   content: " ";
   display: block;
-  top: 6px;
+  top: 7px;
   right: -15px;
   width: 10px;
   height: 10px;
@@ -16175,6 +16175,11 @@ body.page-template-page-services-hub {
   .blog .blog-item-container:first-child .blog-item__footer {
     margin-bottom: 20px;
   }
+}
+.blog .blog-item .read-more-button {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .pagination {
