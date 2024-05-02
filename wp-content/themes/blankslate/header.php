@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" type="text/html">
-<title><?php bloginfo( 'name' ); ?></title>
+<title><?php bloginfo( 'name' ); ?>: <?php bloginfo( 'description' ); ?></title>
 <meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
