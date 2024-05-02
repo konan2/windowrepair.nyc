@@ -58,10 +58,13 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
 <section class="container">
     <div class="row row-cols-1 row-cols-lg-2">
 
-        <div class="post-content col order-1 order-xl-0">
-            
+        <div class="post-content col order-1 order-xl-0 mb-4">   
+            <div class="collapse" id="collapseExample">
                 <?php the_content(); ?>
-            
+            </div>
+            <a class="read-more-button" href="#" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Read more
+            </a>
         </div>
         
 

@@ -12883,7 +12883,7 @@ strong {
   content: " ";
   display: block;
   top: 6px;
-  right: -15px;
+  right: -18px;
   width: 10px;
   height: 10px;
   border: solid #2C5697;
@@ -16407,9 +16407,43 @@ body.page-template-page-services-hub {
 .post-content ul li {
   margin-bottom: 16px;
 }
+.post-content .collapse {
+  margin-bottom: 40px;
+  display: block;
+  max-height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+.post-content .collapse:after {
+  content: "";
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.post-content .collapse.show {
+  max-height: none;
+}
+.post-content .collapse.show:after {
+  display: none;
+}
 
 .post-form {
   position: sticky;
   top: 64px;
   left: 0;
+}
+
+.read-more-button[aria-expanded=false]:after {
+  transform: rotate(45deg);
+  top: 4px;
+}
+.read-more-button[aria-expanded=true] {
+  display: none;
+}
+.read-more-button[aria-expanded=true]:after {
+  transform: rotate(-136deg);
+  top: 9px;
 }
