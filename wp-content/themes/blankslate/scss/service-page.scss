@@ -318,7 +318,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    min-height: 20px;
+    line-height: 20px;
 }
 
 .form-wrap .form-control {
@@ -366,7 +366,7 @@ input:checked+label:before {
     display: block;
     position: absolute;
     left: 6px;
-    top: 3px;
+    top: 4px;
     width: 6px;
     height: 10px;
     border: solid #0E192D;
