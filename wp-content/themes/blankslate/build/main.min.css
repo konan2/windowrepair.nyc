@@ -15551,6 +15551,15 @@ body.page-template-page-services-hub {
   margin-bottom: 40px;
   margin-top: 70px !important;
 }
+@media (min-width: 991px) and (max-width: 1200px) {
+  .contact-areas .container-xl.p-0 .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .contact-areas .container-xl.p-0 .row .order-1.order-xl-0 {
+    padding-left: 0;
+  }
+}
 @media (max-width: 990px) {
   .contact-areas {
     margin-bottom: 0;

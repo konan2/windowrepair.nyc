@@ -75,6 +75,23 @@
 .contact-areas{
     margin-bottom: 40px;
     margin-top: 70px!important;
+
+
+    @media (min-width:991px) and (max-width:1200px) {
+        
+        .container-xl.p-0 .row {
+            margin-right: 0;
+            margin-left: 0; 
+            
+            .order-1.order-xl-0 {
+                padding-left: 0;
+             }
+         }
+
+            
+    }
+
+
     @media (max-width:990px) {
         margin-bottom: 0; 
         
