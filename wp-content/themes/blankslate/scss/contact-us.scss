@@ -114,8 +114,13 @@
         margin-bottom: 60px;
         display: flex;
         justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         max-width: 100%;
+
+        @media (max-width:990px) {
+            justify-content: center;
+        }
 
         @media (max-width:550px) {
             padding-left: 20px;
@@ -135,7 +140,7 @@
 
 .contact-form-wrapper{
     width: 100%;
-    max-width: 380px;
+    max-width: 506px;
 }
 
 .page-template-page-contact_us{
