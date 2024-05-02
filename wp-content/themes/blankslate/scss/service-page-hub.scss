@@ -19,7 +19,7 @@
     }
 
     @media (max-width: 550px) {
-        background: #D6E3F9;
+        background: #D6E3F9!important;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -196,6 +196,10 @@
         height: 218px;
 
     }
+}
+
+.services-section__title + .services_list{
+    margin-top: 40px;
 }
 
 .service_item {
