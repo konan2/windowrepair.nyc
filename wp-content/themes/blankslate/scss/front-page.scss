@@ -539,3 +539,13 @@
         margin: 20px 0;
     }
 }
+
+@media (max-width: 440px) {
+#brands-section .container {
+    text-align: left !important;
+}
+
+#brands-section .swiper-pagination {
+    margin-top:10px;
+}
+}
