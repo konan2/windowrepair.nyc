@@ -16366,7 +16366,7 @@ body.page-template-page-services-hub {
   }
 }
 @media (max-width: 550px) {
-  button.footer__menu-button {
+  .footer__menu-button {
     width: 100%;
   }
 }
@@ -16485,6 +16485,11 @@ body.page-template-page-services-hub {
   margin-top: 32px;
 }
 
+@media (max-width: 990px) {
+  .post-content {
+    margin-bottom: 0 !important;
+  }
+}
 .post-content ul {
   list-style: disc;
   padding-left: 16px;
@@ -16498,6 +16503,11 @@ body.page-template-page-services-hub {
   max-height: 584px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 990px) {
+  .post-content .collapse {
+    margin-bottom: 0;
+  }
 }
 .post-content .collapse:after {
   content: "";

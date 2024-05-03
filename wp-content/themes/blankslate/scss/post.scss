@@ -33,6 +33,10 @@
 }
 
 .post-content {
+    @media (max-width: 990px) {
+        margin-bottom: 0 !important;
+    }
+
     ul{
         list-style: disc;
         padding-left: 16px;
@@ -46,6 +50,10 @@
         max-height: 584px;
         position: relative;
         overflow: hidden;
+        @media (max-width: 990px) {
+            margin-bottom: 0;
+        }
+
         &:after{
             content: '';
             height: 32px;
