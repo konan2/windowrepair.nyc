@@ -14556,9 +14556,18 @@ address {
   padding: 24px;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .advantages-block__right-desc ul {
+    padding-bottom: 0;
+  }
+}
 .advantages-block__right-desc ul li {
   margin-bottom: 16px;
   font-weight: bold;
+}
+.advantages-block__right-desc ul + ul {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media (min-width: 990px) and (max-width: 1300px) {
   .advantages-block__right-desc .row-cols-1.row-cols-md-2 {
@@ -16317,6 +16326,11 @@ body.page-template-page-services-hub {
     background-color: #fff;
     padding: 8px 20px;
     box-shadow: 0px 1px 17px 0px rgba(14, 25, 45, 0.0705882353);
+  }
+}
+@media (max-width: 550px) {
+  .footer__menu-button {
+    width: 100%;
   }
 }
 
