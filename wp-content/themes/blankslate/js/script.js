@@ -684,19 +684,7 @@ $(document).ready(function(){
   showDistricts('new-york')
 
 
-  $(function() {
-    $('button').each(function(i, btn) {
-      $(btn).click(function() {
-        var el = $(this)[0];
-        var urlbeg="https://www.google.com/maps/embed/v1/view?key=AIzaSyCxitB5jQcw7weQdg9MqBRfxr6mj81wT7I&center=";
-        var urlend="&zoom=18&maptype=roadmap";
-        var lat=el.dataset.lat;
-        var lng=el.dataset.long;
-        $('#info').text(lat+","+lng);
-        $("iframe").attr("src",urlbeg+lat+","+lng+urlend);
-      });
-    });
-  });
+
 
 });
 
