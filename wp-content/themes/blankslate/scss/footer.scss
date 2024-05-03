@@ -26,12 +26,12 @@
             box-shadow: 0px 1px 17px 0px #0E192D12;
         }
     }
+}
 
-    &__menu-button {
-        @media (max-width: 550px) {
-            width: 100%;
-        }
-    }
+button.footer__menu-button {
+     @media (max-width: 550px) {
+         width: 100%;
+}
 }
 
 
