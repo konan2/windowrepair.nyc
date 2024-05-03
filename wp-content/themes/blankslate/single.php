@@ -165,6 +165,7 @@ echo do_shortcode('[show_section post_id="583"]');
 <!-- Certification section -->
 <?php echo do_shortcode('[show_section post_id="580"]'); ?>
 
+<!-- Areas we serve section -->
 <?php
 echo do_shortcode('[show_section post_id="294"]');
 ?>

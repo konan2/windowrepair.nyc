@@ -101,20 +101,20 @@
             <div class="row">
                     <div class="form-group">
                         <label for="name">Full name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required autocomplete="name">
                     </div>
             </div>
             <div class="row">
                     <div class="form-group">
                         <label for="Phone">Phone number</label>
-                        <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+                        <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" autocomplete="phone">
                     </div>
             </div>
         
-           
-            <label id="website" for="website">website:</label>
-            <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
-           
+         
+                <label for="website">website:</label>
+                <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
+               
             
             <div class="row-agree">
                 <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
