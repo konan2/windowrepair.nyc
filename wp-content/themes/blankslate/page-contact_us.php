@@ -49,19 +49,19 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
                         <div class="row">
                                 <div class="form-group">
                                     <label for="name">Full name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required autocomplete="name">
                                 </div>
                         </div>
                         <div class="row">
                                 <div class="form-group">
                                     <label for="Phone">Phone number</label>
-                                    <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" >
+                                    <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" autocomplete="phone" >
                                 </div>
                         </div>
                         <div class="row">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your e-mail" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your e-mail" required autocomplete="email">
                                 </div>
                         </div>
 
