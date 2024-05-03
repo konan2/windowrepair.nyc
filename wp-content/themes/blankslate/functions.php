@@ -1,8 +1,8 @@
 <?php
 
 
-
-
+// fix browser warning "Third-party cookie will be blocked. Learn more in the Issues tab."
+setcookie('cookieName', 'cookieValue', ['samesite' => 'Lax']);
 
 
 

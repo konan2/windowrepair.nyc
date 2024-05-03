@@ -79,7 +79,7 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
                             </div>
                     </div>
 
-                    <label for="website"></label>
+                    <label for="website" class="d-none"></label>
                     <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
                     
                     <div class="row">

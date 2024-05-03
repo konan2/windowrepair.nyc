@@ -112,7 +112,7 @@
             </div>
         
          
-                <label for="website"></label>
+                <label for="website" class="d-none"></label>
                 <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
                
             
