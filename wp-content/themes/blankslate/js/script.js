@@ -649,44 +649,37 @@ initSwipers();
 
 //Tabs map
 
-     
-
-    //   var mapOptions = {
-    //     zoom: 17,
-    //     center: myLatlng
-    // };
-
-    //   map = new google.maps.Map(document.getElementById("googlemaps"), mapOptions);
-
-    //   function updatePosition() {
-    //     latitude = parseInt(document.getElementById('latitude').value, 10);
-    //     longtitude = parseInt(document.getElementById('longtitude').value, 10);
-    //     myLatlng = new google.maps.LatLng(latitude, longtitude);
-    //     marker.setPosition(myLatlng);
-    //     map.setCenter(myLatlng);
-    //   }
-
-$(document).ready(function(){
+    $(document).ready(function(){
   
-  function showDistricts(city) {
-  $('.new-york, .new-jersey, .connecticut').hide();
-  $('.' + city).show();
-  $(".filter-button-city").removeClass("active");
-  $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
-  }
+      var mapIframe = document.getElementById('map-iframe');
+      var initialCity = document.querySelector(".areas-list__city .filter-button-city.active").getAttribute('data-filter-city-coord');
+  
+    
+   
 
-  $(".filter-button-city").click(function(){
-    var city = $(this).attr('data-filter-city');
-    showDistricts(city);
-    updatePosition();
-  });
-
-  showDistricts('new-york')
-
-
-
-
-});
+      function showDistricts(city, coordinates) {
+        $('.new-york, .new-jersey, .connecticut').hide();
+        $('.' + city).show();
+        $(".filter-button-city").removeClass("active");
+        $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
+        
+        // Проверяем, нужно ли устанавливать новый src
+        if (mapIframe.src != coordinates) {
+          mapIframe.src = coordinates;
+        }
+      }
+    
+      $(".filter-button-city").click(function(){
+        var city = $(this).attr('data-filter-city');
+        showDistricts(city, $(this).attr('data-filter-city-coord'));
+      });
+    
+    
+      showDistricts('new-york', initialCity);
+    
+    });
+    
+    
 
 //Counter block
 
