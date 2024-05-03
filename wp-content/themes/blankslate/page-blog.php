@@ -83,7 +83,7 @@ foreach ($subcategories as $subcategory) {
                     <article class="blog-item-container">
                         <div class="blog-item">
                             <div class="blog-item__image">
-                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Featured Image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                             </div>
                             <div class="blog-item__text-wrapper">
                                 <div class="blog-item__category"><?php echo get_the_category_list(', '); ?></div>
@@ -93,7 +93,8 @@ foreach ($subcategories as $subcategory) {
                                 </div>
                                 <div class="blog-item__footer">
                                     <a class="read-more-button" href="<?php the_permalink(); ?>">Read more</a>
-                                    <span class="blog-item__date"><?php the_date('M j, Y'); ?></span>
+                                    <span class="blog-item__date"><?php echo get_the_date(); ?></span>
+                                    
                                 </div>
                             </div>
                         </div>

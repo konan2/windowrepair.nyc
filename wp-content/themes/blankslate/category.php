@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="blog-item__footer">
                                     <a class="read-more-button" href="<?php the_permalink(); ?>">Read more</a>
-                                    <span class="blog-item__date"><?php the_date( 'M j, Y' ); ?></span>
+                                    <span class="blog-item__date"><?php echo get_the_date(); ?></span>
                                 </div>
                             </div>
                         </div>

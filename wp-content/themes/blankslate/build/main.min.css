@@ -12882,7 +12882,7 @@ strong {
 .read-more-button:after {
   content: " ";
   display: block;
-  top: 6px;
+  top: 8px;
   right: -18px;
   width: 10px;
   height: 10px;
