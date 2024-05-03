@@ -15649,10 +15649,10 @@ body.page-template-page-services-hub {
   flex-direction: column;
 }
 .page-template-page-contact_us .areas-block .areas-list {
-  min-height: 180px;
+  min-height: 188px;
 }
 .page-template-page-contact_us .areas-block .areas-block__left {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .page-template-page-contact_us .areas-block .areas-block__right {
   position: static;
