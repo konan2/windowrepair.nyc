@@ -649,10 +649,25 @@ initSwipers();
 
 //Tabs map
 
-$(document).ready(function(){
-  var defaultCity = 'new-york';
-  showDistricts(defaultCity);
+     
 
+    //   var mapOptions = {
+    //     zoom: 17,
+    //     center: myLatlng
+    // };
+
+    //   map = new google.maps.Map(document.getElementById("googlemaps"), mapOptions);
+
+    //   function updatePosition() {
+    //     latitude = parseInt(document.getElementById('latitude').value, 10);
+    //     longtitude = parseInt(document.getElementById('longtitude').value, 10);
+    //     myLatlng = new google.maps.LatLng(latitude, longtitude);
+    //     marker.setPosition(myLatlng);
+    //     map.setCenter(myLatlng);
+    //   }
+
+$(document).ready(function(){
+  
   function showDistricts(city) {
   $('.new-york, .new-jersey, .connecticut').hide();
   $('.' + city).show();
@@ -660,10 +675,29 @@ $(document).ready(function(){
   $(".filter-button-city[data-filter-city='" + city + "']").addClass("active");
   }
 
- $(".filter-button-city").click(function(){
- var city = $(this).attr('data-filter-city');
- showDistricts(city);
- });
+  $(".filter-button-city").click(function(){
+    var city = $(this).attr('data-filter-city');
+    showDistricts(city);
+    updatePosition();
+  });
+
+  showDistricts('new-york')
+
+
+  $(function() {
+    $('button').each(function(i, btn) {
+      $(btn).click(function() {
+        var el = $(this)[0];
+        var urlbeg="https://www.google.com/maps/embed/v1/view?key=AIzaSyCxitB5jQcw7weQdg9MqBRfxr6mj81wT7I&center=";
+        var urlend="&zoom=18&maptype=roadmap";
+        var lat=el.dataset.lat;
+        var lng=el.dataset.long;
+        $('#info').text(lat+","+lng);
+        $("iframe").attr("src",urlbeg+lat+","+lng+urlend);
+      });
+    });
+  });
+
 });
 
 //Counter block
