@@ -16151,7 +16151,6 @@ body.page-template-page-services-hub {
 }
 .blog-item__text-excerpt {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -16367,7 +16366,7 @@ body.page-template-page-services-hub {
   }
 }
 @media (max-width: 550px) {
-  .footer__menu-button {
+  button.footer__menu-button {
     width: 100%;
   }
 }
