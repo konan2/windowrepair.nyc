@@ -24,43 +24,56 @@ $image_url = get_field('service_image', get_queried_object());
     <div class="container">
         <h2 class="services-section__title">Our services “<?php single_cat_title(); ?>”</h2>
         <div class="row services_list">
-            <?php
-            // Запрашиваем посты из текущей категории
-            if (have_posts()) :
-                while (have_posts()) :
-                    the_post();
+        <?php
+                // Запрашиваем посты из текущей категории
+                $args = array(
+                    'posts_per_page' => -1, // Выводим все посты
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'service', 
+                            'field'    => 'slug',
+                            'terms'    => get_query_var('service'), 
+                        ),
+                    ),
+                );
+                $query = new WP_Query($args);
+
+                if ($query->have_posts()) :
+                    while ($query->have_posts()) :
+                        $query->the_post();
             ?>
-                    <article id="post-<?php the_ID(); ?>" class="service_item col filter windows">
-                        <div class="service_item__bl">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <a href="<?php the_permalink(); ?>">
-                                <img class="service_item__image" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>">
-                            </a>
-                            <?php else : ?>
-                                <p>No image</p>
-                            <?php endif; ?>
-                        </div>
-                        <h3 class="service_item__title">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php
-                                    $title = get_the_title(); // Получаем заголовок текущей записи
-                                    // Разбиваем заголовок на массив слов
-                                    $words = explode(' ', $title);
-                                    // Вставляем <br> после первого слова
-                                    $first_word = array_shift($words); // Удаляем первое слово из массива                  
-                                    echo $first_word . "<br>" . implode(' ', $words);
-                                ?>
-                            </a>
-                        </h3>
-                    </article>
+                        <article id="post-<?php the_ID(); ?>" class="service_item col filter windows">
+                            <div class="service_item__bl">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <a href="<?php the_permalink(); ?>">
+                                    <img class="service_item__image" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>">
+                                </a>
+                                <?php else : ?>
+                                    <p>No image</p>
+                                <?php endif; ?>
+                            </div>
+                            <h3 class="service_item__title">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php
+                                        $title = get_the_title(); // Получаем заголовок текущей записи
+                                        // Разбиваем заголовок на массив слов
+                                        $words = explode(' ', $title);
+                                        // Вставляем <br> после первого слова
+                                        $first_word = array_shift($words); // Удаляем первое слово из массива                  
+                                        echo $first_word . "<br>" . implode(' ', $words);
+                                    ?>
+                                </a>
+                            </h3>
+                        </article>
             <?php
-                endwhile;
-            else :
-                // Если в категории нет постов, выводим сообщение
-                echo 'No posts found';
-            endif;
+                    endwhile;
+                    wp_reset_postdata(); // Восстанавливаем оригинальные данные запроса
+                else :
+                    // Если в категории нет постов, выводим сообщение
+                    echo 'No posts found';
+                endif;
             ?>
-        </div>
+      </div>
     </div><!-- .row services_list-->
 </section>
   

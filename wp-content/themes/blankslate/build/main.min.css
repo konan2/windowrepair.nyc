@@ -14573,10 +14573,6 @@ address {
   margin-bottom: 16px;
   font-weight: bold;
 }
-.advantages-block__right-desc ul + ul {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 @media (min-width: 990px) and (max-width: 1300px) {
   .advantages-block__right-desc .row-cols-1.row-cols-md-2 {
     margin-right: 4px;
