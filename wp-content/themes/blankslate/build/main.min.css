@@ -16304,6 +16304,11 @@ body.page-template-page-services-hub {
   color: #789AEE;
 }
 
+@media (min-width: 769px) and (max-width: 990px) {
+  .blog-item-container:not(:first-child) {
+    width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .blog-item-container {
     display: flex;
