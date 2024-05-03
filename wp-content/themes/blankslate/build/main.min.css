@@ -14358,6 +14358,7 @@ address {
   display: flex;
   flex-direction: column;
   padding-right: 51px;
+  min-height: 180px;
 }
 @media (max-width: 1300px) {
   .areas-list__city {
