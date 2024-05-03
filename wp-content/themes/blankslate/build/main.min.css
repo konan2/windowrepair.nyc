@@ -14358,7 +14358,6 @@ address {
   display: flex;
   flex-direction: column;
   padding-right: 51px;
-  min-height: 180px;
 }
 @media (max-width: 1300px) {
   .areas-list__city {
@@ -15637,7 +15636,7 @@ body.page-template-page-services-hub {
 
 .contact-form-wrapper {
   width: 100%;
-  max-width: 506px;
+  max-width: 380px;
 }
 
 .page-template-page-contact_us .areas-section {
