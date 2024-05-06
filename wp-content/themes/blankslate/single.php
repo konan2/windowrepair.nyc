@@ -93,11 +93,11 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
                             <div class="form-group">
                                 <label for="repair">Choose a service*</label>
                                 <div class="row">
-                                    <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                    <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
                                         <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repair" checked>
                                         <label class="custom-control-label" for="repair">Repair</label>
                                     </div>
-                                    <div class="col-md-4 custom-control custom-checkbox custom-control-inline">
+                                    <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
                                         <input type="checkbox" class="custom-control-input" name="install" value="install" id="install">
                                         <label class="custom-control-label" for="install">Install</label>
                                     </div>
