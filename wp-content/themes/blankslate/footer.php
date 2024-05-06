@@ -37,6 +37,11 @@
                             </svg>
                             </i>
                         </a>
+
+
+                        <?php /*?> 
+                        Закоментовано на час поки немає посилань на діючі соц мережі
+
                         <a href="#" class="footer__social-icon" title="Follow us on Instagram" aria-label="Follow us on Instagram">
                             <i class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -59,6 +64,8 @@
                                 </svg>
                             </i>
                         </a>
+                        <?php */ ?>
+
                     </span>
                     </span>
                 </li>    
