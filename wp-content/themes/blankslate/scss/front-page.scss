@@ -247,6 +247,13 @@
     }          
     &__text{
         padding-top: 16px;
+
+        @media (max-width: 550px) {
+        .btn-main-request-call {
+            margin: 0 auto;
+            display: block;
+        }
+    }
     }
     &__image{
         background-color: #FCF4DA;
