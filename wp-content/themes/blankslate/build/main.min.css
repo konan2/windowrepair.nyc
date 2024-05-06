@@ -13534,6 +13534,12 @@ address {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media (max-width: 550px) {
+  .front-banner__container-text .btn-hero-main {
+    margin: 0 auto;
+    display: block;
+  }
+}
 .front-banner:after {
   content: "";
   position: absolute;
