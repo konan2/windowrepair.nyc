@@ -354,6 +354,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth >= 992) {
         destroySwiperBestQuality();
     } else {
+        destroySwiperBestQuality(); // Додано для перевірки існування Swiper перед знищенням
         initSwiperBestQuality();
     }
 });
