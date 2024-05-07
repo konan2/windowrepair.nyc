@@ -883,7 +883,7 @@ $(document).ready(function() {
               var buttonText = $(this).text() === "Read more" ? "Read less" : "Read more";
               $(this).text(buttonText);
               descBlock.toggleClass("expanded");
-              descBlock.toggleClass("collapsed");
+              // descBlock.toggleClass("collapsed");
           });
       }
   });
