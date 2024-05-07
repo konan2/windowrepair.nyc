@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/windowrepair13/public_html/test.deploy.com
+    - export DEPLOYPATH=/home/windowrepair13/public_html/test.deploy.com/
     - /bin/cp -R test $DEPLOYPATH
+    - /bin/cp file.name $DEPLOYPATH
