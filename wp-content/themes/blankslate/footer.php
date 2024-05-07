@@ -30,13 +30,18 @@
                   <strong>Follow Us:</strong>
                   <span class="d-inline-block">
                   <span class="d-flex my-1 ms-3">
-                        <a href="#" class="footer__social-icon" title="Follow us on Facebook" aria-label="Follow us on Facebook">
+                        <a href="https://www.facebook.com/WindowRepairNYC/" class="footer__social-icon" title="Follow us on Facebook" aria-label="Follow us on Facebook">
                             <i class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
                                 <path d="M7.01849 0.799805H6.2392C4.07324 0.799805 2.31113 2.56197 2.31113 4.72793V6.38571H0.979721C0.842623 6.38571 0.731445 6.49689 0.731445 6.63399V8.6202C0.731445 8.7573 0.842623 8.86847 0.979721 8.86847H2.31103V14.9515C2.31103 15.0886 2.4222 15.1998 2.5593 15.1998H4.54551C4.68261 15.1998 4.79378 15.0886 4.79378 14.9515V8.86847H6.76937C6.90646 8.86847 7.01764 8.7573 7.01764 8.6202V6.63399C7.01764 6.49689 6.90646 6.38571 6.76937 6.38571H4.79378V4.72793C4.79378 3.93096 5.44218 3.28256 6.2391 3.28256H7.01839C7.15548 3.28256 7.26666 3.17139 7.26666 3.03429V1.04808C7.26676 0.910983 7.15558 0.799805 7.01849 0.799805Z" fill="#2C5697"/>
                             </svg>
                             </i>
                         </a>
+
+
+                        <?php /*?> 
+                        Закоментовано на час поки немає посилань на діючі соц мережі
+
                         <a href="#" class="footer__social-icon" title="Follow us on Instagram" aria-label="Follow us on Instagram">
                             <i class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -59,6 +64,8 @@
                                 </svg>
                             </i>
                         </a>
+                        <?php */ ?>
+
                     </span>
                     </span>
                 </li>    

@@ -52,7 +52,7 @@
 <div class="row row-cols-1 row-cols-md-2">
 <div class="flex-column justify-content-center">
 <h2>OUR CERTIFICATION</h2>
-<p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-body-secondary">We are recognized all over New York and New Jersey - our awards throughit.</p>
 
 </div>
 <div id="certification" class="swiper">
@@ -202,7 +202,7 @@
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <h5 class="best-solutions__item-title">Manufactured</h5>
                             <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <h5 class="best-solutions__item-title">Installation</h5>
                             <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                 <div class="best-solutions__item-wrapper">
                     <div class="best-solutions__item-content">
                         <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
+                            <h5 class="best-solutions__item-title">Guaranteed</h5>
                             <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
 
             <div class="col-12 col-md-4 contrast-banner__text flex-column align-items-center text-center order-1 order-md-2">
                     <h2>Start your project today</h2>
-                    <p class="mb-2 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    <p class="mb-2 text-body-secondary">We offer a wide variety of doors & windows, with a wide range of styles and sizes to choose from.</p>
                     <a href="tel:+496170961709" class="btn btn-primary mt-4">Call us now</a>
             </div>
 

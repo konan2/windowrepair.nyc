@@ -4,7 +4,6 @@ import 'bootstrap/js/dist/dropdown';
 import 'bootstrap/js/dist/modal';
 import videojs from 'video.js';
 
-///Applications/XAMPP/xamppfiles/htdocs/window-repair-nyc/wp-content/themes/blankslate/node_modules/video.js/dist/video.min.js
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
@@ -356,6 +355,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth >= 992) {
         destroySwiperBestQuality();
     } else {
+        destroySwiperBestQuality(); // Додано для перевірки існування Swiper перед знищенням
         initSwiperBestQuality();
     }
 });
