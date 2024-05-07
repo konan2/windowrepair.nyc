@@ -17824,7 +17824,7 @@ body.page-template-page-services-hub {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 40px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   align-content: center;
   margin-top: 40px;
