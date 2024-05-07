@@ -70,7 +70,7 @@
 .google-reviews-item__desc.collapsed {
     max-height: 1000px;
 }
-.google-reviews-item__desc.expanded  + span + .read-more-button[aria-expanded=false]:after {
+.google-reviews-item__desc.expanded  + p + .read-more-button[aria-expanded=false]:after {
     transform: rotate(225deg);
     top: 9px;
 }
