@@ -547,7 +547,7 @@ input:checked+label:before {
         gap: 4px;
     }
 
-    &__title>h4 {
+    &__title>span {
         font-size: 18px;
         color: $primary;
     }
@@ -572,7 +572,7 @@ input:checked+label:before {
     display: block;
 }
 
-.google-reviews-item__title>h4:after {
+.google-reviews-item__title>span:after {
     content: ' ';
     background: url("../img/stars.svg") no-repeat;
     height: 17px;

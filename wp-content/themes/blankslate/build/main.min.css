@@ -16950,7 +16950,7 @@ input:checked + label:before {
   flex-direction: column;
   gap: 4px;
 }
-.google-reviews-item__title > h4, .google-reviews-item__title > .h4 {
+.google-reviews-item__title > span {
   font-size: 18px;
   color: #2C5697;
 }
@@ -16972,7 +16972,7 @@ input:checked + label:before {
   display: block;
 }
 
-.google-reviews-item__title > h4:after, .google-reviews-item__title > .h4:after {
+.google-reviews-item__title > span:after {
   content: " ";
   background: url("../img/stars.svg") no-repeat;
   height: 17px;
