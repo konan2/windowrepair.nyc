@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../node_modules/video.js/dist/video-js.css";
 @font-face {
   font-family: "Bebas Neue";
   src: local("Bebas Neue Thin"), local("BebasNeue-Thin"), url("../fonts/bebasneuethin.woff2") format("woff2"), url("../fonts/bebasneuethin.woff") format("woff"), url("../fonts/bebasneuethin.ttf") format("truetype");
@@ -12872,6 +12873,10 @@ strong {
   font-style: italic;
 }
 
+.video-js .vjs-tech {
+  border: 1px solid #000;
+}
+
 .read-more-button {
   position: relative;
   display: block;
@@ -12928,17 +12933,27 @@ figure {
   margin: 0;
 }
 
-.img-preview--video::before {
-  content: "";
-  display: block;
+.video-js .vjs-big-play-button {
+  font-size: 0;
   width: 150px;
   height: 150px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  margin: -75px 0 0 -75px;
   z-index: 1;
+  border: 0;
   background: url("../img/video-play-icon.svg") no-repeat;
+  transition: transform 0.15s linear;
+  border-radius: 100%;
+}
+
+.video-js:hover .vjs-big-play-button {
+  border: none;
+  background-color: transparent;
+  transform: scale(1.05);
+  transition: transform 0.15s linear;
+}
+
+.vjs-icon-placeholder {
+  display: none;
 }
 
 .img-preview {
@@ -14358,7 +14373,6 @@ address {
   display: flex;
   flex-direction: column;
   padding-right: 51px;
-  min-height: 180px;
 }
 @media (max-width: 1300px) {
   .areas-list__city {

@@ -112,6 +112,12 @@ strong{
     font-style: italic;
   }
 
+// video
+
+.video-js .vjs-tech{
+    border: 1px solid #000;
+}
+
 
 // Buttons
 
@@ -174,18 +180,37 @@ figure{
 }
 
 
-.img-preview--video::before{
-    content: '';
-    display: block;
+.video-js .vjs-big-play-button{
+    font-size: 0;
     width: 150px;
     height: 150px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    margin: -75px 0 0 -75px;
     z-index: 1;
+    border: 0;
     background: url("../img/video-play-icon.svg") no-repeat;
+    transition: transform .15s linear;
+    border-radius: 100%;
 }
+
+.video-js:hover .vjs-big-play-button{
+    border: none;
+    background-color: transparent;
+    transform: scale(1.05);
+    transition: transform .15s linear;
+}
+
+.vjs-icon-placeholder{
+    display: none;
+}
+
+// .video-player {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     display: none;
+//   }
 
 .img-preview {
     position: relative;
