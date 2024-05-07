@@ -17842,6 +17842,33 @@ body.page-template-page-services-hub {
   }
 }
 
+.google-reviews-item__desc:not(.expanded) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.google-reviews-item__desc {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 1.3s ease;
+}
+
+.google-reviews-item__desc.expanded {
+  max-height: 1000px;
+}
+
+.google-reviews-item__desc.collapsed {
+  max-height: 1000px;
+}
+
+.google-reviews-item__desc.expanded + span + .read-more-button[aria-expanded=false]:after {
+  transform: rotate(225deg);
+  top: 9px;
+}
+
 .main-post-content {
   padding: 80px 0 20px;
 }
