@@ -865,3 +865,26 @@ $(document).ready(function() {
 
   checkScrollPosition();
 });
+
+
+/// cards google rewiews
+
+
+$(document).ready(function() {
+  var googleReviews = $(".google-reviews-item");
+
+  googleReviews.each(function() {
+      var descBlock = $(this).find(".google-reviews-item__desc");
+
+      if (descBlock[0].scrollHeight > descBlock.innerHeight()) {
+          $(this).append('<a class="read-more-button" href="#" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Read more</a>');
+
+          $(this).find(".read-more-button").click(function() {
+              var buttonText = $(this).text() === "Read more" ? "Read less" : "Read more";
+              $(this).text(buttonText);
+              descBlock.toggleClass("expanded");
+              // descBlock.toggleClass("collapsed");
+          });
+      }
+  });
+});
