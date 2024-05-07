@@ -68,7 +68,20 @@
     max-height: 1000px; 
 }
 
+.google-reviews-item .read-more-button {
+    color: #789AEE;
+    font-size: 12px;
+}
+
+.google-reviews-item .read-more-button:after {
+    width: 8px;
+    height: 7px;
+    border: solid #789AEE;
+    border-width: 0 2px 2px 0;
+    top: 3px;
+}
+
 .google-reviews-item__desc.expanded  + p + .read-more-button[aria-expanded=false]:after {
     transform: rotate(225deg);
-    top: 9px;
+    top: 6px;
 }
