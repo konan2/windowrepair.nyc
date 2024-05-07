@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/windowrepair13/public_html/deploy_test/
-    - /bin/cp -R /home/windowrepair13/repositories/test $DEPLOYPATH
+    - /bin/cp -R /home/windowrepair13/repositories/test/* $DEPLOYPATH
