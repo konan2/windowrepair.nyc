@@ -59,7 +59,7 @@
 }
 
 .google-reviews-item__desc {
-    max-height: 100px; 
+    max-height: 72px; 
     overflow: hidden;
     transition: max-height 1.3s ease;
 }
@@ -67,9 +67,7 @@
 .google-reviews-item__desc.expanded {
     max-height: 1000px; 
 }
-.google-reviews-item__desc.collapsed {
-    max-height: 1000px;
-}
+
 .google-reviews-item__desc.expanded  + p + .read-more-button[aria-expanded=false]:after {
     transform: rotate(225deg);
     top: 9px;
