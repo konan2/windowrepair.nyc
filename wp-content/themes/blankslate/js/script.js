@@ -8,6 +8,132 @@ import videojs from 'video.js';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
+// Book online form
+
+if (document.getElementById('monday-form')) {
+  document.getElementById('monday-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    const trackingId = 'G-MSLQV6CC5K';  
+
+    const form = document.getElementById('monday-form');    
+    const name = document.getElementById('name_field').value; 
+    const email = document.getElementById('email').value; 
+    const phone = document.getElementById('phone').value; 
+    const address = document.getElementById('address').value; 
+    const projectDescription = document.getElementById('description').value; 
+    const button = document.getElementById('form-submit-button'); 
+
+    button.textContent  = 'Please wait...';
+
+    const columnValues = {
+        "email": { "text": email,  "email": email },
+        "text": phone, 
+        "text5": address,
+        "long_text": projectDescription
+    };
+
+    const data = {
+        'query': `mutation {
+            create_item (
+                board_id: 2614272835,
+                item_name: "${name}",
+                column_values: "${JSON.stringify(columnValues).replace(/"/g, '\\"')}"
+            ) {
+                id
+                name
+            }
+        }`
+    };
+
+
+
+    // Отправка данных
+
+
+
+    // Отправляем данные на сервер Monday.com
+    fetch("https://api.monday.com/v2", {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjM1MjQxMjkxMywiYWFpIjoxMSwidWlkIjo1ODA1MzIzOSwiaWFkIjoiMjAyNC0wNC0yNlQwNjo1ODozOS4zMjZaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NjE2NjcwOSwicmduIjoidXNlMSJ9.szfHVjo2r8QOTzy9ulsOF2xA2ODrEyAZBAvWmpCQ3mI',
+            'API-Version': '2023-04'
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+            button.value = 'Please try again.';
+        }
+        if (response.ok) {
+            form.innerHTML = `<div id="success"><h2>Thank You.</h2><p>We will contact you. Shortly.</p></div>`;
+        }
+        return response.json();
+    }).then(data => {
+        console.log(data);
+    }).catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+
+
+
+
+
+
+    function sendConversionData(trackingId, email, phone, address, description) {
+        // URL для отправки данных о событии конверсии
+        var url = 'https://www.google-analytics.com/collect';
+
+        // Данные для отправки
+        var data = {
+            v: '1',                    // Версия протокола
+            tid: trackingId,           // Идентификатор отслеживания (Tracking ID)
+            cid: Math.floor(Math.random() * 10000000000), // Идентификатор клиента (Client ID)
+            t: 'event',                // Тип запроса
+            ec: 'conversion',          // Категория события
+            ea: 'submit',              // Действие события
+            el: 'form',                // Метка события
+            ev: 1,                     // Значение события
+            name: name,              // name
+            email: email,              // Email
+            phone: phone,              // Телефон
+            address: address,          // Адрес
+            description: projectDescription   // Описание проекта
+        };
+
+        // Форматирование данных для отправки
+        var params = new URLSearchParams(data);
+
+        // Опции запроса
+        var options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: params
+        };
+
+        // Отправка данных на сервер Google Analytics
+        fetch(url, options)
+            .then(response => {
+                // Обработка ответа (можно добавить дополнительную логику)
+                console.log('Conversion data sent successfully');
+            })
+            .catch(error => {
+                // Обработка ошибок (можно добавить дополнительную логику)
+                console.error('Error sending conversion data:', error);
+            });
+    }
+
+    sendConversionData(trackingId, name, email, phone, address, projectDescription);
+
+});
+}
+
+   
 
 
 
