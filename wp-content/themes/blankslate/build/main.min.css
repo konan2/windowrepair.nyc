@@ -14899,6 +14899,10 @@ figure {
   display: none;
 }
 
+.test {
+  color: red;
+}
+
 .post-list {
   padding: 0;
   list-style: none;
