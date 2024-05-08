@@ -14817,13 +14817,13 @@ strong {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #2C5697 !important;
+  color: #fff;
+  background-color: #2C5697;
 }
 
 .btn-secondary {
-  color: #2C5697 !important;
-  background-color: #FFD221 !important;
+  color: #2C5697;
+  background-color: #FFD221;
 }
 
 img {

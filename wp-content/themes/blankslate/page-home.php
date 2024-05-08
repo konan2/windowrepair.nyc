@@ -198,18 +198,7 @@ sendConversionData(trackingId, name, email, phone, address, projectDescription);
 });
 
 
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != ‘undefined’) {
-      window.location = url;
-    }
-  };
-  gtag(‘event’, ‘conversion’, {
-      ‘send_to’: ‘AW-599003605/VhAuCNSAo6gZENWj0J0C’,
-      ‘event_callback’: callback
-  });
-  return false;
-}
+
 </script>
 
 <?php the_content(); ?>
