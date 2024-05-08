@@ -15925,9 +15925,6 @@ address {
     margin-top: 0 !important;
   }
 }
-.company-history img {
-  max-height: 255px;
-}
 .company-history__wrapper {
   position: relative;
 }
