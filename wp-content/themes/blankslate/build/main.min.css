@@ -14891,6 +14891,14 @@ figure {
   max-width: 100%;
 }
 
+.vjs-has-started .vjs-big-play-button {
+  display: block;
+}
+
+.vjs-playing .vjs-big-play-button {
+  display: none;
+}
+
 .post-list {
   padding: 0;
   list-style: none;
