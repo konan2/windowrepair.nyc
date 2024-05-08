@@ -1,10 +1,3 @@
-.modal-dialog{
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    max-width: max-content;
-}
 
 .modal__content{
     align-items: center;
@@ -13,11 +6,12 @@
     width: 100%;
     padding: 0 15px;
     max-width: 100%;
+    margin: 40px 0;
     .btn-close{
         position: absolute;
         width: 24px;
         height: 24px;
-        right: 26px;
+        right: 10px;
         top: 8px;
         color: #fff;
         background: none;

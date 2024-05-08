@@ -14817,13 +14817,13 @@ strong {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #2C5697;
+  color: #fff !important;
+  background-color: #2C5697 !important;
 }
 
 .btn-secondary {
-  color: #2C5697;
-  background-color: #FFD221;
+  color: #2C5697 !important;
+  background-color: #FFD221 !important;
 }
 
 img {
@@ -15093,6 +15093,10 @@ address {
 }
 .tab:hover {
   color: #789AEE;
+}
+
+#monday-form {
+  max-width: 600px;
 }
 
 .navbar {
@@ -15445,15 +15449,6 @@ address {
   padding-right: 0;
 }
 
-.modal-dialog {
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
 .modal__content {
   align-items: center;
   background-color: transparent;
@@ -15461,12 +15456,13 @@ address {
   width: 100%;
   padding: 0 15px;
   max-width: 100%;
+  margin: 40px 0;
 }
 .modal__content .btn-close {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 26px;
+  right: 10px;
   top: 8px;
   color: #fff;
   background: none;

@@ -157,13 +157,13 @@ strong{
 }
 
 .btn-primary{
-    color: #fff;
-    background-color: $primary;
+    color: #fff!important;
+    background-color: $primary!important;
 }
 
 .btn-secondary{
-    color: $primary;
-    background-color: $emphasis-color;
+    color: $primary!important;
+    background-color: $emphasis-color!important;
 }
 
 

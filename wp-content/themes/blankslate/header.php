@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -90,13 +91,12 @@
 <div class="modal fade" id="request-call" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content modal__content">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <form id="request-call-form" onsubmit="submitCform(); return false;" class="form-wrap form-wrap__rows"> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="currentColor"/>
                 </svg>
                 </button>
-        <form id="request-call-form" onsubmit="submitCform(); return false;" class="form-wrap form-wrap__rows"> 
-                
                 <h3 class="form-wrap__title poppins-bold">ENTER YOUR PHONE NUMBER AND WE WILL CONTACT YOU</h3>
             <div class="row">
                     <div class="form-group">
@@ -124,7 +124,7 @@
             <div class="row">
                 <div class="col-md-12">
                 <!-- <button type="submit" id="mybtn" class="btn btn-primary">BOOK ONLINE</button> -->
-                <input id="mybtn" type="submit" value="Send request" class="btn btn-secondary w-100">
+                <input id="mybtn" type="submit" value="Send request" class="w-100 btn btn-secondary btn-medium">
                 <span id="status"> </span>
                 <input type="hidden" id="formid" name="formid" value="1001">
                 </div>
