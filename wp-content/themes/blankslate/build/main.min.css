@@ -15975,7 +15975,7 @@ address {
 }
 @media (max-width: 768px) {
   .certification {
-    margin-top: -30px !important;
+    margin-top: 30px !important;
   }
 }
 .certification__right {
