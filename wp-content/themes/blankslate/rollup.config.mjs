@@ -20,7 +20,7 @@ export default [
       terser({
         compress: { drop_console: false }, // Не удалять console.log()
       }),
-    ]
+    ],
   },
   {
     input: 'scss/main.scss', // Ваш основной файл
