@@ -271,77 +271,10 @@
 
 </section>
 
-<section  class="clients-google-reviews container-fluid">
-    <div class="container-xl text-center">
-        <h2>what <span class="text-primary-emphasis">other’s says</span></h2>
-        <p class="text-body-secondary">Our professional glaziers are always going above and beyond to satisfy every customer, as customer satisfaction is our top priority</p>
-    </div>
-
-
-    <div class="swiper-google-reviews">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                   <div class="google-reviews-item">
-                        <div class="google-reviews-item__top">
-                            <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Kurt Bates</h4>
-                            </div>
-                        </div>
-                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
-                   </div>
-                </div>
-                <div class="swiper-slide">
-                   <div class="google-reviews-item">
-                        <div class="google-reviews-item__top">
-                            <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Marc Anthony</h4>
-                            </div>
-                        </div>
-                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
-                   </div>
-                </div>
-                <div class="swiper-slide">
-                   <div class="google-reviews-item">
-                        <div class="google-reviews-item__top">
-                            <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Gregory Abbott</h4>
-                            </div>
-                        </div>
-                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
-                   </div>
-                </div>
-                <div class="swiper-slide">
-                   <div class="google-reviews-item">
-                        <div class="google-reviews-item__top">
-                            <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Kurt Bates</h4>
-                            </div>
-                        </div>
-                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
-                   </div>
-                </div>
-                <div class="swiper-slide">
-                   <div class="google-reviews-item">
-                        <div class="google-reviews-item__top">
-                            <div class="google-reviews-item__title">
-                                <h4 class="poppins-bold">Gregory Abbott</h4>
-                            </div>
-                        </div>
-                        <p class="google-reviews-item__desc">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                        <span class="google-reviews-item__date poppins-medium">13.04.2021</span>
-                   </div>
-                </div>
-           </div>
-           <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-   </div>
-</section>
+<!-- what other’s says -->
+<?php
+echo do_shortcode('[show_section post_id="292"]');
+?>
 
 <!-- Areas we serve section -->
 <?php
