@@ -17,10 +17,12 @@
         background: none;
         padding: 0;
         z-index: 1;
+        opacity: 1;
     }
     form{
         position: relative;
-        max-width: 380px;
+        max-width: 100%;
+        width: 100%;
     }
 }
 

@@ -15095,10 +15095,6 @@ address {
   color: #789AEE;
 }
 
-#monday-form {
-  max-width: 600px;
-}
-
 .navbar {
   padding: 0;
 }
@@ -15468,10 +15464,12 @@ address {
   background: none;
   padding: 0;
   z-index: 1;
+  opacity: 1;
 }
 .modal__content form {
   position: relative;
-  max-width: 380px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .modal-backdrop.show {
@@ -16768,6 +16766,7 @@ address {
   font-size: 22px;
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
 }
 .form-wrap__rows {
   display: flex;
@@ -16792,6 +16791,10 @@ address {
 
 .form-wrap .form-control {
   height: 48px;
+}
+
+textarea.form-control {
+  min-height: 80px;
 }
 
 .custom-control-input {

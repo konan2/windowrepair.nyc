@@ -75,8 +75,8 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
                             </div>
                         
                         <div class="row-agree">
-                            <input type="checkbox" class="custom-control-input" name="agree" value="agree" id="agree" checked="">
-                            <label class="custom-control-label" for="agree">I agree to the processing of my personal data</label>
+                            <input type="checkbox" class="custom-control-input"  name="agree" value="agree" id="agree-for-processing" checked="">
+                            <label class="custom-control-label" for="agree-for-processing">I agree to the processing of my personal data</label>
                         </div>
 
                         <div class="row">
