@@ -18530,10 +18530,13 @@ body.page-template-page-services-hub {
 }
 .post-content ul {
   list-style: disc;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 .post-content ul li {
   margin-bottom: 16px;
+}
+.post-content b {
+  color: #2C5697;
 }
 .post-content .collapse {
   margin-bottom: 40px;
