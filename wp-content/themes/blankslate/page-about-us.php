@@ -172,80 +172,10 @@
 
 </section>
 
-<section id="best-solutions" class="best-solutions container-fluid">
-    <div class="container-xl text-center">
-        <h2>our the <span class="text-primary-emphasis">best solution</span> to your vision</h2>
-        <p class="text-body-secondary">Our 4 step project system makes everything seamless from connecting with our representative to getting job done by our Glass Technician.</p>
-    </div>
-
-    <div class="container-xl">
-        <div class="best-solutions__list  swiper-best-solutions">
-          <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="best-solutions__item">
-                <div class="best-solutions__item-counter">01</div>
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Design Visit</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-          </div>
-
-          <div class="swiper-slide">
-            <div class="best-solutions__item">
-            <div class="best-solutions__item-counter">02</div>
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Manufactured</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-          </div>  
-
-          <div class="swiper-slide"> 
-            <div class="best-solutions__item">
-                <div class="best-solutions__item-counter">03</div>
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Installation</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-          </div>
-
-          <div class="swiper-slide">            
-            <div class="best-solutions__item">
-                <div class="best-solutions__item-counter">04</div>
-                <div class="best-solutions__item-wrapper">
-                    <div class="best-solutions__item-content">
-                        <div>
-                            <h5 class="best-solutions__item-title">Guaranteed</h5>
-                            <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-          </div> 
-
-         </div> 
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-</section> 
+<!-- our the best solution to your vision -->
+<?php
+echo do_shortcode('[show_section post_id="289"]');
+?>
 
 
 <section id="windows-banner" class="windows-banner contrast-banner container-fluid">
