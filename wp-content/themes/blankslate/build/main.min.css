@@ -16773,6 +16773,9 @@ address {
   flex-direction: column;
   gap: 24px;
 }
+.form-wrap__rows .row {
+  gap: 24px 0;
+}
 
 .form-wrap .btn-primary {
   background: #FFD221;
