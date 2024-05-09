@@ -88,7 +88,7 @@
 <section>
     <div class="container-xl text-center">
         <h2>Our Professional team</h2>
-        <p class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="text-body-secondary">Our team of skilled specialists is committed to delivering excellence in every project.</p>
     </div>
 
     <div class="section-tabs-our-team-block">
@@ -101,10 +101,10 @@
                   </div>
                   <div class="item-our-team-block__bottom">
                     <div>
-                      <h4 class="poppins-bold">Thomas Brandon</h4>
-                      <span class="poppins-medium">Senior technician</span>
+                      <h4 class="poppins-bold">Volodymyr Mykytyuk</h4>
+                      <span class="poppins-medium">Junior glazier</span>
                     </div>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                  <p>With over a decade of experience in window installation, Volodymyr combines precision craftsmanship with a passion for excellence. He ensures that every project exceeds expectations</p>
                   </div>
                 </div>
               </div>
@@ -115,10 +115,10 @@
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
-                    <h4 class="poppins-bold">Eddie Lake</h4>
-                    <span class="poppins-medium">Senior technician</span>
+                    <h4 class="poppins-bold">Taras Daniv</h4>
+                    <span class="poppins-medium">Glazier</span>
                   </div>
-                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                 <p>Taras’s artistic touch and technical prowess elevate every glass creation. His innovative approach and attention to detail guarantee stunning results.</p>
                 </div>
               </div>
               </div>
@@ -128,10 +128,10 @@
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
-                  <h4 class="poppins-bold">Joshua Jones</h4>
-                    <span class="poppins-medium">Senior technician</span>
+                  <h4 class="poppins-bold">Marian Dzoban</h4>
+                    <span class="poppins-medium">Junior glazier</span>
                   </div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <p>Marian’s warm demeanor and attentive nature make every client feel valued and heard. He goes above and beyond to ensure customer satisfaction at every turn.</p>
                 </div>
               </div></div>
               <div class="swiper-slide">
@@ -141,10 +141,10 @@
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
-                    <h4 class="poppins-bold">Joshua Jones</h4>
-                    <span class="poppins-medium">Senior technician</span>
+                    <h4 class="poppins-bold">Pavlo Serednytskyi</h4>
+                    <span class="poppins-medium">Junior glazier</span>
                   </div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <p>Pavlo's expertise in mirror design and installation is matched only by his dedication to customer satisfaction. His creativity knows no bounds, turning ordinary spaces into reflections of beauty</p>
                 </div>
               </div>
               </div>
@@ -155,10 +155,10 @@
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
-                  <h4 class="poppins-bold">Joshua Jones</h4>
-                    <span class="poppins-medium">Senior technician</span>
+                  <h4 class="poppins-bold">Levan Kldiashvili</h4>
+                    <span class="poppins-medium">Glazier</span>
                   </div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <p>Levan has impressive skills in designing and installing doors. His commitment to quality craftsmanship and innovative solutions ensures every entryway is a statement of style and security</p>
                 </div>
               </div>
               </div>
