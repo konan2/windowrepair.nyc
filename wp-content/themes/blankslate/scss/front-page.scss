@@ -47,7 +47,7 @@
         }
     }
     img{
-        min-width: 50vw;
+        min-width: calc(50vw - 7.5px);
         max-height: 565px;
         @media (max-width: 1240px) {
             object-fit: cover;
