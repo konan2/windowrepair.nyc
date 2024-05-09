@@ -1,5 +1,8 @@
 <?php
 
+// Remove empty <p> from text editor
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 
 // fix browser warning "Third-party cookie will be blocked. Learn more in the Issues tab."
 //setcookie('cookieName', 'cookieValue', ['samesite' => 'Lax']);
