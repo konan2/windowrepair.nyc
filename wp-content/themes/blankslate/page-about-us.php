@@ -189,7 +189,7 @@ echo do_shortcode('[show_section post_id="289"]');
 
             <div class="col-12 col-md-4 contrast-banner__text flex-column align-items-center text-center order-1 order-md-2">
                     <h2>Start your project today</h2>
-                    <p class="mb-2 text-body-secondary">We offer a wide variety of doors & windows, with a wide range of styles and sizes to choose from.</p>
+                    <p class="mb-2 text-body-secondary">Ready to turn your vision into reality? Get the best glass solutions today with WRNYC! Our quality, timeliness, responsibility, and flexible pricing converge to make your dreams come true.</p>
                     <a href="tel:+496170961709" class="btn btn-primary mt-4">Call us now</a>
             </div>
 
