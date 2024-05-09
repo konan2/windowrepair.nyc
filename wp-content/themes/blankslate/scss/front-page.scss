@@ -2,10 +2,12 @@
 
 .front-banner{
     position: relative;
+    @media (min-width: 1440px) {
+        min-height: 565px;
+    }
     &__container-text{
         padding-top: 40px;
         padding-bottom: 40px;
-
         @media (max-width: 550px) {
         .btn-hero-main {
             margin: 0 auto;
@@ -42,6 +44,14 @@
     @media (max-width: 992px) {
         &::after,  &::before{
             width: 100%;
+        }
+    }
+    img{
+        min-width: calc(50vw - 7.5px);
+        max-height: 565px;
+        @media (max-width: 1240px) {
+            object-fit: cover;
+            min-height: 100%;
         }
     }
 }

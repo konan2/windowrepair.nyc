@@ -15481,6 +15481,11 @@ address {
 .front-banner {
   position: relative;
 }
+@media (min-width: 1440px) {
+  .front-banner {
+    min-height: 565px;
+  }
+}
 .front-banner__container-text {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -15520,6 +15525,17 @@ address {
 @media (max-width: 992px) {
   .front-banner::after, .front-banner::before {
     width: 100%;
+  }
+}
+.front-banner img {
+  min-width: calc(50vw - 7.5px);
+  max-height: 565px;
+}
+@media (max-width: 1240px) {
+  .front-banner img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 100%;
   }
 }
 
@@ -16769,6 +16785,7 @@ address {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .form-wrap__rows {
   display: flex;
