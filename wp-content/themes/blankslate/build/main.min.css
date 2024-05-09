@@ -18535,6 +18535,9 @@ body.page-template-page-services-hub {
 .post-content ul li {
   margin-bottom: 16px;
 }
+.post-content ol {
+  padding-left: 16px;
+}
 .post-content b {
   color: #2C5697;
 }
