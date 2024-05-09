@@ -72,7 +72,7 @@
         align-items: center;
         overflow: hidden;
 
-        @media (max-width: 990px) {
+        @media (max-width: 992px) {
             min-height: auto;
         }
 
@@ -96,7 +96,7 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width: 990px) {
+        @media (max-width: 992px) {
           max-height: 313px;
         }
         @media (max-width: 768px) {
@@ -263,7 +263,7 @@
     
 }
 
-@media (min-width: 769px) and (max-width: 990px) {
+@media (min-width: 769px) and (max-width: 992px) {
     .blog-item-container:not(:first-child) {
         width: 50%;
     }

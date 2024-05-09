@@ -404,14 +404,14 @@
     max-height: 330px;
 }
 
-@media (max-width:990px) {
+@media (max-width:992px) {
     .areas-section .container {
         max-width: 100%;
         padding: 0;
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
     .areas-block__left,
     .areas-block-contact {
         width: 100%;
@@ -445,7 +445,7 @@
 .services_tabs_scrl.our-work_tabs {
     justify-content: center;
 
-    @media (max-width: 990px) {
+    @media (max-width: 992px) {
         justify-content: flex-start;
     }
 }
