@@ -18538,6 +18538,25 @@ body.page-template-page-services-hub {
 .post-content b {
   color: #2C5697;
 }
+.post-content ul.accent-phrases {
+  list-style: none;
+  padding: 0;
+}
+.post-content ul.accent-phrases li {
+  position: relative;
+  padding: 0;
+  padding-left: 14px;
+}
+.post-content ul.accent-phrases li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background: #789AEE;
+  border-radius: 100%;
+}
 .post-content .collapse {
   margin-bottom: 40px;
   display: block;
