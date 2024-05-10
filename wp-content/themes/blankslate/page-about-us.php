@@ -38,7 +38,7 @@
         </ul>
     </div>
     <div class="px-0 px-sm-3 core-values-block__right">
-        <img class="alignnone size-full wp-image-23" src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/core-values-img.webp" alt="" width="445" height="542" />
+        <img class="alignnone size-full wp-image-23" src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/core-values.png" alt="Core values" width="445" height="542" />
     </div>
 
     </div>
