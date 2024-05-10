@@ -328,11 +328,8 @@ const bestSolutionsSlider = new Swiper('#best-solutions-carousel', {
       320: {
           slidesPerView: 1,
       },
-      550: {
-          slidesPerView: 2,
-      },
       768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
       },
       1300: {
           slidesPerView: 4,
