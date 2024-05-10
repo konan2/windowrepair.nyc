@@ -623,6 +623,7 @@ input:checked+label:before {
     font-size: 13px;
 }
 
+
 .swiper-google-reviews .swiper-button-next,
 .swiper-google-reviews .swiper-button-prev,
 .swiper-best-solutions .swiper-button-next,
@@ -642,12 +643,7 @@ input:checked+label:before {
 
 }
 
-.clients .swiper-button-next,
-.clients .swiper-button-prev {
-    top: 50%;
-    bottom: unset;
-}
-
+.clients .swiper-button-prev,
 .swiper-google-reviews .swiper-button-prev,
 .swiper-best-solutions .swiper-button-prev,
 .tabs-show-photos-block-21 .swiper-button-prev,
@@ -660,6 +656,7 @@ input:checked+label:before {
     }
 }
 
+.clients .swiper-button-next,
 .swiper-google-reviews .swiper-button-next,
 .swiper-best-solutions .swiper-button-next,
 .tabs-show-photos-block-21 .swiper-button-next,
