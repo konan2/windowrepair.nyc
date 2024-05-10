@@ -97,7 +97,7 @@
               <div class="swiper-slide">
                 <div class="item-our-team-block">
                   <div class="item-our-team-block__top">
-                    <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-01.webp" />
+                    <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/img-1-1-jpg.webp" />
                   </div>
                   <div class="item-our-team-block__bottom">
                     <div>
@@ -111,7 +111,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-02.webp" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/img-2-jpg.webp" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -124,7 +124,7 @@
               </div>
               <div class="swiper-slide"><div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-03.webp" alt="team-member-03" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/img-4-jpg.webp" alt="team-member-03" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -137,7 +137,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-01.webp" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/img-3-jpg.webp" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
@@ -151,7 +151,7 @@
               <div class="swiper-slide">
                   <div class="item-our-team-block">
                 <div class="item-our-team-block__top">
-                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/04/our-team-02.webp" alt="team-member-02" />
+                  <img src="https://test.windowrepair.nyc/wp-content/uploads/2024/05/img-5-jpg.webp" alt="team-member-05" />
                 </div>
                 <div class="item-our-team-block__bottom">
                   <div>
