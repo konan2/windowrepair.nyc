@@ -17754,6 +17754,7 @@ body.page-template-page-services-hub {
   border-radius: 20px;
   overflow: hidden;
   max-width: 350px;
+  min-height: 425px;
 }
 .item-our-team-block__bottom {
   display: flex;
