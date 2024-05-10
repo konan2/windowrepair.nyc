@@ -18501,6 +18501,35 @@ body.page-template-page-services-hub {
   }
 }
 
+.hero-section-post.services-hero-section {
+  background: url("../img/services/section-hero-serv-img.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .hero-section-post.services-hero-section {
+    background-position: 50% center;
+  }
+}
+@media (max-width: 550px) {
+  .hero-section-post.services-hero-section {
+    background: #D6E3F9;
+  }
+}
+.hero-section-post.services-hero-section p {
+  max-width: 444px;
+  color: #D6E3F9;
+}
+.hero-section-post.services-hero-section__contacts {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 550px) {
+  .hero-section-post.services-hero-section:after {
+    background: url("../img/services/section-hero-serv-img-sm.png") no-repeat;
+    background-size: cover;
+  }
+}
 .post {
   display: flex;
   flex-direction: column;
