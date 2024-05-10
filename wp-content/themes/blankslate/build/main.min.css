@@ -18166,13 +18166,13 @@ body.page-template-page-services-hub {
 .blog-item__title {
   line-height: 26px;
   text-transform: uppercase;
-  flex-grow: 1;
 }
 .blog-item__text-wrapper {
   padding: 20px;
   max-height: 240px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 @media (max-width: 992px) {
   .blog-item__text-wrapper {
@@ -18186,6 +18186,7 @@ body.page-template-page-services-hub {
 }
 .blog-item__text-excerpt {
   display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
