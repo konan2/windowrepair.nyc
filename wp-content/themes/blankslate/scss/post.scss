@@ -73,6 +73,7 @@
     ol.accent-phrases {
         li::marker {
             color:  $primary-text-emphasis;
+            font-weight: bold;
         }
     }
     .collapse{

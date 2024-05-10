@@ -18570,6 +18570,7 @@ body.page-template-page-services-hub {
 }
 .post-content ol.accent-phrases li::marker {
   color: #789AEE;
+  font-weight: bold;
 }
 .post-content .collapse {
   margin-bottom: 40px;
