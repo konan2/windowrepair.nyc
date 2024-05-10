@@ -782,7 +782,12 @@ initSwipers();
 
 //Tabs map
 
+
+if (document.getElementById('map-iframe')) {
     $(document).ready(function(){
+
+
+    
   
       var mapIframe = document.getElementById('map-iframe');
       var initialCity = document.querySelector(".areas-list__city .filter-button-city.active").getAttribute('data-filter-city-coord');
@@ -811,7 +816,7 @@ initSwipers();
       showDistricts('new-york', initialCity);
     
     });
-    
+  }
     
 
 //Counter block
