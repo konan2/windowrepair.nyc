@@ -138,7 +138,7 @@ if (document.getElementById('monday-form')) {
 
 });
    
-
+console.log("test")
 
 
 // Функция для управления поведением dropdown меню на мобильных устройствах
