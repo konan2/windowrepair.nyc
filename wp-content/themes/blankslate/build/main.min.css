@@ -18555,6 +18555,9 @@ body.page-template-page-services-hub {
   background: #789AEE;
   border-radius: 100%;
 }
+.post-content ol.accent-phrases li::marker {
+  color: #789AEE;
+}
 .post-content .collapse {
   margin-bottom: 40px;
   display: block;

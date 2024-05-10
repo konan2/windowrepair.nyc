@@ -70,6 +70,11 @@
                 }
             }
     }
+    ol.accent-phrases {
+        li::marker {
+            color:  $primary-text-emphasis;
+        }
+    }
     .collapse{
         margin-bottom: 40px;
         display: block;
