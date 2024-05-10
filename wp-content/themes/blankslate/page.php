@@ -27,8 +27,6 @@ if ($field_values) {
 
     // Выводим общий контент
     echo $content;
-} else {
-    echo 'Значение поля не найдено';
 }
 ?>
 

@@ -17089,7 +17089,7 @@ input:checked + label:before {
   width: 18px;
   height: 18px;
   top: unset;
-  bottom: 0;
+  bottom: 4px;
 }
 
 .clients .swiper-button-next,
