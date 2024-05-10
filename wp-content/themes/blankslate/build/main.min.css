@@ -15470,9 +15470,6 @@ address {
   max-width: 100%;
   width: 100%;
 }
-.modal__content .form-wrap {
-  padding: 12px 20px 32px 20px;
-}
 
 .modal-backdrop.show {
   opacity: 0.7;

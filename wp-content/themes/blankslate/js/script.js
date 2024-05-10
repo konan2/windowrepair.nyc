@@ -10,6 +10,9 @@ import $ from 'jquery';
 
 // Book online form
 
+
+window.addEventListener('DOMContentLoaded',function () {
+
 if (document.getElementById('monday-form')) {
   document.getElementById('monday-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -133,6 +136,7 @@ if (document.getElementById('monday-form')) {
 });
 }
 
+});
    
 
 
