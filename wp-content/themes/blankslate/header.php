@@ -124,7 +124,7 @@
           
                 <div class="row">
                 <div class="form-group justify-content-center d-flex">
-                    <input id="mybtn" type="submit" value="Send request" class="btn btn-secondary btn-medium">
+                    <input type="submit" value="Send request" class="btn btn-secondary btn-medium">
                     <span id="status"> </span>
                     <input type="hidden" id="formid" name="formid" value="1001">
                 </div>

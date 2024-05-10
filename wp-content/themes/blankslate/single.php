@@ -139,7 +139,7 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
                     
                     <div class="row">
                     <div class="col-md-12">
-                        <input id="mybtn" type="submit" value="BOOK ONLINE" class="btn btn-primary">
+                        <input type="submit" value="BOOK ONLINE" class="btn btn-primary">
                         <span id="status"> </span>
                         <input type="hidden" id="formid" name="formid" value="1001">
                     </div>

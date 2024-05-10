@@ -81,7 +81,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
 
                         <div class="row">
                             <div class="col-md-12">
-                            <input id="mybtn" type="submit" value="Send request" class="btn btn-secondary w-100">
+                            <input type="submit" value="Send request" class="btn btn-secondary w-100">
                             <span id="status"> </span>
                             <input type="hidden" id="formid" name="formid" value="1001">
                             </div>

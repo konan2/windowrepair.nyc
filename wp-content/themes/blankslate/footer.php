@@ -193,8 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const requestCallForm = document.querySelector("form#request-call-form");
 
 function submitCform() {
-   document.querySelector("form#request-call-form #mybtn").disabled = "true"
-   document.querySelector("form#request-call-form #mybtn").value = 'Please wait...'
+   document.querySelector("form#request-call-form input[type='submit']").disabled = "true"
+   document.querySelector("form#request-call-form input[type='submit']").value = 'Please wait...'
 
    var formdata = new FormData(requestCallForm);
 
@@ -218,8 +218,8 @@ async function AjaxCform(formdata) {
 			document.querySelector("form#request-call-form span#status").innerHTML = `<div id="er">
 			Ops, ${data['reply']}
 			</div>`
-			document.querySelector("form#request-call-form #mybtn").disabled = false
-			document.querySelector("form#request-call-form #mybtn").value = 'Try again'
+			document.querySelector("form#request-call-form input[type='submit']").disabled = false
+			document.querySelector("form#request-call-form input[type='submit']").value = 'Try again'
 	}}	
 });
 
