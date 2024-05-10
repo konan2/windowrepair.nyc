@@ -1,4 +1,36 @@
 
+
+.hero-section-post.services-hero-section{
+    background: url("../img/services/section-hero-serv-img.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-position: 50% center;
+    }
+
+    @media (max-width: 550px) {
+        background: #D6E3F9;
+    }
+
+
+    p{
+        max-width: 444px;
+        color: #D6E3F9;
+    }
+    &__contacts{
+        margin-top: 0!important;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-section-post.services-hero-section:after {
+        background: url("../img/services/section-hero-serv-img-sm.png") no-repeat;
+        background-size: cover;
+    }
+}
+
+
 .post{
     display: flex;
     flex-direction: column;
