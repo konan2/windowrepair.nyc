@@ -783,9 +783,9 @@ initSwipers();
 //Tabs map
 
 
-if (document.getElementById('map-iframe')) {
-    $(document).ready(function(){
 
+    $(document).ready(function(){
+      if (document.getElementById('map-iframe')) {
 
     
   
@@ -814,9 +814,9 @@ if (document.getElementById('map-iframe')) {
     
     
       showDistricts('new-york', initialCity);
-    
+    }
     });
-  }
+
     
 
 //Counter block
