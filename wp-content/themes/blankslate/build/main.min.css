@@ -17693,7 +17693,7 @@ body.page-template-page-services-hub {
 
 .core-values-block {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 @media (max-width: 768px) {
   .core-values-block {
