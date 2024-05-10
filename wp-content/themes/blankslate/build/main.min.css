@@ -17130,11 +17130,12 @@ input:checked + label:before {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .tabs-show-photos-block-21 .swiper-button-prev,
   .tabs-show-photos-block-21 .swiper-button-next,
   .swiper-best-quality .swiper-button-prev,
-  .swiper-best-quality .swiper-button-next {
+  .swiper-best-quality .swiper-button-next,
+  .swiper-best-quality .swiper-pagination {
     display: none;
   }
 }
