@@ -466,3 +466,15 @@ address{
         color: #789AEE;
     }
 }
+
+
+// animation
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Начальное значение непрозрачности */
+    }
+    to {
+        opacity: 1; /* Конечное значение непрозрачности */
+    }
+}

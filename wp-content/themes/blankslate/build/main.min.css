@@ -15095,6 +15095,14 @@ address {
   color: #789AEE;
 }
 
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Начальное значение непрозрачности */
+  }
+  to {
+    opacity: 1; /* Конечное значение непрозрачности */
+  }
+}
 .navbar {
   padding: 0;
 }
@@ -17649,6 +17657,10 @@ body.page-template-page-services-hub {
 }
 .page-template-page-contact_us .areas-block .areas-block__left, .page-template-page-contact_us .areas-block .areas-block__right {
   width: 100%;
+}
+
+.areas-block__right {
+  background-color: #D6E3F9;
 }
 
 .about-us-section.services-hero-section {
