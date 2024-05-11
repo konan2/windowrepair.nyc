@@ -36,7 +36,7 @@
                 <div class="header__contacts-item flex-grow-1 flex-lg-grow-0 justify-content-end">
                     <div class="flex-column align-items-center">
                         <p class="m-0 text-uppercase">EMERGENCY SERVICE</p>
-                        <a href="tel:+496170961709" aria-label="Call us"><strong>+1 646 255 2766</strong></a>
+                        <a href="tel:+16462552766" aria-label="Call us"><strong>+1 646 255 2766</strong></a>
                     </div>
                 </div>
                 <div class="header__contacts-item d-none flex-column d-lg-flex">

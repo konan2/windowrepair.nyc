@@ -2,7 +2,7 @@
 
 <div class="footer__menu-buttons-wrapper">
                     <button class="btn btn-secondary footer__menu-button" data-bs-toggle="modal" data-bs-target="#request-call">request a quote</button>
-                    <a class="btn btn-secondary footer__menu-button d-lg-none d-flex align-items-center ms-3" href="tel:+496170961709">
+                    <a class="btn btn-secondary footer__menu-button d-lg-none d-flex align-items-center ms-3" href="tel:+16462552766">
                         <svg width="15" height="16" viewBox="0 0 15 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.0601 15.5C6.06175 15.5113 -0.00854777 9.36828 9.03508e-06 1.43985C9.03508e-06 0.922086 0.419742 0.5 0.937509 0.5H3.41191C3.87651 0.5 4.27119 0.841371 4.33941 1.30093C4.50292 2.40237 4.8236 3.47466 5.2917 4.48503L5.38804 4.69297C5.522 4.9821 5.4312 5.32563 5.17188 5.51082C4.40559 6.05805 4.11274 7.15958 4.70972 8.01908C5.45885 9.09766 6.40317 10.0418 7.4815 10.7906C8.34096 11.3874 9.44231 11.0946 9.98954 10.3284C10.1748 10.069 10.5186 9.97812 10.8079 10.1121L11.0149 10.208C12.0253 10.6761 13.0977 10.9968 14.1992 11.1603C14.6588 11.2285 15 11.6231 15 12.0877V14.5625C15 15.0802 14.5792 15.5 14.0615 15.5L14.0601 15.5Z" fill="currentColor"/>
                                 </svg>
