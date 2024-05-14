@@ -18,7 +18,7 @@ export default [
       resolve(), // Разрешить импорты из node_modules
       commonjs(), // Преобразовать CommonJS модули в ES6
       terser({
-        compress: { drop_console: true }, // Не удалять console.log()
+        compress: { drop_console: true }, // удалять console.log()
       }),
     ],
   },
@@ -32,7 +32,7 @@ export default [
       del({ targets: 'build/*.css' }),
       postcss({
         extract: true, // Извлечение CSS в отдельный файл
-        minimize: false,
+        minimize: true,
         extensions: ['.scss'], // Добавляем поддержку расширения 
         preprocessor: (content, id) => new Promise((resolve, reject) => {
           const result = sass.renderSync({ file: id });

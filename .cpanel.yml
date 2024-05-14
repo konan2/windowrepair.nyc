@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/windowrepair13/public_html/test5.windowrepair.nyc/
+    - export DEPLOYPATH=/home/windowrepair13/public_html/
     - /bin/cp -R /home/windowrepair13/public_html/test.windowrepair.nyc/* $DEPLOYPATH

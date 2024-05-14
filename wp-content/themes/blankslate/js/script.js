@@ -138,7 +138,6 @@ if (document.getElementById('monday-form')) {
 
 });
    
-console.log("test")
 
 
 // Функция для управления поведением dropdown меню на мобильных устройствах
@@ -903,7 +902,6 @@ var submitButtons = document.querySelectorAll("form input[type='submit']");
           var form = this.closest('form');
           if (form.checkValidity()) { // Проверка формы
               event.preventDefault(); 
-              console.log("test")
               submitCform(this.closest('form')); 
             }
         });
@@ -916,6 +914,7 @@ function submitCform(form) {
 
     var formdata = new FormData(form);
     formdata.append('action', 'submitmyform');
+
     AjaxCform(formdata, form);
 }
 

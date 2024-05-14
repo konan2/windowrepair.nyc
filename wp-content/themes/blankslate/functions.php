@@ -427,7 +427,7 @@ function submitmyform() {
         $message .= "<br><br>---------<br>";
         $message .= "UserAgent: " . str_replace(array("(", ")"), "", $userAgent[0]) . "<br>";
         $message .= "User IP: " . $_SERVER['REMOTE_ADDR'] . "<br>";
-        $subject = 'Contact Form - windowrepair.nyc';
+        $subject = 'Contact Form - window-repair-nyc.com';
 
         if (wp_mail($tomyform, $subject, $message, $headersmyform)) {
             $system['statuse'] = 'ok';

@@ -110,6 +110,12 @@
                         <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="Phone" name="Phone" min="10" max="99" class="form-control" placeholder="+1(___)-___-__-__" autocomplete="phone" required>
                     </div>
             </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="description">Project Description*</label>
+                    <textarea class="form-control" placeholder="Description" name="description" required=""></textarea>
+                </div>
+            </div>
         
          
                 <label for="website" class="d-none"></label>
