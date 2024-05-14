@@ -54,7 +54,7 @@
 
         li{
             margin-bottom: 16px;
-            font-weight: bold;
+            font-family: 'Poppins Bold';
         }
     }  
     
@@ -321,7 +321,7 @@
         text-align: center;
         margin: 0;
         text-transform: uppercase;
-        font-weight: bold;
+        font-family: 'Poppins Bold';
     }
 
     &__rows {
@@ -783,7 +783,7 @@ input:checked+label:before {
     padding: 6px 15px;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 600;
+    font-family: 'Poppins BoldSemiBold';
 }
 
 .photos-tabs-22 a:hover {
@@ -936,7 +936,7 @@ body.page-template-page-services-hub {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
+    font-family: 'Poppins Bold';
     padding: 10px 10px;
     max-width: fit-content;
     margin: 135px auto;

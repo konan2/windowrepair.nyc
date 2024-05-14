@@ -1,55 +1,3 @@
-// .blog-services-section.services-section {
-// background: #fff;
-// }
-
-// @media (min-width: 990px) {
-// .blog-services-section .block-recent-articles {
-//     display: flex;
-//     flex-wrap: wrap; 
-//     row-gap: 40px;
-// }
-
-// .blog-services-section .block-recent-articles .item-our-team-block {
-//     flex-basis: calc(100% / 3); 
-// }
-
-// .blog-services-section .block-recent-articles .item-our-team-block.first-element {
-//     flex-basis: 100%; 
-//     max-width: 100%;
-//     padding: 20px;
-//     flex-direction: row;
-// }
-
-// .blog-services-section  .block-recent-articles .item-our-team-block.first-element img {
-//     width: 520px;
-//     height: 425px;
-//     max-width: max-content;
-//     max-height: max-content;
-//     border-radius: 16px;
-//     object-fit: cover;
-// }
-
-// .blog-services-section .block-recent-articles 
-// .item-our-team-block.first-element .post-category > a {
-//     font-weight: 700;
-//     font-size: 18px;
-// }
-
-// .blog-services-section .block-recent-articles .item-our-team-block.first-element .post-excerpt {
-//     -webkit-line-clamp: unset;
-// }
-
-// .blog-services-section .item-our-team-block:first-child 
-// .row-bottom > span {
-//     font-weight: 500; 
-// }
-
-// .blog-services-section .block-recent-articles .item-our-team-block:first-child h4 {
-//     font-size: 22px;
-// }
-// }
-
-
 .blog-item{
     display: flex;
     flex-direction: column;
@@ -118,7 +66,7 @@
     &__title{
         margin: 0 0 12px 0;
         font-size: 20px;
-        font-weight: 700;
+        font-family: 'Poppins BoldSemiBold', sans-serif;
     }
     &__category{
         margin-bottom: 4px;
@@ -179,7 +127,7 @@
                 .blog-item__category{
                     font-size: 18px;
                     margin-bottom: 8px;
-                    font-weight: 700;
+                    font-family: 'Poppins BoldSemiBold', sans-serif;
                 }
                 .blog-item__title{
                     margin-bottom: 16px;
@@ -188,7 +136,7 @@
         }
 
         .read-more-button {
-            font-weight: 600;
+            font-family: 'Poppins BoldSemiBold';
             font-size: 18px;
             line-height: 27px;
         }
@@ -209,7 +157,7 @@
         align-items: center;
         justify-content: center;
         margin: 0;
-        font-weight: 600;
+        font-family: 'Poppins BoldSemiBold';
         text-decoration: none;
         .prev, .next{
             position: relative;

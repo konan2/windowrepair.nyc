@@ -4,6 +4,7 @@
     padding-bottom: 95px;
     &__title{
         margin: 12px 0;
+        font-family: 'Poppins BoldSemiBold', sans-serif;
         font-weight: bold;
     }
     &-brand{
@@ -47,7 +48,7 @@ button.footer__menu-button {
         font-weight: 500;
         a{
             text-decoration: none;
-            font-weight: 600;
+            font-family: 'Poppins BoldSemiBold';
         }
     }
 }
@@ -59,7 +60,8 @@ button.footer__menu-button {
 }
 
 .footer__menu .footer__menu-item .footer-link{
-    font-weight: 500;
+    font-family: 'Poppins BoldSemiBold', sans-serif;
+    font-weight: bold;
 }
 
 

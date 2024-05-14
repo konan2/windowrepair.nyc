@@ -14,7 +14,7 @@ body{
 // Fonts
 
 h1,h2{
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'Bebas Neue Bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 1px;
@@ -70,7 +70,8 @@ p{
 }
 
 strong{
-    font-weight: 600;
+    font-family: 'Poppins Bold', sans-serif;
+    font-weight: bold;
 }
 
 // Font classes
@@ -95,7 +96,8 @@ strong{
   }
   
   .poppins-semibold {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins BoldSemiBold', sans-serif;
+    font-weight: bold;
     font-weight: 600;
     font-style: normal;
   }
@@ -125,6 +127,7 @@ strong{
     position: relative;
     display: block;
     text-decoration: none;
+    font-family: 'Poppins BoldSemiBold', sans-serif;
     width: max-content;
     &:after {
         content: " ";
@@ -142,7 +145,6 @@ strong{
 
 .btn {
     white-space: nowrap;
-    font-style: italic;
     text-transform: uppercase;
     &:hover{
         background-color: #FFFF33;
@@ -152,7 +154,6 @@ strong{
 
 .btn-medium{
     padding: 8px 20px;
-    font-weight: 700;
     font-size: 18px;
 }
 
@@ -271,7 +272,7 @@ figure{
         padding: 0;
         padding-left: 14px;
         margin: 16px 0 0 0;
-        font-weight: bold;
+        font-family: 'Poppins Bold';
         line-height: 26px;
         color: $primary;
         &:before{

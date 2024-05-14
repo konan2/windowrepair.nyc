@@ -8,8 +8,8 @@
 
     h2 {
         color: $primary;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
+        font-family: 'Poppins BoldSemiBold', sans-serif;
+        font-weight: bold;
         font-size: 22px;
     }
 
@@ -137,7 +137,7 @@
     align-items: center;
     justify-content: flex-start;
     color: #7A7A7A;
-    font-weight: 600;
+    font-family: 'Poppins BoldSemiBold';
     padding-left: 24px;
     width: 245px;
 }
@@ -153,8 +153,8 @@
 }
 
 .block-recent-articles .item-our-team-block__bottom h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-family: 'Poppins BoldSemiBold', sans-serif;
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -166,8 +166,7 @@
 
 .row-bottom>a {
     color: $primary;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: 'Poppins BoldSemiBold';
     font-size: 18px;
     text-decoration: none;
     position: relative;
