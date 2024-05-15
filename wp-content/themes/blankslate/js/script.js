@@ -46,20 +46,18 @@ if (document.getElementById('monday-form')) {
   document.getElementById('monday-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var form = document.getElementById('monday-form');
-    var formData = new FormData(form);
+    var mondayForm = document.getElementById('monday-form');
+    var formData = new FormData(mondayForm);
 
     const trackingId = 'G-MSLQV6CC5K';  
   
-    const name = document.getElementById('name_field').value; 
-    const email = document.getElementById('email').value; 
-    const phone = document.getElementById('phone').value; 
-    const address = document.getElementById('address').value; 
-    const projectDescription = document.getElementById('description').value; 
-    const submitButton = document.getElementById('form-submit-button'); 
+    const name = mondayForm.getElementById('name_field').value; 
+    const email = mondayForm.getElementById('email').value; 
+    const phone = mondayForm.getElementById('phone').value; 
+    const address = mondayForm.getElementById('address').value; 
+    const projectDescription = mondayForm.getElementById('description').value; 
 
-    
-
+    const submitButton = mondayForm.getElementById('form-submit-button'); 
     submitButton.textContent  = 'Please wait...';
 
       // Отправляем данные на сервер Hubspot.com
@@ -68,23 +66,23 @@ if (document.getElementById('monday-form')) {
         "fields": [
           {
             "name": "firstname",
-            "value": name
+            "value": formData.get('name')
           },
           {
             "name": "phone",
-            "value": phone
+            "value": formData.get('phone')
           },
           {
             "name": "message",
-            "value": projectDescription
+            "value": formData.get('description')
           },
           {
             "name": "email",
-            "value": email
+            "value": formData.get('email')
           },
           {
             "name": "address",
-            "value": address
+            "value": formData.get('address')
           }
         ],
         "context": {
@@ -210,7 +208,7 @@ if (document.getElementById('monday-form')) {
 
     sendConversionData(trackingId, name, email, phone, address, projectDescription);
 
-    submitCform(formData, form, submitButton);
+    submitCform(formData, mondayForm, submitButton);
 
 });
 }
