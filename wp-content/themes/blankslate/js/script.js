@@ -46,18 +46,18 @@ if (document.getElementById('monday-form')) {
   document.getElementById('monday-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var mondayForm = document.getElementById('monday-form');
-    var formData = new FormData(mondayForm);
+    var form = document.getElementById('monday-form');
+    var formData = new FormData(form);
 
     const trackingId = 'G-MSLQV6CC5K';  
   
-    const name = mondayForm.querySelector('#name_field').value; 
-    const email = mondayForm.querySelector('#email').value; 
-    const phone = mondayForm.querySelector('#phone').value; 
-    const address = mondayForm.querySelector('#address').value; 
-    const projectDescription = mondayForm.querySelector('#description').value; 
+    const name = form.querySelector('#name_field').value; 
+    const email = form.querySelector('#email').value; 
+    const phone = form.querySelector('#phone').value; 
+    const address = form.querySelector('#address').value; 
+    const projectDescription = form.querySelector('#description').value; 
 
-    const submitButton = mondayForm.querySelector('#form-submit-button'); 
+    const submitButton = form.querySelector('#form-submit-button'); 
     submitButton.textContent  = 'Please wait...';
 
       // Отправляем данные на сервер Hubspot.com
@@ -150,6 +150,7 @@ if (document.getElementById('monday-form')) {
             button.value = 'Please try again.';
         }
         if (response.ok) {
+            console.log('Monday data sent successfully');
             form.innerHTML = `<div id="success"><h2>Thank You.</h2><p>We will contact you. Shortly.</p></div>`;
         }
         return response.json();
@@ -208,7 +209,7 @@ if (document.getElementById('monday-form')) {
 
     sendConversionData(trackingId, name, email, phone, address, projectDescription);
 
-    submitCform(formData, mondayForm, submitButton);
+    submitCform(formData, form, submitButton);
 
 });
 }
