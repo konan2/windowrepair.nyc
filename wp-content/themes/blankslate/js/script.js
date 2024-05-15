@@ -66,23 +66,23 @@ if (document.getElementById('monday-form')) {
         "fields": [
           {
             "name": "firstname",
-            "value": formData.get('name')
+            "value": name
           },
           {
             "name": "phone",
-            "value": formData.get('phone')
+            "value": phone
           },
           {
             "name": "message",
-            "value": formData.get('description')
+            "value": projectDescription
           },
           {
             "name": "email",
-            "value": formData.get('email')
+            "value": email
           },
           {
             "name": "address",
-            "value": formData.get('address')
+            "value": address
           }
         ],
         "context": {
