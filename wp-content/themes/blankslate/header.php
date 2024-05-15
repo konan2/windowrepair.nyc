@@ -149,7 +149,7 @@
             <div class="row">
                 <div class="form-group">
                     <label for="description">Project description*</label>
-                    <textarea class="form-control" placeholder="Description" name="description" required=""></textarea>
+                    <textarea class="form-control" placeholder="Description" id="description" name="description" required=""></textarea>
                 </div>
             </div>
         
