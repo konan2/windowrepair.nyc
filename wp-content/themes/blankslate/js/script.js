@@ -31,14 +31,6 @@ if (document.getElementById('monday-form')) {
     button.textContent  = 'Please wait...';
 
 
-    // Data for sending to hubspot
-    var formData = {
-      'name': name,
-      'email': email,
-      'phone': phone,
-      'address': address,
-      'description': projectDescription
-  };
 
 
     const columnValues = {
@@ -67,27 +59,6 @@ if (document.getElementById('monday-form')) {
 
 
  // Отправляем данные на сервер Hubspot.com
-
-      // fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   },
-      //   body: JSON.stringify(formData)
-      // })
-      // .then(response => {
-      //   if (response.ok) {
-      //     console.log('Form data submitted successfully');
-      //     // Добавьте здесь код обработки успешной отправки формы
-      //   } else {
-      //     console.error('Error submitting form data:', response.statusText);
-      //     // Добавьте здесь код обработки ошибки отправки формы
-      //   }
-      // })
-      // .catch(error => {
-      //   console.error('Error submitting form data:', error);
-      //   // Добавьте здесь код обработки ошибки отправки формы
-      // });
 
 
 
@@ -197,27 +168,6 @@ window.addEventListener('DOMContentLoaded',function () {
       var formData = new FormData(form);
       formData.append('action', 'submitmyform');
 
-      // for (const [key, value] of formData.entries()) {
-      //   console.log(`${key}: ${value}`);
-      // }
-     
-      // Send to hubspot
-
-      // var hubspotData = {
-      //   'fields': {
-      //     'firstname': formData.get('name'),
-      //     'phone': formData.get('Phone'),
-      //     'message': formData.get('description'),
-      //     'email': "test@gmail.com"
-      //   }
-      // };
-
-      var hs_context = {
-        "pageUrl": "https://test.windowrepair.nyc/",
-        "pageTitle": "https://test.windowrepair.nyc/",
-        "pageId": "https://test.windowrepair.nyc/",
-        "pageName": "https://test.windowrepair.nyc/",
-      };
 
       var hubspotData = {
         "fields": [
@@ -244,8 +194,6 @@ window.addEventListener('DOMContentLoaded',function () {
           "pageName": document.title
         },
       }
-
-      console.log(hubspotData);
 
       fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
         method: 'POST',

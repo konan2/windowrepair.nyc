@@ -78,7 +78,12 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
                                 <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required autocomplete="name">
                             </div>
                     </div>
-
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="yourmail@example.com" class="form-control" required autocomplete="email">
+                        </div>
+                    </div>
                     <label for="website" class="d-none"></label>
                     <input type="text" id="website" name="website" autocomplete="off" placeholder="www.yoursite.com">
                     
