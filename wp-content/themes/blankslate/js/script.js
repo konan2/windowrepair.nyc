@@ -235,13 +235,13 @@ window.addEventListener('DOMContentLoaded',function () {
           },
           {
             "name": "email",
-            "value": "joh323dfffdfdweq2n@google.com"
+            "value": formData.get('email')
           }
         ],
         "context": {
           //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
-          "pageUri": "www.example.com/page",
-          "pageName": "Example page"
+          "pageUri": window.location.href,
+          "pageName": document.title
         },
       }
 

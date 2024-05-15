@@ -107,7 +107,13 @@
             <div class="row">
                     <div class="form-group">
                         <label for="name">Full name*</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required autocomplete="name">
+                        <input type="text" id="name" name="name" placeholder="Your name" class="form-control" required autocomplete="name">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="yourmail@example.com" class="form-control" required autocomplete="email">
                     </div>
             </div>
             <div class="row">
@@ -118,7 +124,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="description">Project Description*</label>
+                    <label for="description">Project description*</label>
                     <textarea class="form-control" placeholder="Description" name="description" required=""></textarea>
                 </div>
             </div>
