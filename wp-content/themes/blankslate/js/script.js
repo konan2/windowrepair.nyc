@@ -204,10 +204,13 @@ window.addEventListener('DOMContentLoaded',function () {
       // Send to hubspot
 
       var hubspotData = {
-        'firstname': formdata.get('name'),
-        'phone': formdata.get('Phone'),
-        'message': formdata.get('description')
-      }
+        'fields': {
+          'firstname': formData.get('name'),
+          'phone': formData.get('Phone'),
+          'message': formData.get('description'),
+          'email': "test@gmail.com"
+        }
+      };
 
       console.log(hubspotData);
 
