@@ -212,6 +212,13 @@ window.addEventListener('DOMContentLoaded',function () {
       //   }
       // };
 
+      var hs_context = {
+        "pageUrl": "https://test.windowrepair.nyc/",
+        "pageTitle": "https://test.windowrepair.nyc/",
+        "pageId": "https://test.windowrepair.nyc/",
+        "pageName": "https://test.windowrepair.nyc/",
+      };
+
       var hubspotData = {
         "fields": [
           {
@@ -231,32 +238,32 @@ window.addEventListener('DOMContentLoaded',function () {
             "value": "joh323dffweq2n@google.com"
           },
           {
-            "name": "page_id", 
-            "value": "https://test.windowrepair.nyc/"
+            "name": "hs_context", 
+            "value": hs_context
           },
         ]
       }
 
       console.log(hubspotData);
 
-      // fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   },
-      //   body: JSON.stringify(hubspotData)
-      // })
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(hubspotData)
+      })
 
-      // .then(response => {
-      //   if (response.ok) {
-      //     console.log('Form data submitted successfully');
-      //   } else {
-      //     console.error('Error submitting form data:', response.statusText);
-      //   }
-      // })
-      // .catch(error => {
-      //   console.error('Error submitting form data:', error);
-      // });
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+      });
   
       AjaxCform(formData, form);
   }
