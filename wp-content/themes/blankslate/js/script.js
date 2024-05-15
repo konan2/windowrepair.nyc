@@ -30,6 +30,17 @@ if (document.getElementById('monday-form')) {
 
     button.textContent  = 'Please wait...';
 
+
+    // Data for sending to hubspot
+    var formData = {
+      'name': name,
+      'email': email,
+      'phone': phone,
+      'address': address,
+      'description': projectDescription
+  };
+
+
     const columnValues = {
         "email": { "text": email,  "email": email },
         "text": phone, 
@@ -54,6 +65,25 @@ if (document.getElementById('monday-form')) {
 
     // Отправка данных
 
+
+ // Отправляем данные на сервер Hubspot.com
+
+    // // Отправляем данные в HubSpot
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('POST', 'https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322');
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    // xhr.onreadystatechange = function() {
+    //     if (xhr.readyState === 4 && xhr.status === 200) {
+    //         // Данные успешно отправлены
+    //         console.log('Form data submitted successfully');
+    //         // Добавьте здесь код обработки успешной отправки формы
+    //     } else {
+    //         // Произошла ошибка при отправке данных
+    //         console.error('Error submitting form data:', xhr.statusText);
+    //         // Добавьте здесь код обработки ошибки отправки формы
+    //     }
+    // };
+    // xhr.send(JSON.stringify(formData));
 
 
     // Отправляем данные на сервер Monday.com
