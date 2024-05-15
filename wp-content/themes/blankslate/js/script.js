@@ -213,12 +213,24 @@ window.addEventListener('DOMContentLoaded',function () {
       // };
 
       var hubspotData = {
-        "fields": {
-          "firstname": "John",
-          "phone": "1234567890",
-          "message": "Hello, HubSpot!",
-          "email": "john@example.com"
-        }
+        "fields": [
+          {
+            "name": "firstname",
+            "value": "John"
+          },
+          {
+            "name": "phone",
+            "value": "1234567890"
+          },
+          {
+            "name": "message",
+            "value": "Hello, HubSpot!"
+          },
+          {
+            "name": "email",
+            "value": "john@example.com"
+          }
+        ]
       }
 
       console.log(hubspotData);
