@@ -51,13 +51,13 @@ if (document.getElementById('monday-form')) {
 
     const trackingId = 'G-MSLQV6CC5K';  
   
-    const name = mondayForm.getElementById('name_field').value; 
-    const email = mondayForm.getElementById('email').value; 
-    const phone = mondayForm.getElementById('phone').value; 
-    const address = mondayForm.getElementById('address').value; 
-    const projectDescription = mondayForm.getElementById('description').value; 
+    const name = mondayForm.querySelector('#name_field').value; 
+    const email = mondayForm.querySelector('#email').value; 
+    const phone = mondayForm.querySelector('#phone').value; 
+    const address = mondayForm.querySelector('#address').value; 
+    const projectDescription = mondayForm.querySelector('#description').value; 
 
-    const submitButton = mondayForm.getElementById('form-submit-button'); 
+    const submitButton = mondayForm.querySelector('#form-submit-button'); 
     submitButton.textContent  = 'Please wait...';
 
       // Отправляем данные на сервер Hubspot.com
