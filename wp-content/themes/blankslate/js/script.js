@@ -8,8 +8,37 @@ import videojs from 'video.js';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
 import $ from 'jquery';
 
-// Book online form
 
+
+async function AjaxCform(formData, form, submitButton) {
+  const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
+  const response = await fetch(url, {
+      method: 'POST',
+      body: formData,
+  });
+  const data = await response.json();
+
+  if (data['statuse'] === 'ok') {
+      form.innerHTML = `<div id="success">${data['reply']}</div>`;
+  } else if (data['statuse'] === 'er') {
+      form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
+      submitButton.disabled = false;
+      submitButton.textContent = 'Please try again.';
+  }
+}
+
+
+function submitCform(formData, form, submitButton) {
+  submitButton.disabled = true;
+  submitButton.value = 'Please wait...';
+  
+  formData.append('action', 'submitmyform');
+
+  AjaxCform(formData, form, submitButton);
+}
+
+
+// Book online form
 
 window.addEventListener('DOMContentLoaded',function () {
 
@@ -17,10 +46,11 @@ if (document.getElementById('monday-form')) {
   document.getElementById('monday-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    
-    const trackingId = 'G-MSLQV6CC5K';  
+    var form = document.getElementById('rmonday-form');
+    var formData = new FormData(form);
 
-    const form = document.getElementById('monday-form');    
+    const trackingId = 'G-MSLQV6CC5K';  
+  
     const name = document.getElementById('name_field').value; 
     const email = document.getElementById('email').value; 
     const phone = document.getElementById('phone').value; 
@@ -28,41 +58,86 @@ if (document.getElementById('monday-form')) {
     const projectDescription = document.getElementById('description').value; 
     const button = document.getElementById('form-submit-button'); 
 
+    
+
     button.textContent  = 'Please wait...';
 
+      // Отправляем данные на сервер Hubspot.com
 
+      var hubspotData = {
+        "fields": [
+          {
+            "name": "firstname",
+            "value": name
+          },
+          {
+            "name": "phone",
+            "value": phone
+          },
+          {
+            "name": "message",
+            "value": projectDescription
+          },
+          {
+            "name": "email",
+            "value": email
+          },
+          {
+            "name": "address",
+            "value": address
+          }
+        ],
+        "context": {
+          //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+          "pageUri": window.location.href,
+          "pageName": document.title
+        },
+      }
 
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/6cd756ca-f0d1-4a4f-b6e3-c9a21505b4bf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(hubspotData)
+      })
 
-    const columnValues = {
-        "email": { "text": email,  "email": email },
-        "text": phone, 
-        "text5": address,
-        "long_text": projectDescription
-    };
-
-    const data = {
-        'query': `mutation {
-            create_item (
-                board_id: 2614272835,
-                item_name: "${name}",
-                column_values: "${JSON.stringify(columnValues).replace(/"/g, '\\"')}"
-            ) {
-                id
-                name
-            }
-        }`
-    };
-
-
-
-    // Отправка данных
-
-
- // Отправляем данные на сервер Hubspot.com
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+      });
 
 
 
     // Отправляем данные на сервер Monday.com
+
+        const columnValues = {
+          "email": { "text": email,  "email": email },
+          "text": phone, 
+          "text5": address,
+          "long_text": projectDescription
+      };
+
+      const data = {
+          'query': `mutation {
+              create_item (
+                  board_id: 2614272835,
+                  item_name: "${name}",
+                  column_values: "${JSON.stringify(columnValues).replace(/"/g, '\\"')}"
+              ) {
+                  id
+                  name
+              }
+          }`
+      };
+
+
     fetch("https://api.monday.com/v2", {
         method: 'post',
         headers: {
@@ -87,11 +162,7 @@ if (document.getElementById('monday-form')) {
     });
 
 
-
-
-
-
-
+    // Send data to google analytics
     function sendConversionData(trackingId, email, phone, address, description) {
         // URL для отправки данных о событии конверсии
         var url = 'https://www.google-analytics.com/collect';
@@ -139,120 +210,167 @@ if (document.getElementById('monday-form')) {
 
     sendConversionData(trackingId, name, email, phone, address, projectDescription);
 
+    submitCform(formData, form, form.querySelector("input[type='submit']"));
+
 });
 }
 
 });
    
 
-// all form
+
+// Request a call form
+
+window.addEventListener('DOMContentLoaded',function () {
+  document.getElementById('request-call-form').addEventListener('submit', function(event) {
+
+    var form = document.getElementById('request-call-form');
+    var formData = new FormData(form);
+
+    event.preventDefault();
+
+  var hubspotData = {
+    "fields": [
+      {
+        "name": "firstname",
+        "value": formData.get('name')
+      },
+      {
+        "name": "phone",
+        "value": formData.get('Phone')
+      },
+      {
+        "name": "message",
+        "value": formData.get('description')
+      },
+      {
+        "name": "email",
+        "value": formData.get('email')
+      }
+    ],
+    "context": {
+      //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+      "pageUri": window.location.href,
+      "pageName": document.title
+    },
+  }
+
+  fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(hubspotData)
+  })
+
+  .then(response => {
+    if (response.ok) {
+      console.log('Form data submitted successfully');
+    } else {
+      console.error('Error submitting form data:', response.statusText);
+    }
+  })
+  .catch(error => {
+    console.error('Error submitting form data:', error);
+  });
+
+  
+
+  submitCform(formData, form, form.querySelector("input[type='submit']"));
+  
+
+  
+
+}); 
+  
+}); 
+
+// GET A TECHNIC NOW form
+
 window.addEventListener('DOMContentLoaded',function () {
 
-  var submitButtons = document.querySelectorAll("form input[type='submit']");
-  
-      submitButtons.forEach(function (button) {
-          button.addEventListener('click', function (event) {
-            var form = this.closest('form');
-            if (form.checkValidity()) { // Проверка формы
-                event.preventDefault(); 
-                submitCform(this.closest('form')); 
-              }
-          });
-  });
-  
-  
-  function submitCform(form) {
-      form.querySelector("input[type='submit']").disabled = true;
-      form.querySelector("input[type='submit']").value = 'Please wait...';
-  
-      var formData = new FormData(form);
-      formData.append('action', 'submitmyform');
+  var form = document.getElementById('contactForm');
 
-
-      var hubspotData = {
-        "fields": [
-          {
-            "name": "firstname",
-            "value": formData.get('name')
-          },
-          {
-            "name": "phone",
-            "value": formData.get('Phone')
-          },
-          {
-            "name": "message",
-            "value": formData.get('description')
-          },
-          {
-            "name": "email",
-            "value": formData.get('email')
-          }
-        ],
-        "context": {
-          //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
-          "pageUri": window.location.href,
-          "pageName": document.title
-        },
-      }
-
-      fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(hubspotData)
-      })
-
-      .then(response => {
-        if (response.ok) {
-          console.log('Form data submitted successfully');
-        } else {
-          console.error('Error submitting form data:', response.statusText);
-        }
-      })
-      .catch(error => {
-        console.error('Error submitting form data:', error);
-      });
-  
-      AjaxCform(formData, form);
-  }
-  
-  async function AjaxCform(formData, form) {
-      const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
-      const response = await fetch(url, {
-          method: 'POST',
-          body: formData,
-      });
-      const data = await response.json();
-  
-      if (data['statuse'] === 'ok') {
-          form.innerHTML = `<div id="success">${data['reply']}</div>`;
-      } else if (data['statuse'] === 'er') {
-          form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
-          form.querySelector("input[type='submit']").disabled = false;
-          form.querySelector("input[type='submit']").textContent = 'Please try again.';
-      }
-  }
-  
-  
-  
-   //Button add comment (form)
-  
   var showCommentBtn = document.getElementById('show-comment-btn');
-  var commentForm = document.getElementById('comment-form');
   
   if (showCommentBtn) {
+    var hiddenComment = document.getElementById('comment-form');
     showCommentBtn.addEventListener('click', function() {
-        if (commentForm && commentForm.style.display === 'none') {
-            commentForm.style.display = 'block';
+        if (hiddenComment && hiddenComment.style.display === 'none') {
+            hiddenComment.style.display = 'block';
             showCommentBtn.style.display = 'none';
         }
     });
   }
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+
+    
+    var formData = new FormData(form);
+    event.preventDefault();
+
+
+
+  var hubspotData = {
+    "fields": [
+      {
+        "name": "firstname",
+        "value": formData.get('name')
+      },
+      {
+        "name": "phone",
+        "value": formData.get('Phone')
+      },
+      {
+        "name": "message",
+        "value": formData.get('description')
+      },
+      {
+        "name": "email",
+        "value": formData.get('email')
+      }
+    ],
+    "context": {
+      //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+      "pageUri": window.location.href,
+      "pageName": document.title
+    },
+  }
+
+  fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/10e31b62-0db1-4055-9a37-a5d15d88d606', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(hubspotData)
+  })
+
+  .then(response => {
+    if (response.ok) {
+      console.log('Form data submitted successfully');
+    } else {
+      console.error('Error submitting form data:', response.statusText);
+    }
+  })
+  .catch(error => {
+    console.error('Error submitting form data:', error);
+  });
+
+  
+
+  submitCform(formData, form, form.querySelector("input[type='submit']"));
   
   
+
+}); 
   
-  }); 
+}); 
+
+
+
+
+
+
 
 
 // Функция для управления поведением dropdown меню на мобильных устройствах

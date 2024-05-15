@@ -186,46 +186,9 @@ document.addEventListener('DOMContentLoaded', function() {
         closeOtherDropdowns(null); // передаем null для закрытия всех меню
     });
 
-
-    /// Contact form
-
-
-const requestCallForm = document.querySelector("form#request-call-form");
-
-function submitCform() {
-   document.querySelector("form#request-call-form input[type='submit']").disabled = "true"
-   document.querySelector("form#request-call-form input[type='submit']").value = 'Please wait...'
-
-   var formdata = new FormData(requestCallForm);
-
-   formdata.append('action', 'submitmyform') 
-   AjaxCform(formdata) 
-}
-
-async function AjaxCform(formdata) {
-  const url = location.protocol+ '//'+ window.location.hostname +'/wp-admin/admin-ajax.php?action=submitmyform'
-  const response = await fetch(url, {
-      method: 'POST',
-      body: formdata,
-  });
-  const data = await response.json();
-	
-	if (data['statuse'] == 'ok'){			
-			document.querySelector("form#request-call-form").innerHTML = `<div id="success">
-			${data['reply']}
-			</div>`			
-	} else if (data['statuse'] == 'er') {
-			document.querySelector("form#request-call-form span#status").innerHTML = `<div id="er">
-			Ops, ${data['reply']}
-			</div>`
-			document.querySelector("form#request-call-form input[type='submit']").disabled = false
-			document.querySelector("form#request-call-form input[type='submit']").value = 'Try again'
-	}}	
 });
 
   </script>  
-
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 
 
 <?php wp_footer(); ?>
