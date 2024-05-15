@@ -71,7 +71,7 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
         <div class="col-lg-6 d-flex justify-content-center align-items-start order-0 order-lg-1 mb-4">
             <div class="form-wrap post-form">	
                 <form id="contactForm" class="form-wrap__rows"> 
-                    <h3 class="form-wrap__title poppins-bold">GET A TECHNIC NOW</h3>
+                    <h3 class="form-wrap__title poppins-bold">GET A GLAZIER NOW</h3>
                     <div class="row">
                             <div class="form-group">
                                 <label for="name">Full name*</label>

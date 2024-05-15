@@ -313,6 +313,7 @@ window.addEventListener('DOMContentLoaded',function () {
         var repairCheckbox = document.getElementById('repairCheckbox');
         var installCheckbox = document.getElementById('installCheckbox');
 
+
         // Создаем строку для хранения выбранных значений
         var servicesValue = '';
 
@@ -331,11 +332,6 @@ window.addEventListener('DOMContentLoaded',function () {
         // Создаем объект FormData и добавляем строку с значениями чекбоксов
         formData.append('services', servicesValue);
 
-
-    for (const [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-    debugger
     
     var hubspotData = {
       "fields": [
@@ -370,31 +366,37 @@ window.addEventListener('DOMContentLoaded',function () {
         "pageName": document.title
       },
     }
+
+    if (!repairCheckbox.checked && !installCheckbox.checked) {
+      event.preventDefault();
+      alert("Please select at least one service.");
+    }
+    else{
     
-    fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/10e31b62-0db1-4055-9a37-a5d15d88d606', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(hubspotData)
-    })
-    
-    .then(response => {
-      if (response.ok) {
-        console.log('Form data submitted successfully');
-      } else {
-        console.error('Error submitting form data:', response.statusText);
-      }
-    })
-    .catch(error => {
-      console.error('Error submitting form data:', error);
-    });
-    
-    
-    
-    submitCform(formData, contactForm, contactForm.querySelector("input[type='submit']"));
-    
-    
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/10e31b62-0db1-4055-9a37-a5d15d88d606', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(hubspotData)
+      })
+      
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+      });
+      
+      
+      
+      submitCform(formData, contactForm, contactForm.querySelector("input[type='submit']"));
+      
+    }
     
     }); 
   }
