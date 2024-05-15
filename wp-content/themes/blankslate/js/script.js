@@ -216,27 +216,28 @@ window.addEventListener('DOMContentLoaded',function () {
         "fields": [
           {
             "name": "firstname",
-            "value": "John2"
+            "value": formData.get('name')
           },
           {
             "name": "phone",
-            "value": "1234567890"
+            "value": formData.get('Phone')
           },
           {
             "name": "message",
-            "value": "Hello, HubSpot!"
+            "value": formData.get('description')
           },
           {
             "name": "email",
-            "value": "joh3232n@example.com"
+            "value": "joh323weq2n@google.com"
           },
           {
             "name": "page_id", 
             "value": "https://test.windowrepair.nyc/"
           },
+
           {
             "name": "hs_context", 
-            "value": "google.com"
+            "value": hs_context
           }
         ]
       }
