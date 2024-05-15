@@ -19,7 +19,7 @@ export default [
       resolve(), // Разрешить импорты из node_modules
       commonjs(), // Преобразовать CommonJS модули в ES6
       terser({
-        compress: { drop_console: true }, // удалять console.log()
+        compress: { drop_console: false }, // удалять console.log()
         output: {
           comments: false, // Удаляем комментарии
         },

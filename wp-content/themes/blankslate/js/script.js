@@ -197,6 +197,10 @@ window.addEventListener('DOMContentLoaded',function () {
       var formdata = new FormData(form);
       formdata.append('action', 'submitmyform');
 
+      for (const [key, value] of formdata.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+      debugger;
       // Send to hubspot
       fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/b3b6f02d-af52-44c2-9cae-02eb8aa20380', {
         method: 'POST',
@@ -205,6 +209,7 @@ window.addEventListener('DOMContentLoaded',function () {
         },
         body: JSON.stringify(formdata)
       })
+
       .then(response => {
         if (response.ok) {
           console.log('Form data submitted successfully');
