@@ -14,6 +14,30 @@
 <!-- HubSpot-->
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 
+<!-- Book online-->
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44979414",
+    formId: "6cd756ca-f0d1-4a4f-b6e3-c9a21505b4bf"
+  });
+</script>
+<!-- Get a technic-->
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44979414",
+    formId: "10e31b62-0db1-4055-9a37-a5d15d88d606"
+  });
+</script>
+<!-- Request a call-->
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44979414",
+    formId: "a72ba619-eacb-4b37-b965-b4719c626659"
+  });
+</script>
 
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
