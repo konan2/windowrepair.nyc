@@ -194,10 +194,10 @@ window.addEventListener('DOMContentLoaded',function () {
       form.querySelector("input[type='submit']").disabled = true;
       form.querySelector("input[type='submit']").value = 'Please wait...';
   
-      var formdata = new FormData(form);
-      formdata.append('action', 'submitmyform');
+      var formData = new FormData(form);
+      formData.append('action', 'submitmyform');
 
-      // for (const [key, value] of formdata.entries()) {
+      // for (const [key, value] of formData.entries()) {
       //   console.log(`${key}: ${value}`);
       // }
      
@@ -237,14 +237,14 @@ window.addEventListener('DOMContentLoaded',function () {
       });
       ////// end of hubspot 
   
-      AjaxCform(formdata, form);
+      AjaxCform(formData, form);
   }
   
-  async function AjaxCform(formdata, form) {
+  async function AjaxCform(formData, form) {
       const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
       const response = await fetch(url, {
           method: 'POST',
-          body: formdata,
+          body: formData,
       });
       const data = await response.json();
   
