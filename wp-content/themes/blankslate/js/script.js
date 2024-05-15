@@ -46,7 +46,7 @@ if (document.getElementById('monday-form')) {
   document.getElementById('monday-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var form = document.getElementById('rmonday-form');
+    var form = document.getElementById('monday-form');
     var formData = new FormData(form);
 
     const trackingId = 'G-MSLQV6CC5K';  
