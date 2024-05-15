@@ -222,11 +222,12 @@ if (document.getElementById('monday-form')) {
 
 window.addEventListener('DOMContentLoaded',function () {
   document.getElementById('request-call-form').addEventListener('submit', function(event) {
-
+    event.preventDefault();
     var form = document.getElementById('request-call-form');
     var formData = new FormData(form);
 
-    event.preventDefault();
+  
+
 
   var hubspotData = {
     "fields": [
@@ -304,12 +305,37 @@ window.addEventListener('DOMContentLoaded',function () {
 
   if(contactForm){
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-
-  
-      var formData = new FormData(contactForm);
+      
       event.preventDefault();
-    
-    
+      var formData = new FormData(contactForm);
+     
+      // Получаем элементы чекбоксов
+        var repairCheckbox = document.getElementById('repairCheckbox');
+        var installCheckbox = document.getElementById('installCheckbox');
+
+        // Создаем строку для хранения выбранных значений
+        var servicesValue = '';
+
+        // Проверяем, выбран ли каждый чекбокс и добавляем его значение к строке servicesValue
+        if (repairCheckbox.checked) {
+          servicesValue += repairCheckbox.value;
+        }
+        if (installCheckbox.checked) {
+          // Если уже есть выбранное значение, добавляем запятую перед следующим значением
+          if (servicesValue !== '') {
+            servicesValue += ',';
+          }
+          servicesValue += installCheckbox.value;
+        }
+
+        // Создаем объект FormData и добавляем строку с значениями чекбоксов
+        formData.append('services', servicesValue);
+
+
+    for (const [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+    debugger
     
     var hubspotData = {
       "fields": [
@@ -323,11 +349,19 @@ window.addEventListener('DOMContentLoaded',function () {
         },
         {
           "name": "message",
-          "value": formData.get('description')
+          "value": formData.get('message')
         },
         {
           "name": "email",
           "value": formData.get('email')
+        },
+        {
+          "name": "problem",
+          "value": formData.get('problem')
+        },
+        {
+          "name": "service",
+          "value": formData.get('services')
         }
       ],
       "context": {

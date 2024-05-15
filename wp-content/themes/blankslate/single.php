@@ -95,31 +95,32 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
                     </div>
 
                     <div class="row">
-                            <div class="form-group">
-                                <label for="repair">Choose a service*</label>
-                                <div class="row">
-                                    <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
-                                        <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repair" checked>
-                                        <label class="custom-control-label" for="repair">Repair</label>
-                                    </div>
-                                    <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
-                                        <input type="checkbox" class="custom-control-input" name="install" value="install" id="install">
-                                        <label class="custom-control-label" for="install">Install</label>
-                                    </div>
+                        <div class="form-group">
+                            <label for="repair">Choose a service*</label>
+                            <div class="row">
+                                <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="repair" value="repair" id="repairCheckbox" checked>
+                                    <label class="custom-control-label" for="repairCheckbox">Repair</label>
+                                </div>
+                                <div class="col-md-4 col-4 custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" name="install" value="install" id="installCheckbox">
+                                    <label class="custom-control-label" for="installCheckbox">Install</label>
                                 </div>
                             </div>
+                        </div>
                     </div>
+
 
                     <div class="row">
                             <div class="form-group">
                                 <label for="problem">What's the problem*</label>
                                 <select id="problem" name="problem" class="form-control" required>
-                                    <option selected value="window_Replacement">Window replacement</option>
-                                    <option value="window_Repair">Window Repair</option>
-                                    <option value="window_Installation">Window Installation</option>
-                                    <option value="window_Capping">Window Capping</option>
-                                    <option value="wooden_Windows_Restoration">Wooden Windows Restoration</option>
-                                    <option value="other">Other</option>
+                                    <option selected value="Window replacement">Window replacement</option>
+                                    <option value="Window repair">Window repair</option>
+                                    <option value="Window installation">Window installation</option>
+                                    <option value="Window capping">Window capping</option>
+                                    <option value="Wooden windows restoration">Wooden windows restoration</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                     </div>
