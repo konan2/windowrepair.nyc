@@ -202,27 +202,27 @@ window.addEventListener('DOMContentLoaded',function () {
       // }
       // debugger;
       // Send to hubspot
-      // fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/b3b6f02d-af52-44c2-9cae-02eb8aa20380', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   },
-      //   body: JSON.stringify(formdata)
-      // })
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/a72ba619-eacb-4b37-b965-b4719c626659', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formdata)
+      })
 
-      // .then(response => {
-      //   if (response.ok) {
-      //     console.log('Form data submitted successfully');
-      //     // Добавьте здесь код обработки успешной отправки формы
-      //   } else {
-      //     console.error('Error submitting form data:', response.statusText);
-      //     // Добавьте здесь код обработки ошибки отправки формы
-      //   }
-      // })
-      // .catch(error => {
-      //   console.error('Error submitting form data:', error);
-      //   // Добавьте здесь код обработки ошибки отправки формы
-      // });
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+          // Добавьте здесь код обработки успешной отправки формы
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+          // Добавьте здесь код обработки ошибки отправки формы
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+        // Добавьте здесь код обработки ошибки отправки формы
+      });
 
   
       AjaxCform(formdata, form);
