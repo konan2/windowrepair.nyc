@@ -200,14 +200,23 @@ window.addEventListener('DOMContentLoaded',function () {
       // for (const [key, value] of formdata.entries()) {
       //   console.log(`${key}: ${value}`);
       // }
-      // debugger;
+     
       // Send to hubspot
+
+      var hubspotData = {
+        'firstname': formdata.get('name'),
+        'phone': formdata.get('Phone'),
+        'message': formdata.get('description')
+      }
+
+      console.log(hubspotData);
+
       fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/a72ba619-eacb-4b37-b965-b4719c626659', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formdata)
+        body: JSON.stringify(hubspotData)
       })
 
       .then(response => {
@@ -223,7 +232,7 @@ window.addEventListener('DOMContentLoaded',function () {
         console.error('Error submitting form data:', error);
         // Добавьте здесь код обработки ошибки отправки формы
       });
-
+      ////// end of hubspot 
   
       AjaxCform(formdata, form);
   }
