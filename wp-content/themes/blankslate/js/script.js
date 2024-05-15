@@ -68,22 +68,27 @@ if (document.getElementById('monday-form')) {
 
  // Отправляем данные на сервер Hubspot.com
 
-    // // Отправляем данные в HubSpot
-    // var xhr = new XMLHttpRequest();
-    // xhr.open('POST', 'https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322');
-    // xhr.setRequestHeader('Content-Type', 'application/json');
-    // xhr.onreadystatechange = function() {
-    //     if (xhr.readyState === 4 && xhr.status === 200) {
-    //         // Данные успешно отправлены
-    //         console.log('Form data submitted successfully');
-    //         // Добавьте здесь код обработки успешной отправки формы
-    //     } else {
-    //         // Произошла ошибка при отправке данных
-    //         console.error('Error submitting form data:', xhr.statusText);
-    //         // Добавьте здесь код обработки ошибки отправки формы
-    //     }
-    // };
-    // xhr.send(JSON.stringify(formData));
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+          // Добавьте здесь код обработки успешной отправки формы
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+          // Добавьте здесь код обработки ошибки отправки формы
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+        // Добавьте здесь код обработки ошибки отправки формы
+      });
+
 
 
     // Отправляем данные на сервер Monday.com
@@ -168,6 +173,92 @@ if (document.getElementById('monday-form')) {
 
 });
    
+
+// all form
+window.addEventListener('DOMContentLoaded',function () {
+
+  var submitButtons = document.querySelectorAll("form input[type='submit']");
+  
+      submitButtons.forEach(function (button) {
+          button.addEventListener('click', function (event) {
+            var form = this.closest('form');
+            if (form.checkValidity()) { // Проверка формы
+                event.preventDefault(); 
+                submitCform(this.closest('form')); 
+              }
+          });
+  });
+  
+  
+  function submitCform(form) {
+      form.querySelector("input[type='submit']").disabled = true;
+      form.querySelector("input[type='submit']").value = 'Please wait...';
+  
+      var formdata = new FormData(form);
+      formdata.append('action', 'submitmyform');
+
+
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Form data submitted successfully');
+          // Добавьте здесь код обработки успешной отправки формы
+        } else {
+          console.error('Error submitting form data:', response.statusText);
+          // Добавьте здесь код обработки ошибки отправки формы
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form data:', error);
+        // Добавьте здесь код обработки ошибки отправки формы
+      });
+
+  
+      AjaxCform(formdata, form);
+  }
+  
+  async function AjaxCform(formdata, form) {
+      const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
+      const response = await fetch(url, {
+          method: 'POST',
+          body: formdata,
+      });
+      const data = await response.json();
+  
+      if (data['statuse'] === 'ok') {
+          form.innerHTML = `<div id="success">${data['reply']}</div>`;
+      } else if (data['statuse'] === 'er') {
+          form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
+          form.querySelector("input[type='submit']").disabled = false;
+          form.querySelector("input[type='submit']").textContent = 'Please try again.';
+      }
+  }
+  
+  
+  
+   //Button add comment (form)
+  
+  var showCommentBtn = document.getElementById('show-comment-btn');
+  var commentForm = document.getElementById('comment-form');
+  
+  if (showCommentBtn) {
+    showCommentBtn.addEventListener('click', function() {
+        if (commentForm && commentForm.style.display === 'none') {
+            commentForm.style.display = 'block';
+            showCommentBtn.style.display = 'none';
+        }
+    });
+  }
+  
+  
+  
+  }); 
 
 
 // Функция для управления поведением dropdown меню на мобильных устройствах
@@ -920,70 +1011,7 @@ $(document).ready(function() {
 });
 
 
-// all form
 
-
-window.addEventListener('DOMContentLoaded',function () {
-
-var submitButtons = document.querySelectorAll("form input[type='submit']");
-
-    submitButtons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-          var form = this.closest('form');
-          if (form.checkValidity()) { // Проверка формы
-              event.preventDefault(); 
-              submitCform(this.closest('form')); 
-            }
-        });
-});
-
-
-function submitCform(form) {
-    form.querySelector("input[type='submit']").disabled = true;
-    form.querySelector("input[type='submit']").value = 'Please wait...';
-
-    var formdata = new FormData(form);
-    formdata.append('action', 'submitmyform');
-
-    AjaxCform(formdata, form);
-}
-
-async function AjaxCform(formdata, form) {
-    const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
-    const response = await fetch(url, {
-        method: 'POST',
-        body: formdata,
-    });
-    const data = await response.json();
-
-    if (data['statuse'] === 'ok') {
-        form.innerHTML = `<div id="success">${data['reply']}</div>`;
-    } else if (data['statuse'] === 'er') {
-        form.querySelector("span#status").innerHTML = `<div id="er">${data['reply']}</div>`;
-        form.querySelector("input[type='submit']").disabled = false;
-        form.querySelector("input[type='submit']").textContent = 'Please try again.';
-    }
-}
-
-
-
- //Button add comment (form)
-
-var showCommentBtn = document.getElementById('show-comment-btn');
-var commentForm = document.getElementById('comment-form');
-
-if (showCommentBtn) {
-  showCommentBtn.addEventListener('click', function() {
-      if (commentForm && commentForm.style.display === 'none') {
-          commentForm.style.display = 'block';
-          showCommentBtn.style.display = 'none';
-      }
-  });
-}
-
-
-
-}); /// end of dome ready
 
 
 //scroll categories
