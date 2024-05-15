@@ -235,10 +235,10 @@ window.addEventListener('DOMContentLoaded',function () {
             "value": "https://test.windowrepair.nyc/"
           },
 
-          {
-            "name": "hs_context", 
-            "value": hs_context
-          }
+          // {
+          //   "name": "hs_context", 
+          //   "value": hs_context
+          // }
         ]
       }
 
