@@ -68,26 +68,26 @@ if (document.getElementById('monday-form')) {
 
  // Отправляем данные на сервер Hubspot.com
 
-      fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(response => {
-        if (response.ok) {
-          console.log('Form data submitted successfully');
-          // Добавьте здесь код обработки успешной отправки формы
-        } else {
-          console.error('Error submitting form data:', response.statusText);
-          // Добавьте здесь код обработки ошибки отправки формы
-        }
-      })
-      .catch(error => {
-        console.error('Error submitting form data:', error);
-        // Добавьте здесь код обработки ошибки отправки формы
-      });
+      // fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify(formData)
+      // })
+      // .then(response => {
+      //   if (response.ok) {
+      //     console.log('Form data submitted successfully');
+      //     // Добавьте здесь код обработки успешной отправки формы
+      //   } else {
+      //     console.error('Error submitting form data:', response.statusText);
+      //     // Добавьте здесь код обработки ошибки отправки формы
+      //   }
+      // })
+      // .catch(error => {
+      //   console.error('Error submitting form data:', error);
+      //   // Добавьте здесь код обработки ошибки отправки формы
+      // });
 
 
 
@@ -197,8 +197,8 @@ window.addEventListener('DOMContentLoaded',function () {
       var formdata = new FormData(form);
       formdata.append('action', 'submitmyform');
 
-
-      fetch('https://api.hsforms.com/submissions/v3/integration/submit/6cbe3e4e-f3e6-480c-b943-8e860bd78322', {
+      // Send to hubspot
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/b3b6f02d-af52-44c2-9cae-02eb8aa20380', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
