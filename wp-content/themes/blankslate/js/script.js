@@ -229,6 +229,10 @@ window.addEventListener('DOMContentLoaded',function () {
           {
             "name": "email",
             "value": "john@example.com"
+          },
+          {
+            "name": "CONVERSION_PAGE", 
+            "value": "google.com"
           }
         ]
       }
