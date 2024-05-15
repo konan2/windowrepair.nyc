@@ -225,18 +225,12 @@ async function AjaxCform(formdata) {
 
   </script>  
 
-
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-
 <script>
   hbspt.forms.create({
-    //region: "na1",
-    //portalId: "44979414",
-    //formId: "a72ba619-eacb-4b37-b965-b4719c626659",
-    //target: "#request-call-form"
-    // onFormSubmit: function($form) {
-    //     console.log( $form.serialize() );
-    // } 
+    region: "na1",
+    portalId: "44979414",
+    formId: "a72ba619-eacb-4b37-b965-b4719c626659"
   });
 </script>
 
