@@ -203,14 +203,23 @@ window.addEventListener('DOMContentLoaded',function () {
      
       // Send to hubspot
 
+      // var hubspotData = {
+      //   'fields': {
+      //     'firstname': formData.get('name'),
+      //     'phone': formData.get('Phone'),
+      //     'message': formData.get('description'),
+      //     'email': "test@gmail.com"
+      //   }
+      // };
+
       var hubspotData = {
-        'fields': {
-          'firstname': formData.get('name'),
-          'phone': formData.get('Phone'),
-          'message': formData.get('description'),
-          'email': "test@gmail.com"
+        "fields": {
+          "firstname": "John",
+          "phone": "1234567890",
+          "message": "Hello, HubSpot!",
+          "email": "john@example.com"
         }
-      };
+      }
 
       console.log(hubspotData);
 
