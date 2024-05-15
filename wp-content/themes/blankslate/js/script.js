@@ -239,7 +239,7 @@ window.addEventListener('DOMContentLoaded',function () {
           }
         ],
         "context": {
-          "hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+          //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
           "pageUri": "www.example.com/page",
           "pageName": "Example page"
         },
