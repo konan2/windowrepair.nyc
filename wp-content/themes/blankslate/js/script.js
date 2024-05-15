@@ -56,11 +56,11 @@ if (document.getElementById('monday-form')) {
     const phone = document.getElementById('phone').value; 
     const address = document.getElementById('address').value; 
     const projectDescription = document.getElementById('description').value; 
-    const button = document.getElementById('form-submit-button'); 
+    const submitButton = document.getElementById('form-submit-button'); 
 
     
 
-    button.textContent  = 'Please wait...';
+    submitButton.textContent  = 'Please wait...';
 
       // Отправляем данные на сервер Hubspot.com
 
@@ -210,7 +210,7 @@ if (document.getElementById('monday-form')) {
 
     sendConversionData(trackingId, name, email, phone, address, projectDescription);
 
-    submitCform(formData, form, form.querySelector("input[type='submit']"));
+    submitCform(formData, form, submitButton);
 
 });
 }
