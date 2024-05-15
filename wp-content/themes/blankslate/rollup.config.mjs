@@ -13,9 +13,10 @@ export default [
       file: 'build/main.min.js',
       format: 'iife', ///iife /// umd
       name: 'MyModule', // Глобальное имя для вашего пакета (доступно в окружении браузера)
+      sourcemap: true
     },
     plugins: [
-      del({ targets: 'build/*.js' }),
+      del({ targets: ['build/*.js', 'build/*.map'] }),
       resolve(), // Разрешить импорты из node_modules
       commonjs(), // Преобразовать CommonJS модули в ES6
       terser({
@@ -30,7 +31,7 @@ export default [
     input: 'scss/main.scss', // Ваш основной файл
     output: {
       file: 'build/main.min.css', // Выходной CSS файл
-      format: 'esm',
+      format: 'esm'
     },
     plugins: [
       del({ targets: 'build/*.css' }),
