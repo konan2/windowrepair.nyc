@@ -289,7 +289,7 @@ window.addEventListener('DOMContentLoaded',function () {
 
 window.addEventListener('DOMContentLoaded',function () {
 
-  var form = document.getElementById('contactForm');
+  var contactForm = document.getElementById('contactForm');
 
   var showCommentBtn = document.getElementById('show-comment-btn');
   
@@ -303,66 +303,68 @@ window.addEventListener('DOMContentLoaded',function () {
     });
   }
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  if(contactForm){
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
 
+  
+      var formData = new FormData(contactForm);
+      event.preventDefault();
     
-    var formData = new FormData(form);
-    event.preventDefault();
-
-
-
-  var hubspotData = {
-    "fields": [
-      {
-        "name": "firstname",
-        "value": formData.get('name')
+    
+    
+    var hubspotData = {
+      "fields": [
+        {
+          "name": "firstname",
+          "value": formData.get('name')
+        },
+        {
+          "name": "phone",
+          "value": formData.get('Phone')
+        },
+        {
+          "name": "message",
+          "value": formData.get('description')
+        },
+        {
+          "name": "email",
+          "value": formData.get('email')
+        }
+      ],
+      "context": {
+        //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+        "pageUri": window.location.href,
+        "pageName": document.title
       },
-      {
-        "name": "phone",
-        "value": formData.get('Phone')
-      },
-      {
-        "name": "message",
-        "value": formData.get('description')
-      },
-      {
-        "name": "email",
-        "value": formData.get('email')
-      }
-    ],
-    "context": {
-      //"hutk": ":hutk", // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
-      "pageUri": window.location.href,
-      "pageName": document.title
-    },
-  }
-
-  fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/10e31b62-0db1-4055-9a37-a5d15d88d606', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(hubspotData)
-  })
-
-  .then(response => {
-    if (response.ok) {
-      console.log('Form data submitted successfully');
-    } else {
-      console.error('Error submitting form data:', response.statusText);
     }
-  })
-  .catch(error => {
-    console.error('Error submitting form data:', error);
-  });
-
-  
-
-  submitCform(formData, form, form.querySelector("input[type='submit']"));
-  
-  
-
-}); 
+    
+    fetch('https://api.hsforms.com/submissions/v3/integration/submit/44979414/10e31b62-0db1-4055-9a37-a5d15d88d606', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(hubspotData)
+    })
+    
+    .then(response => {
+      if (response.ok) {
+        console.log('Form data submitted successfully');
+      } else {
+        console.error('Error submitting form data:', response.statusText);
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting form data:', error);
+    });
+    
+    
+    
+    submitCform(formData, contactForm, contactForm.querySelector("input[type='submit']"));
+    
+    
+    
+    }); 
+  }
   
 }); 
 
