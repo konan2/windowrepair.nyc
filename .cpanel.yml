@@ -3,7 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/windowrepair13/public_html/
     - /bin/cp -R /home/windowrepair13/public_html/test.windowrepair.nyc/* $DEPLOYPATH
-  excludes:
+  exclude:
     - /home/windowrepair13/public_html/test.windowrepair.nyc/.htaccess
     - /home/windowrepair13/public_html/test.windowrepair.nyc/wp-config.php
     - /home/windowrepair13/public_html/test.windowrepair.nyc/.gitignore
