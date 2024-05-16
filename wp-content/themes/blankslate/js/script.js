@@ -2,9 +2,10 @@ import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
 import 'bootstrap/js/dist/modal';
+import $ from 'jquery';
 import videojs from 'video.js';
 import Swiper from '../node_modules/swiper/swiper-bundle.min.mjs';
-import $ from 'jquery';
+
 
 async function AjaxCform(formData, form, submitButton) {
   const url = location.protocol + '//' + window.location.hostname + '/wp-admin/admin-ajax.php?action=submitmyform';
@@ -22,6 +23,7 @@ async function AjaxCform(formData, form, submitButton) {
       submitButton.textContent = 'Please try again.';
   }
 }
+
 
 function submitCform(formData, form, submitButton) {
   submitButton.disabled = true;
