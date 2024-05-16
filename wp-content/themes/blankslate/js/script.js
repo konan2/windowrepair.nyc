@@ -813,7 +813,7 @@ const enableOurServicesSlider = function () {
       delay: 1000,
     },
     a11y: {
-      slideRole: 'banner',
+      slideRole: 'article',
     },
     breakpoints: {
       576: {
