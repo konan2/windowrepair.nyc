@@ -710,7 +710,7 @@ function initSwiperBestQuality() {
             initialSlide: 0,
             speed: 1000,
             a11y: {
-              slideRole: 'tabpanel',
+              slideRole: 'banner',
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -813,7 +813,7 @@ const enableOurServicesSlider = function () {
       delay: 1000,
     },
     a11y: {
-      slideRole: 'tabpanel',
+      slideRole: 'banner',
     },
     breakpoints: {
       576: {
