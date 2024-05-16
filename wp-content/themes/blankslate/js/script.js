@@ -709,6 +709,9 @@ function initSwiperBestQuality() {
             slidesPerView: 1,
             initialSlide: 0,
             speed: 1000,
+            a11y: {
+              slideRole: 'tabpanel',
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -809,6 +812,9 @@ const enableOurServicesSlider = function () {
     autoplay: {
       delay: 1000,
     },
+    a11y: {
+      slideRole: 'tabpanel',
+    },
     breakpoints: {
       576: {
         slidesPerView: 2,
@@ -820,23 +826,7 @@ const enableOurServicesSlider = function () {
         slidesPerView: 4,
       },
     },
-    // Колбэк после создания слайда
-    on: {
-      init: function () {
-        addRoleToSlides(this.slides); // Добавление атрибута role="slider" к каждому слайду при инициализации
-      },
-      slideChangeTransitionEnd: function () {
-        addRoleToSlides(this.slides); // При каждом изменении слайда также добавляется атрибут role="slider"
-      },
-    },
   });
-  
-  // Функция для добавления атрибута role="slider" ко всем слайдам
-  function addRoleToSlides(slides) {
-    slides.forEach(function (slide) {
-      slide.setAttribute('role', 'banner');
-    });
-  }  
 };
 
 // keep an eye on viewport size changes
@@ -846,8 +836,6 @@ breakpoint.addListener(breakpointChecker);
 breakpointChecker();
 
 /// Filter services
-
-console.log("test");
 
 const radioButtons = document.querySelectorAll('#our-services .filter-radio');
 

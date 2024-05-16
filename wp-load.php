@@ -17,8 +17,6 @@
  */
 
 
-// just for test
-// just for test222
 
 /** Define ABSPATH as this file's directory */
 if ( ! defined( 'ABSPATH' ) ) {
