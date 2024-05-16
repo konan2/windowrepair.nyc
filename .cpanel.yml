@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/windowrepair13/public_html/
     - /bin/cp -R /home/windowrepair13/public_html/test.windowrepair.nyc/* $DEPLOYPATH
   excludes:
-  - /home/windowrepair13/public_html/test.windowrepair.nyc/.htaccess
-  - /home/windowrepair13/public_html/test.windowrepair.nyc/wp-config.php
-  - /home/windowrepair13/public_html/test.windowrepair.nyc/.gitignore
+    - /home/windowrepair13/public_html/test.windowrepair.nyc/.htaccess
+    - /home/windowrepair13/public_html/test.windowrepair.nyc/wp-config.php
+    - /home/windowrepair13/public_html/test.windowrepair.nyc/.gitignore
