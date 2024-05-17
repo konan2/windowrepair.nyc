@@ -2,6 +2,8 @@
 
 .front-banner{
     position: relative;
+    background-position-x: right;
+    background-size: contain;
     @media (min-width: 1440px) {
         min-height: 565px;
     }
@@ -9,11 +11,11 @@
         padding-top: 40px;
         padding-bottom: 40px;
         @media (max-width: 550px) {
-        .btn-hero-main {
-            margin: 0 auto;
-            display: block;
+            .btn-hero-main {
+                margin: 0 auto;
+                display: block;
+            }
         }
-    }
     }
     &:after{
         content: '';
