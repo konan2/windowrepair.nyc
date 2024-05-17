@@ -3,6 +3,6 @@ deployment:
     # Указание пути исходной директории
     - export REPOPATH=/home/windowrepair13/public_html/test.windowrepair.nyc/*
     # Указание пути целевой директории
-    - export DEPLOYPATH=/home/windowrepair13/public_html/test5.windowrepair.nyc/
+    - export DEPLOYPATH=/home/windowrepair13/public_html/
     # Копирование всех файлов и папок из исходной директории в целевую, исключая указанные файлы
     - /bin/rsync -rav --exclude '.htaccess' --exclude 'wp-config.php' --exclude '.gitignore' $REPOPATH $DEPLOYPATH
