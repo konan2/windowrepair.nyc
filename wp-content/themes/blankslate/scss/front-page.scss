@@ -3,7 +3,9 @@
 .front-banner{
     position: relative;
     background-position-x: right;
-    background-size: contain;
+    background-size: 50% 100%;
+    display: flex;
+    align-items: center;
     @media (min-width: 1440px) {
         min-height: 565px;
     }
