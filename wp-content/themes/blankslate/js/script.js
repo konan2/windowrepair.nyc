@@ -710,7 +710,7 @@ function initSwiperBestQuality() {
             initialSlide: 0,
             speed: 1000,
             a11y: {
-              slideRole: 'banner',
+              slideRole: 'article',
             },
             pagination: {
                 el: ".swiper-pagination",
