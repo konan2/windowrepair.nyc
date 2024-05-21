@@ -4,7 +4,7 @@
     <div class="container-bg">
        <div class="alone-hero__block">
         <div class="col-sm-6 main-title-block alone-hero__left">
-            <h1 class="services-hero-section__title"><?php echo $args['custom_title']; ?></h1>
+            <h2 class="services-hero-section__title"><?php echo $args['custom_title']; ?></h1>
             <p class="services-hero-section__desc"><?php echo $args['custom_text']; ?></p>
         </div>
         <div class="alone-hero__right">

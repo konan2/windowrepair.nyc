@@ -2,8 +2,47 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" type="text/html">
-<title><?php bloginfo( 'name' ); ?>: <?php bloginfo( 'description' ); ?></title>
-<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+<title>
+    <?php
+        if ( is_single() ) {
+            wp_title('|', true, 'right');
+            bloginfo('name');
+        } elseif ( is_home() || is_front_page() ) {
+            bloginfo('name');
+            echo ' | ';
+            bloginfo('description');
+        } elseif ( is_page() ) {
+            wp_title('|', true, 'right');
+            bloginfo('name');
+        } elseif ( is_search() ) {
+            echo 'Search results for "' . get_search_query() . '"';
+        } elseif ( is_404() ) {
+            echo 'Page Not Found';
+        } else {
+            wp_title('|', true, 'right');
+            bloginfo('name');
+        }
+    ?>
+</title>
+<meta name="description" content="<?php
+    if ( is_home() || is_front_page() ) {
+        bloginfo('description');
+    } 
+    elseif ( is_single() || is_page() ) {
+        echo strip_tags(get_the_excerpt());
+    }
+    elseif ( is_category() ) {
+        single_cat_title('', true);
+    } elseif ( is_tag() ) {
+        single_tag_title('', true);
+    } elseif ( is_search() ) {
+        echo 'Search results for "' . get_search_query() . '"';
+    } elseif ( is_404() ) {
+        echo 'Page not found';
+    } else {
+        echo strip_tags(get_the_excerpt());
+    }
+?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 

@@ -29,7 +29,7 @@ foreach ($subcategories as $subcategory) {
 <section class="services-hero-section">
     <div class="container">
         <div class="col-sm-6 main-title-block">
-            <h1 class="services-hero-section__title" itemprop="name"><?php echo $parent_category->name ?></h1>
+            <h2 class="services-hero-section__title" itemprop="name"><?php echo $parent_category->name ?></h1>
             <?php 
             $category_description = $parent_category->description;
             if ($category_description) {

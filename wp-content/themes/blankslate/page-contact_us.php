@@ -12,7 +12,7 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
 <section class="services-hero-section contact-us">
     <div class="container-xl container">
         <div class="col-sm-6 main-title-block">
-            <h1 class="services-hero-section__title"><?php the_title() ?></h1>
+            <h2 class="services-hero-section__title"><?php the_title() ?></h1>
             <div class="services-hero-section__desc"><?php echo $custom_field_value ?></div>
         </div>
     </div>  
