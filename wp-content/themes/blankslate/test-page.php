@@ -4,11 +4,11 @@
 
 <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> -->
 <script>
-//   hbspt.forms.create({
-//     region: "na1",
-//     portalId: "44979414",
-//     formId: "65076e56-04e1-4a10-9c63-525282c68f23"
-//   });
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44979414",
+    formId: "65076e56-04e1-4a10-9c63-525282c68f23"
+  });
 
 function formFieldsToHSJSON(form) {
     let fieldArray = [];
@@ -103,13 +103,22 @@ window.addEventListener('DOMContentLoaded',function () {
 
 </script>
 
-
 <form method="POST" id="custom-form">
-    <input type="text" name="firstname" placeholder="First Name">
-    <input type="text" name="email" placeholder="Email">
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <input type="submit" value="Submit Form">
+  <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Name</label>
+    <input type="text" name="firstname" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputMail" class="form-label">Mail</label>
+    <input type="email" name="email" class="form-control" id="exampleInputMail">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputMessage" class="form-label">Message</label>
+    <input type="text" name="message" class="form-control" id="exampleInputMessage">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<div id="thankyou">Thank you!</div>
+
+<div id="thankyou" class="alert alert-success" role="alert"></div>
 
 <?php get_footer();?>
