@@ -1,13 +1,15 @@
 {
   "type": "commonjs",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "autoprefixer": "^10.4.19",
+    "babel": "^6.23.0",
     "cssnano": "^7.0.1",
-    "rollup": "^4.14.3",
+    "rollup": "^2.79.1",
     "rollup-plugin-auto-reload": "^1.0.3",
     "rollup-plugin-concat": "^1.0.3",
     "rollup-plugin-copy": "^3.5.0",

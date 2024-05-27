@@ -6,49 +6,43 @@ import terser from '@rollup/plugin-terser';
 import del from 'rollup-plugin-delete';
 import cssnano from 'cssnano';
 
-export default [
-  {
-    input: 'js/script.js',
-    output: {
+export default {
+  input: ['js/script.js', 'scss/main.scss'],
+  output: [
+    {
       file: 'build/main.min.js',
-      format: 'iife', ///iife /// umd
-      name: 'MyModule', // Глобальное имя для вашего пакета (доступно в окружении браузера)
+      format: 'iife', // iife or umd
+      name: 'MyModule', // Global name for your package (available in the browser environment)
       sourcemap: true
     },
-    plugins: [
-      del({ targets: ['build/*.js', 'build/*.map'] }),
-      resolve(), // Разрешить импорты из node_modules
-      commonjs(), // Преобразовать CommonJS модули в ES6
-      terser({
-        compress: { drop_console: true }, // удалять console.log()
-        output: {
-          comments: false, // Удаляем комментарии
-        },
-      }),
-    ],
-  },
-  {
-    input: 'scss/main.scss', // Ваш основной файл
-    output: {
-      file: 'build/main.min.css', // Выходной CSS файл
+    {
+      file: 'build/main.min.css',
       format: 'esm'
-    },
-    plugins: [
-      del({ targets: 'build/*.css' }),
-      postcss({
-        extract: true, // Извлечение CSS в отдельный файл
-        minimize: true,
-        extensions: ['.scss'], // Добавляем поддержку расширения 
-        plugins: [
-          cssnano({
-            preset: ['default', { discardComments: { removeAll: true } }] // Настройка для удаления всех комментариев
-          })
-        ],
-        preprocessor: (content, id) => new Promise((resolve, reject) => {
-          const result = sass.renderSync({ file: id });
-          resolve({ code: result.css.toString() });
-        }),
+    }
+  ],
+  plugins: [
+    del({ targets: ['build/*.js', 'build/*.map', 'build/*.css'] }), // Deleting old build files
+    resolve(), // Allow imports from node_modules
+    commonjs(), // Convert CommonJS modules to ES6
+    terser({
+      compress: { drop_console: true }, // Remove console.log()
+      output: {
+        comments: false, // Remove comments
+      },
+    }),
+    postcss({
+      extract: true, // Extract CSS to a separate file
+      minimize: true,
+      extensions: ['.scss'], // Add support for SCSS
+      plugins: [
+        cssnano({
+          preset: ['default', { discardComments: { removeAll: true } }] // Remove all comments
+        })
+      ],
+      preprocessor: (content, id) => new Promise((resolve, reject) => {
+        const result = sass.renderSync({ file: id });
+        resolve({ code: result.css.toString() });
       }),
-    ],
-  },
-];
+    }),
+  ],
+};
