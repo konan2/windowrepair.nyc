@@ -177,14 +177,14 @@ echo do_shortcode('[show_section post_id="294"]');
 ?>
 
 
-<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+
 <script>
   hbspt.forms.create({
     region: "na1",
     portalId: "44979414",
     formId: "10e31b62-0db1-4055-9a37-a5d15d88d606"
   });
-</script> -->
+</script>
 
 <?php get_footer(); ?>
 
