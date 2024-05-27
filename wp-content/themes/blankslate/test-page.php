@@ -1,8 +1,10 @@
 <?php /* Template Name: Test page */ ?>
 
 <?php get_header(); ?>
+
+<!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> -->
 <script>
-  hbspt.forms.refresh({
+  hbspt.forms.create({
     region: "na1",
     portalId: "44979414",
     formId: "65076e56-04e1-4a10-9c63-525282c68f23"
