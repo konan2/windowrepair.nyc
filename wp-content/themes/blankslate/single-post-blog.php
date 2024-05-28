@@ -111,6 +111,11 @@
 </div>
 </section>
 
+<!-- Latest projects we made -->
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
+
 
 
 <?php get_footer(); ?>

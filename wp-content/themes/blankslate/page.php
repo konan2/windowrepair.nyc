@@ -34,6 +34,14 @@ if ($field_values) {
 
 
 
+<!-- Latest projects we made -->
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
 
+<!-- Areas we serve -->
+<?php
+echo do_shortcode('[show_section post_id="294"]');
+?>
 
 <?php get_footer();?>

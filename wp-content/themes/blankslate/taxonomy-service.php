@@ -86,7 +86,10 @@ $image_url = get_field('service_image', get_queried_object());
 
 
 
-
+<!-- Latest projects we made -->
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
 
 
 <!-- We started Window Repair NYC 8 years ago -->

@@ -147,6 +147,10 @@ $custom_field_value = get_post_meta(get_the_ID(), 'short_description', true);
         </div>
 </section>
 
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
+
 <!-- We started Window Repair NYC 8 years ago -->
 <?php
 echo do_shortcode('[show_section post_id="583"]');

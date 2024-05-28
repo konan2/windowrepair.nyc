@@ -157,6 +157,10 @@ $term_image = get_field('banner_image', 'service' . '_' . $term_id);
     </div>
 </section>
 
+<!-- Latest projects we made -->
+<?php
+echo do_shortcode('[show_section post_id="293"]');
+?>
 
 <!-- Our brand partners we work with -->
 <?php
